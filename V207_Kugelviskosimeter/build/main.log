@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  20 NOV 2016 12:47
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  20 NOV 2016 13:02
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -331,7 +331,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.107 seconds)
+luaotfload | main : initialization completed in 0.105 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.st
 y
@@ -1710,7 +1710,7 @@ Package csquotes Warning: Using preliminary 'polyglossia' interface.
 (csquotes)                Some of the multilingual features may not
 (csquotes)                work as expected.
 
-(./main.aux
+(./build/main.aux
 luatex-hyphen: loading patterns and exceptions for: german (\language4)
 luatex-hyphen: info: no hyphenation exceptions for this language
 Language ngerman already loaded; id is 8)
@@ -1792,14 +1792,14 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout4 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
+Package biblatex Info: ... file 'main.bbl' found.
+ (./build/main.bbl)
 Package biblatex Info: Reference section=0 on input line 61.
 Package biblatex Info: Reference segment=0 on input line 61.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
+
 *************************************************
 * unicode-math warning: "mathtools-overbracket"
 * 
@@ -1862,14 +1862,15 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
  [1
 Non-PDF special ignored!
 
-{/home/tim/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
+{/home/tim/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./build/main.toc
+Language ngerman already loaded; id is 8)
 \tf@toc=\write5
 
 \openout5 = main.toc
  [2
 
 ]
-<figure/bild.png, id=19, 770.88pt x 1009.7725pt>
+<figure/bild.png, id=31, 770.88pt x 1009.7725pt>
 File: figure/bild.png Graphic file (type png)
  <use figure/bild.png>
 Package luatex.def Info: figure/bild.png used on input line 127.
@@ -1882,26 +1883,14 @@ LaTeX Warning: Empty bibliography on input line 154.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
  [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
- (./main.aux
+ (./build/main.aux
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
-
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: CBB0846597DC67A4A3A0CCAA6F80622B;2367
-(rerunfilecheck)             After:  EE0BA0C0269D96600777362ABF65A4AD;3598.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  58C6714AE21605EC24DA2F5F8BDB74C9;526.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: EE0BA0C0269D96600777362ABF65A4AD;3598.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 58C6714AE21605EC24DA2F5F8BDB74C9;526.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -1909,14 +1898,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40182 strings out of 495118
+ 40192 strings out of 495118
  100000,1373583 words of node,token memory allocated
- 959 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 54 glue, 1 kern, 34 attribute, 57 glue_spec, 34 att
+ 1015 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 59 glue, 1 kern, 38 attribute, 58 glue_spec, 38 att
 ribute_list, 1 write nodes
-   avail lists: 1:2,2:237,3:79,4:34,5:253,6:2970,7:689,8:31,9:113,10:20,11:395
- 42773 multiletter control sequences out of 65536+600000
- 76 fonts using 18690831 bytes
+   avail lists: 1:2,2:235,3:79,4:34,5:253,6:2970,7:689,8:31,9:113,10:20,11:395
+ 42778 multiletter control sequences out of 65536+600000
+ 76 fonts using 18690679 bytes
  69i,6n,100p,8868b,857s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bol
 d.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/la
@@ -1925,10 +1914,10 @@ ic/lm-math/latinmodern-math.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/
 opentype/public/lm/lmroman10-regular.otf></home/tim/.local/texlive/2016/texmf-di
 st/fonts/opentype/public/lm/lmroman12-regular.otf></home/tim/.local/texlive/2016
 /texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (5 pages, 478935 bytes).
+Output written on main.pdf (5 pages, 479432 bytes).
 
-PDF statistics: 102 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+PDF statistics: 108 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 131072)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
