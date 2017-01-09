@@ -260,10 +260,10 @@ zu bestimmen.
 	\frac{\mathup{d}^2D}{\mathup{d}x^2}&=-\frac{F\cdot x}{2EI}, \;\;\; 0\leqslant x\leqslant\frac{L}{2}\text{,}
     \label{eq:dgl_beidseitig1} \\
 	\frac{\mathup{d}^2D}{\mathup{d}x^2}&=-\frac{F}{2EI}(L-x), \;\;\; \frac{L}{2}\leqslant x\leqslant L
-	\label{eq:dgl_beidseitig2}
+	\label{eq:dgl_beidseitig}
 \end{align}
 Mit zweifacher Integration der Gleichungen \ref{eq:dgl_beidseitig1} und
-\ref{eq:dgl_beidseitig2} ergibt sich für die Durchbiegung $D$:
+\ref{eq:dgl_beidseitig} ergibt sich für die Durchbiegung $D$:
 \begin{align}
 	D(x)&=\frac{F}{48EI}(3L^2x-4x^3), \;\;\; 0\leqslant  x\leqslant\frac{L}{2}\text{,}
     \label{eq:gl_Biegung1} \\
@@ -414,8 +414,7 @@ bereits um die Auslenkung bereinigt wurde, die der Stab aufgrund seines Eigengew
 selbst verursacht.
 
 In einem weiteren Schritt wird nun gemäß Gleichung \ref{eq:durchbieg} eine
-lineare Regression der Messwerte vorgenommen. Abbildung \ref{fig:plot_aluminium}
-zeigt den resultierenden Plot.
+lineare Regression der Messwerte vorgenommen.
 
 Die lineare Ausgleichsrechnung, welche auf der Gleichung \ref{eq:durchbieg}
 basiert, liefert für die Steigung $m$ und den y-Achsenabschnitt $b$ die Werte:
@@ -423,8 +422,7 @@ basiert, liefert für die Steigung $m$ und den y-Achsenabschnitt $b$ die Werte:
     m &= \SI{-0.0087(2)}{\frac{1}{\metre\squared}} \\
     b &= \SI{0.000028(4)}{\metre}.
 \end{align}
-In Abbildung \ref{plotmessing} ist der zugehörige Plot zu sehen. Für den
-Elastizitätsmodul $E$ folgt mit der Formel
+Für den Elastizitätsmodul $E$ folgt mit der Formel
 \begin{equation}
     E = \frac{F}{2mI} = \frac{Mg}{2mI} = \SI{1589(44)}{\kilo\newton\per\milli\metre\squared}.
     \label{eq:E}
@@ -547,8 +545,6 @@ Messungen ergeben.
     \end{tabular}
     \label{tab2:alueckig}
 \end{table}
-Da weiß ich nicht, was ich damit anfangen soll, das war das ohne Masse, daher
-ist dann logischerweise auch $E$ = 0
 \begin{table}[H]
     \centering
     \caption{Effektive Durchbiegung des beidseitig eingespannten eckigen Alustabes in Abhängigkeit des Ortes mit angehängter Masse.}
@@ -584,15 +580,59 @@ ist dann logischerweise auch $E$ = 0
     \end{tabular}
     \label{tab3:alueckig}
 \end{table}
-Das Flächenträgheitsmoment des beidseitig eingespannten eckigen Aluminiumstabes ist mit Gleichung
-\ref{eq:trägheit}:
+Bei der Regression der Messwerte muss beachtet werden, dass für die beidseitige
+Auflage des Stabes nun  verschiedene Gleichungen verwendet werden müssen, um die
+$x$-Werte in Bezug auf die Auslenkung $D$ zu linearisieren. Insbesondere gilt
+für den Abschnitt $0\leqslant x\leqslant\sfrac{L}{2}$ eine andere Beziehung als
+für den Abschnitt $\sfrac{L}{2}\leqslant x\leqslant L$. Die entsprechenden
+Gleichungen~\eqref{eq:gl_Biegung1} und~\eqref{eq:gl_Biegung} sind im Theorieteil
+angegeben.
+
+Die lineare Regression im Bereich $0\leqslant x\leqslant\sfrac{L}{2}$ liefert die Parameter
+
+\begin{align}
+    m_1 &= \SI{0.00028(3)}{\frac{1}{\metre\squared}} \\
+    b_1 &= \SI{-0.00003(4)}{\metre}.
+\end{align}
+
+
+Der Zusammenhang mit dem Elastizitätsmodul $E$ folgt aus Gleichung~\eqref{eq:gl_Biegung1}. Hierbei ist
+erneut die in der Ausgleichsrechnung ermittelte Steigung $m$ über das Flächenträgheitsmoment $I$ und das
+Gewicht $M$ der angehängten Masse mit $E$ verbunden.
+
 \begin{equation}
-    I = \frac{\pi}{64}d^4 = \SI{491}{\milli\metre^4}
+    m = \frac{F}{48EI}
 \end{equation}
-Für den Elastiziätsmodul folgt dann mit der Formel \ref{eq:E}
+
+Durch Umformung folgt für den Elastizitätsmodul
+
 \begin{equation}
-    E = \frac{F}{2mI} = \frac{Mg}{2mI} = \SI{11962(19042)}{\kilo\newton\per\milli\metre\squared}.
+    E_1 = \frac{F}{48mI} = \frac{Mg}{48mI} = \SI{3073(388)}{\kilo\newton\per\milli\metre\squared}.
 \end{equation}
+
+Die Bestimmung des Elastizitätsmoduls für den Abschnitt $\sfrac{L}{2}\leqslant x\leqslant L$ erfolgt
+analog, mit dem Unterschied, dass nun Gleichung~\eqref{eq:dgl_beidseitig} für die lineare Regression
+genutzt wird. Für Steigung und y-Achsenabschnitt ergibt sich
+
+\begin{align}
+    m_2 &= \SI{0.00041(8)}{\frac{1}{\metre\squared}} \\
+    b_2 &= \SI{0.00013(1)}{\metre}.
+\end{align}
+
+Daraus folgt der Elastizitätsmodul
+
+\begin{equation}
+    E_2 = \frac{Mg}{48mI} = \SI{20851(38082)}{\kilo\newton\per\milli\metre\squared}.
+\end{equation}
+
+Abschließend werden die beiden Werte $E_1$ und $E_2$ gemittelt, sodass sich für den Elastizitätsmodul $E$
+von Stahl der Wert
+
+\begin{equation}
+    E = \SI{11962(19042)}{\kilo\newton\per\milli\metre\squared}.
+\end{equation}
+
+ergibt.
 \newpage
 \section{Diskussion}
 \label{sec:diskussion}
@@ -608,14 +648,31 @@ inklusive der jeweiligen Abweichung.
         & {Experimenteller Wert} & {Literaturwert} & {Abweichung} \\
         & in $\si{\kilo\newton\per\milli\metre\squared}$ & in $\si{\kilo\newton\per\milli\metre\squared}$ & in $\si{\percent}$ \\
         \midrule
-        Messing   & 1589 \pm\,44 & 70     &  2000 \\
-        Alu rund  & 566 \pm\,8     & 78-123 & 400 \\
-        Alu eckig & 11962 \pm\,19042    & 78-123   & 0\\
+        Messing   & 1589 \pm\,44 & 78-123     &  1500 \\
+        Alu rund  & 566 \pm\,8     & 70 & 808 \\
+        Alu eckig & 11962 \pm\,19042    & 70   & 0\\
         \bottomrule
     \end{tabular}
     \label{tab:ergebnisse}
 \end{table}
+Die Ergebnisse weichen unterschiedlich stark von den Literaturwerten ab. Für den
+runden Messingstab ergibt sich eine Abweichung von etwa $\SI{1500}{\percent}$,
+für den runden Alustab eine Abweichung von etwa $\SI{808}{\percent}$ und der
+eckige Alustab hat einen größeren Fehler, als den Messwert selbst. Unter
+Einbeziehung des Fehlers kann man theoretisch sagen, dass der Fehler
+$\SI{0}{\percent}$ groß ist. Allerdings ist dieser Wert nicht repräsentativ.
+Die Abweichungen der anderen Elastizitätsmodule sind ebenfalls sehr groß.
+Daraus folgt, dass die vorliegenden Messwerte nicht gut sind. Das wird vorallem
+daran liegen, dass die Messuhren sehr wackelig waren. Es war kaum möglich diese
+zu Nullen. Wenn testweise die Messuhren richtig kalibriert wurden und man einmal
+den Stab abgefahren ist und wieder zurück, war diese danach nicht mehr richtig
+kalibriert. Insgesamt sind die vorliegenden Messwerte nicht repräsentativ.
 \newpage
+\section{Literatur}
+TU Dortmund. Versuch 103: Biegung elastischer Stäbe. url: http://129.217.224.
+2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V103.pdf (besucht am 26. 12. 2016).
+
+http://www.chemie.de/lexikon/Elastizit%C3%A4tsmodul.html
 \section{Anhang}
 \begin{figure}[H]
     \centering
