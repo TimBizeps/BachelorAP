@@ -153,8 +153,8 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \section{Zielsetzung}
 \label{sec:zielsetzung}
 Ziel des Versuchs ist es, mit Hilfe verschiedener Brückenschaltungen Widerstände,
-Kapazitäten und Induktivitäten zu bestimmen, sowie eine Brückenschaltung, die
-mit Wechselspannung betrieben wird, auf ihre Frequenzanhängigkeit zu untersuchen.
+Kapazitäten und Induktivitäten zu bestimmen, sowie eine Brückenschaltung, auf
+ihre Frequenzabhängigkeit zu untersuchen.
 \section{Theorie}
 \label{sec:theorie}
 \subsection{Die allgemeine Brückenschaltung}
@@ -162,41 +162,19 @@ mit Wechselspannung betrieben wird, auf ihre Frequenzanhängigkeit zu untersuche
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.5\textwidth]{V3021.png}
-  \caption{Schaltplan der Allgemeinen Brückenschaltung}
+  \caption{Schaltplan der allgemeinen Brückenschaltung}
   \label{fig:V3021}
 \end{figure}
-In Abbildung \ref{fig:V3021} zu sehen ist der Aufbau der allgemeinen
-Brückenschaltung. An den Punkten A und B wird die Brückenspannung abgegriffen.
+In Abbildung \ref{fig:V3021} ist der Aufbau der allgemeinen
+Brückenschaltung zu sehen. An den Punkten A und B wird die Brückenspannung abgegriffen.
 Sie wird durch das Verhältnis der eingebrachten Widerstände $R_1$ und $R_4$
-bestimmt. Aus der Knotenregel
-\begin{equation}
-  \sum_{\mathup{k}} I_{\mathup{k}}=0
-\end{equation}
-\label{Knotenregel}
-und der Maschenregel
-\begin{equation}
-  \sum_{\mathup{k}} U_{\mathup{k}}=0
-\end{equation}
-\label{Maschenregel}
-folgen die Zusammenhänge:
-\begin{align*}
-    I_1 &= I_2 & U &= -R_1 I_1 + R_3 I_3\\
-    I_3 &= I_4 & U &= -R_4 I_4 + R_2 I_2 \\
-    \shortintertext{sowie}
-    U_{\mathup{S}} &= I_1 (R_1 + R_2).
-\end{align*}
-Daraus ergibt sich die Brückenspannung $U$
-\begin{equation}
-    U = \frac{R_2 R_3 - R_1 R_4}{(R_3 + R_4)(R_1 + R_2)} U_{\mathup{S}}.
-    \label{eq:brückenspannung}
-\end{equation}
-Bei den Messungen dieses Versuchs wird immer, bei dem Oszillographen, die
-Nullspannung anvisiert. Dies ist der Fall, wenn die Abgleichbedingung
+bestimmt.
+Wenn die Abgleichbedingung
 \begin{equation}
     R_1 R_4 = R_2 R_3
     \label{eq:abgleich}
 \end{equation}
-gegeben ist. Für komplexe Widerstände folgt:
+gegeben ist, ist eine Nullspannung erreicht. Für komplexe Widerstände folgt:
 \begin{equation}
     Z = X + \mathup{i}Y.
 \end{equation}
@@ -232,11 +210,11 @@ Damit folgt
   \label{fig:V3022}
 \end{figure}
 In Abbildung \ref{fig:V3022} zu sehen ist die Wheatstonesche Brückenschaltung.
-Sie wird genutzt, um einen ohmschen Widerstand $R_x$ zu bestimmen, der unbekannt
-ist. Bei einer Wheatstoneschen Brückenschaltung kann mit Gleich- und
+Sie wird genutzt, um einen unbekannten ohmschen Widerstand $R_x$ zu bestimmen.
+Bei einer Wheatstoneschen Brückenschaltung kann mit Gleich- und
 Wechselstrom gearbeitet werden. Durch die Abgleichbeziehung ergibt sich,
-dass, durch die Änderung des Verhältnisses von $R_3$ und $R_4$, die
-Brückenspannung auf 0 gebracht wird. Damit folgt
+dass durch die Änderung des Verhältnisses von $R_3$ und $R_4$ die
+Brückenspannung auf 0 gebracht werden kann. Damit folgt
 \begin{equation}
     \label{eq:wheatstone}
     R_{\mathup{x}} = R_2 \frac{R_3}{R_4}
@@ -275,11 +253,10 @@ In Abbildung \ref{fig:V3024} zu sehen ist die Brückenschaltung für die
 Induktivitätsmessbrücke. Induktivitäten werden dabei analog wie bei der
 Kapazitätsmessbrücke bestimmt, mit dem Unterschied, dass die Kapazitäten
 durch Induktivitäten ersetzt werden. Dabei folgen aus den Abgleichbedingungen
-folgende Zusammenhänge
+folgende Zusammenhänge:
 \begin{align}
     \label{eq:induktivitätsmessbrücke_R}
     R_{\mathup{x}} &= R_2 \frac{R_3}{R_4} \\
-    \shortintertext{und}
     \label{eq:induktivitätsmessbrücke_L}
     L_{\mathup{x}} &= L_2 \frac{R_3}{R_4}.
 \end{align}
@@ -291,10 +268,11 @@ folgende Zusammenhänge
   \caption{Schaltplan der Maxwell-Brücke}
   \label{fig:V3025}
 \end{figure}
-In Abbildung \ref{fig:V3025} zu sehen ist die Brückenschaltung für die Maxwell-
-Brücke. Hier wird auf die Induktivität $L_2$, welche bei der Induktivitätsmessbrücke
-noch verwendet wurde, verzichtet. Stattdessen wird mit einem Kondensator $C_4$
-gearbeitet. Aus den Abgleichbedingungen folgen dann die Beziehungen
+In Abbildung \ref{fig:V3025} zu sehen ist die Brückenschaltung für die
+Maxwell-Brücke. Hier wird auf die Induktivität $L_2$, welche bei der
+Induktivitätsmessbrücke noch verwendet wurde, verzichtet. Stattdessen wird mit
+einem Kondensator $C_4$ gearbeitet. Aus den Abgleichbedingungen folgen dann die
+Beziehungen
 \begin{align}
     \label{eq:maxwell_R}
     R_{\mathup{x}} &= \frac{R_2 R_3}{R_4} \\
@@ -331,58 +309,43 @@ ausdrücken.
 Als erstes wird in dem Versuch mit einer Wheatstoneschen Brücke, wie in
 Abbildung \ref{fig:V3022} dargestellt, gearbeitet. Sie ist an einer
 Wechselstromspannungsquelle angeschlossen. Zu bestimmen ist der Widerstand $R_x$.
-Dieser ist unbekannt. $R_x$ wird in Reihe zum bekannten Widerstand $R_2$
-geschaltet. Außerdem wird ein variabler Widerstand $R_3$ bzw. $R_4$ parallel,
-in Form eines Potentiometers, bis \SI{1000}{\kilo\ohm}, verschaltet. Zwischen
-$R_x$ und $R_2$ wird der erste Abgriff des Oszillographen platziert. Der zweite
-Abgriff des Oszillographen greift zwischen den beiden Widerständen des
-Potentiometers ab. Um nun $R_x$ zu bestimmen, wird das am Potentiometer
+Dieser ist unbekannt. Um $R_x$ zu bestimmen, wird das am Potentiometer
 regelbare Verhältnis der beiden Widerstände $R_3$ und $R_4$ so eingestellt, dass
 der Oszillograph eine Nullspaannung anzeigt. Diese Messung wird an zwei
 verschiedenen unbekannten Widerständen $R_x$ durchgeführt, mit drei verschiedenen
 $R_2$-Widerständen, um die Messgenauigkeit zu verbessern.
 \subsection{Kapazitätsmessung}
 Als nächstes wird eine Kapazitätsmessung durchgeführt. Dafür verändert man die
-Schaltung, wie in \ref{fig:V3023} dargestellt. $R_2$ wird, unter der Annahme,
-dass der zu bestimmende Kondensator $C_x$ ideal ist und keinen Wirkwiderstand
-$R_x$ besitzt, vorerst nicht in die Schaltung eingebracht. Wie auch schon bei der
+Schaltung, wie in \ref{fig:V3023} dargestellt. Wie auch schon bei der
 Widerstandsmessung wird erneut die Nullspannung gesucht. Diese Messung wird
-für einen weiteren idealen Kondensator wiederholt, dabei wird $C_2$ für eine
-bessere Messgenauigkeit variiert. Bei der nächsten Messung wird ein Kondensator
-verwendet, der einen Wirkanteil in seinem Widerstand hat. Dabei wird nun der
-zweite variable Widerstand $R_2$ mit in die Schaltung eingebracht. Auch hier
-wird eine Nullspannung gesucht. Dabei wird das Verhältnis von $R_3$ und $R_4$
-des ersten Potentiometers verändert, bis die Spannung ein Minimum findet.
-Anschließend wird dies mit dem Potentiometer $R_2$ ebenfalls durchgeführt.
-Dabei wird so abwechselnd variiert, bis ein absolutes Minimum nahe Null gefunden
-wird. Dabei werden beide eingestellten Widerstände notiert. Außerdem wird jede
-Messung mit drei verschiedenen Kapazitäten $C_2$ durchgeführt.
+für einen weiteren idealen Kondensator wiederholt. Bei der nächsten Messung wird ein Kondensator
+verwendet, der einen Wirkanteil in seinem Widerstand hat. Auch hier
+wird eine Nullspannung gesucht. Dabei wird so abwechselnd variiert, bis ein
+absolutes Minimum nahe Null gefunden wird. Dabei werden beide eingestellten
+Widerstände notiert. Außerdem wird jede Messung mit drei verschiedenen
+Kapazitäten $C_2$ durchgeführt.
 \newpage
 \subsection{Induktivitätsmessung}
 Als nächstes wird eine Induktivitätsmessung durchgeführt. Dafür wird ein Aufbau.
-wie in Abbildung \ref{fig:V3024} zu sehen, genutzt. Dieser unterscheidet sich
-zu dem zuvor verwendeten nur darin, dass die Reihenschaltung aus zwei
-Kondesatoren durch eine aus zwei Induktivitäten ersetzt wird. Diese Messung
+wie in Abbildung \ref{fig:V3024} zu sehen, genutzt. Diese Messung
 ist, vom Ablauf her, analog zu der Kapazitätsmessung. Um hier eine bessere
 Messgenauigkeit zu gewährleisten wird die Messung mit drei verschiedenen
 $L_2$-Induktivitäten durchgeführt.
 Daraufhin wird mit einer Maxwell-Brücke, wie in Abbildung \ref{fig:V3025} zu
 sehen, dieselbe Induktivität, wie bei der ersten Induktivitätsmessung,
-bestimmt. Dazu werden $R_3$ und $R_4$ erneut solange variiert, bis die mit dem
-Oszillographen gemessene Spannungsamplitude Null beträgt. Die Werte werden dann
-für $R_3$ und $R_4$ bestimmt und die Messung wird für zwei weitere $R_2$-Widerstände
-wiederholt.
+bestimmt. Die Werte werden für $R_3$ und $R_4$ bestimmt und die Messung wird
+für zwei weitere $R_2$-Widerstände wiederholt.
 
 \subsection{Untersuchung der Frequenzanhängigkeit einer Wien-Robinson-Brücke}
 Als letztes wird die Frequenzabhängigkeit einer Brückenschaltung untersucht.
 Dafür nutzt man eine Wien-Robinson-Brücke, wie in Abbildung \ref{fig:V3026}
 zu sehen. Der in der Schaltung enthaltene Wechselstromgenerator liefert eine
-Quellspannung $U_Q$. Diese Spannung hat den Vorteil, dass sie eine variable bzw.
-einstellbare Frequenz hat. Zur Messung wird dann die Brückenspannung $U$ mit dem
-Oszillographen gegen die Frequenz $f$ zwischen \SI{20}{\hertz} und \SI{20}{\kilo\hertz}
-aufgenommen. Es werden 37 Werte aufgenommen für die Frequenz, $U_Q$ und $U$.
-Dabei wird auf das Spannungsminimum von $U$ besonders Wert gelegt, indem man
-vorallem Frequenzen bestimmt, die nahe an dem Spannungsminimum von
-\SI{0.0152}{\volt} bei einer Frequenz von \SI{378}{\hertz} liegen.
+Quellspannung $U_Q$. Diese Spannung hat eine variable bzw.
+einstellbare Frequenz. Zur Messung wird dann die Brückenspannung $U$ gegen die
+Frequenz $f$ zwischen \SI{20}{\hertz} und \SI{20}{\kilo\hertz} aufgenommen. Es
+werden 37 Werte aufgenommen für die Frequenz, $U_Q$ und $U$. Dabei wird auf das
+Spannungsminimum von $U$ besonders Wert gelegt, indem man vorallem Frequenzen
+bestimmt, die nahe an dem Spannungsminimum von \SI{0.0152}{\volt} bei einer
+Frequenz von \SI{378}{\hertz} liegen.
 \newpage
 \end{document}
