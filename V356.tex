@@ -150,59 +150,49 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \thispagestyle{empty}
 \tableofcontents
 \newpage
-\section{Zielsetzung}
-\label{zielsetzung}
-Ziel des Versuchs ist es, die Durchlasskurve, die Dispersion und die
-Eigenfrequenzen zweier LC-Ketten zu untersuchen.
 \section{Theorie}
 \label{theorie}
+Ziel des Versuchs ist es, die Durchlasskurve, die Dispersion und die
+Eigenfrequenzen zweier LC-Ketten zu untersuchen.
 LC-Glieder sind Frequenzfilter. Sie sind entweder als Hochpass oder als Tiefpass
 aufgebaut. Die schematischen Aufbauten eines Hochpasses und eines Tiefpasses sind
-in Abbildung \ref{fig:V3563} zu sehen.
+in Abbildung \ref{fig:V3561} zu sehen.
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.8\textwidth]{V3563.png}
-  \caption{Schematischer Aufbau von einem Hochpass und einem Tiefpass}
-  \label{fig:V3563}
+  \includegraphics[width=0.8\textwidth]{V3561.png}
+  \caption{Schematischer Aufbau von einem Hochpass und einem Tiefpass }
+  \label{fig:V3561}
 \end{figure}
 In diesem Versuch sind alle LC-Glieder als Tiefpass aufgebaut. Sie filtern also
 alle hohen Frequenzen eines Signals heraus. Es wird zunächst ein Tiefpass in
 einer als unendlich lang simulierten LC-Kette betrachtet. Für diese Kette gilt
 mit Hilfe der Kirchhoffschen Regeln:
 \begin{equation}
-  \omega²\,=\,\frac{2}{LC}\cdot(1-\cos(\theta))
+  \omega²\,=\,\frac{2}{LC}\cdot(1-\cos(\theta)).
+  \label{eqn:dispersionsrelationLC}
 \end{equation}
 $\omega$ kann dabei nur folgende Werte annehmen:
 \begin{equation}
-  0\,\le\,\omega\,<\,\frac{2}{\sqrt{LC}}
+  0\,\le\,\omega\,<\,\frac{2}{\sqrt{LC}}.
+  \label{eqn:grenzwertdispersLC}
 \end{equation}
 Das ist der Fall, da die LC-Kette, analog zu einem Tiefpass, Frequenzen ab einer
 bestimmten Frequenz rausfiltert.
 Diese Gleichung wird als Dispersionsrelation bezeichnet. Diese stellt die
 Phasenänderung pro Kettenglied in Abhängigkeit von der Kreisfrequenz dar.
-In Abbildung \ref{fig:V3566} ist der Aufbau der (simuliert) unendlich lange
-Kette zu sehen.
+In Abbildung \ref{fig:V3562} zu sehen ist der Aufbau einer $LC_1C_2$-Kette.
+Hier sind zwei unterschiedliche Kondensatoren in der Schaltung verbaut.
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.8\textwidth]{V3566.png}
-  \caption{Simulierte unendlich lange Kette aus endlich vielen Gliedern und einem geeignetem Abschlusswiderstand}
-  \label{fig:V3566}
-\end{figure}
-Nun wird der vorherige Aufbau leicht abgeändert. Der Aufbau, bei dem nun jeder
-zweite Kondensator der LC-Kette durch einen anderen ersetzt wird, wodurch
-zwei unterschiedliche Kondensatoren in der Schaltung verbaut sind, ist in
-Abbildung \ref{fig:V3565} zu sehen. Die LC-Kette ist nun eine $LC_1C_2$-Kette.
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=0.8\textwidth]{V3565.png}
-  \caption{Aufbau einer LC-Kette mit alternierenden Kettengliedern}
-  \label{fig:V3565}
+  \includegraphics[width=0.8\textwidth]{V3562.png}
+  \caption{Aufbau einer LC-Kette mit alternierenden Kettengliedern }
+  \label{fig:V3562}
 \end{figure}
 Die Formel der durchgelassenen Frequenzen ist von der Kapazität abhängig und muss
 daher nun abgeändert werden, damit ergibt sich dann:
 \begin{equation}
-  (\omega_{1/2})^2\,=\,\frac{1}{L}\left(\frac{1}{C_1}+\frac{1}{C_2}\right)\,\pm\,\frac{1}{L}\sqrt{\left(\frac{1}{C_1}+\frac{1}{C_2}\right)^2-\frac{4\sin^2(\theta)}{C_1C_2}}
-\label{husoformel}
+  (\omega_{1/2})^2\,=\,\frac{1}{L}\left(\frac{1}{C_1}+\frac{1}{C_2}\right)\,\pm\,\frac{1}{L}\sqrt{\left(\frac{1}{C_1}+\frac{1}{C_2}\right)^2-\frac{4\sin^2(\theta)}{C_1C_2}}.
+  \label{eqn:husoformel}
 \end{equation}
 $\omega$ hat dabei die drei Grenzwerte $\sqrt{\frac{2}{LC_1}}$,
 $\sqrt{\frac{2}{LC_2}}$ und $\sqrt{\frac{2}{L}\frac{C_1+C_2}{C_1C_2}}$, die
@@ -216,23 +206,29 @@ Für $\theta=0$ bekommt man den Wert $\omega_1(0)=\sqrt{\frac{2}{L}\frac{C_1+C_2
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.8\textwidth]{V3564.png}
-  \caption{Dispersionskurve einer alternierenden LC-Kette}
+  \caption{Dispersionskurve einer alternierenden LC-Kette }
   \label{fig:V3564}
 \end{figure}
-Der Graph besteht aus zwei Kurven. Der Grund dafür ist das wechselnde Vorzeichen
-in \ref{husoformel}. Die durchgelassenen Frequenzen sind daher endlich.\\
+Der Graph besteht aus zwei Kurven. Die obere Kurve ist die optische Kurve, da
+diese Frequenzen hoch sind und die untere Kurve heißt akustische Kurve, da diese
+Frequenzen tief sind. Der Grund dafür, dass zwei Kurven existieren ist das
+wechselnde Vorzeichen in \eqref{eqn:husoformel}. Die durchgelassenen Frequenzen
+sind daher endlich.\\
 \\
-Trivialerweise ist \ref{fig:V3566} schwingfähig. Daher besitzt dieses System
+Trivialerweise ist Abbildung \ref{fig:V3562} schwingfähig. Daher besitzt dieses System
 Eigenfrequenzen und kann somit ohne äußere Einflüsse schwingen. Diese
 Eigenfrequenzen können bestimmt werden, da nun die Enden der LC-Ketten offen
-sind, also ohne Abschlusswiderstand. Es werden also die Spannungswellen
-ohne Phasensprung an den Enden reflekiert. Das Spektrum der Frequenzen hängt
-von vielen Gerätspezifischen Beschaffenheiten ab. So ist beispielsweise
-die Dämpfung oder die Trägheit ausschlaggebend dafür, wie das Spektrum dieser
-Frequenzen aussieht. Analog dazu ist die elektrische Induktivität, Kapazität etc.
-entscheidend dafür. Diese entstehenden Eigenfrequenzen sind messbar am
-Kettenende in Form eines Maximums der Spannung. Damit folgt für den
-Zusammenhang der verschiedenen Phasen:
+sind, also mit getrenntem Abschlusswiderstand $\left( Z \to \infty \right)$.
+Es werden also die Spannungswellen ohne Phasensprung an den Enden reflekiert.
+Es ist auch möglich, durch minimieren des Abschlusswiderstandes $\left( Z \to 0 \right)$
+eine stehende Welle zu erzeugen, in dem Fall mit festen Enden. Dies wird in dem
+Versuch allerdings nicht betrachtet.
+Das Spektrum der Frequenzen hängt von vielen Gerätspezifischen Beschaffenheiten
+ab. Zum Beispiel von der Dispersionsrelation, die für eine frequenzabhängige
+Phasengeschwindigkeit und damit eine frequenzabhängige Wellenlänge sorgt, die
+für stehende Wellen auf die Kette passen muss. Die entstehenden Eigenfrequenzen
+sind messbar am Kettenende in Form eines Maximums der Spannungsamplitude. Damit
+folgt für den Zusammenhang der verschiedenen Phasen:
 \begin{equation}
   n_{max}\cdot\theta_k=k\cdot\pi
 \end{equation}
@@ -241,88 +237,82 @@ k ist dabei definiert für
   k=1,2,3,...,n_{max}
 \end{equation}
 Bei $n_{max}$ wird die Phase betrachtet, die am Kettenende vorliegt. In
-Abbildung zu sehen ist, wie die nun entstandene stehende Welle aussieht. Die
-einlaufende und die reflektierte Welle überlagern sich so, dass die
-Phasenverschiebungen 0 oder ein vielfaches von $\pi$ sind. Das widerum liegt
-daran, dass es an dem offenen Ende nicht zu einem Phasensprung kommt.
+Abbildung \ref{fig:V3567} zu sehen ist, wie die nun entstandene stehende
+Welle aussieht. Die einlaufende und die reflektierte Welle überlagern sich so,
+dass die Phasenverschiebungen 0 oder ein vielfaches von $\pi$ sind. Das widerum
+liegt daran, dass es an dem offenen Ende nicht zu einem Phasensprung kommt.
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.8\textwidth]{V3567.png}
+  \includegraphics[width=0.5\textwidth]{V3567.png}
   \caption{Spannungsamplitude einer stehenden Welle}
   \label{fig:V3567}
 \end{figure}
 Die Anzahl der Kettenglieder bestimmt die Anzahl an möglichen stehenden Wellen.
-Wenn am Kettenende ein Widerstand vorliegt kann sich allerdings auch eine stehende
-Welle ausbilden. Auch hier muss dann die stehende Welle mit ihrer Wellenlänge auf
-die Wellenlänge der Kette passen. \\
+Wenn am Kettenende kein Widerstand vorliegt kann sich allerdings auch eine
+stehende Welle ausbilden. Auch hier muss dann die stehende Welle mit ihrer
+Wellenlänge auf die Wellenlänge der Kette passen. \\
 \\
-Die Phasengeschwindigkeit ergibt sich mit Hilfe der Dispersionsrelation zu:
+Die Phasengeschwindigkeit ist die Ausbreitungsgeschwindigkeit von einer Welle
+in der Kettenschaltung. Solange die einzelnen Frequenzkomponenten einer Welle
+sich mit einer einheitlichen Phasengeschwindigkeit fortpflanzen, wird sich auch
+die jeweilige Wellengruppe mit der Phasengeschwindigkeit ausbreiten.
+Mit Hilfe der Dispersionsrelation ergibt sich dann für die Phasengeschwindigkeit:
 \begin{equation}
-  v_{Ph}\,=\,\frac{\omega}{\theta}\,=\,\frac{\omega}{\arccos(1-\frac{1}{2}\omega^2LC)}
+  v_{Ph}\,=\,\frac{\omega}{\theta}\,=\,\frac{\omega}{\arccos(1-\frac{1}{2}\omega^2LC)}.
+  \label{eqn:phasengesch}
 \end{equation}
 
 \section{Durchführung}
 \label{durchführung}
-Als erstes wurde die Durchlasskurve zweier LC-Ketten gemessen. Die dafür genutzte
-Schaltung ist in Abbildung \ref{fig:V3561} zu sehen.
+Als erstes wurde die Durchlasskurve zweier LC-Ketten gemessen. Die dafür
+genutzte Schaltung ist in Abbildung \ref{fig:V3568} zu sehen.
 \begin{figure}[htb]
   \centering
-  \includegraphics[width=0.8\textwidth]{V3561.png}
-  \caption{Versuchsaufbau zur Messung der Durchlasskurve}
-  \label{fig:V3561}
+  \includegraphics[width=0.8\textwidth]{V3568.png}
+  \caption{Versuchsaufbau zur Messung der Durchlasskurve }
+  \label{fig:V3568}
 \end{figure}
-Die Kette bestand aus 14 Kettengliedern. Zuerst wurde der Wellenwiderstand
-sowohl für die $LC_1$ als auch für die $LC_1C_2$-Kette gemessen. Die Werte
-der Wellenwiderstände ergeben sich mit der Formel:
+Die Kette bestand aus 16 Kettengliedern.
+Die Parameter der Induktivität $L$, der Kapazität $C_1$ und Kapazität
+$C_2$ waren mit der Apparatur gegeben mit:
 \begin{align}
-  Z=\frac{U_E}{I_E}\,\,(LC-Kette) \\
-  Z=sqrt{\frac{2L}{C_1+C_2}}\,\,(LC_1C_2-Kette) \\
+  L &= \SI{1.75}{\milli\henry} \\
+  C_1 &= \SI{22}{\nano\farad} \\
+  C_2 &= \SI{9.39}{\nano\farad}.
 \end{align}
-zu
+Zuerst wurde der Wellenwiderstand sowohl für die $LC_1$ als auch für die
+$LC_1C_2$-Kette gemessen. Die Werte der Wellenwiderstände ergeben sich mit den
+Formeln:
 \begin{align}
-  282\,\Omega\,\,(LC-Kette) \\
-  334\,\Omega\,\,(LC_1C_2-Kette) \\
+  &Z =\sqrt{\frac{L}{C}}=\SI{282}{\ohm}&(LC-Kette)& \\
+  &Z =\sqrt{\frac{2L}{C_1+C_2}}=\SI{334}{\ohm}&\mathup{(LC_1C_2-Kette)}&. \\
 \end{align}
-Danach wurden
-die Parameter Induktivität $L$, Kapazität $C_1$ und Kapazität $C_2$ aufgenommen.
-Die Werte der Induktiven und Kapazitäten ergeben sich mit:
-\begin{align}
-  L=1.75\,mH \\
-  C_1=22.0\,nF \\
-  C_2=9.99\,nF \\
-\end{align}
-Die Durchlasskurve wurde daraufhin mit einem XY-Schreiber aufgenommen. Auf
-dieser wurde dann an 5 verschiedenen Stellen bei konstantem Eingangsstrom die
-Abhängigkeit der Frequenz der Speisespannung und der Spannungsamplitude am Ende
-der Kette gemessen.
-Bei der $LC_1C_2$-Kette mit alternierenden Kapazitäten muss man die Kapazität $nF$ der Kondensatoren
-verändern und dann erneut die gleiche Messung durchführen. Die Durchlasskurve
-wird erneut vom XY-Schreiber aufgenommen.  \\
+
+Die Durchlasskurve, also die Ausgangsamplitude in Abhängigkeit von der Frequenz,
+wurde daraufhin mit einem XY-Schreiber aufgenommen. Auf
+dieser wurde dann an 5 verschiedenen Stellen die Frequenz der Eingansspannung
+notiert, um damit eine Skala für die Aufzeichnung zu erhalten.
+Bei der $LC_1C_2$-Kette mit alternierenden Kapazitäten wird die Kapazität jedes
+zweiten Kondensators verändert und dann erneut die gleiche Messung durchgeführt.\\
 \\
 Als nächstes wird die Dispersionsrelation gemessen. Die dafür genutzte Schaltung
-ist in Abbildung \ref{fig:V3562} zu sehen.
-\begin{figure}[htb]
+ist in Abbildung \ref{fig:V3569} zu sehen.
+
+\begin{figure}
   \centering
-  \includegraphics[width=0.8\textwidth]{V3562.png}
-  \caption{Versuchsaufbau zur Aufnahme der Dispersionsrelation}
-  \label{fig:V3562}
+  \includegraphics[width=0.8\textwidth]{V3569.png}
+  \caption{Versuchsaufbau zur Aufnahme der Dispersionsrelation }
+  \label{fig:V3569}
 \end{figure}
 Auf dem Oszilloskop sind dabei Lissajous-Figuren zu beobachten. An den Figuren
 ist die jeweilige Phasenverschiebung zu sehen. Für beide Ketten wird immer, wenn
-eine Lissajous-Figur auf dem Oszilloskop zu erkennen ist, der Wert der Frequenz
-notiert. Für die alternierende LC-Kette werden 8 Werte gemessen, für die
-nicht alternierende LC-Kette werden 14 Werte gemessen. \\
+die Phasenverschiebung ein vielfaches von $\pi$ beträgt, die entsprechende
+Frequenz notiert, bis keine Figur mehr zu erkennen ist.\\
 \\
-Als nächstes werden die Eigenfrequenzen der beiderseits offenen LC-Kette
-gemessen. Um eine offene LC-Kette zu erzeugen werden die Abschlusswiderstände
-der beiden Ketten entfernt. Danach wird einmal bei einer Frequenz von \SI{5000}{Hz}
-und einmal bei einer Frequenz von \SI{10000}{Hz} die Spannungsamplitude an den
-Enden gemessen. Diese Frequenz wurde gemessen, als die Spannungsamplitude maximal war.
-Die Messung ist für die andere LC-Kette analog. \\
-\\
-Als letztes wird die Spannungsamplitude der Kette an dem jeweiligen
-Kettenglied gemessen. Diese liegt bei der ersten Eigenschwingung des Systems
-vor, denn dort ist keine stehende Welle zu beobachten. Es werden die Werte der
-Spannungsamplituden notiert.
-Die Messung ist für die andere LC-Kette analog.
+Als letztes wird die Spannungsamplitude der $LC$-Kette an dem jeweiligen
+Kettenglied gemessen. Dazu werden die Eigenfrequenzen der ersten beiden Moden
+eingestellt. Diese liegen bei \SI{5}{\kilo\hertz} und \SI{10}{\kilo\hertz} vor.
+Gemessen wird für beide Frequenzen mit offenen Enden
+(Abschlusswiderstand getrennt) und für eine Frequenz mit aktivierten
+Abschlusswiderständen.
 \end{document}
