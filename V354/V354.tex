@@ -1,0 +1,368 @@
+\documentclass[
+  bibliography=totoc,     % Literatur im Inhaltsverzeichnis
+  captions=tableheading,  % Tabellenüberschriften
+  titlepage=firstiscover, % Titelseite ist Deckblatt
+]{scrartcl}
+
+% Paket float verbessern
+\usepackage{scrhack}
+
+% Warnung, falls nochmal kompiliert werden muss
+\usepackage[aux]{rerunfilecheck}
+
+% unverzichtbare Mathe-Befehle
+\usepackage{amsmath}
+% viele Mathe-Symbole
+\usepackage{amssymb}
+% Erweiterungen für amsmath
+\usepackage{mathtools}
+
+% Fonteinstellungen
+\usepackage{fontspec}
+% Latin Modern Fonts werden automatisch geladen
+% Alternativ:
+%\setromanfont{Libertinus Serif}
+%\setsansfont{Libertinus Sans}
+%\setmonofont{Libertinus Mono}
+\recalctypearea % Wenn man andere Schriftarten gesetzt hat,
+% sollte man das Seiten-Layout neu berechnen lassen
+
+% deutsche Spracheinstellungen
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+
+\usepackage[
+  math-style=ISO,    % ┐
+  bold-style=ISO,    % │
+  sans-style=italic, % │ ISO-Standard folgen
+  nabla=upright,     % │
+  partial=upright,   % ┘
+  warnings-off={           % ┐
+    mathtools-colon,       % │ unnötige Warnungen ausschalten
+    mathtools-overbracket, % │
+},                       % ┘
+]{unicode-math}
+
+% traditionelle Fonts für Mathematik
+\setmathfont{Latin Modern Math}
+% Alternativ:
+%\setmathfont{Libertinus Math}
+
+\setmathfont{XITS Math}[range={scr, bfscr}]
+\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
+
+% Zahlen und Einheiten
+\usepackage[
+locale=DE,                   % deutsche Einstellungen
+separate-uncertainty=true,   % immer Fehler mit \pm
+per-mode=symbol-or-fraction, % / in inline math, fraction in display math
+]{siunitx}
+
+% chemische Formeln
+\usepackage[
+version=4,
+math-greek=default, % ┐ mit unicode-math zusammenarbeiten
+text-greek=default, % ┘
+]{mhchem}
+
+% richtige Anführungszeichen
+\usepackage[autostyle]{csquotes}
+
+% schöne Brüche im Text
+\usepackage{xfrac}
+
+% Standardplatzierung für Floats einstellen
+\usepackage{float}
+\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}
+
+% Floats innerhalb einer Section halten
+\usepackage[
+section, % Floats innerhalb der Section halten
+below,   % unterhalb der Section aber auf der selben Seite ist ok
+]{placeins}
+
+% Seite drehen für breite Tabellen: landscape Umgebung
+\usepackage{pdflscape}
+
+% Captions schöner machen.
+\usepackage[
+  labelfont=bf,        % Tabelle x: Abbildung y: ist jetzt fett
+  font=small,          % Schrift etwas kleiner als Dokument
+  width=0.9\textwidth, % maximale Breite einer Caption schmaler
+]{caption}
+% subfigure, subtable, subref
+\usepackage{subcaption}
+
+% Grafiken können eingebunden werden
+\usepackage{graphicx}
+% größere Variation von Dateinamen möglich
+\usepackage{grffile}
+
+% schöne Tabellen
+\usepackage{booktabs}
+
+% Verbesserungen am Schriftbild
+\usepackage{microtype}
+
+% Literaturverzeichnis
+\usepackage[style=alphabetic,]{biblatex}
+% Quellendatenbank
+\addbibresource{lit.bib}
+
+% Hyperlinks im Dokument
+\usepackage[
+  unicode,        % Unicode in PDF-Attributen erlauben
+  pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
+  pdfcreator={},  % ┐ PDF-Attribute säubern
+  pdfproducer={}, % ┘
+]{hyperref}
+% erweiterte Bookmarks im PDF
+\usepackage{bookmark}
+
+% Trennung von Wörtern mit Strichen
+\usepackage[shortcuts]{extdash}
+
+\title{V354: Gedämpfte und erzwungene Schwingungen}
+\author{
+  Simon Schulte
+  \texorpdfstring{
+    \\
+    \href{mailto:simon.schulte@udo.edu}{simon.schulte@udo.edu}
+  }{}
+  \texorpdfstring{\and}{, }
+  Tim Sedlaczek
+  \texorpdfstring{
+    \\
+    \href{mailto:tim.sedlaczek@udo.edu}{tim.sedlaczek@udo.edu}
+  }{}
+}
+\publishers{TU Dortmund – Fakultät Physik}
+
+\date{Durchführung: 24.01.2017\\
+      Abgabe: 31.01.2016}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\section{Zielsetzung}
+\label{zielsetzung}
+Ziel des Versuchs ist die Untersuchung eines gedämp5ften elektrischen
+RCL-Schwingkreises.
+\section{Theorie}
+\label{theorie}
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.75\textwidth]{V3541.png}
+  \caption{Der Aufbau eines gedämpften Schwingkreises. [TUDo17]}
+\end{figure}
+\label{V3541}
+In Abbildung 1 zu sehen ist der Aufbau eines elektrischen
+Schwingkreises. Dieser ist in der Lage nach kurzer Anregung Energie entweder
+im magnetischen Feld der Spule oder im elektrischen Feld des Kondensators zu
+speichern. Er besteht aus einer Kapazität $C$, einer Induktivität $L$ und einem
+ohmschen Widerstand $R$. Die Energie schwingt periodisch zwischen den beiden
+Energiereservoirs. Logischerweise ändert der Strom dabei auch seine Richtung.
+Die Schwingung kommt irgendwann zum Erliegen, da über den ohmschen Wiederstand
+$R$ stets Energie in Form von Wärme verloren geht. Durch diesen Widerstand
+entsteht dabei eine kontinuierliche Dämpfung. \\
+\\
+Das Zeitgesetz lässt sich aus dem 2. Kirchhoffschen Gesetz herleiten.
+Es macht eine Aussage über die Amplitude der Kondensatorspannung. Es gilt:
+
+\begin{equation}
+    U_{\mathup{R}}(t)+U_{\mathup{C}}(t)+U_{\mathup{L}}(t)=0.
+    \label{kirchhoff}
+\end{equation}
+
+Daraus folgt die Differentialgleichung
+
+\begin{equation}
+    \frac{\mathup{d}^2}{\mathup{d}t^2}I(t)+\frac{R}{L}\frac{\mathup{d}}{\mathup{d}t}I(t)+\frac{1}{LC}I(t)=0.
+    \label{dgl}
+\end{equation}
+
+Die Lösung dieser gewöhnlichen homogenen DGL 2. Ordnung erfolgt über den
+komplexen Ansatz:
+
+\begin{equation}
+    I(t)=A\mathup{e}^{\mathup{i}\omega t}.
+    \label{ansatz}
+\end{equation}
+
+Dieser führt durch Einsetzen, Kürzen und Zusammenfassen zu einem wichtigen
+Ausdruck für den Parameter $\omega$:
+
+\begin{equation}
+    \omega_{1,2}=\mathup{i}\frac{R}{2L}\pm\sqrt{\frac{1}{LC}-\frac{R^2}{4L^2}}.
+    \label{omega}
+\end{equation}
+
+Unter Zuhilfenahme der Abkürzungen
+
+\begin{align}
+    2\pi\mu&:=\frac{R}{2L} & 2\pi\nu&:=\sqrt{\frac{1}{LC}-\frac{R^2}{4L^2}}
+    \label{abkuerzungen}
+\end{align}
+
+ergibt sich die allgemeine Lösung von Gleichung \ref{dgl} als
+
+\begin{equation}
+    I(t)=\mathup{e}^{-2\pi\mu t}\left(A_1\mathup{e}^{\mathup{i}2\pi\nu t}+A_2\mathup{e}^{-\mathup{i}2\pi\nu t}\right).
+    \label{allgemeine_loesung}
+\end{equation}
+
+Eine Betrachtung der Lösungen \ref{allgemeine_loesung} unter physikalischen
+Gesichtspunkten ergibt im Wesentlichen zwei zu unterscheidende Fälle mit einem
+Spezialfall:\\
+
+Für den ersten Fall: $\frac{1}{LC}>\frac{R^2}{4L^2}$ \\
+\\
+
+In diesem Fall ist $\nu$ reell; es existieren weiterhin imaginäre Exponenten in
+der Lösungsfunktion $I(t)$. Damit hat die Lösung die Form einer Schwingung mit
+exponentiellem Dämpfungsterm, die sich als
+
+\begin{equation}
+    I(t)=A_0\mathup{e}^{-2\pi\mu t}\cos{\left(2\pi\nu t+\eta\right)}
+    \label{schwingfall}
+\end{equation}
+
+schreiben lässt. $\eta$ bezeichnet hierbei eine Phasenverschiebung, die neben
+der Anfangsauslenkung $A_0$ durch die Anfangsbedingungen festgelegt wird. Die
+Schwingungsdauer $T$ des Oszillators ergibt sich zu
+
+\begin{equation}
+    T=\frac{1}{\nu}=\frac{2\pi}{\sqrt{\frac{1}{LC}-\frac{R^2}{4L^2}}}.
+    \label{schwingungsdauer}
+\end{equation}
+
+Eine weitere wichtige Größe in diesem Zusammenhang ist die sogenannte
+Abklingdauer $T_{\mathup{ex}}$. Sie gibt die Zeit an, nach derer die Amplitude
+der Schwingung auf den $\mathup{e}$-ten Teil ihres Ausgangswertes abgenommen hat:
+
+\begin{equation}
+    T_{\mathup{ex}}:=\frac{1}{2\pi\mu}=\frac{2L}{R}.
+    \label{abklingdauer}
+\end{equation}
+
+Für den zweiten Fall: $\frac{1}{LC}<\frac{R^2}{4L^2}$ \\
+\\
+Tritt dieser Fall ein, so ist $\nu$ imaginär, was zur Folge hat, dass alle
+Exponenten der Lösungsfunktion rein reell werden. Daraus folgt, dass
+physikalisch betrachtet keine gedämpfte Schwingung sondern eine Relaxation
+vorliegt, wobei die Spannung noch maximal ein lokales Extremum annehmen kann.\\
+\\
+Für den Spezialfall: $\frac{1}{LC}=\frac{R^2}{4L^2}$ \\
+\\
+
+In diesem Fall ist $\nu=0$. Die Lösungsfunktion $I(t)$ wird dann zu
+
+\begin{equation}
+    I(t)=A\mathup{e}^{-\frac{R}{2L}t}=A\mathup{e}^{-\frac{t}{\sqrt{LC}}}.
+    \label{grenzfall}
+\end{equation}
+
+Für diesen, auch als aperiodischen Grenzfall bezeichneten Fall, geht die Spannung
+auf schnellstem Weg, ohne ein lokales Extremum anzunehmen, gegen Null.
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.75\textwidth]{V3542.png}
+  \caption{Der Aufbau eines gedämpften Schwingkreises mit periodischer Anregung. [TUDo17]}
+  \label{V3542}
+\end{figure}
+\\
+\\
+Wenn man nun eine weitere Spannungsquelle an den Schwingkreis anschließt, die
+eine Sinusspannung liefert, ergibt sic eine neue DGL aus den Kirchhoffschen Regeln:
+\begin{equation}
+    LC\frac{\mathup{d}^2}{\mathup{d}t^2}U_{\mathup{C}}(t)+RC\frac{\mathup{d}}{\mathup{d}t}U_{\mathup{C}}(t)+U_{\mathup{C}}(t)=U_0\mathup{e}^{\mathup{i}\omega t}.
+    \label{dgl2}
+\end{equation}
+Dabei ist $U_c$ die Spannung am Kondensator. Mit dem gleichen Ansatz wie in
+\ref{ansatz} folgt:
+\begin{equation}
+    \varphi(\omega)=\arctan\left(\frac{-\omega RC}{1-LC\omega^2}\right).
+    \label{eq:phase}
+\end{equation}
+Dabei ist allerdings $A$ nun abhängig von $\omega$ und eine komplexe Zahl $A(\omega)$.
+$\phi$ ist die Phasenverschiebung zwischen Kondensator- und Erregerspannung.
+Für die von $\omega$ abhängige Spannungsamplitude am Kondensator folgt:
+\begin{equation}
+    U_{\mathup{C}}(\omega)=\frac{U_0}{\sqrt{\left(1-LC\omega^2\right)^2+\omega^2R^2C^2}}.
+    \label{eq:amplitude}
+\end{equation}
+Während die Spannungsamplitude für $\omega\rightarrow\infty$ gegen Null und für
+$\omega\rightarrow 0$ gegen $U_0$ strebt, erreicht sie bei Einstellung der
+sogenannten Resonanzfrequenz $\omega_{\mathup{res}}$ einen Wert der größer als
+$U_0$ ist. Für die Resonanzfrequenz folgt:
+
+\begin{equation}
+    \omega_{\mathup{res}}=\sqrt{\frac{1}{LC}-\frac{R^2}{2L^2}}.
+    \label{eq:resonanz}
+\end{equation}
+Bei einer schwachen Dämpfung wird die Kondensatorspannung bei dieser Frequenz um
+den Faktor
+\begin{equation}
+    q=\frac{U_\mathup{C, max}}{U_0}=\frac{1}{\omega_0RC}
+    \label{eq:guete}
+\end{equation}
+im Bezug auf die Erregerspannung vergrößert. $q$ ist dabei die Güte. Die Resonanz
+eines Schwingkreises ist definiert durch die Breite des Bereichs zwischen den
+beiden Frequenzen, bei denen die Spannung bei einer Resonanzfrequenz auf den
+$\sfrac{1}{\sqrt{2}}$-ten Teil gefallen ist. Für $\sfrac{R^2}{L^2}\ll\omega_0^2$
+gilt näherungsweise:
+
+\begin{equation}
+    \omega_+-\omega_-\approx\frac{R}{L}.
+    \label{eq:breite}
+\end{equation}
+\newpage
+\section{Versuchsaufbau}
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.75\textwidth]{V3543.png}
+  \label{V3543}
+  \caption{Versuchsaufbau zur Untersuchung der Kondensatoramplitude eines gedämpften Schwingkreises.[TUDo17]}
+\end{figure}
+\section{Durchführung}
+\label{durchführung}
+Der Versuch besteht aus 4 Teilversuchen, dabei werden ein Funktionsgenerator,
+ein Speicheroszilloskop und ein RCL-Kreis verwendet. Bei dem RCL-Kreis besteht
+die Möglichkeit über verschiedene Anschlüsse zwischen einem variablen Widerstand
+und zwei festen Widerständen, $R_1$ und $R_2$, zu wählen. \\
+\\
+Als erstes wird versucht aus der Untersuchung der Kondensatoramplitude eines
+gedämpften Schwingkreises dessen Dämpfungswiderstand $R_{eff}$ zu bestimmen.
+Der dafür genutzte Versuchsaufbau ist in Abbildung 3 zu sehen. Der Rechteckgenerator
+liefert die gedämpften Schwingungen des RCL-Kreises, diese sind auf einem
+Oszilloskop zu sehen. Die Generatorfrequenz ist dabei \SI{1468}{\hertz}. \\
+\\
+Als nächstes soll der Widerstand $R_{ap}$ gefunden werden, bei dem die Dämpfung
+genau so stark ist, dass der aperiodische Grenzfall eintritt. Dort wird dann
+der variable Widerstand genutzt. Dieser ersetzt dann den Widerstand $R_1$. Es
+wird solange der Widerstand $R_{ap}$ variiert, bis der Wert erreicht ist, an dem
+kein lokales Spannungsextremum existiert, sondern die Spannung auf 0 gedämpft
+wird. \\
+\\
+Als nächstes soll die Frequenzabhängigkeit des RCL-Kreises untersucht werden.
+Dabei wird zunächst die Kondensatorspannung beobachtet. Hier wird nun der
+vorher verwendete Widerstand mit dem Widerstand $R_2$ ersetzt. Außerdem bekommt
+der Schwingkreis nun eine Sinusspannung vom Funktionsgenerator. Dann wird die
+Generatorfrequenz variiert. Dabei ist Generatorspannung $U_0=\SI{10}{\Volt}$
+und es werden Werte für die Kondensatorspannung $U_C$ aufgenommen. \\
+\\
+Als nächstes wird die Frequenzabhängigkeit der Phasenverschiebung zwischen
+Kondensator und Generatorspannung beobachtet. Dabei wird die Phasendifferenz
+zwischen $U_0$ und $U_C$ untersucht. Der RCL-Kreis wird jetzt über einen
+frequenzvariablen Sinusgenerator angeregt und die Kondensatorspannung sowie die
+Generatorspannung werden nebeneinander dargestellt. Es werden in dem
+Frequenzspektrum \SI{4.183}{\kilo\hertz} bis \SI{100}{\kilo\hertz} 15 Messwerte aufgenommen.
+
+Es wurde Gerät 2 verwendet und die Parameter des Geräts lauten:
+\end{document}
