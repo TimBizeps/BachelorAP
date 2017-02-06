@@ -155,14 +155,14 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.85\textwidth]{V3551.png}
-  \caption{Der Versuchsaufbau von zwei gekoppelten Schwingkreisen}
+  \caption{Der Versuchsaufbau von zwei gekoppelten Schwingkreisen \cite{anleitung}.}
   \label{fig:V3551}
 \end{figure}
 In diesem Versuch werden gekoppelte Schwingkreise im Hinblick auf Energietausch
 und auf ihre Fundamentalschwingungen untersucht. In Abbildung 1 zu sehen ist
 das Schaltbild zweier kapazitiv gekoppelter Schwingkreise. In diesem Schaltkreis
-werden INduktivitäten $L$ und Kapazitäten $C$ verwendet. $C_K$ charakterisiert
-dabei den Kopplungskondensator. Mit Hilfe der Kirchhoofschen Regeln lassen
+werden Induktivitäten $L$ und Kapazitäten $C$ verwendet. $C_K$ charakterisiert
+dabei den Kopplungskondensator. Mit Hilfe der Kirchhofschen Regeln lassen
 sich dann 2 Schwingungsgleichungen aufstellen. Die Maschenregel ist in der
 Abbildung visualisiert für die beiden Maschen 1 und 2. Die beiden
 Schwingungsgleichungen lauten:
@@ -206,8 +206,8 @@ ergibt sich dann aus den Gleichungen 3 und 4:
   I_1(t) &=I_{1_0}\cos(\frac{1}{2}(\omega_++\omega_-)t)\cos(\frac{1}{2}(\omega_+-\omega_-)t) \\
   I_2(t) &=I_{1_0}\sin(\frac{1}{2}(\omega_++\omega_-)t)\sin(\frac{1}{2}(\omega_+-\omega_-)t).
 \end{align}
-Im Verlauf der Zeit wird $I_2$ größer und $I_1$ kleiner, bis zu dem Zeitpunkt, andem
-die Ausgangslage umgekehrt wurde. Außerdem wird die Annahme getroffen, dass
+Im Verlauf der Zeit wird $I_2$ größer und $I_1$ kleiner, bis zu dem Zeitpunkt, an
+dem die Ausgangslage umgekehrt wurde. Außerdem wird die Annahme getroffen, dass
 $C_K>>C$ gilt und damit auch:
 \begin{align}
   \frac{1}{2}(\omega_++\omega_-)\thickapprox\omega_+ \\
@@ -252,7 +252,7 @@ mit einer Sinusspannung ersetzt.
   \label{fig:V3553}
 \end{figure}
 In Abbildung \ref{fig:V3553} zu sehen ist die Schaltskizze zur Justierung
-des einstellbaren Kondensators von Masche 2 aus Abbildung \ref{fig:V3554}
+des einstellbaren Kondensators von Masche 2 aus Abbildung \ref{fig:V3554}.
 Justiert wird dabei der Schwingkreis aus Abbildung \ref{fig:V3554} auf die
 Resonanzfrequenz des anderen Schwignkreises. Dafür sucht man mit Hilfe von
 Lissajous-Figuren, die auf dem Oszilloskop zu sehen sind, die Frequenz, bei der
@@ -282,9 +282,15 @@ die die Frequenzen $\nu_+$ und $\nu_-$ darstellen.\\
 \\
 Es wurde Schaltung 2 genutzt mit den folgenden Bauteilwerten:
 \begin{align}
-  L=\SI{23.954}{mF} \\
-  C=\SI{0.7932}{nF} \\
-  C_{sp}=\SI{0.028}{nF}
+  L&=\SI{23.954}{\milli\henry} \\
+  C&=\SI{0.7932}{\nano\farad} \\
+  C_{sp}&=\SI{0.028}{\nano\farad}\\
+  R &= \SI{48}{\ohm}
 \end{align}
-Dabei gibt $C_sp$ die Spuleneigene Kapazität an.
+Dabei gibt $C_\mathup{sp}$ die Spuleneigene Kapazität an.
+\clearpage
+\section{Auswertung}
+\label{sec:auswertung}
+
+
 \end{document}
