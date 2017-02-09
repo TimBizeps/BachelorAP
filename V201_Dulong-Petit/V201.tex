@@ -1,0 +1,727 @@
+\documentclass[
+  bibliography=totoc,     % Literatur im Inhaltsverzeichnis
+  captions=tableheading,  % Tabellenüberschriften
+  titlepage=firstiscover, % Titelseite ist Deckblatt
+]{scrartcl}
+
+% Paket float verbessern
+\usepackage{scrhack}
+
+% Warnung, falls nochmal kompiliert werden muss
+\usepackage[aux]{rerunfilecheck}
+
+% unverzichtbare Mathe-Befehle
+\usepackage{amsmath}
+% viele Mathe-Symbole
+\usepackage{amssymb}
+% Erweiterungen für amsmath
+\usepackage{mathtools}
+
+% Fonteinstellungen
+\usepackage{fontspec}
+% Latin Modern Fonts werden automatisch geladen
+% Alternativ:
+%\setromanfont{Libertinus Serif}
+%\setsansfont{Libertinus Sans}
+%\setmonofont{Libertinus Mono}
+\recalctypearea % Wenn man andere Schriftarten gesetzt hat,
+% sollte man das Seiten-Layout neu berechnen lassen
+
+% deutsche Spracheinstellungen
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+
+\usepackage[
+  math-style=ISO,    % ┐
+  bold-style=ISO,    % │
+  sans-style=italic, % │ ISO-Standard folgen
+  nabla=upright,     % │
+  partial=upright,   % ┘
+  warnings-off={           % ┐
+    mathtools-colon,       % │ unnötige Warnungen ausschalten
+    mathtools-overbracket, % │
+},                       % ┘
+]{unicode-math}
+
+% traditionelle Fonts für Mathematik
+\setmathfont{Latin Modern Math}
+% Alternativ:
+%\setmathfont{Libertinus Math}
+
+\setmathfont{XITS Math}[range={scr, bfscr}]
+\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
+
+% Zahlen und Einheiten
+\usepackage[
+locale=DE,                   % deutsche Einstellungen
+separate-uncertainty=true,   % immer Fehler mit \pm
+per-mode=symbol-or-fraction, % / in inline math, fraction in display math
+]{siunitx}
+
+% chemische Formeln
+\usepackage[
+version=4,
+math-greek=default, % ┐ mit unicode-math zusammenarbeiten
+text-greek=default, % ┘
+]{mhchem}
+
+% richtige Anführungszeichen
+\usepackage[autostyle]{csquotes}
+
+% schöne Brüche im Text
+\usepackage{xfrac}
+
+% Standardplatzierung für Floats einstellen
+\usepackage{float}
+\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}
+
+% Floats innerhalb einer Section halten
+\usepackage[
+section, % Floats innerhalb der Section halten
+below,   % unterhalb der Section aber auf der selben Seite ist ok
+]{placeins}
+
+% Seite drehen für breite Tabellen: landscape Umgebung
+\usepackage{pdflscape}
+
+% Captions schöner machen.
+\usepackage[
+  labelfont=bf,        % Tabelle x: Abbildung y: ist jetzt fett
+  font=small,          % Schrift etwas kleiner als Dokument
+  width=0.9\textwidth, % maximale Breite einer Caption schmaler
+]{caption}
+% subfigure, subtable, subref
+\usepackage{subcaption}
+
+% Grafiken können eingebunden werden
+\usepackage{graphicx}
+% größere Variation von Dateinamen möglich
+\usepackage{grffile}
+
+% schöne Tabellen
+\usepackage{booktabs}
+
+% Verbesserungen am Schriftbild
+\usepackage{microtype}
+
+% Literaturverzeichnis
+\usepackage[style=alphabetic,]{biblatex}
+% Quellendatenbank
+\addbibresource{lit.bib}
+
+% Hyperlinks im Dokument
+\usepackage[
+  unicode,        % Unicode in PDF-Attributen erlauben
+  pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
+  pdfcreator={},  % ┐ PDF-Attribute säubern
+  pdfproducer={}, % ┘
+]{hyperref}
+% erweiterte Bookmarks im PDF
+\usepackage{bookmark}
+
+% Trennung von Wörtern mit Strichen
+\usepackage[shortcuts]{extdash}
+
+\title{V201: Das Dulong-Petitsche Gesetz}
+\author{
+  Simon Schulte
+  \texorpdfstring{
+    \\
+    \href{mailto:simon.schulte@udo.edu}{simon.schulte@udo.edu}
+  }{}
+  \texorpdfstring{\and}{, }
+  Tim Sedlaczek
+  \texorpdfstring{
+    \\
+    \href{mailto:tim.sedlaczek@udo.edu}{tim.sedlaczek@udo.edu}
+  }{}
+}
+\publishers{TU Dortmund – Fakultät Physik}
+
+\date{Durchführung: 22.11.2016\\
+      Abgabe: 29.11.2016}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\section{Zielsetzung}
+\label{sec:zielsetzung}
+In diesem Versuch soll die Molwärme bei konstantem Druck von Blei, Graphit und
+Aluminium durch eine Mischungskalometrie bestimmt werden. Mit diesen Ergebnissen
+soll dann überprüft werden, ob die oszillatorische Bewegung der Atome
+(oder Moleküle) eines Festkörpers noch mit klassischen Methoden beschrieben
+werden kann oder ob eine korrekte Darstellung nur auf der Grundlage der
+Quantenmechanik möglich ist.
+\section{Theorie}
+\label{sec:theorie}
+Das Dulong-Petit-Gesetz besagt, dass die molare Wärmekapazität eines Festkörpers
+den konstanten Wert, nämlich das Dreifache der universellen Gaskonstante $R$
+\begin{equation}
+  C=3R \approx 3 \cdot \SI{8.314}{\joule\per\mol\per\kelvin} \approx
+  \SI{24.942}{\joule\per\mol\per\kelvin}
+  \label{eqn:c-dulong}
+\end{equation}
+habe. Im Fokus dieses Experiments steht die Bestimmung der spezifischen
+Wärmekapazität von Feststoffen. Die spezifische Wärmekapazität ist eine
+stoffcharakteristische Eigenschaft, die Auskunft darüber gibt, inwiefern
+zugeführte Energiemenge $\Delta Q$ und Temperaturanstieg $\Delta T$ an einem Körper im
+Zusammenhang stehen. Mit $m$, für die Masse des Stoffes und c, der spezifischen
+Wärmekapazität des Stoffes ergibt sich
+\begin{equation}
+  \Delta Q=mc\Delta T,
+  \label{eqn:wärmemenge}
+\end{equation}
+mit der Einheit $\si{\joule\per\kilogram\per\kelvin}$
+für die spezifische Wärmekapazität.
+Man kann die Wärmekapazität allerdings nicht
+nur auf die Masse beziehen, sondern mit dem Zusammenhang
+\begin{equation}
+  C=M \cdot c.
+  \label{eqn:C}
+\end{equation}
+auch auf die Molwärme $C$. Diese misst man bei konstantem Volumen $C_V$ oder bei
+konstantem Druck $C_P$.
+Somit folgt für die Molwärme bei konstantem Volumen
+\begin{equation}
+  C_{\mathup{V}}=3R
+  \label{eqn:Cv-dulong}
+\end{equation}
+Dabei ergibt sich die Allgemeine Gaskonstante $R$ aus der Lonschmidtschen Zahl $N_L$
+und der Boltzmann-Konstante $k_B$.\\
+Die Quantenmechanik liefert ein exakteres Modell. Sie geht davon aus, dass
+Energie und somit Wärme nur gequantelt von Festkörpern aufgenommen oder
+abgegeben werden kann. Für die innere Energie von einem Mol eines Stoffes folgt
+in der Quantenmechanik die Beziehung
+\begin{equation}
+  \langle U_{\mathup{qu}}\rangle=\frac{3N_{\mathup{L}}\hbar\omega}{\mathup{exp}\left(\hbar\frac{\omega}{kT}\right)-1}.
+  \label{eqn:Uqu}
+\end{equation}
+mit dem reduzierten Plankschen Wirkungsquantum $\hbar$ und der Schwingungsfrequenz der
+Atome im Feststoff $\omega$. Im Modell der Quantenmechanik ist das Dulong-Petitsche
+Gesetz nur ein Extremfall für hohe Temperaturen, da es sich erst bei hohen
+Temperaturen dem klassischen Wert
+\begin{equation}
+  \langle U_{\mathup{kl}}\rangle=3RT
+  \label{eqn:Ukl}
+\end{equation}
+annähert. Im Experiment ist es bedeutend einfacher die spezifische Wärmekapazität $c_{\mathup{k}}$ einer Probe bei
+konstantem Druck zu bestimmen. $c_{\mathup{k}}$ lässt sich durch die Formel
+
+\begin{equation}
+  c_{\mathup{k}}=\frac{\left(c_{\mathup{w}}m_{\mathup{w}}+c_{\mathup{g}}m_{\mathup{g}}\right)\left(T_{\mathup{m}}-T_{\mathup{w}}\right)}{m_{\mathup{k}}\left(T_{\mathup{k}}-T_{\mathup{m}}\right)}
+  \label{eqn:ck}
+\end{equation}
+bestimmen, die aus einer Betrachtung der im System erhaltenen Gesamtwärmemenge resultiert.
+$c_{\mathup{w}}$ ist hierbei die spezifische Wärmekapazität von Wasser,
+die mit $c_{\mathup{w}}=\SI{4.18}{\joule\per\gram\per\kelvin}$ vorgegeben ist.
+Die Größen $m_{\mathup{w}}$, $m_{\mathup{k}}$, $T_{\mathup{w}}$, $T_{\mathup{m}}$ und $T_{\mathup{k}}$ müssen
+experimentell bestimmt werden.
+Desweiteren muss die spezifische Wärmekapazität des Kalorimeters $c_{\mathup{g}}m_{\mathup{g}}$ in einer
+separaten Messung bestimmt werden. Derselbe wärmeenergieerhaltende Ansatz wie bei Formel (7) liefert
+
+\begin{equation}
+  c_{\mathup{g}}m_{\mathup{g}}=\frac{c_{\mathup{w}}m_{\mathup{y}}\left(T_{\mathup{y}}-T'_{\mathup{m}}\right)-c_{\mathup{w}}m_{\mathup{x}}\left(T'_{\mathup{m}}-T_{\mathup{x}}\right)}{\left(T'_{\mathup{m}}-T_{\mathup{x}}\right)},
+  \label{eqn:cgmg}
+\end{equation}
+wobei auch hier $m_{\mathup{x}}$, $m_{\mathup{y}}$, $T_{\mathup{x}}$, $T_{\mathup{y}}$ und $T'_{\mathup{m}}$
+experimentell zu bestimmen sind.
+\clearpage
+
+\section{Durchführung}
+\label{sec:durchführung}
+\subsection{Versuchsaufbau}
+Um die spezifische Wärmekapazität $c_k$ eines Körpers zu ermitteln nutzt man ein
+Mischungskalorimeter. Die röhrenförmigen Probekörper
+Blei, Aluminium und Graphit werden in einem Wasserbad, welches von einer
+Herdplatte erwärmt wird auf eine Temperatur von \SI{100}{\celsius} gebracht.
+Danach werden die Probekörper jeweils in ein Dewa-Gefäß eingetaucht. Dieses ist
+mit einer bestimmten Masse $m_w$ an Wasser mit einer Temperatur $T_w$ befüllt.
+Das Wasser wird immer wieder ausgewechselt nachdem es einmal benutzt wurde.
+Die Temperatur wird mit einem Thermoelement gemessen, welches mit der Probe
+selbst und Eiswasser verbunden ist. Dieses ist \SI{0}{\celsius} kalt.
+\subsection{Versuchsdurchführung}
+Zunächst ist die spezifische Wärmekapazität $c_{\mathup{g}}m_{\mathup{g}}$ des
+Dewar-Gefäßes zu bestimmen.
+Dazu wird dieses mit ca. 600ml Wasser fast gänzlich gefüllt. Nach Bestimmung der
+Masse des Wassers in einem Becherglas gießt man dieses in das Dewar-Gefäß und
+bestimmt die Leermasse des Becherglases. Die Temperaturen von Wasser
+$T_{\mathup{w}}$ und Dewar-Gefäß gleichen sich innerhalb einer kurzen Zeit an.
+Zur Bestimmung der Wärmekapazität gießt man etwa die Hälfte dieses Wassers in
+das Becherglas zurück, bestimmt die Menge $m_{\mathup{y}}$ durch Wiegen und
+erwärmt dieses mit Hilfe einer Herdplatte auf etwa \SI{100}{\celsius}.
+Wenn die erforderliche Temperatur im Becherglas erreicht ist, wird die
+Temperatur $T_{\mathup{w}}$ des Wassers im Dewar-Gefäß bestimmt. Stellt sich nach
+wenigen Minuten eine nur noch geringen Schwankungen unterliegende stationäre
+Temperatur ein, so ist die Mischtemperatur $T_{\mathup{m}}$ für dieses System
+erreicht.
+Zur Bestimmung der Messgrößen für die spezifischen Wärmekapazitäten der
+Probenstoffe geht man analog vor. Eine vorher im gleichen Becherglas gewogene
+Wassermenge von etwa \SI{600}{\gram} wird in das selbe Dewar-Gefäß gefüllt. Die
+holhzylinderförmigen Proben befinden sich, über einen Faden verbunden, an einem
+kreisrunden Deckel. Mit Hilfe dieses Deckels kann die Probe sowohl über den Rand
+eines Becherglases, als auch über den Rand des Dewar-Gefäßes in Wasser gehängt
+werden. Zur Bestimmung des Gewichts wird zunächst die Gesamtmasse gewogen. Die
+Masse von Deckel und Faden wurden vorgegeben, woraus sich die Reinmasse
+$m_{\mathup{k}}$ der Probe ergibt. Die Energiezufuhr zur Probe erfolgt über ein
+wassergefülltes Becherglas auf einer Herdplatte. Die Probe wird dazu möglichst
+weit in das Wasser gehängt. Wasser und Probe werden durch die Herdplatte auf ca.
+\SI{100}{\celsius} erhitzt. Ist die Temperatur erreicht, wird die Temperatur des
+Wassers $T_w$ im Dewar-Gefäß gemessen und der Probenkörper sofort in selbiges
+gehängt. Durch eine schmale Öffnung im Deckel kann die Temperatur des Wassers
+weiterhin über ein Digitalthermometer beobachtet werden. Stellt sich auch hier
+nach einigen Minuten eine stationäre Temperatur ein, so ist dies die
+Mischungstemperatur $T_{\mathup{m}}$. Die Messung wird für die Probe aus Blei
+dreifach durchgeführt, für die Probe aus Graphit ebenfalls dreifach und für die
+Probe aus Almuminium lediglich einmal.
+\section{Auswertung}
+\label{sec:auswertung}
+\subsection{Fehlerrechnung}
+Die in der Auswertung verwendeten Mittelwerte mehrfach gemessener Größen sind gemäß der
+Gleichung
+\begin{equation}
+    \bar{x}=\frac{1}{n}\sum_{i=1}^n x_i
+    \label{eqn:mittelwert}
+\end{equation}
+bestimmt. Der Standardfehler des Mittelwertes ergibt sich dabei zu
+
+\begin{equation}
+    \mathup{\Delta}\bar{x}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n\left(x_i-\bar{x}\right)^2}.
+    \label{eqn:stdfehler}
+\end{equation}
+Resultiert eine Größe über eine Gleichung aus mehreren anderen fehlerbehafteten Größen, so
+berechnet sich der Gesamtfehler nach der Gaußschen Fehlerfortpflanzung zu
+
+\begin{equation}
+    \mathup{\Delta}f(x_1,x_2,...,x_n)=\sqrt{\left(\frac{\mathup{d}f}{\mathup{d}x_1}\mathup{\Delta}x_1\right)^2+\left(\frac{\mathup{d}f}{\mathup{d}x_2}\mathup{\Delta}x_2\right)^2+ \dotsb +\left(\frac{\mathup{d}f}{\mathup{d}x_n}\mathup{\Delta}x_n\right)^2}.
+    \label{eqn:gauß}
+\end{equation}
+
+\subsection{Messwerte und verwendete Literaturwerte}
+\begin{table}
+  \centering
+  \caption{Thermospannungen und Masse des Wassers (Blei(Pb))}
+  \label{tab:ThUmW}
+  \sisetup{table-format=1.3}
+  \begin{tabular}{
+    S[table-format=3.2]
+    S
+    @{${}\pm{}$}
+    S
+    S[table-format=1.1]
+    @{${}\pm{}$}
+    S[table-format=1.1]
+    S
+    @{${}\pm{}$}
+    S
+    }
+    \toprule{$m_w \,/\, \si{\gram}$} &
+    \multicolumn{2}{c}{$U_w \,/\, \si{\milli\volt}$} &
+    \multicolumn{2}{c}{$U_k \,/\, \si{\milli\volt}$} &
+    \multicolumn{2}{c}{$U_m \,/\, \si{\milli\volt}$} \\
+    \midrule
+    593.97 & 0.914 & 0.001 & 2.6 & 0.2 & 0.965 & 0.005 \\
+    575.55 & 0.89 & 0.01 & 2.9 & 0.3 & 0.915 & 0.005 \\
+    566.31 & 0.877 & 0.001 & 3.0 & 0.5 & 0.924 & 0.001 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Thermospannungen und Masse des Wassers (Graphit(C))}
+  \label{tab:ThUmW}
+  \sisetup{table-format=1.3}
+  \begin{tabular}{
+    S[table-format=3.2]
+    S
+    @{${}\pm{}$}
+    S
+    S[table-format=1.1]
+    @{${}\pm{}$}
+    S[table-format=1.1]
+    S
+    @{${}\pm{}$}
+    S
+    }
+    \toprule{$m_w \,/\, \si{\gram}$} &
+    \multicolumn{2}{c}{$U_w \,/\, \si{\milli\volt}$} &
+    \multicolumn{2}{c}{$U_k \,/\, \si{\milli\volt}$} &
+    \multicolumn{2}{c}{$U_m \,/\, \si{\milli\volt}$} \\
+    \midrule
+    580.33 & 0.858 & 0.001 & 3.8 & 0.1 & 1.077 & 0.001 \\
+    592.24 & 0.856 & 0.001 & 3.8 & 0.1 & 0.955 & 0.001 \\
+    578.50 & 0.868 & 0.001 & 3.9 & 0.1 & 0.974 & 0.001 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Thermospannungen und Masse des Wassers (Aluminium(Al))}
+  \label{tab:ThUmW}
+  \sisetup{table-format=1.3}
+  \begin{tabular}{
+    S[table-format=3.2]
+    S
+    @{${}\pm{}$}
+    S
+    S[table-format=1.1]
+    @{${}\pm{}$}
+    S[table-format=1.1]
+    S
+    @{${}\pm{}$}
+    S
+    }
+    \toprule{$m_w \,/\, \si{\gram}$} &
+    \multicolumn{2}{c}{$U_w \,/\, \si{\milli\volt}$} &
+    \multicolumn{2}{c}{$U_k \,/\, \si{\milli\volt}$} &
+    \multicolumn{2}{c}{$U_m \,/\, \si{\milli\volt}$} \\
+    \midrule
+    580.05 & 0.868 & 0.001 & 3.8 & 0.1 & 0.988 & 0.001 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\clearpage
+Für die Massen der drei Körper wurden die folgenden Werte gemessen:
+\begin{align}
+  &m_{\mathup{Pb}} = \SI{385.76}{\gram} \\
+  &m_{\mathup{C}} = \SI{114.55}{\gram} \\
+  &m_{\mathup{Al}} = \SI{108.72}{\gram}
+\end{align}
+Die für die Bestimmung von $c_gm_g$ benötigten Massen des Wassers sowie die entsprechenden Thermospannungen betragen:
+\begin{align}
+  &m_x = \SI{346.27}{\gram} & &U_x = \SI{0.859(3)}{\milli\volt} \\
+  &m_y = \SI{271.67}{\gram} & &U_y = \SI{4.10(1)}{\milli\volt}\\
+  &m_m = \SI{617.94}{\gram} & &U'_m = \SI{2.150(5)}{\milli\volt}
+\end{align}
+Um eine lineare Näherung für die Abhängigkeit der Thermospannung von der Temperatur zu erhalten
+wurden die Thermospannungen bei $\SI{0}{\celsius}$ und $\SI{100}{\celsius}$ gemessen.
+\begin{align}
+  &U_{\SI{0}{\celsius}} = \SI{-0.002(1)}{\milli\volt} \\
+  &U_{\SI{100}{\celsius}} = \SI{4.10(1)}{\milli\volt}
+\end{align}
+Die gegebene Wärmekapazität von Wasser beträgt $c_w = \SI{4.18}{\joule\per\gram\per\kelvin}$.
+Für weitere Rechnungen werden die folgenden Daten der verschiedenen Stoffe verwendet:
+\begin{align}
+  &M_{\mathup{Pb}} = \SI{207.2}{\gram\per\mol} & &\rho _{\mathup{Pb}} = \SI{11.35}{\gram\per\cubic\centi\meter} \\
+  &\alpha _{\mathup{Pb}} = \SI{29e-6}{\per\kelvin} & &k_{\mathup{Pb}} = \SI{42e9}{\newton\per\square\meter} \\
+  &M_{\mathup{C}} = \SI{12}{\gram\per\mol} & &\rho _{\mathup{C}} = \SI{2.25}{\gram\per\cubic\centi\meter} \\
+  &\alpha _{\mathup{C}} = \SI{8e-6}{\per\kelvin} & &k_{\mathup{C}} = \SI{33e9}{\newton\per\square\meter} \\
+  &M_{\mathup{Al}} = \SI{27}{\gram\per\mol} & &\rho _{\mathup{Al}} = \SI{2.7}{\gram\per\cubic\centi\meter} \\
+  &\alpha _{\mathup{Al}} = \SI{23.5e-6}{\per\kelvin} & &k_{\mathup{Al}} = \SI{75e9}{\newton\per\square\meter}
+\end{align}
+\subsection{Bestimmung von T(U)}
+Zu Beginn wird angenommen, dass der Verlauf von $U \left( T \right)$ näherungsweise linear ist.
+\begin{equation}
+  U \left( T \right) = a \cdot T + U_{\SI{0}{\celsius}}
+  \label{eqn:U(T)}
+\end{equation}
+Mit $U_{\SI{0}{\celsius}}$ und $U_{\SI{100}{\celsius}}$ erhalt man dann zunächst die Steigung a.\\
+$a = \SI{0.04102(10)}{\milli\volt\per\celsius}$\\
+Damit folgt für $T \left( U \right)$:
+\begin{equation}
+  T \left( U \right) = \frac{1}{a} \cdot \left( U - U_{\SI{0}{\celsius}} \right)
+  \label{eqn:T(U)}
+\end{equation}
+mit $\frac{1}{a} = \SI{24.38(6)}{\celsius\per\milli\volt}$.
+\clearpage
+\subsection{Berechnung der Wärmekapazitäten sowie der Atomwärmen}
+Zuerst bestimmt man $c_{\mathup{g}}m_{\mathup{g}}$ für das Kalorimeter.\\
+Hierzu rechnet man die gemessenen Spannungen $U_x$, $U_y$ und $U'_m$ in Temperaturen um
+und setzt diese dann, zusammen mit $c_w$, in \eqref{eqn:cgmg} ein.
+\begin{table}
+  \centering
+  \caption{Ergebnisse}
+  \label{tab:Ergebnissecgmg}
+  \sisetup{table-format=2.2}
+  \begin{tabular}{
+    S
+    @{${}\pm{}$}
+    S
+    S[table-format=3.2]
+    @{${}\pm{}$}
+    S
+    S
+    @{${}\pm{}$}
+    S
+    S[table-format=3.0]
+    @{${}\pm{}$}
+    S[table-format=2.0]
+    }
+    \toprule
+    \multicolumn{2}{c}{$T_x \,/\, \si{\celsius}$} &
+    \multicolumn{2}{c}{$T_y \,/\, \si{\celsius}$} &
+    \multicolumn{2}{c}{$T'_m \,/\, \si{\celsius}$} &
+  \multicolumn{2}{c}{$c_gm_g \,\,/\,\, \si{\joule\per\kelvin}$} \\
+    \midrule
+    20.99 & 0.09 & 100.00 & 0.34 & 52.46 & 0.18 & 268 & 15 \\
+    \bottomrule
+  \end{tabular}
+\end{table}\\
+Danach rechnet man die restlichen gemessenen Spannungen in Temperaturen um und setzt
+diese, zusammen mit den jeweiligen Massen und $c_gm_g$, in \eqref{eqn:ck} ein.
+\begin{table}
+  \centering
+  \caption{Temperaturen (Blei)}
+  \label{tab:tempPb}
+  \sisetup{table-format=2.2}
+  \begin{tabular}{
+    S
+    @{${}\pm{}$}
+    S
+    S[table-format=2.0]
+    @{${}\pm{}$}
+    S[table-format=2.0]
+    S
+    @{${}\pm{}$}
+    S
+    }
+    \toprule
+    \multicolumn{2}{c}{$T_w \,/\, \si{\celsius}$} &
+    \multicolumn{2}{c}{$T_k \,/\, \si{\celsius}$} &
+    \multicolumn{2}{c}{$T_m \,/\, \si{\celsius}$} \\
+    \midrule
+    22.33 & 0.06 & 63 & 5 & 23.57 & 0.14 \\
+    21.75 & 0.25 & 71 & 7 & 22.35 & 0.13 \\
+    21.43 & 0.06 & 73 & 12 & 22.57 & 0.06 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\begin{table}
+  \centering
+  \caption{Temperaturen (Graphit)}
+  \label{tab:tempC}
+  \sisetup{table-format=2.2}
+  \begin{tabular}{
+    S
+    @{${}\pm{}$}
+    S
+    S[table-format=2.1]
+    @{${}\pm{}$}
+    S[table-format=1.1]
+    S
+    @{${}\pm{}$}
+    S
+    }
+    \toprule
+    \multicolumn{2}{c}{$T_w \,/\, \si{\celsius}$} &
+    \multicolumn{2}{c}{$T_k \,/\, \si{\celsius}$} &
+    \multicolumn{2}{c}{$T_m \,/\, \si{\celsius}$} \\
+    \midrule
+    20.97 & 0.06 & 92.7 & 2.4 & 26.30 & 0.07 \\
+    20.92 & 0.06 & 92.7 & 2.4 & 23.33 & 0.06 \\
+    21.21 & 0.06 & 95.1 & 2.4 & 23.79 & 0.07 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\clearpage
+\begin{table}
+  \centering
+  \caption{Temperaturen (Aluminium)}
+  \label{tab:tempAl}
+  \sisetup{table-format=2.2}
+  \begin{tabular}{
+    S
+    @{${}\pm{}$}
+    S
+    S[table-format=2.1]
+    @{${}\pm{}$}
+    S[table-format=1.1]
+    S
+    @{${}\pm{}$}
+    S
+    }
+    \toprule
+    \multicolumn{2}{c}{$T_w \,/\, \si{\celsius}$} &
+    \multicolumn{2}{c}{$T_k \,/\, \si{\celsius}$} &
+    \multicolumn{2}{c}{$T_m \,/\, \si{\celsius}$} \\
+    \midrule
+    21.21 & 0.06 & 92.7 & 2.4 & 24.13 & 0.07 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Damit erhält man dann die spezifischen Wärmekapazitäten der Proben.
+\begin{table}
+  \centering
+  \caption{Spezifische Wärmekapazitäten der Proben
+  (0.0 ist ein Lückenfüller für nicht vorhandene Messreihen)}
+  \label{tab:sezWärme}
+  \sisetup{table-format=1.2}
+  \begin{tabular}{
+    S
+    @{${}\pm{}$}
+    S
+    S
+    @{${}\pm{}$}
+    S
+    S
+    @{${}\pm{}$}
+    S
+    }
+    \toprule
+    \multicolumn{2}{c}{$c_{\mathup{Pb}} \,\,/\,\, \si{\joule\per\gram\per\kelvin}$} &
+    \multicolumn{2}{c}{$c_{\mathup{C}} \,\,/\,\, \si{\joule\per\gram\per\kelvin}$} &
+    \multicolumn{2}{c}{$c_{\mathup{Al}} \,\,/\,\, \si{\joule\per\gram\per\kelvin}$} \\
+    \midrule
+    0.22 & 0.04 & 1.89 & 0.07 & 1.06 & 0.04 \\
+    0.09 & 0.04 & 0.83 & 0.03 & 0.0 & 0.0 \\
+    0.15 & 0.04 & 0.85 & 0.03 & 0.0 & 0.0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}\\
+Als nächstes berechnet man die Atomwärmen $C_{\mathup{P}}$ und $C_{\mathup{V}}$.
+Die entsprechenden Formeln lauten
+\begin{equation}
+  C_{\mathup{P}} = c_{\mathup{k}} \cdot M_{\mathup{Pb}}
+  \label{eqn:Cp}
+\end{equation}
+und
+\begin{equation}
+  C_{\mathup{V}} = C_{\mathup{P}} - 9 \alpha^2 k V_0 T_m
+  \label{eqn:CvBez19}
+\end{equation}
+wobei $V_0$ das Molvolumen $\frac{M}{\rho}$ des Probenmaterials ist.
+Somit erhält man mit den Messwerten folgende Werte für $C_{\mathup{P}}$ und $C_{\mathup{V}}$:
+\begin{table}
+  \centering
+  \caption{Werte für $C_{\mathup{P}}$}
+  \label{tab:CP}
+  \sisetup{table-format=2.1}
+  \begin{tabular}{
+    S
+    @{${}\pm{}$}
+    S
+    S
+    @{${}\pm{}$}
+    S
+    S
+    @{${}\pm{}$}
+    S
+    }
+    \toprule
+    \multicolumn{2}{c}{$C_{\mathup{P}} \left( Pb \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} &
+    \multicolumn{2}{c}{$C_{\mathup{P}} \left( C \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} &
+    \multicolumn{2}{c}{$C_{\mathup{P}} \left( Al \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} \\
+    \midrule
+    46 & 7 & 22.7 & 0.9 & 28.5 & 1.1 \\
+    18 & 9 & 10.0 & 0.4 & 0.0 & 0.0 \\
+    32 & 8 & 10.2 & 0.4 & 0.0 & 0.0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\begin{table}
+  \centering
+  \caption{Werte für $C_{\mathup{V}}$}
+  \label{tab:CV}
+  \sisetup{table-format=2.1}
+  \begin{tabular}{
+    S
+    @{${}\pm{}$}
+    S
+    S
+    @{${}\pm{}$}
+    S
+    S
+    @{${}\pm{}$}
+    S
+    }
+    \toprule
+    \multicolumn{2}{c}{$C_{\mathup{V}} \left( Pb \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} &
+    \multicolumn{2}{c}{$C_{\mathup{V}} \left( C \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} &
+    \multicolumn{2}{c}{$C_{\mathup{V}} \left( Al \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} \\
+    \midrule
+    46 & 7 & 22.7 & 0.9 & 28.4 & 1.1 \\
+    18 & 9 & 10.0 & 0.4 & 0.0 & 0.0 \\
+    32 & 8 & 10.2 & 0.4 & 0.0 & 0.0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Diskussion}
+\begin{table}
+  \centering
+  \caption{Literaturwerte für $c_{\mathup{k}}$}
+  \label{tab:ckl}
+  \sisetup{table-format=1.3}
+  \begin{tabular}{
+    S
+    S
+    S
+    }
+    \toprule
+    {$c_{\mathup{Pb}} \,\,/\,\, \si{\joule\per\gram\per\kelvin}$} &
+    {$c_{\mathup{C}} \,\,/\,\, \si{\joule\per\gram\per\kelvin}$} &
+    {$c_{\mathup{Al}} \,\,/\,\, \si{\joule\per\gram\per\kelvin}$} \\
+    \midrule
+    0.129 & 0.715 & 0.896 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Mit den Literaturwerten für $c_{\mathup{k}}$ ergeben sich dann die folgenden theoretischen Werte für $C_{\mathup{P}}$
+und $C_{\mathup{V}}$:
+\begin{table}
+  \centering
+  \caption{Literaturwerte für $C_{\mathup{P}}$}
+  \label{tab:ckl}
+  \sisetup{table-format=2.2}
+  \begin{tabular}{S S S}
+    \toprule
+    {$C_{\mathup{P}} \left( Pb \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} &
+    {$C_{\mathup{P}} \left( C \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} &
+    {$C_{\mathup{P}} \left( Al \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} \\
+    \midrule
+    26.73 & 8.58 & 24.19 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\clearpage
+\begin{table}
+  \centering
+  \caption{Literaturwerte für $C_{\mathup{V}}$}
+  \label{tab:ckl}
+  \sisetup{table-format=2.2}
+  \begin{tabular}{S S S}
+    \toprule
+    {$C_{\mathup{V}} \left( Pb \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} &
+    {$C_{\mathup{V}} \left( C \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} &
+    {$C_{\mathup{V}} \left( Al \right) \,\,/\,\, \si{\joule\per\mol\per\kelvin}$} \\
+    \midrule
+    26.60 & 8.58 & 24.10 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Auffällig ist, dass die jeweils ersten Messreihen von Blei und Graphit stark aus der Reihe
+tanzen und die dabei entstandenen Ergebnisse damit doppelt so groß sind, wie die, der
+anderen beiden Messreihen. Für die erste Messung mit Blei würden wir unsere Unerfahrenheit
+mit der Apparatur verantwortlich machen sowie der unhandliche Zustand der Probe, welche
+es aufgrund einer nicht intakten Einkerbung für das Thermoelement die Messung wesentlich
+erschwert hat. Für die Abweichung bei der ersten Messung für Graphit finden wir keinen konkreten Grund.
+Allerdings ist uns im Laufe der verschiedenen Messungen aufgefallen, dass die Mischtemperatur teilweise
+stark schwankt, und zwischenzeitlich einen scheinbar konstanten Wert annimmt und dann wieder auf
+einen kleineren konstanten Wert abfällt.\\
+Abgesehen davon liegen die Abweichungen der restlichen Werte für Blei im Rahmen der statistischen Fehler.
+Für Graphit und Aluminium liegen die restlichen Ergebnisse ca. $\SI{0.1}{\joule\per\gram\per\kelvin}$ über den
+Literaturwerten. Fehlerquellen dafür könnten z.B. die möglicherweise ungenaue Annahme eines
+linearen Verlaufes für $U \left( T \right)$ sein.
+Des Weiteren gestalltet sich die Temperaturmessung für $T_{\mathup{k}}$ als etas kompliziert,
+da die Temperatur beim Tranfer der Probe zum Kalorimeter teilweise schon zügig abfällt.
+Aufgrund des dem entsprechend schnelleren Vorgangs fällt diese Messung immer relativ ungenau aus.
+Ein weiterer Faktor ist, dass zwischen der Messung der Temperatur des Wassers und der Messung
+der Temperatur der Probe sowie der Mischtemperatur relativ viel Zeit vergeht, da man das
+Thermoelement zu Beginn des Aufheizens der Probe an der Probe befestigt, um den Transfervorgang
+zu vereinfachen. Dies sorgt dafür, dass äußere Einflüsse, die in dieser Zeit die Wassertemperatur
+verändern, wie z.B. Abwärme von der Heizplatte, nicht berücksichtigt werden.\\
+Insgesamt kann man gut erkennen, dass für schwere Elemente wie Blei der klassisch angenommene Wert
+von 3R gut passt. Bei Graphit dagegen zeigt sich deutlich der durch die Quantendynamik beschriebene
+Effekt, dass ein Stoff je nach molarer Masse fürher oder später den Wert von 3 R erreicht.
+\clearpage
+\nocite{*}
+\printbibliography
+
+\end{document}

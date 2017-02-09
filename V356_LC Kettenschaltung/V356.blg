@@ -1,0 +1,15 @@
+[0] Config.pm:354> INFO - This is Biber 2.6
+[1] Config.pm:357> INFO - Logfile is 'V356.blg'
+[67] biber:302> INFO - === Di Jan 17, 2017, 11:03:30
+[96] Biber.pm:359> INFO - Reading 'V356.bcf'
+[201] Biber.pm:820> INFO - Using all citekeys in bib section 0
+[217] Biber.pm:3658> INFO - Processing section 0
+[231] Biber.pm:3828> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[231] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[232] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
+[249] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[249] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[249] Biber.pm:3487> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'de-DE'
+[249] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
+[251] bbl.pm:597> INFO - Writing 'V356.bbl' with encoding 'UTF-8'
+[251] bbl.pm:701> INFO - Output to V356.bbl

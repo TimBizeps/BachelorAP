@@ -1,0 +1,24 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Die allgemeine Brückenschaltung}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Die Wheatstonesche Brücke}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Die Kapazitätsmessbrücke}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Die Induktivitätsmessbrücke}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Die Maxwell-Brücke}{8}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Die Wien-Robinson-Brücke}{9}{subsection.2.6}
+\contentsline {section}{\numberline {3}Durchführung}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Widerstandsmessung}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Kapazitätsmessung}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Induktivitätsmessung}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Untersuchung der Frequenzanhängigkeit einer Wien-Robinson-Brücke}{11}{subsection.3.4}
+\contentsline {section}{\numberline {4}Auswertung}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Messwerte}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}a)Berechnung von zwei unbekannten Widerständen (Wheatstone)}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}b)Berechnung von zwei Kapazitäten sowie einer RC Kombination}{15}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}c)+d)Berechnung der Induktivität einer Spule sowie ihres Verlustwiderstands}{16}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}e)Frequenzabhängikeit der Wien-Robinson-Brücke und f)Berechnung des Klirrfaktors des Generators}{17}{subsection.4.5}
+\contentsline {section}{\numberline {5}Diskussion}{20}{section.5}
+\contentsline {section}{\nonumberline Literatur}{20}{section*.21}

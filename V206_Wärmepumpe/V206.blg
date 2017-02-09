@@ -1,0 +1,15 @@
+[0] Config.pm:354> INFO - This is Biber 2.6
+[0] Config.pm:357> INFO - Logfile is 'V206.blg'
+[43] biber:302> INFO - === Di Feb  7, 2017, 19:38:55
+[64] Biber.pm:359> INFO - Reading 'V206.bcf'
+[150] Biber.pm:820> INFO - Using all citekeys in bib section 0
+[166] Biber.pm:3658> INFO - Processing section 0
+[180] Biber.pm:3828> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[181] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[182] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
+[210] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[210] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[210] Biber.pm:3487> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'de-DE'
+[210] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
+[216] bbl.pm:597> INFO - Writing 'V206.bbl' with encoding 'UTF-8'
+[217] bbl.pm:701> INFO - Output to V206.bbl

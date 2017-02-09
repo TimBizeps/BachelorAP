@@ -185,12 +185,14 @@ mit gleicher Amplitude und Phase anfangen zu oszillieren. Die
 Schwingungsfrequenz dieser ist definiert durch:
 \begin{equation}
   \nu_+=\frac{1}{2\pi\sqrt{LC}}.
+  \label{eqn:gleichph}
 \end{equation}
 Bei einer gegenphasigen Schwingung beginnt die Oszillation mit gleicher
 Amplitude und einer entgegengesetzten Phase. Die Schwingungsfrequenz dieser
 ist definiert durch:
 \begin{equation}
   \nu_-=\frac{1}{2\pi\sqrt{L(\frac{1}{C}+\frac{2}{C_K})^{-1}}}.
+  \label{eqn:gegenph}
 \end{equation}
 $\nu_+$ und $\nu_-$ sind die Frequenzen zu den Fundamentalschwingungen des
 gekoppelten Systems, wobei die folgende Ungleichung gilt:
@@ -210,20 +212,21 @@ Im Verlauf der Zeit wird $I_2$ größer und $I_1$ kleiner, bis zu dem Zeitpunkt,
 dem die Ausgangslage umgekehrt wurde. Außerdem wird die Annahme getroffen, dass
 $C_K>>C$ gilt und damit auch:
 \begin{align}
+  \label{eqn:swing}
   \frac{1}{2}(\omega_++\omega_-)\thickapprox\omega_+ \\
   \omega_--\omega_+<<\omega_+.
 \end{align}
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.85\textwidth]{V3552.png}
-  \caption{Der Amplitudenverlauf von zwei Schwingungen überlagert mit einer Schwebung}
+  \caption{Der Amplitudenverlauf von zwei Schwingungen überlagert mit einer Schwebung \cite{anleitung}.}
   \label{fig:V3552}
 \end{figure}
 In Abbildung \ref{fig:V3552} zu sehen ist dann der Amplitudenverlauf zweier
 Schwingungen, wenn eine Schwebung eintritt, wie durch die vorherigen Gleichungen
 beschrieben. Dabei wird die Frequenz
 \begin{equation}
-\nu_--\nu_+
+\nu_\mathup{Sch} = \nu_--\nu_+
 \label{eqn:Lörres}
 \end{equation}
 als Schwebungsfrequenz bezeichnet. Die Schwebungsfrequenz ist die Frequenz, mit
@@ -236,7 +239,7 @@ der die Gesamtenergie des Systems zwischen den Schwingkreisen oszilliert.
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.85\textwidth]{V3554.png}
-  \caption{Der zur Untersuchung des Schwebungsphänomens und der Fundamentalschwingungen verwendete Versuchsaufbau. Für die Messung der Fundamentalschwingungen wurden kleine Änderungen an dem Schaltkreis vorgenommen.}
+  \caption{Der zur Untersuchung des Schwebungsphänomens und der Fundamentalschwingungen verwendete Versuchsaufbau. Für die Messung der Fundamentalschwingungen wurden kleine Änderungen an dem Schaltkreis vorgenommen \cite{anleitung}.}
   \label{fig:V3554}
 \end{figure}
 In Abbildung \ref{fig:V3554} zu sehen ist der genutzte Versuchsaufbau zur
@@ -252,7 +255,7 @@ mit einer Sinusspannung ersetzt.
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.75\textwidth]{V3553.png}
-  \caption{Versuchsaufbau zur Justierung des einstellbaren Kondensators}
+  \caption{Versuchsaufbau zur Justierung des einstellbaren Kondensators \cite{anleitung}.}
   \label{fig:V3553}
 \end{figure}
 In Abbildung \ref{fig:V3553} zu sehen ist die Schaltskizze zur Justierung
@@ -292,9 +295,221 @@ Es wurde Schaltung 2 genutzt mit den folgenden Bauteilwerten:
   R &= \SI{48}{\ohm}
 \end{align}
 Dabei gibt $C_\mathup{sp}$ die Spuleneigene Kapazität an.
+Der verstellbare Kondensator konnte die in Tabelle \ref{tab:kapaz}
+stehenden Werte annehmen, wobei der Wert jeweils einen Fehler von $\SI{3}{\percent}$
+besitzt.
+\begin{table}
+  \centering
+  \caption{Mögliche Kapazitäten $C_K$.}
+  \label{tab:kapaz}
+  \sisetup{table-format=3.2}
+  \begin{tabular}{S}
+    \toprule
+    {$C_K \,/\, \si{\nano\farad}$}\\
+    \midrule
+    \num{12}\\
+    \num{9.99}\\
+    \num{8.18}\\
+    \num{6.86}\\
+    \num{4.74}\\
+    \num{2.86}\\
+    \num{2.19}\\
+    \num{0.997}\\
+    \bottomrule
+  \end{tabular}
+\end{table}
 \clearpage
 \section{Auswertung}
 \label{sec:auswertung}
+\subsection{Fehlerrechnung}
+Alle Fehler, die sich beim Rechnen mit Formeln aus mehreren fehlerbehafteten Größen
+ergeben, werden mit Python berechnet. Dazu wird die Fehlerfortpflanzung nach
+\begin{equation}
+    \mathup{\Delta}f(x_1,x_2,...,x_n)=\sqrt{\left(\frac{\mathup{d}f}{\mathup{d}x_1}\mathup{\Delta}x_1\right)^2+\left(\frac{\mathup{d}f}{\mathup{d}x_2}\mathup{\Delta}x_2\right)^2+ \dotsb +\left(\frac{\mathup{d}f}{\mathup{d}x_n}\mathup{\Delta}x_n\right)^2}.
+    \label{eqn:formelgauß}
+\end{equation}
+verwendet.
+\subsection{Berechnung der theoretischen Fundamentalfrequenzen}
+Zu Beginn werden die theoretischen Eigenfrequenzen der gleichphasigen und der gegenphasigen
+Schwingung berechnet. Diese berechnen sich nach den Formeln \eqref{eqn:gleichph}
+und \eqref{eqn:gegenph}. Allerdings sind noch die Kapazitäten der Spulen zu berücksichtigen,
+weshalb die Formeln die folgenden Formen annehmen:
+\begin{align}
+  \nu_+ &= \frac{1}{2\pi\sqrt{L(C+C_\mathup{sp})}}\\
+  \nu_- &=\frac{1}{2\pi\sqrt{L((\frac{1}{C}+\frac{2}{C_K})^{-1}+C_\mathup{sp})}}
+\end{align}
+Mit diesen und den gegebenen Bauteilwerten ergibt sich für $\nu_{+_\mathup{th}}$
+\begin{equation}
+  \nu_{+_\mathup{th}} = \SI{35.9}{\kilo\hertz}.
+\end{equation}
+In Tabelle \ref{tab:ergebnisse1} stehen die möglichen Kapazitäten $C_K$ und die
+damit berechneten Werte von $\nu_-$.
+\begin{table}
+  \centering
+  \caption{Eigenfrequenzen der gegenphasigen Schwingung bei der jeweiligen Kapazität $C_K$.}
+  \label{tab:ergebnisse1}
+  \sisetup{table-format=3.2}
+  \begin{tabular}{S S}
+    \toprule
+    {$C_K \,/\, \si{\nano\farad}$} & {$\nu_{-_\mathup{th}} \,/\, \si{\kilo\hertz}$}\\
+    \midrule
+    \num{12.0(4)} & \num{38.1(1)}\\
+    \num{10.0(3)} & \num{38.5(1)}\\
+    \num{8.2(2)} & \num{39.1(1)}\\
+    \num{6.9(2)} & \num{39.7(1)}\\
+    \num{4.7(1)} & \num{41.2(1)}\\
+    \num{2.9(1)} & \num{44.3(2)}\\
+    \num{2.2(1)} & \num{46.6(3)}\\
+    \num{1.00(3)} & \num{56.3(5)}\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\clearpage
+\subsection{Justierung}
+Bei der Justierung, wie in Abschnitt \ref{sec:versuchsdurchführung} beschrieben
+wurde eine Resonanzfrequenz von
+\begin{equation}
+  \nu_+ = \SI{37(1)}{\kilo\hertz}
+\end{equation}
+für den einzelnen Schwingkreis notiert. Der Fehler beruht auf eigener Abschätzung.
+Der Wert weicht um $\SI{3.3}{\percent}$ vom theoretischen Wert ab.
 
+\subsection{Bestimmung der Eigenfrequenzen}
+Die Eigenfrequenzen wurden wie in Abschnitt \ref{sec:versuchsdurchführung} beschrieben
+auf zwei verschiedene Weisen gemessen.
+Die Messwerte dazu stehen in den Tabellen \ref{tab:messwerte1} und \ref{tab:messwerte2}.
+Der Fehler der Kapazitäten entspricht den $\SI{3}{\percent}$, während die anderen
+Abweichungen geschätzt sind.
+Bei dem Sweep wurde innerhalb von einer Sekund das Spektrum von $\SI{25}{\kilo\hertz}$
+bis $\SI{66}{\kilo\hertz}$ durchlaufen.
+\begin{table}
+  \centering
+  \caption{Eigenfrequenzen der Schwingungen bei der jeweiligen Kapazität $C_K$ (direkt am Oszilloskop gemessen).}
+  \label{tab:messwerte1}
+  \sisetup{table-format=1}
+  \begin{tabular}{S S S S S[table-format=1.1]}
+    \toprule
+    & \multicolumn{2}{c}{$\nu_+$} & \multicolumn{2}{c}{$\nu_-$}\\
+    {$C_K \,/\, \si{\nano\farad}$} & {$\nu \,/\, \si{\kilo\hertz}$} & {Abweichung in $\si{\percent}$} & {$\nu \,/\, \si{\kilo\hertz}$} & {Abweichung in $\si{\percent}$}\\
+    \midrule
+    \num{12.0(4)} & \num{35.6(3)} & 1 & \num{38.3(3)} & 0.5\\
+    \num{10.0(3)} & \num{35.6(3)} & 1 & \num{38.6(3)} & 0.3\\
+    \num{8.2(2)} & \num{35.6(3)} & 1 & \num{39.0(3)} & 0.3\\
+    \num{6.9(2)} & \num{35.6(3)} & 1 & \num{39.5(3)} & 0.5\\
+    \num{4.7(1)} & \num{35.6(3)} & 1 & \num{41.1(3)} & 0.2\\
+    \num{2.9(1)} & \num{35.6(3)} & 1 & \num{44.3(2)} & 0.0\\
+    \num{2.2(1)} & \num{35.6(3)} & 1 & \num{46.5(3)} & 0.2\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\begin{table}
+  \centering
+  \caption{Zeitpunkt beim Sweep bei der jeweils das Resonanzmaximum gemessen wurde.}
+  \label{tab:messwerte2}
+  \sisetup{table-format=3.0}
+  \begin{tabular}{S S S}
+    \toprule
+    {$C_K \,/\, \si{\nano\farad}$} & {$t_{\nu_+} \,/\, \si{\milli\second}$} & {$t_{\nu_-} \,/\, \si{\milli\second}$}\\
+    \midrule
+    \num{12.0(4)} & \num{256(4)} & \num{304(4)}\\
+    \num{10.0(3)} & \num{256(4)} & \num{316(4)}\\
+    \num{8.2(2)} & \num{260(4)} & \num{336(4)}\\
+    \num{6.9(2)} & \num{256(4)} & \num{344(4)}\\
+    \num{4.7(1)} & \num{256(4)} & \num{384(4)}\\
+    \num{2.9(1)} & \num{256(4)} & \num{460(4)}\\
+    \num{2.2(1)} & \num{260(4)} & \num{512(4)}\\
+    \num{1.00(3)} & \num{252(4)} & \num{740(4)}\\
+    \bottomrule
+  \end{tabular}
+\end{table}\\
+Da der Sweep linear verläuft und sich damit mit einer Funktion
+\begin{equation}
+  f(t)=m \cdot t + b
+\end{equation}
+beschreiben lässt, ist es nun möglich daraus die Frequenzen zu bestimmen.
+Als Steigung $m$ wird aus dem Anfangs und Endwert
+\begin{equation}
+  m = \SI{41}{\kilo\hertz\per\second}
+\end{equation}
+bestimmt.
+$b$ entspricht dem Anfangswert von $\SI{25}{\kilo\hertz}$.
+Damit ergeben sich die in Tabelle \ref{tab:ergebnisse2} stehenden Frequenzen der
+Eigenschwingungen.
+\begin{table}
+  \centering
+  \caption{Eigenfrequenzen der Schwingungen bei der jeweiligen Kapazität $C_K$ (direkt am Oszilloskop gemessen).}
+  \label{tab:ergebnisse2}
+  \sisetup{table-format=1.1}
+  \begin{tabular}{S S S S S}
+    \toprule
+    & \multicolumn{2}{c}{$\nu_+$} & \multicolumn{2}{c}{$\nu_-$}\\
+    {$C_K \,/\, \si{\nano\farad}$} & {$\nu \,/\, \si{\kilo\hertz}$} & {Abweichung in $\si{\percent}$} & {$\nu \,/\, \si{\kilo\hertz}$} & {Abweichung in $\si{\percent}$}\\
+    \midrule
+    \num{12.0(4)} & \num{35.5(2)} & 1.1 & \num{37.5(2)} & 1.6\\
+    \num{10.0(3)} & \num{35.5(2)} & 1.1 & \num{38.0(2)} & 1.3\\
+    \num{8.2(2)} & \num{35.7(2)} & 0.6 & \num{38.8(2)} & 0.8\\
+    \num{6.9(2)} & \num{35.5(2)} & 1.1 & \num{39.1(2)} & 1.5\\
+    \num{4.7(1)} & \num{35.5(2)} & 1.1 & \num{40.7(2)} & 1.2\\
+    \num{2.9(1)} & \num{35.5(2)} & 1.1 & \num{43.9(2)} & 0.9\\
+    \num{2.2(1)} & \num{35.7(2)} & 0.6 & \num{46.0(2)} & 1.3\\
+    \num{1.00(3)} & \num{35.3(2)} & 1.7 & \num{55.3(2)} & 1.8\\
+    \bottomrule
+  \end{tabular}
+\end{table}\\
+Die Theoriewerte sowie die bei den Messungen bestimmten Frequenzen sind in Abbildung
+\ref{fig:plot} dargestellt.
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=\textwidth]{Plot.pdf}
+  \caption{Eigenfrequenzen der Schwingkreise in Abhängigkeit von der Kapazität.}
+  \label{fig:plot}
+\end{figure}
+\clearpage
+\subsection{Bestimmung des Verhältnisses von Schwebungsfrequenz und Schwingungsfrequenz}
+Durch kombination von Formel \eqref{eqn:swing} und Formel \eqref{eqn:Lörres} lässt sich das Verhältnis
+der Schwingungsfrequenz zur Schwebungsfrequenz bestimmen.
+\begin{equation}
+  \frac{\nu_+}{\nu_\mathup{Sch}} = \frac{1}{2} \frac{\nu_+ + \nu_-}{\nu_- - \nu_+}
+\end{equation}
+In Tabelle \ref{tab:ergebnisse3} stehen die mit den theoretischen Frequenzen bestimmten
+und die abgezählten Verhältnisse, sowie deren prozentualen Abweichungen.
+\begin{table}
+  \centering
+  \caption{Verhältniss der Schwingungsfrequenz zur Schwebungsfrequenz.}
+  \label{tab:ergebnisse3}
+  \sisetup{table-format=1.1}
+  \begin{tabular}{S S S S}
+    \toprule
+    {$C_K \,/\, \si{\nano\farad}$} & {$n_\mathup{theorie}$} & {$n_\mathup{gemessen}$} & {Abweichung in $\si{\percent}$}\\
+    \midrule
+    \num{12.0(4)} & \num{16.7(5)} & \num{16.0(5)} & 4.2\\
+    \num{10.0(3)} & \num{14.1(4)} & \num{14.0(5)} & 0.7\\
+    \num{8.2(2)} & \num{11.7(3)} & \num{12.0(5)} & 2.6\\
+    \num{6.9(2)} & \num{10.0(3)} & \num{10.0(5)} & 0.0\\
+    \num{4.7(1)} & \num{7.2(2)} & \num{7.0(5)} & 2.7\\
+    \num{2.9(1)} & \num{4.8(1)} & \num{5.0(5)} & 4.2\\
+    \num{2.2(1)} & \num{3.86(9)} & \num{4.0(5)} & 3.6\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\section{Diskussion}
+\label{sec:diskussion}
+Bei der Justage ergab sich eine Resonanzfrequenz von $\SI{37(1)}{\kilo\hertz}$.
+Diese liegt etwas über der theoretischen Frequenz was daran liegt, dass die Phase
+mit der Lissajous-Figur, aufgrund der ungleichen Amplitudenskaalen, nur grob  auf
+ein Oval eingestellt werden konnte und somit mit gewisser Ungenauigkeit nur $\frac{\pi}{2}$
+beträgt. Diese nicht unbedingt optimale Justierung ist ebenfalls ein möglicher Grund
+für spätere Abweichungen.
+Grundsätzlich liegen alle Ergebnisse sehr nah an den Theorie-Werten.
+Die Frequenzen der gleichphasigen Schwingung liegen mit $\SI{35.6}{\kilo\hertz}$
+und $\approx \SI{35.5}{\kilo\hertz}$ etwas unterhalb des Theorie-Wertes.
+Die direkt gemessenen Werte der gegenphasigen Schwingung liegen sehr gut auf den
+Theorie-Werten. Beim Sweep gibt es generell etwas größere Abweichungen, sodass
+die Fehler die Abweichungen nur teilweise überstrecken. Bei den direkten Messungen
+der Eigenfrequenzen und bei der Messung der Frequenzverhältnisse
+liegen die Werte insgesamt im Bereich der Fehler.
+\clearpage
+\nocite{*}
+\printbibliography
 
 \end{document}

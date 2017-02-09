@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  6 FEB 2017 11:54
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  7 FEB 2017 15:16
  restricted system commands enabled.
 **V355.tex
 (./V355.tex
@@ -605,7 +605,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.111 seconds)
+luaotfload | main : initialization completed in 0.110 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.
 sty
@@ -2185,13 +2185,13 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout4 = V355.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'V355.bbl' not found.
-
-No file V355.bbl.
+Package biblatex Info: ... file 'V355.bbl' found.
+ (./V355.bbl)
 Package biblatex Info: Reference section=0 on input line 147.
 Package biblatex Info: Reference segment=0 on input line 147.
 \AtBeginShipoutBox=\box58
 Package hyperref Info: Link coloring OFF on input line 147.
+
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2281,118 +2281,127 @@ Language ngerman already loaded; id is 8)
  [2
 
 ]
-<V3551.png, id=31, 1376.14125pt x 819.06pt>
+<V3551.png, id=46, 1376.14125pt x 819.06pt>
 File: V3551.png Graphic file (type png)
  <use V3551.png>
 Package luatex.def Info: V3551.png used on input line 157.
 (luatex.def)             Requested size: 355.51976pt x 211.6008pt.
-
-
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 158.
-
-
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 158.
-
-[3<./V3551.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 199--205
+ [3<./V3551.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 201--207
 
  []
 
-<V3552.png, id=46, 1442.38875pt x 644.4075pt>
+<V3552.png, id=65, 1442.38875pt x 644.4075pt>
 File: V3552.png Graphic file (type png)
  <use V3552.png>
-Package luatex.def Info: V3552.png used on input line 218.
+Package luatex.def Info: V3552.png used on input line 221.
 (luatex.def)             Requested size: 355.51976pt x 158.83008pt.
  [4]
-<V3554.png, id=63, 1528.71124pt x 753.81625pt>
+<V3554.png, id=85, 1528.71124pt x 753.81625pt>
 File: V3554.png Graphic file (type png)
  <use V3554.png>
-Package luatex.def Info: V3554.png used on input line 234.
+Package luatex.def Info: V3554.png used on input line 241.
 (luatex.def)             Requested size: 355.51976pt x 175.30647pt.
- [5<./V3552.png><./V3554.png>] <V3553.png, id=73, 693.59125pt x 755.82375pt>
+ [5<./V3552.png><./V3554.png>] <V3553.png, id=97, 693.59125pt x 755.82375pt>
 File: V3553.png Graphic file (type png)
  <use V3553.png>
-Package luatex.def Info: V3553.png used on input line 250.
+Package luatex.def Info: V3553.png used on input line 257.
 (luatex.def)             Requested size: 313.69167pt x 341.84747pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--284
+Underfull \hbox (badness 10000) in paragraph at lines 261--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--284
+Underfull \hbox (badness 10000) in paragraph at lines 261--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--284
+Underfull \hbox (badness 10000) in paragraph at lines 261--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--284
+Underfull \hbox (badness 10000) in paragraph at lines 261--291
 
  []
 
 [6<./V3553.png>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cach
 e/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/simon/.local/texlive/2
 016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-
 [8
 
+] [9
+
+](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmroman5-regular.luc) <Plot.pdf, id=149, 578.16pt x 433.62pt>
+File: Plot.pdf Graphic file (type pdf)
+
+<use Plot.pdf>
+Package luatex.def Info: Plot.pdf used on input line 463.
+(luatex.def)             Requested size: 418.25555pt x 313.68826pt.
+ [10] [11<./Plot.pdf>] [12
+
+](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmromancaps10-regular.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 513.
+
+
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
+File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)(load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmmono10-regular.luc)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: EU2).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
+ [13
+
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
  (./V355.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
-
-
-Package rerunfilecheck Warning: File `V355.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `V355.aux':
-(rerunfilecheck)             Before: 4EBDD360DF7F4BFD6C7A3D160F06EF69;5289
-(rerunfilecheck)             After:  FEB7A6F96256FC86C5AA1DC9291F16BD;5289.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 515.
+Package rerunfilecheck Info: File `V355.aux' has not changed.
+(rerunfilecheck)             Checksum: 6D74C662A3FF9C20CA21093B86E30C14;11818.
 Package rerunfilecheck Info: File `V355.toc' has not changed.
-(rerunfilecheck)             Checksum: 5FC00E819DAA3F8C5756DA5B9EB55BAF;525.
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                V355
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 4717F97EFEF609D03B1A55C14A9F4BC9;1163.
 Package logreq Info: Writing requests to 'V355.run.xml'.
 
 \openout1 = V355.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 44465 strings out of 495118
+ 44605 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 2168 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 206 glue, 1 kern, 68 attribute, 57 glue_spec, 68 at
-tribute_list, 1 write nodes
-   avail lists: 1:5,2:307,3:86,4:19,5:161,6:1943,7:482,8:56,9:251,10:13,11:242
- 46764 multiletter control sequences out of 65536+600000
- 102 fonts using 32783295 bytes
- 61i,13n,104p,8814b,2919s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinm
-odern-math.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public
-/lm-math/latinmodern-math.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/
-opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive/2016/te
-xmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/simon/.local/texlive
-/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/simon/.lo
-cal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></hom
-e/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.ot
-f></home/simon/.local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb>
-Output written on V355.pdf (8 pages, 288162 bytes).
+ 5261 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 554 glue, 1 kern, 228 attribute, 58 glue_spec, 228 
+attribute_list, 1 write, 2 pdf_action nodes
+   avail lists: 1:2,2:1689,3:221,4:33,5:237,6:1951,7:991,8:70,9:565,10:19,11:242
 
-PDF statistics: 164 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 131072)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46854 multiletter control sequences out of 65536+600000
+ 105 fonts using 33171679 bytes
+ 61i,15n,104p,8814b,2960s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-re
+gular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/l
+mromancaps10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opent
+ype/public/lm/lmroman10-italic.otf></home/simon/.local/texlive/2016/texmf-dist/f
+onts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive/20
+16/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.l
+ocal/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf>
+</home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-b
+old.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmr
+oman10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/pu
+blic/lm/lmroman12-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/
+opentype/public/lm/lmsans10-bold.otf></home/simon/.local/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on V355.pdf (13 pages, 328128 bytes).
+
+PDF statistics: 318 PDF objects out of 1000 (max. 8388607)
+ 247 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 131072)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

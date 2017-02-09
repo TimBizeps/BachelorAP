@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
+\contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bestimmung der Grenzfrequenzen}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Dispersionskurven}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Berechnung der Phasengeschindigkeit}{12}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Messung des Verlaufs der Stehenden Wellen bei $\SI {5}{\kilo \hertz }$ und $\SI {10}{\kilo \hertz }$}{14}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{17}{section.4}
+\contentsline {section}{\nonumberline Literatur}{18}{section*.17}

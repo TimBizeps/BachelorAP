@@ -1,0 +1,18 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Biegung des einseitig eingespannten homogenen Stabes}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Biegung des beidseitig eingespannten homogenen Stabes}{5}{subsection.2.2}
+\contentsline {section}{\numberline {3}Durchführung}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Einseitige Einspannung}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Beidseitige Einspannung}{8}{subsection.3.2}
+\contentsline {section}{\numberline {4}Fehlerrechnung}{9}{section.4}
+\contentsline {section}{\numberline {5}Auswertung}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}Berechnung des Elastizitätsmoduls $E$ eines Messingstabes mit quadratischem Querschnitt bei einseitiger Einspannung}{10}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Berechnung des Elastizitätsmoduls $E$ eines Aluminiumstabes mit kreisförmigem Querschnitt bei einseitiger Einspannung}{12}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Berechnung des Elastizitätsmoduls $E$ eines Aluminiumstabes mit quadratischem Querschnitt bie beidseitiger Einspannung}{13}{subsection.5.3}
+\contentsline {section}{\numberline {6}Diskussion}{17}{section.6}
+\contentsline {section}{\nonumberline Literatur}{17}{section*.13}
+\contentsline {section}{\numberline {7}Anhang}{19}{section.7}
