@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 import uncertainties.unumpy as unp
+from uncertainties.unumpy import (nominal_values as noms, std_devs as stds)
 mpl.rcParams.update({
     'font.family': 'serif',
     'text.usetex': True,
@@ -16,7 +17,8 @@ mpl.rcParams.update({
 
 x, y, z = np.genfromtxt('Daten.txt', unpack=True)
 zs = z/1000000
-deltaQ = zs*60/y
+yw = y/60
+deltaQ = zs/yw
 elem = deltaQ/e
 #def f(x, a, b):
 #    return a*x+b
@@ -30,7 +32,7 @@ elem = deltaQ/e
 #
 #x_plot = np.linspace(300, 710)
 #
-#np.savetxt("Parameter2.txt", np.column_stack([params, errors]))
+np.savetxt("Ladungen.txt", np.column_stack([deltaQ, elem]))
 #
 #plt.plot(x_plot, f(x_plot, *params), 'b-', label='Fit', linewidth=1)
 plt.plot(x, elem, 'rx', label='Messwerte')
@@ -42,3 +44,4 @@ plt.legend(loc="best")
 plt.title('Die im Zählrohr freigesetzte Ladung pro Teilchen')
 plt.tight_layout()
 plt.savefig("Plot2.pdf")
+print('e =', e)
