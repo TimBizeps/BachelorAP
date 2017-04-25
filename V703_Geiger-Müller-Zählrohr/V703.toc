@@ -10,3 +10,4 @@
 \contentsline {subsection}{\numberline {3.2}Teil b)}{11}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Teil c)}{11}{subsection.3.3}
 \contentsline {section}{\numberline {4}Diskussion}{13}{section.4}
+\contentsline {section}{\nonumberline Literatur}{13}{section*.13}
