@@ -124,7 +124,7 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 % Trennung von Wörtern mit Strichen
 \usepackage[shortcuts]{extdash}
 
-\title{V703: Das Geiger-Müller-Zählrohr}
+\title{V704: Absorption von Gamma- und Beta-Strahlung}
 \author{
   Simon Schulte
   \texorpdfstring{
@@ -140,10 +140,15 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 }
 \publishers{TU Dortmund – Fakultät Physik}
 
-\date{Durchführung: 18.04.2017\\
-      Abgabe: 25.04.2017}
+\date{Durchführung: 25.04.2017\\
+      Abgabe: 02.05.2017}
 
 \begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
 \setcounter{page}{1}
 \section{Zielsetzung}
 \label{sec:zielsetzung}
@@ -164,7 +169,7 @@ eines Teilchens, im Absorbermaterial, in welcher es zwischen Strahlung
 und Teilchen zu Wechselwirkungen kommt.
 Im Idealfall ergibt sich ein exponentielles Absorptionsgesetz:
 \begin{equation}
-  N \left( D \right) = N_0 e^-n \sigma D
+  N \left( D \right) = N_0 e^{-n \sigma D}
   \label{eqn:absorption}
 \end{equation}
 Es gibt die Anzahl der, nach einer Schichtdicke $D$, noch messbaren Ereignisse
@@ -238,12 +243,6 @@ und ein Positron. $\sigma_\mathup{p}$ ist dabei proportional zu $z^2$.
 Für Germanium ($z = 32$) sind in Abbildung \ref{fig:V7041} die Verläufe der einzelnen
 Koeffizienten, sowie die Überlagerung, in Abhängigkeit von der Energie des
 $\gamma$-Quants dargestellt.
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=0.9\textwidth]{V7041.png}
-  \caption{Absorptionskoeffizienten bei Germanium \cite{anleitung}.}
-  \label{fig:V7041}
-\end{figure}
 
 \subsection{Entstehung und Wechselwirkung von \texorpdfstring{$\beta$}{beta}-Strahlung}
 $\beta$-Strahlung entsteht beim Zerfall eines instabilen Atomkerns.
@@ -282,6 +281,12 @@ zeigen sich stärkere Abweichungen.
   \includegraphics[width=0.9\textwidth]{V7042.png}
   \caption{Absorptionsverhalten eines $\beta$-Strahlers \cite{anleitung}.}
   \label{fig:V7042}
+\end{figure}
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.9\textwidth]{V7041.png}
+  \caption{Absorptionskoeffizienten bei Germanium \cite{anleitung}.}
+  \label{fig:V7041}
 \end{figure}
 In Abbildung \ref{fig:V7042} ist der Verlauf einer Absorptionskurve eines natürlichen
 $\beta$-Strahlers dargestellt. Die Strahlungsintensität ist dabei logarithmiert
@@ -674,4 +679,8 @@ korrigiert werden können. Dabei ist der Wert der Korrektur umso besser, je
 exakter der Nulleffekt bestimmt wird, dass heißt je länger die natürliche
 Strahlung in Abwesenheit der zu untersuchenden radioaktiven Strahlungsquelle
 untersucht wird.
+\clearpage
+\nocite{*}
+\printbibliography
+
 \end{document}
