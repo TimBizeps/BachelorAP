@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  2 MAY 2017 12:44
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  4 MAY 2017 13:40
  restricted system commands enabled.
 **V704_3.tex
 (./V704_3.tex
@@ -598,7 +598,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.106 seconds)
+luaotfload | main : initialization completed in 0.104 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.st
 y
@@ -2266,8 +2266,7 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 {/home/tim/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 150
 .
- (./V704_3.toc
-Language ngerman already loaded; id is 8)
+ (./V704_3.toc)
 \tf@toc=\write5
 
 \openout5 = V704_3.toc
@@ -2287,7 +2286,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1](load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
 /otl/lmroman8-regular.luc)(load luc: /home/tim/.local/texlive/2016/texmf-var/lua
 tex-cache/generic/fonts/otl/lmroman6-regular.luc)
-<V7042.png, id=61, 1232.605pt x 805.0075pt>
+<V7042.png, id=32, 1232.605pt x 805.0075pt>
 File: V7042.png Graphic file (type png)
  <use V7042.png>
 Package luatex.def Info: V7042.png used on input line 281.
@@ -2297,20 +2296,20 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 282.
 
-<V7041.png, id=64, 502.87875pt x 817.0525pt>
+<V7041.png, id=35, 502.87875pt x 817.0525pt>
 File: V7041.png Graphic file (type png)
  <use V7041.png>
 Package luatex.def Info: V7041.png used on input line 287.
 (luatex.def)             Requested size: 376.42744pt x 611.6035pt.
 
 
-LaTeX Warning: Float too large for page by 37.80324pt on input line 290.
+LaTeX Warning: Float too large for page by 49.80324pt on input line 290.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 [2](load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
 /otl/lmroman5-regular.luc) [3<./V7042.png>] [4<./V7041.png>]
-<V7043.png, id=95, 1872.9975pt x 811.03pt>
+<V7043.png, id=66, 1872.9975pt x 811.03pt>
 File: V7043.png Graphic file (type png)
  <use V7043.png>
 Package luatex.def Info: V7043.png used on input line 319.
@@ -2330,42 +2329,59 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 365.
 
-[6] [7] <plot_Zink.pdf, id=131, 578.16pt x 433.62pt>
+[6] [7] <plot_Zink.pdf, id=108, 578.16pt x 433.62pt>
 File: plot_Zink.pdf Graphic file (type pdf)
  <use plot_Zink.pdf>
 Package luatex.def Info: plot_Zink.pdf used on input line 480.
 (luatex.def)             Requested size: 334.60571pt x 250.9506pt.
 
-[8] <plot_Eisen.pdf, id=139, 578.16pt x 433.62pt>
+[8] <plot_Eisen.pdf, id=115, 578.16pt x 433.62pt>
 File: plot_Eisen.pdf Graphic file (type pdf)
  <use plot_Eisen.pdf>
 Package luatex.def Info: plot_Eisen.pdf used on input line 487.
 (luatex.def)             Requested size: 334.60571pt x 250.9506pt.
- [9<./plot_Zink.pdf><./plot_Eisen.pdf>] [10]
-<plot_Aluminium.pdf, id=312, 578.16pt x 433.62pt>
+
+
+LaTeX Warning: Reference `tab:theoriewerte' on page 9 undefined on input line 50
+1.
+
+[9<./plot_Zink.pdf><./plot_Eisen.pdf>]
+
+LaTeX Warning: Reference `tab:beta' on page 10 undefined on input line 545.
+
+[10]
+
+LaTeX Warning: Reference `fig:plot_aluminium' on page 11 undefined on input line
+ 573.
+
+<plot_Aluminium.pdf, id=287, 578.16pt x 433.62pt>
 File: plot_Aluminium.pdf Graphic file (type pdf)
  <use plot_Aluminium.pdf>
-Package luatex.def Info: plot_Aluminium.pdf used on input line 595.
+Package luatex.def Info: plot_Aluminium.pdf used on input line 588.
 (luatex.def)             Requested size: 334.60571pt x 250.9506pt.
 
 [11]
-LaTeX Font Info:    Calculating math sizes for size <7.63431> on input line 661.
+
+LaTeX Warning: Reference `tab:ergebnisse' on page 12 undefined on input line 641
+.
+
+LaTeX Font Info:    Calculating math sizes for size <7.63431> on input line 654.
 
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.63441pt on input line 661.
+(Font)              scaled to size 7.63441pt on input line 654.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.34406pt on input line 661.
+(Font)              scaled to size 5.34406pt on input line 654.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 3.8172pt on input line 661.
+(Font)              scaled to size 3.8172pt on input line 654.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.63419pt on input line 661.
+(Font)              scaled to size 7.63419pt on input line 654.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.34389pt on input line 661.
+(Font)              scaled to size 5.34389pt on input line 654.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 3.8171pt on input line 661.
- [12<./plot_Aluminium.pdf>] [13](load luc: /home/tim/.local/texlive/2016/texmf-v
-ar/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc)
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 684.
+(Font)              scaled to size 3.8171pt on input line 654.
+[12<./plot_Aluminium.pdf>] [13](load luc: /home/tim/.local/texlive/2016/texmf-va
+r/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 677.
 
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
@@ -2376,30 +2392,36 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 686.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 679.
  [14
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 686.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 679.
  (./V704_3.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 686.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 686.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 679.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 679.
 
 
 Package rerunfilecheck Warning: File `V704_3.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `V704_3.aux':
-(rerunfilecheck)             Before: 2E1EF253108CAC6230996F41E8CDCD8C;16548
-(rerunfilecheck)             After:  1AC0D9BF499747B7BA8FA64194655134;16548.
+(rerunfilecheck)             Before: 7B41330E45CE198FC87E4FB9F9F6C6C8;13117
+(rerunfilecheck)             After:  C0A2E614A4D00B8199CE671C6634E413;16786.
 
 Package rerunfilecheck Warning: File `V704_3.toc' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `V704_3.toc':
-(rerunfilecheck)             Before: C28820A8AF13A9C2CC9559F17347FD3D;1523
-(rerunfilecheck)             After:  46C99AB9C86DA4FE006C47EA45E0798A;1523.
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  DDF9F6FF42ECFD094DE661EB6B5857A0;1536.
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'V704_3.run.xml'.
 
@@ -2407,15 +2429,15 @@ Package logreq Info: Writing requests to 'V704_3.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45055 strings out of 495118
+ 45053 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 5468 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 552 glue, 1 kern, 284 attribute, 58 glue_spec, 284 
-attribute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:2,2:975,3:168,4:41,5:316,6:2780,7:952,8:97,9:374,10:15,11:354
- 47164 multiletter control sequences out of 65536+600000
- 239 fonts using 86421339 bytes
- 61i,24n,104p,8816b,2965s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 5425 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 550 glue, 1 kern, 281 attribute, 57 glue_spec, 281 
+attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:2,2:987,3:159,4:44,5:271,6:2840,7:834,8:97,9:378,10:15,11:362
+ 47162 multiletter control sequences out of 65536+600000
+ 239 fonts using 86421751 bytes
+ 61i,24n,104p,8816b,2964s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-regu
 lar.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmrom
 ancaps10-regular.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/pu
@@ -2429,10 +2451,10 @@ f></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-r
 egular.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lm
 roman12-regular.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/pub
 lic/lm/lmsans10-bold.otf>
-Output written on V704_3.pdf (16 pages, 328492 bytes).
+Output written on V704_3.pdf (16 pages, 327671 bytes).
 
-PDF statistics: 542 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
+PDF statistics: 518 PDF objects out of 1000 (max. 8388607)
+ 302 compressed objects within 4 object streams
  67 named destinations out of 1000 (max. 131072)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

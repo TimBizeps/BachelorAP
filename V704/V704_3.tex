@@ -240,7 +240,7 @@ erfüllt ist. Dann bilden sich im Coulomb-Feld eines Absorberteilchens ein Elekt
 und ein Positron. $\sigma_\mathup{p}$ ist dabei proportional zu $z^2$.
 
 \noindent
-Für Germanium ($z = 32$) sind in Abbildung \ref{fig:V7041} die Verläufe der einzelnen
+Für Germanium ($z = 32$) sind in Abbildung 2 die Verläufe der einzelnen
 Koeffizienten, sowie die Überlagerung, in Abhängigkeit von der Energie des
 $\gamma$-Quants dargestellt.
 
@@ -285,7 +285,7 @@ zeigen sich stärkere Abweichungen.
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.9\textwidth]{V7041.png}
-  \caption{Absorptionskoeffizienten bei Germanium \cite{anleitung}.}
+  \caption{Die Absorptionskoeffizienten bei Germanium. Es wird jeweils der dominierende Effekt dargestellt.\cite{anleitung}.}
   \label{fig:V7041}
 \end{figure}
 In Abbildung \ref{fig:V7042} ist der Verlauf einer Absorptionskurve eines natürlichen
@@ -320,7 +320,7 @@ schließen. Dazu wird folgende Formel verwendet:
   \caption{Schematischer Versuchsaufbau \cite{anleitung}.}
   \label{fig:V7043}
 \end{figure}
-Bei diesem Versuch wird eine Messapparatur, wie sie in Abbildung \ref{fig:V7043}
+Bei diesem Versuch wird eine Messapparatur, wie sie in Abbildung 3
 zu sehen ist, verwendet. Sie besteht aus einem Geiger-Müller-Zählrohr und einer
 Abschirmung aus Blei. Diese dient einerseits dem Strahlenschutz. Andererseits
 wird die Messung, auf diese Weise, möglichst frei von äußeren Einflüssen gehalten.
@@ -329,7 +329,7 @@ für die Absorberplatten.
 \subsection{Versuchsablauf}
 Zu Beginn wird eine Nullmessung durchgeführt, bei der, ohne Strahlungsquelle,
 die Anzahl an Ereignissen in $\SI{1000}{\second}$ gemessen wird.
-Währenddessen sollten die Maße der zur Verfügung stehenden Dämmmaterialien
+Währenddessen sollen die Maße der zur Verfügung stehenden Dämmmaterialien
 aufgenommen werden. Anschließend wird eine Quelle an der Apparatur befestigt
 und, in zehn Schritten, Dämmmaterial zwischen Quelle und Zählrohr platziert.
 Mit jeder Änderung der Dicke des Dämmmaterials wird erneut die Anzahl an
@@ -352,7 +352,7 @@ bestimmt. Die Standardabweichung des Mittelwertes ergibt sich dabei zu
 \mathup{\Delta}\bar{x}=\sqrt{\frac{1}{n(n-1)}\sum_{i=1}^n\left(x_i-\bar{x}\right)^2}.
 \label{eqn:standardabweichung}
 \end{equation}
-Resultiert eine Größe über eine Gleichung aus zwei anderen fehlerbehafteten Größen, so
+Resultiert eine Größe über eine Gleichung aus zwei oder mehr anderen fehlerbehafteten Größen, so
 berechnet sich der Gesamtfehler nach der Gaußschen Fehlerfortpflanzung zu
 \begin{equation}
 \mathup{\Delta}f(x_1,x_2,...,x_n)=\sqrt{\left(\frac{\partial f}{\partial x_1}\mathup{\Delta}x_1\right)^2+\left(\frac{\partial f}{\partial x_2}\mathup{\Delta}x_2\right)^2+ \dotsb +\left(\frac{\partial f}{\partial x_n}\mathup{\Delta}x_n\right)^2}.
@@ -362,20 +362,20 @@ Alle in der Auswertung angegebenen Größen sind stets auf die erste signifikant
 Fehlers gerundet. Setzt sich eine Größe über mehrere Schritte aus anderen Größen zusammen,
 so wird erst am Ende gerundet, um Fehler zu vermeiden. Zur Auswertung wird das Programm
 Python verwendet.
-\subsection{Bestimmung des Absorptionskoeffizienten von Zink und Eisen sowie der Größe $N_0$ der verwendeten radioaktiven Strahlungsquelle}
+\subsection{Bestimmung des Absorptionskoeffizienten von Zink und Eisen sowie der Größe $N_0$ der verwendeten radioaktiven \texorpdfstring{$\gamma$}{gamma}-Strahlungsquelle}
 
 Zunächst wird der Nulleffekt ausgemessen, den das verwendete Zählrohr detektiert.
 Bei Abwesenheit einer radioaktiven Strahlungsquelle registriert das Gerät
 $\num{1000}$ Zerfälle in $\SI{1000}{\second}$. Daraus ergibt sich ein Korrekturwert von
 \begin{equation}
-N_{\mathup{u}}=\frac{\text{Zerfälle}}{\text{Zeit}}=\frac{\SI{1000}{}}{\SI{1000}{\second}}\approx\SI{1}{\frac{1}{\second}}
+N_{\mathup{u}}=\frac{\text{Zerfälle}}{\text{Zeit}}=\frac{\SI{1000}{}}{\SI{1000}{\second}}\approx\SI{1.00(3)}{\frac{1}{\second}}
 \label{eqn:nulleffekt}
 \end{equation}
 für die im Versuch gemessenen Strahlungsintensität ohne einen Strahler. Danach
 wurde eine Nullmessung durchgeführt mit dem verwendeten Strahler.
 Diese ergab einen Wert von
 \begin{equation}
-N_{\mathup{0}}=\frac{\text{Zerfälle}}{\text{Zeit}}=\frac{\SI{8599}{}}{\SI{60}{\second}}\approx\SI{143}{\frac{1}{\second}}
+N_{\mathup{0}}=\frac{\text{Zerfälle}}{\text{Zeit}}=\frac{\SI{8599}{}}{\SI{60}{\second}}\approx\SI{143.0(16)}{\frac{1}{\second}}
 \label{eqn:nulleffektmitstrahler}
 \end{equation}
 für die im Versuch gemessene Strahlungsintensität mit einem Strahler.
@@ -390,7 +390,7 @@ Messzeit und $N$ die Anzahl der vom Zählrohr registrierten Zerfälle.
 \toprule
 {$D/\si{\centi\meter}$} & {$N/t$} & {$\sqrt{Z}/Z$}\\
 \midrule
-{$0,2$} & {$7515/60$} & {$0,001$}\\
+{$0,2$} & {$7515/60$} & {$0,01$}\\
 {$0,4$} & {$9293/85$} & {$0,01$}\\
 {$0,6$} & {$11603/110$} & {$0,01$}\\
 {$0,8$} & {$12216/135$} & {$0,01$}\\
@@ -407,7 +407,7 @@ Messzeit und $N$ die Anzahl der vom Zählrohr registrierten Zerfälle.
 \end{table}
 Die lineare Ausgleichsrechnung ergibt die Geradengleichung
 \begin{equation}
-    y(x) = (\num{-520(12)})\;x+(\num{4.93(1)}).
+    y(x) = (\num{-51.0(12)})\;x+(\num{4.93(1)}).
     \label{eq:geradengleichung_zink}
 \end{equation}
 
@@ -416,17 +416,17 @@ linearen Ausgleichsrechnung. Dadurch
 folgt für die Zinkproben das exponentielle Absorptionsgesetz
 
 \begin{equation}
-    N(d) = N_0\mathup{e}^{-{\mu}d} = \SI{143(1)}{\frac{1}{\second}}\,\mathup{e}^{-\SI{520(12)}{\frac{1}{\metre}}d}.
+    N(d) = N_0\mathup{e}^{-{\mu}d} = \SI{143(1)}{\frac{1}{\second}}\,\mathup{e}^{-\SI{51.0(12)}{\frac{1}{\metre}}d}.
     \label{eq:absorption_zink}
 \end{equation}
 
 Damit ergeben sich für Zink
 
 \begin{equation}
-    \boxed{\mu = \SI{520(12)}{\frac{1}{\metre}}} \qquad\text{und}\qquad \boxed{N_0 = \SI{143(1)}{\frac{1}{\second}}}
+    \boxed{\mu = \SI{51.0(12)}{\frac{1}{\metre}}} \qquad\text{und}\qquad \boxed{N_0 = \SI{143(1)}{\frac{1}{\second}}}
 \end{equation}
 
-Der Graph in Abbildung~\ref{fig:plot_zink} zeigt die Größe $N-N_0$
+Der Graph in Abbildung~\ref{fig:plot_zink} zeigt die Größe $N/t$
 aufgetragen gegen die Absorberschichtdicke $D$ in einem halblogarithmischen
 Diagramm.
 
@@ -435,7 +435,7 @@ Tabelle~\ref{tab:Fe} listet die im Versuch aufgenommenen Werte auf. Die lineare
 Ausgleichsrechnung ergibt die Geradengleichung
 
 \begin{equation}
-    y(x) = (\num{-510(8)})\;x+(\num{4.92(2)}).
+    y(x) = (\num{-54.0(8)})\;x+(\num{4.92(2)}).
     \label{eq:geradengleichung_eisen}
 \end{equation}
 
@@ -465,27 +465,27 @@ Ausgleichsrechnung ergibt die Geradengleichung
 Das Absorptionsgesetz für die Eisenproben lautet somit
 
 \begin{equation}
-    N(d) = N_0\mathup{e}^{-{\mu}d} = \SI{143(1)}{\frac{1}{\second}}\,\mathup{e}^{-\SI{510(8)}{\frac{1}{\metre}}d}.
+    N(d) = N_0\mathup{e}^{-{\mu}d} = \SI{143(1)}{\frac{1}{\second}}\,\mathup{e}^{-\SI{54.0(8)}{\frac{1}{\metre}}d}.
     \label{eq:absorption_eisen}
 \end{equation}
 
 Als Resultat folgt
 %
 \begin{equation}
-    \boxed{\mu = \SI{510(8)}{\frac{1}{\metre}}} \qquad\text{und}\qquad \boxed{N_0 = \SI{143(1)}{\frac{1}{\second}}}
+    \boxed{\mu = \SI{54.0(8)}{\frac{1}{\metre}}} \qquad\text{und}\qquad \boxed{N_0 = \SI{143(1)}{\frac{1}{\second}}}
 \end{equation}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.80\textwidth]{plot_Zink.pdf}
-    \caption{Strahlintensität $N-N_0$ halblogarithmisch aufgetragen gegen die Absorberschichtdicke $D$ von Zink.}
+    \caption{Strahlintensität $N-N_0/t$ halblogarithmisch aufgetragen gegen die Absorberschichtdicke $D$ von Zink.}
     \label{fig:plot_zink}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.80\textwidth]{plot_Eisen.pdf}
-    \caption{Strahlintensität ${N-N_0}$ halblogarithmisch aufgetragen gegen die Absorberschichtdicke $D$ von Eisen.}
+    \caption{Strahlintensität ${N-N_u}$ halblogarithmisch aufgetragen gegen die Absorberschichtdicke $D$ von Eisen.}
     \label{fig:plot_eisen}
 \end{figure}
 
@@ -507,32 +507,25 @@ Stoffes.
 	\begin{center}
         \caption{Theoretische Werte für die Absorptionskoeffizienten von Zink und Eisen.}
         \label{tab:theoriewerte}
-		\begin{tabular}{l
-                        S[table-format = 1.2e-2]
-                        S[table-format = 2.0]
-                        S[table-format = 3.1]
-                        S[table-format = 2.3]
-                        S[table-format = 2.2]}
+		\begin{tabular}{ccccccc}
 			\toprule
 			{Absorber} & {$\sigma_{\mathup{com}}$} & {z} & {$M\left[\si{\frac{\gram}{\mol}}\right]$} &
             {$\rho\left[\si{\frac{\gram}{\centi\metre\cubed}}\right]$} &
-            {$\mu_{\mathup{com}}\left[\si{\frac{1}{\metre}}\right]$} \\
+            {$\mu_{\mathup{com}}\left[\si{\frac{1}{\metre}}\right]$} &
+            {$\mu_{\mathup{berechnet}}\left[\si{\frac{1}{\metre}}\right]$} \\
 			\midrule
-			Zink  & 2.57e-29 & 30 &  65.4 &  7.130 & 55 \\
-			Eisen & 2.57e-29 & 26 &  55.8 &  7.874 & 62 \\
+			Zink  & 2.57e-29 & 30 &  65.4 &  7.130 & 51 & 51\\
+			Eisen & 2.57e-29 & 26 &  55.8 &  7.874 & 55 & 55\\
 			\bottomrule
 		\end{tabular}
 	\end{center}
 \end{table}
 
 Es zeigt sich, dass der gemessene Absorptionskoeffizient von Eisen und Zink sehr
-stark vom theoretisch ermittelten Wert abweicht. Daraus kann
-geschlossen werden, dass zu einem minimalen Teil die Compton-Streuung als
+stark den theoretisch ermittelten Werten ähnelt. Daraus kann
+geschlossen werden, dass zu einem sehr großen Teil die Compton-Streuung als
 Wechselwirkungsmechanismus zwischen $\gamma$-Quanten und Absorbermaterial
-vorliegt. Daraus folgt, dass neben dem Compton-Effekt auch der Photoeffekt einen
-gewichtigen Anteil der Wechselwirkungsprozesse ausmachen muss. Die Paarbildung
-kann nahezu ausgeschlossen werden, da die Energien der $\gamma$-Quanten
-definitiv zu klein sind.
+vorliegt. Die Paarbildung kann nahezu ausgeschlossen werden, da die Energien der $\gamma$-Quanten definitiv zu klein sind.
 
 \subsection{Bestimmung der Maximalenergie~\texorpdfstring{$E_{\mathup{max}}$}{R}
 eines \texorpdfstring{$\beta$}{β}-Strahlers}
@@ -544,12 +537,12 @@ Zerfällen in $\SI{1000}{\second}$ ergibt sich der neue Korrekturwert zu
 \begin{equation}
     N_{\mathup{u}}=\frac{\text{Zerfälle}}{\text{Zeit}}=\frac{\SI{327}{}}{\SI{1000}{\second}}\approx\SI{0.33}{\frac{1}{\second}}.
     \label{eq:nulleffekt_2}
-\end{equation}^^
+\end{equation}
 
 Zur Bestimmung der Maximalenergie $E_{\mathup{max}}$ eines $\beta$-Strahlers
 wird eine Absorptionskurve für Aluminium aufgenommen. Die Aufnahme der Messwerte
 erfolgt wie in den vorangegangenen Versuchsteilen. Als zu untersuchender
-Strahler liegt eine $\ce{^{60}Co}$-Probe vor. Tabelle~\ref{tab:beta}
+Strahler liegt eine $\ce{^{99}Tec}$-Probe vor. Tabelle~\ref{tab:beta}
 führt die gemessenen Schichtdicken~$D$, die Zeitintervalle~$t$ und die Anzahl der
 Zerfälle~$N$ auf. Die Schichtdicken $D$ sind dabei mit Fehlern gegeben.
 Diese werden in den weiteren Auswertungsschritten nicht berücksichtigt, da sie
@@ -559,7 +552,7 @@ mit unter $\SI{1}{\percent}$ vernachlässigbar klein sind.
 \centering
 \begin{tabular}{S S S}
 \toprule
-{$(D\pm\Delta D)/\si{\micro\meter}$} & {$N/t\si{\per\second}$} & {$\sqrt{N}/N$}\\
+{$(D\pm\Delta D)/\si{\micro\meter}$} & {$N\si{\per\second}$} & {$\sqrt{N}/N$}\\
 \midrule
 {$102\pm1$} & {$1772/60$} & {$0,02$}\\
 {$126\pm1$} & {$2246/150$} & {$0,02$}\\
@@ -593,7 +586,7 @@ durchdringender ist als die geladene ursprüngliche Strahlung.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.80\textwidth]{plot_Aluminium.pdf}
-    \caption{Strahlintensität $N-N_0$ halblogarithmisch aufgetragen gegen die Absorberschichtdicke $D$ von Aluminium.}
+    \caption{Strahlintensität $N/t$ halblogarithmisch aufgetragen gegen die Absorberschichtdicke $D$ von Aluminium.}
     \label{fig:plot_aluminium}
 \end{figure}
 
@@ -658,8 +651,8 @@ bestimmten Werten im Mittel.
 			& {$\gamma$-Strahlung} & {$\beta$-Strahlung} \\
             & $\ce{^{137}Cs}$ & $\ce{^{60}Co}$ \\
 			\midrule
-			$\mu_{\text{Zink}}$  & $\SI{520(12)}{\sfrac{1}{\metre}}$   & -                                  \\
-            $\mu_{\text{Eisen}}$ & $\SI{510(8)}{\sfrac{1}{\metre}}$    & -                                  \\
+			$\mu_{\text{Zink}}$  & $\SI{51.0(12)}{\sfrac{1}{\metre}}$   & -                                  \\
+            $\mu_{\text{Eisen}}$ & $\SI{54.0(8)}{\sfrac{1}{\metre}}$    & -                                  \\
             $N_m$                & $\SI{143(1)}{\sfrac{1}{\metre}}$ & -                                  \\
             $R_{\text{max}}$     & -                                  & $\SI{27(1)}{\micro\metre}$         \\
             $E_{\text{max}}$     & -                                  & $\SI{0.28(5)}{\mega\electronvolt}$ \\
