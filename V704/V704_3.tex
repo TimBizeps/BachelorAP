@@ -124,7 +124,7 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 % Trennung von Wörtern mit Strichen
 \usepackage[shortcuts]{extdash}
 
-\title{V704: Absorption von Gamma- und Beta-Strahlung}
+\title{V704: Absorption von \texorpdfstring{$\gamma$} --und \texorpdfstring{$\beta$} --Strahlung}
 \author{
   Simon Schulte
   \texorpdfstring{
@@ -141,7 +141,8 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \publishers{TU Dortmund – Fakultät Physik}
 
 \date{Durchführung: 25.04.2017\\
-      Abgabe: 02.05.2017}
+      Abgabe: 02.05.2017\\
+      Korrekturabgabe: 04.05.2017}
 
 \begin{document}
 
@@ -240,7 +241,7 @@ erfüllt ist. Dann bilden sich im Coulomb-Feld eines Absorberteilchens ein Elekt
 und ein Positron. $\sigma_\mathup{p}$ ist dabei proportional zu $z^2$.
 
 \noindent
-Für Germanium ($z = 32$) sind in Abbildung 2 die Verläufe der einzelnen
+Für Germanium ($z = 32$) sind in Abbildung \ref{fig:V7041} die Verläufe der einzelnen
 Koeffizienten, sowie die Überlagerung, in Abhängigkeit von der Energie des
 $\gamma$-Quants dargestellt.
 
@@ -320,7 +321,7 @@ schließen. Dazu wird folgende Formel verwendet:
   \caption{Schematischer Versuchsaufbau \cite{anleitung}.}
   \label{fig:V7043}
 \end{figure}
-Bei diesem Versuch wird eine Messapparatur, wie sie in Abbildung 3
+Bei diesem Versuch wird eine Messapparatur, wie sie in Abbildung \ref{fig:V7043}
 zu sehen ist, verwendet. Sie besteht aus einem Geiger-Müller-Zählrohr und einer
 Abschirmung aus Blei. Diese dient einerseits dem Strahlenschutz. Andererseits
 wird die Messung, auf diese Weise, möglichst frei von äußeren Einflüssen gehalten.
@@ -336,7 +337,8 @@ Mit jeder Änderung der Dicke des Dämmmaterials wird erneut die Anzahl an
 registrierten Ereignissen gemessen. Da die Zählrate mit dicker werdender
 Abschirmung immer kleiner wird, muss die Dauer der Messung entsprechend
 angepasst werden, um den Fehler der Messungen im Bereich von $\SI{1}{\percent}$
-zu halten.
+zu halten. Als $\gamma$-Quelle dient ein $\ce{^{137}Cs}$-Strahlerund als
+$\beta$-Quelle ein $\ce{^{99}Tc}$-Strahler.
 \section{Auswertung}
 \label{sec:auswertung}
 \subsection{Fehlerrechnung}
@@ -515,7 +517,7 @@ Stoffes.
             {$\mu_{\mathup{berechnet}}\left[\si{\frac{1}{\metre}}\right]$} \\
 			\midrule
 			Zink  & 2.57e-29 & 30 &  65.4 &  7.130 & 51 & 51\\
-			Eisen & 2.57e-29 & 26 &  55.8 &  7.874 & 55 & 55\\
+			Eisen & 2.57e-29 & 26 &  55.8 &  7.874 & 55 & 54\\
 			\bottomrule
 		\end{tabular}
 	\end{center}
@@ -542,7 +544,7 @@ Zerfällen in $\SI{1000}{\second}$ ergibt sich der neue Korrekturwert zu
 Zur Bestimmung der Maximalenergie $E_{\mathup{max}}$ eines $\beta$-Strahlers
 wird eine Absorptionskurve für Aluminium aufgenommen. Die Aufnahme der Messwerte
 erfolgt wie in den vorangegangenen Versuchsteilen. Als zu untersuchender
-Strahler liegt eine $\ce{^{99}Tec}$-Probe vor. Tabelle~\ref{tab:beta}
+Strahler liegt eine $\ce{^{99}Tc}$-Probe vor. Tabelle~\ref{tab:beta}
 führt die gemessenen Schichtdicken~$D$, die Zeitintervalle~$t$ und die Anzahl der
 Zerfälle~$N$ auf. Die Schichtdicken $D$ sind dabei mit Fehlern gegeben.
 Diese werden in den weiteren Auswertungsschritten nicht berücksichtigt, da sie
@@ -649,7 +651,7 @@ bestimmten Werten im Mittel.
 		\begin{tabular}{lcc}
 			\toprule
 			& {$\gamma$-Strahlung} & {$\beta$-Strahlung} \\
-            & $\ce{^{137}Cs}$ & $\ce{^{60}Co}$ \\
+            & $\ce{^{137}Cs}$ & $\ce{^{99}Tc}$ \\
 			\midrule
 			$\mu_{\text{Zink}}$  & $\SI{51.0(12)}{\sfrac{1}{\metre}}$   & -                                  \\
             $\mu_{\text{Eisen}}$ & $\SI{54.0(8)}{\sfrac{1}{\metre}}$    & -                                  \\

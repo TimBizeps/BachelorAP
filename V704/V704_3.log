@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  4 MAY 2017 15:04
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  4 MAY 2017 15:28
  restricted system commands enabled.
 **V704_3.tex
 (./V704_3.tex
@@ -598,7 +598,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.118 seconds)
+luaotfload | main : initialization completed in 0.125 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.st
 y
@@ -2078,33 +2078,33 @@ luatex-hyphen: info: no hyphenation exceptions for this language
 Language ngerman already loaded; id is 8)
 \openout1 = V704_3.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 146.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 146.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 147.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 147.
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 147.
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2150,12 +2150,12 @@ File: siunitx-abbreviations.cfg 2016/09/02 v2.6s siunitx: Abbreviated units
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `fontspec' on line 146.
+. Activating mapping `fontspec' on line 147.
 .................................................
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 146.
+LaTeX Info: Redefining \microtypecontext on input line 147.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2180,10 +2180,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'V704_3.bbl' found.
  (./V704_3.bbl)
-Package biblatex Info: Reference section=0 on input line 146.
-Package biblatex Info: Reference segment=0 on input line 146.
+Package biblatex Info: Reference section=0 on input line 147.
+Package biblatex Info: Reference segment=0 on input line 147.
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 146.
+Package hyperref Info: Link coloring OFF on input line 147.
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2194,34 +2194,34 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count429
 )
-LaTeX Info: Redefining \ref on input line 146.
-LaTeX Info: Redefining \pageref on input line 146.
-LaTeX Info: Redefining \nameref on input line 146.
+LaTeX Info: Redefining \ref on input line 147.
+LaTeX Info: Redefining \pageref on input line 147.
+LaTeX Info: Redefining \nameref on input line 147.
 \c__siunitx_mathsf_int=\count430
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LatinModernMath' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 146.
+(Font)              scaled to size 10.95015pt on input line 147.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 146.
+(Font)              scaled to size 8.00012pt on input line 147.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 146.
+(Font)              scaled to size 6.00009pt on input line 147.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 146.
+(Font)              scaled to size 10.94983pt on input line 147.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 146.
+(Font)              scaled to size 7.99988pt on input line 147.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 146.
-LaTeX Font Info:    Try loading font information for U+msa on input line 146.
+(Font)              scaled to size 5.99991pt on input line 147.
+LaTeX Font Info:    Try loading font information for U+msa on input line 147.
  (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 146.
+LaTeX Font Info:    Try loading font information for U+msb on input line 147.
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2247,24 +2247,33 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 (load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/ot
-l/lmsans10-bold.luc)(load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-ca
-che/generic/fonts/otl/lmroman12-regular.luc)
+l/lmsans10-bold.luc)
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 149.
+(Font)              scaled to size 20.74031pt on input line 150.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 149.
+(Font)              scaled to size 14.4002pt on input line 150.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 149.
+(Font)              scaled to size 12.00018pt on input line 150.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 149.
+(Font)              scaled to size 20.73969pt on input line 150.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 149.
+(Font)              scaled to size 14.39977pt on input line 150.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 149.
+(Font)              scaled to size 11.99982pt on input line 150.
+(load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/ot
+l/lmroman12-regular.luc)
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 10.00015pt on input line 150.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 7.0001pt on input line 150.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 9.99985pt on input line 150.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.9999pt on input line 150.
  [1
 
 {/home/tim/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 150
+Package tocbasic Info: character protrusion at toc deactivated on input line 151
 .
  (./V704_3.toc
 Language ngerman already loaded; id is 8)
@@ -2274,98 +2283,94 @@ Language ngerman already loaded; id is 8)
  [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 159--165
+Underfull \hbox (badness 10000) in paragraph at lines 160--166
 
  []
 
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 194.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 194.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1](load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
 /otl/lmroman8-regular.luc)(load luc: /home/tim/.local/texlive/2016/texmf-var/lua
 tex-cache/generic/fonts/otl/lmroman6-regular.luc)
-<V7042.png, id=60, 1232.605pt x 805.0075pt>
+<V7042.png, id=61, 1232.605pt x 805.0075pt>
 File: V7042.png Graphic file (type png)
  <use V7042.png>
-Package luatex.def Info: V7042.png used on input line 281.
+Package luatex.def Info: V7042.png used on input line 282.
 (luatex.def)             Requested size: 376.42744pt x 245.84016pt.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 282.
+(Font)              scaled to size 5.00008pt on input line 283.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 282.
+(Font)              scaled to size 4.99992pt on input line 283.
 
-<V7041.png, id=63, 502.87875pt x 817.0525pt>
+<V7041.png, id=64, 502.87875pt x 817.0525pt>
 File: V7041.png Graphic file (type png)
  <use V7041.png>
-Package luatex.def Info: V7041.png used on input line 287.
+Package luatex.def Info: V7041.png used on input line 288.
 (luatex.def)             Requested size: 376.42744pt x 611.6035pt.
 
 
-LaTeX Warning: Float too large for page by 49.80324pt on input line 290.
+LaTeX Warning: Float too large for page by 49.80324pt on input line 291.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 [2](load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
 /otl/lmroman5-regular.luc) [3<./V7042.png>] [4<./V7041.png>]
-<V7043.png, id=93, 1872.9975pt x 811.03pt>
+<V7043.png, id=94, 1872.9975pt x 811.03pt>
 File: V7043.png Graphic file (type png)
  <use V7043.png>
-Package luatex.def Info: V7043.png used on input line 319.
+Package luatex.def Info: V7043.png used on input line 320.
 (luatex.def)             Requested size: 376.42744pt x 162.99513pt.
  [5
 
 <./V7043.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 365.
+(hyperref)                removing `math shift' on input line 367.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 365.
+(hyperref)                removing `subscript' on input line 367.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 365.
+(hyperref)                removing `math shift' on input line 367.
 
-[6] [7] <plot_Zink.pdf, id=129, 578.16pt x 433.62pt>
+[6] [7] <plot_Zink.pdf, id=131, 578.16pt x 433.62pt>
 File: plot_Zink.pdf Graphic file (type pdf)
  <use plot_Zink.pdf>
-Package luatex.def Info: plot_Zink.pdf used on input line 480.
+Package luatex.def Info: plot_Zink.pdf used on input line 482.
 (luatex.def)             Requested size: 334.60571pt x 250.9506pt.
 
-[8] <plot_Eisen.pdf, id=136, 578.16pt x 433.62pt>
+[8] <plot_Eisen.pdf, id=139, 578.16pt x 433.62pt>
 File: plot_Eisen.pdf Graphic file (type pdf)
  <use plot_Eisen.pdf>
-Package luatex.def Info: plot_Eisen.pdf used on input line 487.
+Package luatex.def Info: plot_Eisen.pdf used on input line 489.
 (luatex.def)             Requested size: 334.60571pt x 250.9506pt.
  [9<./plot_Zink.pdf><./plot_Eisen.pdf>] [10]
-<plot_Aluminium.pdf, id=310, 578.16pt x 433.62pt>
+<plot_Aluminium.pdf, id=312, 578.16pt x 433.62pt>
 File: plot_Aluminium.pdf Graphic file (type pdf)
  <use plot_Aluminium.pdf>
-Package luatex.def Info: plot_Aluminium.pdf used on input line 588.
+Package luatex.def Info: plot_Aluminium.pdf used on input line 590.
 (luatex.def)             Requested size: 334.60571pt x 250.9506pt.
 
 [11]
-LaTeX Font Info:    Calculating math sizes for size <7.63431> on input line 654.
+LaTeX Font Info:    Calculating math sizes for size <7.63431> on input line 656.
 
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.63441pt on input line 654.
+(Font)              scaled to size 7.63441pt on input line 656.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.34406pt on input line 654.
+(Font)              scaled to size 5.34406pt on input line 656.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 3.8172pt on input line 654.
+(Font)              scaled to size 3.8172pt on input line 656.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.63419pt on input line 654.
+(Font)              scaled to size 7.63419pt on input line 656.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.34389pt on input line 654.
+(Font)              scaled to size 5.34389pt on input line 656.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 3.8171pt on input line 654.
+(Font)              scaled to size 3.8171pt on input line 656.
  [12<./plot_Aluminium.pdf>] [13](load luc: /home/tim/.local/texlive/2016/texmf-v
 ar/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc)
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 677.
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 679.
 
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
@@ -2376,22 +2381,17 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 679.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 681.
  [14
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 679.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 681.
  (./V704_3.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 679.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 679.
-
-
-Package rerunfilecheck Warning: File `V704_3.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `V704_3.aux':
-(rerunfilecheck)             Before: C0A2E614A4D00B8199CE671C6634E413;16786
-(rerunfilecheck)             After:  7F1965C8C2CB584AD57EE20585EF7A78;16945.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 681.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 681.
+Package rerunfilecheck Info: File `V704_3.aux' has not changed.
+(rerunfilecheck)             Checksum: EA5E99C4CA62D88FA8328D6CEE04AFAA;16945.
 Package rerunfilecheck Info: File `V704_3.toc' has not changed.
 (rerunfilecheck)             Checksum: DDF9F6FF42ECFD094DE661EB6B5857A0;1536.
 Package logreq Info: Writing requests to 'V704_3.run.xml'.
@@ -2400,15 +2400,15 @@ Package logreq Info: Writing requests to 'V704_3.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45055 strings out of 495118
+ 45085 strings out of 495118
  100000,1648299 words of node,token memory allocated
  5497 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 555 glue, 1 kern, 286 attribute, 58 glue_spec, 286 
 attribute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:2,2:985,3:159,4:44,5:271,6:2840,7:848,8:97,9:377,10:15,11:362
- 47164 multiletter control sequences out of 65536+600000
- 239 fonts using 86422163 bytes
- 61i,24n,104p,8816b,2964s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:2,2:985,3:159,4:44,5:271,6:2842,7:848,8:97,9:377,10:15,11:362
+ 47184 multiletter control sequences out of 65536+600000
+ 249 fonts using 90476999 bytes
+ 61i,24n,104p,8816b,2965s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-regu
 lar.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmrom
 ancaps10-regular.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/pu
@@ -2417,15 +2417,15 @@ ntype/public/lm/lmroman8-regular.otf></home/tim/.local/texlive/2016/texmf-dist/f
 onts/opentype/public/lm-math/latinmodern-math.otf></home/tim/.local/texlive/2016
 /texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/tim/.local/texliv
 e/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/tim/
-.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.ot
-f></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-r
-egular.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lm
-roman12-regular.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/pub
+.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></
+home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regul
+ar.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/l
+atinmodern-math.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/pub
 lic/lm/lmsans10-bold.otf>
-Output written on V704_3.pdf (16 pages, 329055 bytes).
+Output written on V704_3.pdf (16 pages, 329344 bytes).
 
-PDF statistics: 540 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
+PDF statistics: 542 PDF objects out of 1000 (max. 8388607)
+ 326 compressed objects within 4 object streams
  67 named destinations out of 1000 (max. 131072)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
