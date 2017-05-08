@@ -1,0 +1,5 @@
+[0] Config.pm:354> INFO - This is Biber 2.6
+[0] Config.pm:357> INFO - Logfile is 'V408_Geometrische.blg'
+[30] biber:302> INFO - === Mo Mai  8, 2017, 16:39:49
+[130] Utils.pm:180> ERROR - Cannot find control file 'V408_Geometrische.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[130] Biber.pm:113> INFO - ERRORS: 1

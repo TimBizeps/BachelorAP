@@ -44,18 +44,18 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>new408.bcf</file>
+      <file>V408.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>new408.bbl</file>
+      <file>V408.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
-      <file>alphabetic.bbx</file>
+      <file>numeric.bbx</file>
       <file>standard.bbx</file>
-      <file>alphabetic.cbx</file>
+      <file>numeric.cbx</file>
       <file>biblatex.cfg</file>
       <file>german.lbx</file>
     </requires>
@@ -64,22 +64,23 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>new408</infile>
+      <infile>V408</infile>
     </cmdline>
     <input>
-      <file>new408.bcf</file>
+      <file>V408.bcf</file>
     </input>
     <output>
-      <file>new408.bbl</file>
+      <file>V408.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>new408.bbl</file>
+      <file>V408.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>new408.bcf</file>
+      <file>V408.bcf</file>
     </requires>
     <requires type="editable">
-      <file>lit.bib</file>
+      <file>../lit.bib</file>
+      <file>../programme.bib</file>
     </requires>
   </external>
 </requests>
