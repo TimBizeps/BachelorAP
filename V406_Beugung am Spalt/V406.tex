@@ -164,7 +164,7 @@ Gesetzen der geometrischen Optik. Nach dem Huygensschen Prinzip und dem Interfer
   \caption{Die Fesnelsche und Franhofersche Beugung an einem Einfachspalt. \cite{anleitung}}
   \label{fig:V4061}
 \end{figure}
-Abbildung \ref{fig:V4061} zeigt die Fresnelsche und Fraunhofersche Beugung an einem Einzelspalt. In diesem Versuch wird lediglich die Fraunhofersche Beugung betrachtet, da man diese mathematisch einfacher beschreiben kann. Hierbei wird von einem parallel ankommenden Strahl ausgegangen. Die getrichelten Linien stellen den Verlauf der geometrischen Optik dar. Bei der Fraunhoferschen Beugung werden die Lichtstrahlen aber teilweise um den Winkel $\phi$ gebeugt. Dadurch interferieren sie im Punkt $P$. Dieser Effekt hängt mit dem Huygensschen Prinzip und dem Interferenzprinzip von Fresnel zusammen. Um nun die Amplitude eines Einzelspalts zu bestimmen, muss über alle Strahlenbündel, welche um den Winkel $\phi$ ausgelenkt werden, summiert werden. Eine hier betrachtete Welle wird durch
+Abbildung \ref{fig:V4061} zeigt die Fresnelsche und Fraunhofersche Beugung an einem Einzelspalt. In diesem Versuch wird lediglich die Fraunhofersche Beugung betrachtet, da diese mathematisch einfacher zu beschreiben ist. Hierbei wird von einem parallel ankommenden Strahl ausgegangen. Die getrichelten Linien stellen den Verlauf der geometrischen Optik dar. Bei der Fraunhoferschen Beugung werden die Lichtstrahlen aber teilweise um den Winkel $\phi$ gebeugt. Dadurch interferieren sie im Punkt $P$. Um nun die Amplitude eines Einzelspalts zu bestimmen, muss über alle Strahlenbündel, welche um den Winkel $\phi$ ausgelenkt werden, summiert werden. Eine hier betrachtete Welle wird durch
 \begin{equation}
   A(z,t)\,=\,A_0\exp\Big(i\Big(\omega t-2\pi \frac{z}{\lambda}\Big)\Big)
   \label{eqn:welle}
@@ -181,19 +181,14 @@ In Abbildung \ref{fig:V4065} wird genau dies skizziert.
   \caption{Eine Skizze zur Ableitung einer Phasenbeziehung zwischen 2 Teilstrahlen bei der Fraunhoferschen Beugung am Spalt. \cite{anleitung}}
   \label{fig:V4065}
 \end{figure}
-Die Strahlenbündel vom Laser sind sehr klein. Daher integriert man über die Spaltbreite $D$. Dadurch ergibt sich
-\begin{equation}
-  B(z,t,\phi)\,=\,A_0\exp\Big(i\Big(\omega t-\frac{2\pi z}\lambda\Big)\Big)\cdot \exp\Big(\frac{\pi ib \sin(\phi)}{\lambda}\Big)\cdot\frac{\lambda}{\pi \sin(\phi)}\sin\Big(\frac{\pi b\sin{\phi}}{\lambda}\Big)
-  \label{eqn:amplitude}
-\end{equation}
-für die Amplitude vom den in $\phi$-Richtung abgelenkten Strahlen. Da sich die Amplitude nicht direkt messen lässt, wird zur Überprüfung ebenfalls die zeitlich gemittelte Intensität $I(\phi)$ bestimmt. Dabei ergibt sich folgender Zusammenhang:
+Die Strahlenbündel vom Laser sind sehr klein. Daher wird über die Spaltbreite $D$ integriert. Da sich die Amplitude nicht direkt messen lässt, weil nicht nur ein einzelnes Photon betrachtet wird, sondern eine Intensität, wird zur Überprüfung ebenfalls die zeitlich gemittelte Intensität $I(\phi)$ bestimmt. Dabei ergibt sich folgender Zusammenhang:
 \begin{equation}
   I(\phi)\,\propto\,B(\phi)²\,=\,A_0 b²\Big(\frac{\lambda}{\pi b\sin(\phi)}\Big)²\cdot \sin²\Big(\frac{\pi b\sin(\phi)}{\lambda}\Big).
   \label{eqn:intensitätsverteilungeinzel}
 \end{equation}
 Ein Doppelspalt kann physikalisch auch als Überlagerung zweier Einzelspalte gesehen werden. Abbildung \ref{fig:V4064} zeigt eine Beugung am Doppelspalt, an der dies gut erkennbar ist. Dann ergibt sich für die Intensitätsverteilung eines Doppelspalts
 \begin{equation}
-  I(\phi)\,\propto\,B(\phi)²\,=\,4\cos²\Big(\frac{\pi s\sin(\phi)}{\lambda}\Big)\cdot\Big(\frac{\lambda}{\pi b\sin(\phi)}\Big)²\cdot \sin²\Big(\frac{\pi b\sin(\phi)}{\lambda}\Big).
+  I(\phi)\,\propto\,B(\phi)²\,=\,A_0\cos²\Big(\frac{\pi s\sin(\phi)}{\lambda}\Big)\cdot\Big(\frac{\lambda}{\pi b\sin(\phi)}\Big)²\cdot \sin²\Big(\frac{\pi b\sin(\phi)}{\lambda}\Big).
   \label{eqn:intensitätsverteilungdoppel}
 \end{equation}
 \begin{figure}[htb]
@@ -212,45 +207,45 @@ Ein Doppelspalt kann physikalisch auch als Überlagerung zweier Einzelspalte ges
   \caption{Der Versuchsaufbau zur Ausmessung einer Beugungsfigur. \cite{anleitung}}
   \label{fig:V4063}
 \end{figure}
-In Abbildung \ref{fig:V4063} zu sehen ist der in dem Versuch verwendete Versuchsaufbau. Ein Laser sendet Lichtwellen mit einer Wellenlänge von \SI{635}{\nano\metre} aus. Dies ist notwendig, da Lichtbeugung nur auftritt, wenn der Spalt, an dem es gebeugt wird, ungefähr der Größenordnung der Wellenlänge $\lambda$ entspricht. Die Lichtwellen gehen durch einen Spalt, welcher in dem Versuch drei mal variiert wird. Dann kommen die Lichtwellen nach einer Strecke von L=\SI{124}{\centi\metre} an einem Verschiebereiter mit Photoelement an. Dieser misst die Intensität der einlaufenden Welle und schickt die Information an ein Amperemeter, an welchem man dann den Diodenstrom ablesen kann.
+In Abbildung \ref{fig:V4063} zu sehen ist der in dem Versuch verwendete Versuchsaufbau. Ein Laser sendet Lichtwellen mit einer Wellenlänge von \SI{635}{\nano\metre} aus. Dies ist notwendig, da Lichtbeugung nur auftritt, wenn der Spalt, an dem es gebeugt wird, ungefähr der Größenordnung der Wellenlänge $\lambda$ entspricht. Die Lichtwellen laufen durch einen Spalt, welcher in dem Versuch drei mal variiert wird. Dann kommen die Lichtwellen nach einer Strecke von L=\SI{124}{\centi\metre} an einem Verschiebereiter mit Photoelement an. Dieser misst die Intensität der einlaufenden Welle und schickt die Information an ein Amperemeter, an welchem dann der Diodenstrom ablesen werden kann.
 \subsection{Versuchsablauf}
 \label{sec:Versuchsablauf}
 Als erstes werden die Spaltbreiten $b$ und die Gitterkonstanten $s$, der jeweils verwendeten Spalten, den Herstellerangeben entnommen.
-Die Spaltbreite beträgt für den Einfachspalt
-\begin{equation}
-  b_{Einfachspalt}\,=\,\SI{0.075}{\milli\metre}.
+Die Spaltbreite $b_E$ beträgt für den Einfachspalt
+\begin{equation*}
+  b_{E}\,=\,\SI{0.075}{\milli\metre}.
   \label{eqn:einfachspalt}
-\end{equation}
+\end{equation*}
 Für den ersten verwendeten Doppelspalt sind
-\begin{align}
-  b_{Doppelspalt 1}\,=\,\SI{0.1}{\milli\metre}\\
-  s_{Doppelspalt 1}\,=\,\SI{0.4}{\milli\metre}
+\begin{align*}
+  b_{D1}\,=\,\SI{0.1}{\milli\metre}\\
+  s_{D1}\,=\,\SI{0.4}{\milli\metre}
   \label{eqn:doppelspalt1}
-\end{align}
+\end{align*}
 angegeben.
 
 \noindent
 Für den zweiten verwendeten Doppelspalt sind
-\begin{align}
-  b_{Doppelspalt 2}\,=\,\SI{0.15}{\milli\metre}\\
-  s_{Doppelspalt 2}\,=\,\SI{0.25}{\milli\metre}
+\begin{align*}
+  b_{D2}\,=\,\SI{0.15}{\milli\metre}\\
+  s_{D2}\,=\,\SI{0.25}{\milli\metre}
   \label{eqn:doppelspalt2}
-\end{align}
+\end{align*}
 angegeben.
 
 \noindent
-Danach wird gemessen, was für einen Diodenstrom das Amperemeter registriert, wenn der Laser noch nicht eingeschaltet ist. Dies nennt man Dunkelmessung und dieser Wert wird dann von den anderen Werten abgezogen, da die Lichtwellen, die sich im Raum befinden und auf das Amperemeter treffen die Messung verfälschen.
-Die Dunkelmessung ergab einen Wert von
-\begin{equation}
-  A_{Dunkel}\,=\,\SI{1.15}{\nano\ampere}.
+Danach wird gemessen, was für einen Diodenstrom das Amperemeter registriert, wenn der Laser noch nicht eingeschaltet ist. Dies wird Dunkelmessung gennant und dieser Wert wird dann von den anderen Werten abgezogen, da die Lichtwellen, die sich im Raum befinden und auf das Amperemeter treffen die Messung verfälschen.
+Die Dunkelmessung $d1$ ergibt einen Wert von
+\begin{equation*}
+  A_{d1}\,=\,\SI{1.15}{\nano\ampere}.
   \label{eqn:dunkel}
-\end{equation}
-Zwischen den Messungen, für den Einzelspalt und den ersten Doppelspalt, wurde die Dunkelmessung wiederholt.
-Dabei ergab sich ein Wert von
-\begin{equation}
-  A_{Dunkel_2}\,=\,\SI{1.25}{\nano\ampere}.
+\end{equation*}
+Zwischen den Messungen, für den Einzelspalt und den ersten Doppelspalt, wird die Dunkelmessung $d2$ wiederholt.
+Dabei ergibt sich ein Wert von
+\begin{equation*}
+  A_{d2}\,=\,\SI{1.25}{\nano\ampere}.
   \label{eqn:dunkel2}
-\end{equation}
+\end{equation*}
 Danach werden 93 Werte im Bereich von \SI{1}{\milli\metre} bis \SI{50}{\milli\metre} am Verschiebereiter mit Photoelement für den Diodenstrom aufgenommen. Dazu wird ein Einfachspalt verwendet.
 Als nächstes werden 56 Werte zwischen \SI{14.25}{\milli\metre} und \SI{40.25}{\milli\metre} für den Diodenstrom aufgenommen. Dazu wird der erste Doppelspalt verwendet.
 Als letztes werden 50 Werte im Bereich von \SI{11.25}{\milli\metre} bis \SI{40.75}{\milli\metre} für den Diodenstrom aufgenommen. Dazu wird der zweite Doppelspalt verwendet.
@@ -258,9 +253,9 @@ Als letztes werden 50 Werte im Bereich von \SI{11.25}{\milli\metre} bis \SI{40.7
 \section{Auswertung}
 \label{sec:auswertung}
 \subsection{Intensitätsverteilung am Einzelspalt}
-Bei der Messung am Einzelspalt wurden die in Tabelle \ref{tab:messwerte1}
+Bei der Messung am Einzelspalt werden die in Tabelle \ref{tab:messwerte1}
 stehenden Werte gemessen. Von diesen Werten wird zuerst der Dunkelstrom
-$A_{Dunkel}$ \eqref{eqn:dunkel} abgezogen und dann mit Python eine
+$A_{Dunkel}$ \eqref{eqn:dunkel} abgezogen und dann mit curve-fit eine
 Kurvenanpassung an Formel \eqref{eqn:intensitätsverteilungeinzel}
 durchgeführt. Die Wellenlänge des Lasers ist dabei mit
 \begin{equation}
@@ -275,10 +270,10 @@ der Abstand zwischen Spalt und Photodiode ist. Dieser beträgt in unserem Fall
 \begin{equation}
   L = \SI{124}{\centi\meter}.
 \end{equation}
-Die fehlenden drei Parameter $A_0$, $b$ und $x_0$ werden also bei dem Fit
+Die freien drei Parameter $A_0$, $b$ und $x_0$ werden also bei dem Fit
 bestimmt:
 \begin{align}
-  A_0 &= \SI{170(1)}{\micro\ampere}?\\
+  A_0 &= \SI{170(1)}{\micro\ampere}\\
   b &= \SI{75.7(3)}{\micro\meter}\\
   x_0 &= \SI{26.38(2)}{\milli\meter}
 \end{align}
