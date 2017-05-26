@@ -208,28 +208,26 @@ Ein Doppelspalt kann physikalisch auch als Überlagerung zweier Einzelspalte ges
   \label{fig:V4063}
 \end{figure}
 In Abbildung \ref{fig:V4063} zu sehen ist der in dem Versuch verwendete Versuchsaufbau. Ein Laser sendet Lichtwellen mit einer Wellenlänge von \SI{635}{\nano\metre} aus. Dies ist notwendig, da Lichtbeugung nur auftritt, wenn der Spalt, an dem es gebeugt wird, ungefähr der Größenordnung der Wellenlänge $\lambda$ entspricht. Die Lichtwellen laufen durch einen Spalt, welcher in dem Versuch drei mal variiert wird. Dann kommen die Lichtwellen nach einer Strecke von L=\SI{124}{\centi\metre} an einem Verschiebereiter mit Photoelement an. Dieser misst die Intensität der einlaufenden Welle und schickt die Information an ein Amperemeter, an welchem dann der Diodenstrom ablesen werden kann.
+\clearpage
 \subsection{Versuchsablauf}
 \label{sec:Versuchsablauf}
 Als erstes werden die Spaltbreiten $b$ und die Gitterkonstanten $s$, der jeweils verwendeten Spalten, den Herstellerangeben entnommen.
 Die Spaltbreite $b_E$ beträgt für den Einfachspalt
 \begin{equation*}
-  b_{E}\,=\,\SI{0.075}{\milli\metre}.
-  \label{eqn:einfachspalt}
+  b_\mathup{E}\,=\,\SI{0.075}{\milli\metre}.
 \end{equation*}
 Für den ersten verwendeten Doppelspalt sind
 \begin{align*}
-  b_{D1}\,=\,\SI{0.1}{\milli\metre}\\
-  s_{D1}\,=\,\SI{0.4}{\milli\metre}
-  \label{eqn:doppelspalt1}
+  b_\mathup{D1} &= \SI{0.1}{\milli\metre}\\
+  s_\mathup{D1} &= \SI{0.4}{\milli\metre}
 \end{align*}
 angegeben.
 
 \noindent
 Für den zweiten verwendeten Doppelspalt sind
 \begin{align*}
-  b_{D2}\,=\,\SI{0.15}{\milli\metre}\\
-  s_{D2}\,=\,\SI{0.25}{\milli\metre}
-  \label{eqn:doppelspalt2}
+  b_\mathup{D2} &= \SI{0.15}{\milli\metre}\\
+  s_\mathup{D2} &= \SI{0.25}{\milli\metre}
 \end{align*}
 angegeben.
 
@@ -238,13 +236,11 @@ Danach wird gemessen, was für einen Diodenstrom das Amperemeter registriert, we
 Die Dunkelmessung $d1$ ergibt einen Wert von
 \begin{equation*}
   A_{d1}\,=\,\SI{1.15}{\nano\ampere}.
-  \label{eqn:dunkel}
 \end{equation*}
 Zwischen den Messungen, für den Einzelspalt und den ersten Doppelspalt, wird die Dunkelmessung $d2$ wiederholt.
 Dabei ergibt sich ein Wert von
 \begin{equation*}
   A_{d2}\,=\,\SI{1.25}{\nano\ampere}.
-  \label{eqn:dunkel2}
 \end{equation*}
 Danach werden 93 Werte im Bereich von \SI{1}{\milli\metre} bis \SI{50}{\milli\metre} am Verschiebereiter mit Photoelement für den Diodenstrom aufgenommen. Dazu wird ein Einfachspalt verwendet.
 Als nächstes werden 56 Werte zwischen \SI{14.25}{\milli\metre} und \SI{40.25}{\milli\metre} für den Diodenstrom aufgenommen. Dazu wird der erste Doppelspalt verwendet.
@@ -255,28 +251,28 @@ Als letztes werden 50 Werte im Bereich von \SI{11.25}{\milli\metre} bis \SI{40.7
 \subsection{Intensitätsverteilung am Einzelspalt}
 Bei der Messung am Einzelspalt werden die in Tabelle \ref{tab:messwerte1}
 stehenden Werte gemessen. Von diesen Werten wird zuerst der Dunkelstrom
-$A_{Dunkel}$ \eqref{eqn:dunkel} abgezogen und dann mit curve-fit eine
-Kurvenanpassung an Formel \eqref{eqn:intensitätsverteilungeinzel}
-durchgeführt. Die Wellenlänge des Lasers ist dabei mit
-\begin{equation}
+$A_{d1}$ abgezogen und dann mit der Funktion curve-fit von Python eine
+Kurvenanpassung an Formel \eqref{eqn:intensitätsverteilungeinzel} durchgeführt.
+Die Wellenlänge des Lasers ist dabei mit
+\begin{equation*}
   \lambda = \SI{635}{\nano\meter}
-\end{equation}
+\end{equation*}
 angegeben. Für $\phi$ wird näherungsweise
 \begin{equation}
   \phi = \frac{x-x_0}{L}
 \end{equation}
 angenommen. Wobei $x_0$ die Position des Hauptmaximums darstellt. Während L
 der Abstand zwischen Spalt und Photodiode ist. Dieser beträgt in unserem Fall
-\begin{equation}
+\begin{equation*}
   L = \SI{124}{\centi\meter}.
-\end{equation}
+\end{equation*}
 Die freien drei Parameter $A_0$, $b$ und $x_0$ werden also bei dem Fit
 bestimmt:
-\begin{align}
-  A_0 &= \SI{170(1)}{\micro\ampere}\\
+\begin{align*}
+  A_0 &= \SI{170(1)}{}\\
   b &= \SI{75.7(3)}{\micro\meter}\\
   x_0 &= \SI{26.38(2)}{\milli\meter}
-\end{align}
+\end{align*}
 In Abbildung \ref{fig:plot1} ist der Verlauf der Messwerte, sowie des Fits,
 zu sehen.
 \begin{table}
@@ -284,9 +280,9 @@ zu sehen.
   \caption{Gemessener Diodenstrom bei der jeweiligen Position der Photodiode (ohne Abzug des Dunkelstroms).}
   \label{tab:messwerte1}
   \sisetup{table-format=2.2}
-  \begin{tabular}{S S[table-format=3.0] S S[table-format=3.0] S S[table-format=3.0]}
+  \begin{tabular}{S S[table-format=3.0] | S S[table-format=3.0] | S S[table-format=3.0]}
     \toprule
-     {Position $x$ in $\si{\milli\meter}$} & {Diodenstrom $I$ in $\si{\nano\ampere}$} & {$x$} & {$I$} & {$x$} & {$I$} \\
+     {$x$ in $\si{\milli\meter}$} & {$I$ in $\si{\nano\ampere}$} & {$x$} & {$I$} & {$x$} & {$I$} \\
     \midrule
     26.25 & 990 & 38.00 &  38 & 21.00 & 360 \\
     27.25 & 980 & 38.50 &  45 & 20.75 & 330 \\
@@ -330,20 +326,18 @@ zu sehen.
   \label{fig:plot1}
 \end{figure}
 \subsection{Intensitätsverteilung am ersten Doppelspalt}
-Bei der Messung am ersten Doppelspalt wurden die in Tabelle \ref{tab:messwerte2}
+Bei der Messung am ersten Doppelspalt werden die in Tabelle \ref{tab:messwerte2}
 stehenden Werte gemessen. Von diesen Werten wird zuerst der Dunkelstrom
-$A_{Dunkel_2}$ \eqref{eqn:dunkel2} abgezogen und danach wie für den
-Einzelspalt mit Python ein Fit an Formel \eqref{eqn:intensitätsverteilungdoppel}
-durchgeführt. Dabei wird statt dem Faktor $4$ erneut $A_0$ verwendet, da
-es sonst zu Problemen kommt und die Ausgleichsfunktion nicht wirklich passt.
-Der Laser und der Abstand zwischen Spalt und Photodiode bleiben unverändert.
-Als Parameter ergeben sich:
-\begin{align}
+$A_{d2}$ abgezogen und danach wie für den Einzelspalt mit Python ein Fit
+an Formel \eqref{eqn:intensitätsverteilungdoppel} durchgeführt. Der Laser
+und der Abstand zwischen Spalt und Photodiode bleiben unverändert. Als
+Parameter ergeben sich:
+\begin{align*}
   A_0 &= \SI{2.3(1)}{\micro\ampere}\\
   b &= \SI{100(6)}{\micro\meter}\\
   x_0 &= \SI{27.06(2)}{\milli\meter}\\
   s &= \SI{486(5)}{\micro\meter}
-\end{align}
+\end{align*}
 Die Messwerte und die Ausgleichsfunktion sind in Abbildung \ref{fig:plot2}
 dargestellt.
 \begin{table}
@@ -351,9 +345,9 @@ dargestellt.
   \caption{Gemessener Diodenstrom bei der jeweiligen Position der Photodiode (ohne Abzug des Dunkelstroms).}
   \label{tab:messwerte2}
   \sisetup{table-format=2.2}
-  \begin{tabular}{S S[table-format=3.0] S S[table-format=3.0] S S[table-format=3.0]}
+  \begin{tabular}{S S[table-format=4.0] | S S[table-format=4.0]}
     \toprule
-     {Position $x$ in $\si{\milli\meter}$} & {Diodenstrom $I$ in $\si{\nano\ampere}$} & {$x$} & {$I$} \\
+     {$x$ in $\si{\milli\meter}$} & {$I$ in $\si{\nano\ampere}$} & {$x$} & {$I$} \\
     \midrule
     26.25 &  810 & 38.25 &  110 \\
     26.75 & 1680 & 39.25 &   52 \\
@@ -394,17 +388,16 @@ dargestellt.
   \label{fig:plot2}
 \end{figure}
 \subsection{Intensitätsverteilung am zweiten Doppelspalt}
-Beim zweiten Doppelspalt wurden die in Tabelle \ref{tab:messwerte3} stehenden
-Werte gemessen. Erneut wird von diesen zuerst der Dunkelstrom $A_{Dunkel_2}$
-\eqref{eqn:dunkel2} abgezogen. Mit der Anpassung an Formel
-\eqref{eqn:intensitätsverteilungdoppel} ergeben sich
-bei gleichem Laser und gleichem Abstand die folgenden Parameter:
-\begin{align}
+Beim zweiten Doppelspalt werden die in Tabelle \ref{tab:messwerte3} stehenden
+Werte gemessen. Erneut wird von diesen zuerst der Dunkelstrom $A_{d2}$
+abgezogen. Mit der Anpassung an Formel \eqref{eqn:intensitätsverteilungdoppel}
+ergeben sich bei gleichem Laser und gleichem Abstand die folgenden Parameter:
+\begin{align*}
   A_0 &= \SI{2.98(7)}{\micro\ampere}\\
   b &= \SI{152(3)}{\micro\meter}\\
   x_0 &= \SI{27.62(2)}{\milli\meter}\\
   s &= \SI{238(3)}{\micro\meter}
-\end{align}
+\end{align*}
 Die Messwerte und die Ausgleichsfunktion sind in Abbildung \ref{fig:plot3}
 dargestellt.
 \begin{table}
@@ -412,9 +405,9 @@ dargestellt.
   \caption{Gemessener Diodenstrom bei der jeweiligen Position der Photodiode (ohne Abzug des Dunkelstroms).}
   \label{tab:messwerte3}
   \sisetup{table-format=2.2}
-  \begin{tabular}{S S[table-format=3.0] S S[table-format=3.0] S S[table-format=3.0]}
+  \begin{tabular}{S S[table-format=4.0] | S S[table-format=3.1]}
     \toprule
-     {Position $x$ in $\si{\milli\meter}$} & {Diodenstrom $I$ in $\si{\nano\ampere}$} & {$x$} & {$I$} \\
+     {$x$ in $\si{\milli\meter}$} & {$I$ in $\si{\nano\ampere}$} & {$x$} & {$I$} \\
     \midrule
     26.25 &  500 & 25.75 &  360  \\
     26.75 & 1400 & 25.25 &  700  \\
@@ -466,7 +459,7 @@ Das Ergebniss ist in Abbildung \ref{fig:plot4} dargestellt.
 \end{figure}
 \section{Diskussion}
 \label{sec:diskussion}
-Bei dem Versuch gab es folgende Ergebnisse:
+Bei dem Versuch ergeben sich folgende Ergebnisse:
 \begin{table}
   \centering
   \caption{Gemessener Diodenstrom bei der jeweiligen Position der Photodiode (ohne Abzug des Dunkelstroms).}
@@ -476,21 +469,32 @@ Bei dem Versuch gab es folgende Ergebnisse:
     \toprule
     {Gemessen:} & {Herstellerangeben:} & {Abweichung in $\si{\percent}$} \\
     \midrule
-    \text{$b_\mathup{Einzel}$} = \SI{75.7(3)}{\micro\meter} & \text{$b_\mathup{Einzel}$} = \SI{75}{\micro\meter} & 0.9\\
-    \text{$b_\mathup{Doppel_1}$} = \SI{100(6)}{\micro\meter} & \text{$b_\mathup{Doppel_1}$} = \SI{100}{\micro\meter} & 0\\
-    \text{$s_\mathup{Doppel_1}$} = \SI{486(5)}{\micro\meter} & \text{$s_\mathup{Doppel_1}$} = \SI{400}{\micro\meter} & 21.5\\
-    \text{$b_\mathup{Doppel_2}$} = \SI{152(3)}{\micro\meter} & \text{$b_\mathup{Doppel_2}$} = \SI{150}{\micro\meter} & 1.3\\
-    \text{$s_\mathup{Doppel_2}$} = \SI{238(3)}{\micro\meter} & \text{$s_\mathup{Doppel_2}$} = \SI{250}{\micro\meter} & 4.8\\
+    \text{$b_\mathup{E}$} = \SI{75.7(3)}{\micro\meter} & \text{$b_\mathup{E}$} = \SI{75}{\micro\meter} & 0.9\\
+    \text{$b_\mathup{D1}$} = \SI{100(6)}{\micro\meter} & \text{$b_\mathup{D1}$} = \SI{100}{\micro\meter} & 0.0\\
+    \text{$s_\mathup{D1}$} = \SI{486(5)}{\micro\meter} & \text{$s_\mathup{D1}$} = \SI{400}{\micro\meter} & 21.5\\
+    \text{$b_\mathup{D2}$} = \SI{152(3)}{\micro\meter} & \text{$b_\mathup{D2}$} = \SI{150}{\micro\meter} & 1.3\\
+    \text{$s_\mathup{D2}$} = \SI{238(3)}{\micro\meter} & \text{$s_\mathup{D2}$} = \SI{250}{\micro\meter} & 4.8\\
     \bottomrule
   \end{tabular}
 \end{table}\\
-Insgesamt liegen die gemessenen Spaltbreiten und Gitterkonstanten sehr nah an den Herstellerangaben. Lediglich die Gitterkonstante
-beim ersten Doppelspalt weicht etwas stärker davon ab.
-Mit dem Aufbau lassen sich also gut die Maße von Spalten und Gittern bestimmen.
-Dabei ist das Ergebnis genauer, wenn der Spalt sehr schmal ist, da das Beugungsmuster
-dann breiter ist und dann die Position der Messung genauer ist.
-Beim Vergleich von Einzel- und Doppelspalt ist gut zu sehen, dass der Verlauf
-des Einzelspalts die Einhüllende der Amplituden des Doppelspalts darstellt.
+Insgesamt liegen die gemessenen Spaltbreiten und Gitterkonstanten sehr nah an
+den Herstellerangaben. Lediglich die Gitterkonstante beim ersten Doppelspalt
+weicht etwas stärker davon ab. Mit dem Aufbau lassen sich also gut die Maße
+von Spalten und Gittern bestimmen. Dabei ist das Ergebnis genauer, wenn der
+Spalt sehr schmal ist, da das Beugungsmuster dann breiter und leichter
+abtastbar ist.
+
+\noindent
+Beim Vergleich von Einzel- und Doppelspalt ist gut zu sehen,
+dass der Verlauf des Einzelspalts die Einhüllende der Amplituden des
+Doppelspalts darstellt. Außerdem ist beim Vergleich der beiden Doppelspalten
+gut zu erkennen, dass die maximale Intensität mit einer größeren Spaltbreite
+größer wird. Sie ist zudem doppelt so groß, wie die eines entsprechenden
+Einzelspalts, da sich die Intensitäten der beiden Spalten am Doppelspalt
+addieren. Die Einhüllende der Maxima wird mit größerer Spaltbreite schmaler,
+was dem Verhalten des Beugungsmusters des Einzelspalts entspricht.
+Eine größere Gitterkonstante sorgt dafür, dass zwischen den Maxima ein kleinerer
+Abstand liegt und somit mehr Maxima in ein Maximum der Einhüllenden passen.
 \nocite{*}
 \printbibliography
 \end{document}

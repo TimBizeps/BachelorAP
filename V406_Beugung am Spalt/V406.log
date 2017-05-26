@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  15 MAY 2017 21:30
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  26 MAY 2017 11:43
  restricted system commands enabled.
 **V406.tex
 (./V406.tex
@@ -605,7 +605,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.108 seconds)
+luaotfload | main : initialization completed in 0.106 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.
 sty
@@ -2284,137 +2284,70 @@ Language ngerman already loaded; id is 8)
  [2
 
 ]
-<V4061.png, id=43, 1853.92625pt x 767.86874pt>
+<V4061.png, id=45, 1853.92625pt x 767.86874pt>
 File: V4061.png Graphic file (type png)
  <use V4061.png>
 Package luatex.def Info: V4061.png used on input line 163.
 (luatex.def)             Requested size: 376.42744pt x 155.90265pt.
 
-<V4065.png, id=48, 1303.87125pt x 707.64375pt>
+<V4065.png, id=50, 1303.87125pt x 707.64375pt>
 File: V4065.png Graphic file (type png)
  <use V4065.png>
 Package luatex.def Info: V4065.png used on input line 180.
 (luatex.def)             Requested size: 376.42744pt x 204.29362pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1<./V4061.png>] <V4064.png, id=65, 1731.46875pt x 557.08125pt>
+[1<./V4061.png>] <V4064.png, id=67, 1731.46875pt x 557.08125pt>
 File: V4064.png Graphic file (type png)
 
 <use V4064.png>
-Package luatex.def Info: V4064.png used on input line 201.
+Package luatex.def Info: V4064.png used on input line 196.
 (luatex.def)             Requested size: 376.42744pt x 121.11319pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2<./V4065.png>] <V4063.png, id=77, 1515.6625pt x 639.38875pt>
+[2<./V4065.png>] <V4063.png, id=78, 1515.6625pt x 639.38875pt>
 File: V4063.png Graphic file (type png)
  <use V4063.png>
-Package luatex.def Info: V4063.png used on input line 211.
+Package luatex.def Info: V4063.png used on input line 206.
 (luatex.def)             Requested size: 376.42744pt x 158.7931pt.
-(load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/
-otl/lmroman8-regular.luc)(load luc: /home/simon/.local/texlive/2016/texmf-var/lu
-atex-cache/generic/fonts/otl/lmroman6-regular.luc) [3<./V4064.png><./V4063.png>] [4] [5
 
-] [6] <Plot.pdf, id=123, 578.16pt x 433.62pt>
+[3<./V4064.png><./V4063.png>](load luc: /home/simon/.local/texlive/2016/texmf-va
+r/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/simon/.lo
+cal/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [4
+
+] [5
+
+] [6] <Plot.pdf, id=110, 578.16pt x 433.62pt>
 File: Plot.pdf Graphic file (type pdf)
  <use Plot.pdf>
-Package luatex.def Info: Plot.pdf used on input line 333.
+Package luatex.def Info: Plot.pdf used on input line 324.
 (luatex.def)             Requested size: 418.25555pt x 313.68826pt.
+ [7
 
-Overfull \hbox (5.475pt too wide) detected at line 364
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 365
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 367
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 367
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 368
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 368
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 371
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 371
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 372
- 
- []
-
-[7
-
-<./Plot.pdf>] [8] <Plot2.pdf, id=163, 578.16pt x 433.62pt>
+<./Plot.pdf>] [8] <Plot2.pdf, id=144, 578.16pt x 433.62pt>
 File: Plot2.pdf Graphic file (type pdf)
  <use Plot2.pdf>
-Package luatex.def Info: Plot2.pdf used on input line 397.
+Package luatex.def Info: Plot2.pdf used on input line 386.
 (luatex.def)             Requested size: 418.25555pt x 313.68826pt.
+ [9
 
-Overfull \hbox (5.475pt too wide) detected at line 425
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 426
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 427
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 428
- 
- []
-
-
-Overfull \hbox (8.5191pt too wide) detected at line 446
- 
- []
-
-[9
-
-<./Plot2.pdf>] [10] <Plot3.pdf, id=203, 578.16pt x 433.62pt>
+<./Plot2.pdf>] [10] <Plot3.pdf, id=180, 578.16pt x 433.62pt>
 File: Plot3.pdf Graphic file (type pdf)
  <use Plot3.pdf>
-Package luatex.def Info: Plot3.pdf used on input line 455.
+Package luatex.def Info: Plot3.pdf used on input line 443.
 (luatex.def)             Requested size: 418.25555pt x 313.68826pt.
 
-<Plot4.pdf, id=206, 578.16pt x 433.62pt>
+<Plot4.pdf, id=183, 578.16pt x 433.62pt>
 File: Plot4.pdf Graphic file (type pdf)
  <use Plot4.pdf>
-Package luatex.def Info: Plot4.pdf used on input line 468.
+Package luatex.def Info: Plot4.pdf used on input line 456.
 (luatex.def)             Requested size: 418.25555pt x 313.68826pt.
  [11
 
 <./Plot3.pdf>]
 [12<./Plot4.pdf>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cac
 he/generic/fonts/otl/lmromancaps10-regular.luc)
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 500.
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 499.
 
 
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
@@ -2425,34 +2358,20 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 500.
  [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 500.
  (./V406.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
-
-
-Package rerunfilecheck Warning: File `V406.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `V406.aux':
-(rerunfilecheck)             Before: 0573E8C9582E8017B3BF905662FEBC3A;11820
-(rerunfilecheck)             After:  18ECFA01F96358A4CA5FFBAC13909DBD;12160.
-
-Package rerunfilecheck Warning: File `V406.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `V406.toc':
-(rerunfilecheck)             Before: 325C2A8ED2CADC4E1D7C545E8C4E38E2;1074
-(rerunfilecheck)             After:  B945B1A0AB7ABA57AC4A654D5AD8C30F;1140.
-
-LaTeX Warning: There were undefined references.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 500.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 500.
+Package rerunfilecheck Info: File `V406.aux' has not changed.
+(rerunfilecheck)             Checksum: EEC1AC71986421FAE8C32A4E217DD66E;11799.
+Package rerunfilecheck Info: File `V406.toc' has not changed.
+(rerunfilecheck)             Checksum: B945B1A0AB7ABA57AC4A654D5AD8C30F;1140.
 
 
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'V406.run.xml'.
 
@@ -2460,14 +2379,14 @@ Package logreq Info: Writing requests to 'V406.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44627 strings out of 495118
+ 44600 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 4368 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 437 glue, 1 kern, 211 attribute, 58 glue_spec, 211 
+ 4153 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 412 glue, 1 kern, 201 attribute, 58 glue_spec, 201 
 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:2,2:5872,3:415,4:56,5:503,6:1856,7:2816,8:112,9:1982,10:25,11:
-229
- 46868 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:5790,3:387,4:27,5:490,6:1967,7:2811,8:123,9:1942,10:8,11:2
+47
+ 46862 multiletter control sequences out of 65536+600000
  104 fonts using 33040151 bytes
  61i,15n,104p,8814b,2964s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-re
@@ -2476,16 +2395,15 @@ mromancaps10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opent
 ype/public/lm/lmroman10-italic.otf></home/simon/.local/texlive/2016/texmf-dist/f
 onts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive/20
 16/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.l
-ocal/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf>
-</home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-b
-old.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmr
-oman10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/pu
-blic/lm/lmroman12-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/
-opentype/public/lm/lmsans10-bold.otf>
-Output written on V406.pdf (15 pages, 306711 bytes).
+ocal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/
+simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.
+otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman
+12-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public
+/lm/lmsans10-bold.otf>
+Output written on V406.pdf (15 pages, 302954 bytes).
 
-PDF statistics: 372 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 131072)
+PDF statistics: 341 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 131072)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

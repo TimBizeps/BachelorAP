@@ -1,15 +1,15 @@
 [0] Config.pm:354> INFO - This is Biber 2.6
 [0] Config.pm:357> INFO - Logfile is 'V406.blg'
-[43] biber:302> INFO - === Mo Mai 15, 2017, 21:30:10
-[65] Biber.pm:359> INFO - Reading 'V406.bcf'
-[154] Biber.pm:820> INFO - Using all citekeys in bib section 0
-[169] Biber.pm:3658> INFO - Processing section 0
-[183] Biber.pm:3828> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[184] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
-[184] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
-[202] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[202] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[202] Biber.pm:3487> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'de-DE'
-[202] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
-[204] bbl.pm:597> INFO - Writing 'V406.bbl' with encoding 'UTF-8'
-[205] bbl.pm:701> INFO - Output to V406.bbl
+[36] biber:302> INFO - === Fr Mai 26, 2017, 11:43:16
+[57] Biber.pm:359> INFO - Reading 'V406.bcf'
+[143] Biber.pm:820> INFO - Using all citekeys in bib section 0
+[158] Biber.pm:3658> INFO - Processing section 0
+[172] Biber.pm:3828> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[193] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[193] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
+[215] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[215] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[216] Biber.pm:3487> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'de-DE'
+[216] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
+[218] bbl.pm:597> INFO - Writing 'V406.bbl' with encoding 'UTF-8'
+[219] bbl.pm:701> INFO - Output to V406.bbl
