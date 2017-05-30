@@ -110,6 +110,7 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \usepackage[style=alphabetic,]{biblatex}
 % Quellendatenbank
 \addbibresource{lit.bib}
+\addbibresource{programme.bib}
 
 % Hyperlinks im Dokument
 \usepackage[
@@ -400,7 +401,7 @@ sich dann die Kathodentemperatur bestimmen:
 \begin{equation}
   T = -\frac{e_0}{k \cdot m} = \SI{2582(130)}{\kelvin}
 \end{equation}
-Dabei werden für $e_0$ und $k$ die bei Scipy enthaltenen Werte der Elementarladung
+Dabei werden für $e_0$ und $k$ die bei Scipy \cite{scipy} enthaltenen Werte der Elementarladung
 und der Boltzmann-Konstante verwendet. ($e_0 \approx \SI{1.602e-19}{\coulomb}$, $k \approx \SI{1.381e-23}{\joule\per\kelvin}$)
 \subsection{Bestimmung der Kathodentemperatur über die Leistungsbilanz}
 Für die Abschätzung der Kathodentemperatur werden die fünf Heizspannungen und
@@ -481,7 +482,7 @@ Da in der Formel von der Sättigungsstromdichte $j_\mathup{S}$ die Rede ist
 muss der von uns gemessene Sättigungsstrom $I_\mathup{S}$ noch durch die Fläche
 geteilt werden. Dabei ist auf die Einheiten zu achten. Für die Elementarladung
 $e_0$, die Elektronenmasse $m_0$ ($\approx \SI{9.109e-31}{\kilo\gram}$), die Boltzmann-Konstante $k$ und die Planksche
-Konstante $h$ ($\approx \SI{6.626e-34}{\joule\second}$) werden die Werte von Scipy verwendet.
+Konstante $h$ ($\approx \SI{6.626e-34}{\joule\second}$) werden die Werte von Scipy \cite{scipy} verwendet.
 Damit ergeben sich die in Tabelle \ref{tab:ergebnissephi} stehenden
 Austrittsarbeiten.
 \begin{table}[H]
@@ -509,5 +510,57 @@ gemittelt.
 \clearpage
 \section{Diskussion}
 \label{sec:diskussion}
+In Tabelle \ref{tab:ergebnissevers} stehen die Ergebnisse des Versuchs.
+\begin{table}[H]
+  \centering
+  \caption{Ergebnisse.}
+  \label{tab:ergebnissevers}
+  \sisetup{table-format=1.1}
+  \begin{tabular}{S S S}
+    \toprule
+    {Größe} & {Ergebniss} & {Theoriewert} \\
+    \midrule
+    $I_\mathup{S_1}$ & $\SI{0.029}{\milli\ampere}$ & / \\
+    $I_\mathup{S_2}$ & $\SI{0.068}{\milli\ampere}$ & / \\
+    $I_\mathup{S_3}$ & $\SI{0.156}{\milli\ampere}$ & / \\
+    $I_\mathup{S_4}$ & $\SI{0.340}{\milli\ampere}$ & / \\
+    $I_\mathup{S_5}$ & $\SI{0.715}{\milli\ampere}$ & / \\
+    $V^x$ & $\SI{1.254(9)}{}$ & 1.5 \\
+    $T_{\SI{4.5}{\volt}} \text{(Methode 1)}$ & $\SI{2582(130)}{\kelvin}$ & / \\
+    $T_{\SI{3.25}{\volt}} \text{(Methode 2)}$ & $\SI{1760}{\kelvin}$ & / \\
+    $T_{\SI{3.5}{\volt}} \text{(Methode 2)}$ & $\SI{1828}{\kelvin}$ & / \\
+    $T_{\SI{4.0}{\volt}} \text{(Methode 2)}$ & $\SI{1928}{\kelvin}$ & / \\
+    $T_{\SI{4.25}{\volt}} \text{(Methode 2)}$ & $\SI{1988}{\kelvin}$ & / \\
+    $T_{\SI{4.5}{\volt}} \text{(Methode 2)}$ & $\SI{2046}{\kelvin}$ & / \\
+    $\phi$ & $\SI{4.53(4)}{\electronvolt}$ & $\SI{4.54}{\electronvolt}$ \cite{austritt} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\noindent
+Die erhaltenen Kurven der Kennlinien passen gut zu dem Schema aus Abbildung \ref{fig:V5044}.
+Der bestimmte Exponent der Spannungsabhängigkeit von Formel \eqref{eqn:raumladung}
+liegt etwas unterhalb von dem Theoriewert, was an einem systematischen Fehler liegen
+dürfte, da der statistische Fehler der Steigung kleiner ist als die Abweichung.
+Ein derartiger Fehler wäre z.B. ein ungenaues Ablesen der Werte. Außerdem ist
+während dem Versuch aufgefallen, dass teilweise bei einem bestimmten Wert auf
+der Skala der Spannung ein keliner Sprung stattfand, nachdem sich für davor
+gemessene Werte bei erneutem Messen ein etwas höherer Wert ergab. Somit könnte
+auch durch die Messgeräte ein Fehler zustande kommen.
 
+\noindent
+Beim Vergleich der bestimmten Temperaturen fällt eine größere Differenz zwischen
+den beiden Werten für $\SI{4.5}{\volt}$ auf. Da das Ergebnis der Austrittsarbeit
+sehr gut ist und den Theoriewert einschließt sollten die dazu verwendeten
+Ergebnisse für die Sättigungsströme sowie die mit Methode 2 bestimmten
+Temperaturen ebenfalls sehr gut passen. Daraus lässt sich schließen, dass die
+Bestimmung der Temperatur nach der ersten Methode weniger genau ist. Der
+statistische Fehler ist mit $\SI{130}{\kelvin}$ schon groß.
+
+\noindent
+Wie bereits erwähnt liegt der bestimmte Wert der Austrittsarbeit $e_0 \phi$
+sehr dicht an dem Theoriewert.
+Insgesamt ist der Versuch einfach durchzuführen und liefert gute Ergebnisse.
+\clearpage
+\nocite{*}
+\printbibliography
 \end{document}
