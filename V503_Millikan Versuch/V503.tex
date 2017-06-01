@@ -154,19 +154,18 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \setcounter{page}{1}
 \section{Zielsetzung}
 \label{sec:zielsetzung}
-Bei dem Millikan-Öltröpfchenversuch wir anhand der Bewegungen
-eines geladenen Öltröpfchens im Feld eines Plattenkondensators.
-Die Elementarladung bestimmt.
+Bei dem Millikan-Öltröpfchenversuch wird anhand der Bewegungen
+eines geladenen Öltröpfchens im Feld eines Plattenkondensators, die Elementarladung bestimmt.
 
 \noindent
-Bei dem regulären Verfahren wird dazu die Geschwindigkeit des Tröpfchens,
+Bei dem regulären Verfahren wird dazu die Geschwindigkeit des Tröpfchens
 für einen abgeschalteten Kondensator und für die zwei verschiedenen
-Möglichkeiten der Polarisierung des Kondensators, bei bekannten Spannungen
+Möglichkeiten der Polarisierung des Kondensators bei bekannten Spannungen
 gemessen.
 Hier wird jedoch ein leicht verändertes Verfahren verwendet.
 \section{Theorie}
 \label{sec:theorie}
-Beim einsprühen des Öls in die Apparatur werden die Öltröpfchen
+Beim Einsprühen des Öls in die Apparatur werden die Öltröpfchen
 durch Reibung geladen. Zwischen den Kondensatorplatten
 erfahren sie dann mehrere Kräfte:
 
@@ -183,7 +182,7 @@ und, bei eingeschaltetem Kondensator, die elektrische Kraft
 \begin{equation}
   \vec{F}_\mathup{el} = q \cdot \vec{E}.
 \end{equation}
-$g$ ist dabei die Schwerebeschleunigung, $r$ der Radius des Tröpfchens, $\eta_\mathup{L}$
+Dabei ist $g$ die Schwerebeschleunigung, $r$ der Radius des Tröpfchens, $\eta_\mathup{L}$
 die Viskosität der Luft und $E$ die elektrische Feldstärke im Kondensator.
 
 \noindent
@@ -254,15 +253,15 @@ und auf die Skala fokussiert werden. Damit die Tröpfchen nicht seitlich abdrift
 muss die Apparatur möglichst gerade ausgerichtet sein. Die Libelle 9 zeigt dabei
 die Neigung an.
 \subsection{Versuchsablauf}
-Zu Beginn der Messung wird an der Oberseite, der Millikan Kammer, Öl zerstäubt.
+Zu Beginn der Messung wird an der Oberseite der Millikan Kammer Öl zerstäubt.
 An dem Bildschirm können dann die Tröpfchen beobachtet werden.
 
 \noindent
-Führ die Messung wird ein relativ langsames Tröpfchen gewählt.
-Durch einschalten des Kondensators wird geprüft ob das Tröpfchen
+Für die Messung wird ein relativ langsames Tröpfchen gewählt.
+Durch Einschalten des Kondensators wird geprüft ob das Tröpfchen
 geladen ist. Wenn sich ein Tröpfchen entsprechend für die Messung
 eignet wird die Zeit gestoppt, die es bei abgeschaltetem Kondensator
-benötigt, um $\SI{0.5}{\milli\meter}$ zurückzulegen. Anschließend wird
+benötigt um $\SI{0.5}{\milli\meter}$ zurückzulegen. Anschließend wird
 mit dem Generator eine Spannung eingestellt, die so groß ist, dass das
 Tröpfchen in der Luft ruht. Die eingestellte Spannung wird dann zusammen
 mit der aktuellen Temperatur in der Kammer notiert.
@@ -279,7 +278,7 @@ wird für $25$ Tröpfchen durchgeführt.
 \label{sec:auswertung}
 Die in der Auswertung verwendeten Mittelwerte mehrfach gemessener Größen sind gemäß der
 Gleichung
-
+%
 \begin{equation}
     \bar{x}=\frac{1}{n}\sum_{i=1}^n x_i
     \label{eq:mittelwert}
@@ -305,7 +304,7 @@ Fehlers gerundet. Setzt sich eine Größe über mehrere Schritte aus anderen Gr�
 so wird erst am Ende gerundet, um Fehler zu vermeiden. Zur Auswertung wird das Programm Python verwendet.
 \subsection{Bestimmung der Tröpfchenladung \texorpdfstring{$q$}{q}}
 
-Zur Bestimmung der Elementarladung $\epsilon_0$ werden insgesamt 25 Tröpfchen beobachtet. Die Tabelle~\ref{tab:messwerte1} zeigt die aufgenommenen Messwerte. Die in den jeweiligen Zeiten zurückgelegte Strecke beträgt jeweils $\SI{0.5}{\milli\metre}$. Es wird die Zeit $t_0$, aus der sich die Geschwindigkeit $v_0$ ergibt, die Temperatur $T$, die sich aus dem Thermowiderstand ergibt und die Spannung, bei der sich das jeweilige Tröpfchen nicht mehr bewegt hat, angegeben.
+Zur Bestimmung der Elementarladung $e_0$ werden insgesamt 25 Tröpfchen beobachtet. Die Tabelle~\ref{tab:messwerte1} zeigt die aufgenommenen Messwerte. Die in den jeweiligen Zeiten zurückgelegte Strecke beträgt jeweils $\SI{0.5}{\milli\metre}$. Es wird die Zeit $t_0$, aus der sich die Geschwindigkeit $v_0$ ergibt, die Temperatur $T$, die sich aus dem Thermowiderstand ergibt und die Spannung, bei der sich das jeweilige Tröpfchen nicht mehr bewegt hat, angegeben.
 
 \begin{table}[H]
 	\begin{center}
@@ -347,7 +346,7 @@ Zur Bestimmung der Elementarladung $\epsilon_0$ werden insgesamt 25 Tröpfchen b
 \end{table}
 
 Nun werdem mit Hilfe der Gleichungen~\eqref{eqn:ladung} und~\eqref{eqn:tröpfchenradius}, Radius und Ladung der Tröpfchen ermittelt. Zur Bestimmung der temperaturabhängigen Viskosität $\eta_{\mathup{L}}$ von Luft, die im relevanten Temperaturbereich zwischen $\SI{26}{\celsius}$ und $\SI{32}{\celsius}$ annähernd linear verläuft, werden die Werte aus dem in \cite{anleitung} gegebenen Graphen abgelesen.
- Die Bestimmung der Temperatur aus dem gemessenen Thermistorwiderstand der Apparatur erfolgt mit Hilfe einer Widerstandstabelle, die sich auf einem der Versuchsgeräte befand. Tabelle~\ref{tab:ergebnisse} listet die Radien und Ladungen der Tröpfchen auf. Bei der angegebenen Ladung $q_{\mathup{k}}$ handelt es sich um die nach Cunnigham korrigierte Ladung. Der Zusammenhang zwischen korrigierter Ladung $q_{\mathup{k}}$ erfolgt aus den Gleichungen~\eqref{eqn:1} und~\eqref{eqn:2}.
+ Die Bestimmung der Temperatur aus dem gemessenen Thermistorwiderstand der Apparatur erfolgt mit Hilfe einer Widerstandstabelle, die sich auf einem der Versuchsgeräte befindet. Tabelle~\ref{tab:ergebnisse} listet die Radien und Ladungen der Tröpfchen auf. Bei der angegebenen Ladung $q_{\mathup{k}}$ handelt es sich um die nach Cunningham korrigierte Ladung. Der Zusammenhang zwischen korrigierter Ladung $q_{\mathup{k}}$ erfolgt aus den Gleichungen~\eqref{eqn:1} und~\eqref{eqn:2}.
 \begin{table}[H]
         \begin{center}
         \captionsetup{width=\linewidth}
@@ -412,8 +411,8 @@ Nun werdem mit Hilfe der Gleichungen~\eqref{eqn:ladung} und~\eqref{eqn:tröpfche
     \end{table}
 \newpage
 Ein Blick auf die errechneten Werte für
-$q_{\mathup{k}}$ und $q$ zeigt, dass diese zum größten Teil von einer ganzen Zahl abweichen.
-Da solche Werte für die weitere Auswertung nicht zu gebrauchen sind, werden im Folgenden nur die Werte verwendet, die einen relativen Fehler $\leq\SI{20}{\percent}$ haben. Damit scheiden alle Tröpfchen außer 2, 3, 5, 6, 7, 14, 17, 19, und 20 aus. \ref{tab:elementarladungen} zeigt die einzelnen Elementarladungen dieser Tröpfchen und die Faktoren, durch die jeweils geteilt werden musste.
+$q_{\mathup{k}}$ und $q$ zeigt, dass diese, nachdem sie durch die Elementarladung geteilt wurden, zum größten Teil von einer ganzen Zahl abweichen.
+Da solche Werte für die weitere Auswertung nicht zu gebrauchen sind, werden im Folgenden nur die Werte verwendet, die einen relativen Fehler $\leq\SI{20}{\percent}$ haben, also um weniger als 0,2 von einer ganzen Zahl abweichen.. Damit scheiden alle Tröpfchen außer 2, 3, 5, 6, 7, 14, 17, 19, und 20 aus. Tabelle \ref{tab:elementarladungen} zeigt die einzelnen Elementarladungen dieser Tröpfchen und die Faktoren, durch die jeweils geteilt werden muss.
 \begin{table}[H]
         \begin{center}
         \captionsetup{width=\linewidth}
@@ -452,7 +451,7 @@ Da solche Werte für die weitere Auswertung nicht zu gebrauchen sind, werden im 
             \end{tabular}
         \end{center}
     \end{table}
-Jetzt geht es nun darum, aus den übrigen Ladungen per Mittelwert die Elementarladung $\epsilon_0$ zu bestimmen.
+Jetzt geht es darum, aus den übrigen Ladungen per Mittelwert die Elementarladung $e_0$ zu bestimmen.
 
 Der Theorie nach sollten sich die Messpunkte in diskreten, horizontal gelegenen Abschnitten ("Balken") aufhalten, da es nur möglich ist die Elementarladung oder ganzzahlige Vielfache dieser zu messen. Eine kontinuierliche Verteilung der Messwerte widerspräche der Theorie. Daher werden in Abbildung~\ref{fig:messwerte} die gültigen Messpunkte des durchgeführten Versuchs aufgetragen. Das Problem ist nur, dass keine "Balken" zu erkennen sind.
 
@@ -463,16 +462,16 @@ Der Theorie nach sollten sich die Messpunkte in diskreten, horizontal gelegenen 
     \label{fig:messwerte}
 \end{figure}
 
-Aufgrund der Tatsache, dass die Ladung quantisiert ist und nur als Vielfache der Elementarladung $\epsilon_0$ auftreten kann, werden nun die in ~\ref{tab:ergebnisse} stehenden Ladungen durch die Elementarladung geteilt. Hierzu wird die in SciPy enthaltene Elementarladung verwendet. Als Mittel der betrachteten Tröpfchen ergibt sich dann für die nicht korrigierten Ladungen ein Wert von
+Aufgrund der Tatsache, dass die Ladung quantisiert ist und nur als Vielfache der Elementarladung $e_0$ auftreten kann, werden nun die in ~\ref{tab:ergebnisse} stehenden Ladungen durch die Elementarladung geteilt. Hierzu wird die in SciPy enthaltene Elementarladung verwendet. Als Mittel der betrachteten Tröpfchen ergibt sich dann für die nicht korrigierten Ladungen ein Wert von
 
 \begin{equation}
-    \epsilon_0 = \SI{1.62(5)e-19}{\coulomb}.
+    e_0 = \SI{1.62(5)e-19}{\coulomb}.
 \end{equation}
 
 Dieser Wert liegt sehr nah am Literaturwert $e = \SI{1.602e-19}{\coulomb}$ \cite{Elementarladung}. Abbildung~\ref{fig:messwerte+} zeigt nun die Punkte der korrigierten Ladung, die ebenso wie die errechneten nicht korrigierten Ladungen keine Balken darstellen. Für die Elementarladung der korrigierten Ladungen ergibt sich analog wie zuvor eine Elementarladung von
 
 \begin{equation}
-    \epsilon_0 = \SI{1.55(12)e-19}{\coulomb}.
+    e_0 = \SI{1.55(12)e-19}{\coulomb}.
 \end{equation}
 Auch dieser Wert liegt nah am Literaturwert.
 \begin{figure}[h]
@@ -484,7 +483,7 @@ Auch dieser Wert liegt nah am Literaturwert.
 
 \subsection{Bestimmung der Avogadro-Konstante}
 
-In einem letzten Schritt soll noch von der errechneten Elementarladung mit Hilfe der Faraday-Konstante auf die Avogadro-Konstante geschlossen werden. Die benötigte Faraday-Konstante hat den Wert $F=\SI{96485.337}{\coulomb\per\mol}$~\cite{faraday} und ist die Ladung eines Mols einfach geladener Ionen. Dividiert durch die Elementarladung $\epsilon_0$ ergibt sich die Anzahl an Teilchen in einem Mol: die Avogadro-Konstante $N_{\mathup{A}}$. Es folgt für die nicht korrigierte Elementarladung
+In einem letzten Schritt soll noch von der errechneten Elementarladung mit Hilfe der Faraday-Konstante auf die Avogadro-Konstante geschlossen werden. Die benötigte Faraday-Konstante hat den Wert $F=\SI{96485.337}{\coulomb\per\mol}$~\cite{faraday} und ist die Ladung eines Mols einfach geladener Ionen. Dividiert durch die Elementarladung $e_0$ ergibt sich die Anzahl an Teilchen in einem Mol: die Avogadro-Konstante $N_{\mathup{A}}$. Es folgt für die nicht korrigierte Elementarladung
 
 \begin{equation}
     N_{\mathup{A}}=\frac{F}{e}=\frac{\SI{96485.337}{\coulomb\per\mol}}{\SI{1.62e-19}{\coulomb}}=\SI{5.96e23}{\per\mol}.

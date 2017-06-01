@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  24 MAY 2017 11:29
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  30 MAY 2017 14:33
  restricted system commands enabled.
 **V503.tex
 (./V503.tex
@@ -3511,15 +3511,15 @@ tex-cache/generic/fonts/otl/lmroman6-regular.luc)
 <5031.png, id=53, 1002.74625pt x 547.04375pt>
 File: 5031.png Graphic file (type png)
  <use 5031.png>
-Package luatex.def Info: 5031.png used on input line 237.
+Package luatex.def Info: 5031.png used on input line 236.
 (luatex.def)             Requested size: 376.42744pt x 205.35793pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 [2<./5031.png>] [3]
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 306.
+(Font)              scaled to size 12.00018pt on input line 305.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 306.
+(Font)              scaled to size 11.99982pt on input line 305.
  [4
 
 ](load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/o
@@ -3527,7 +3527,7 @@ tl/lmroman5-regular.luc) [5] [6]
 <plot_messwerte.pdf, id=100, 578.16pt x 433.62pt>
 File: plot_messwerte.pdf Graphic file (type pdf)
  <use plot_messwerte.pdf>
-Package luatex.def Info: plot_messwerte.pdf used on input line 461.
+Package luatex.def Info: plot_messwerte.pdf used on input line 460.
 (luatex.def)             Requested size: 376.42744pt x 282.31943pt.
 
 
@@ -3536,7 +3536,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <plot_messwerte+.pdf, id=104, 578.16pt x 433.62pt>
 File: plot_messwerte+.pdf Graphic file (type pdf)
  <use plot_messwerte+.pdf>
-Package luatex.def Info: plot_messwerte+.pdf used on input line 480.
+Package luatex.def Info: plot_messwerte+.pdf used on input line 479.
 (luatex.def)             Requested size: 376.42744pt x 282.31943pt.
 
 [7]
@@ -3545,7 +3545,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8<./plot_messwerte.pdf>] [9<./plot_messwerte+.pdf>](load luc: /home/tim/.local/
 texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc)
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 506.
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 505.
 
  (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -3555,15 +3555,15 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 507.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 506.
  [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 507.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 506.
  (./V503.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 507.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 507.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 506.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 506.
 Package rerunfilecheck Info: File `V503.aux' has not changed.
-(rerunfilecheck)             Checksum: 624417E341ABD776B1F4493454FA196F;8639.
+(rerunfilecheck)             Checksum: 6ADAA67CD3A1AF8D5B8039DCED039252;8639.
 Package rerunfilecheck Info: File `V503.toc' has not changed.
 (rerunfilecheck)             Checksum: FC3230AC46F784D3AC3F2E2B46B0CEE1;913.
 Package logreq Info: Writing requests to 'V503.run.xml'.
@@ -3574,13 +3574,13 @@ Package logreq Info: Writing requests to 'V503.run.xml'.
 Here is how much of LuaTeX's memory you used:
  45687 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 3541 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 359 glue, 1 kern, 137 attribute, 58 glue_spec, 137 
+ 3569 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 363 glue, 1 kern, 137 attribute, 58 glue_spec, 137 
 attribute_list, 1 write, 5 pdf_action nodes
-   avail lists: 1:2,2:5928,3:286,4:48,5:490,6:2377,7:3420,8:105,9:2006,10:24,11:
-299
+   avail lists: 1:2,2:5928,3:286,4:48,5:490,6:2467,7:3416,8:105,9:2006,10:24,11:
+312
  47930 multiletter control sequences out of 65536+600000
- 115 fonts using 37227103 bytes
+ 115 fonts using 37227619 bytes
  61i,29n,104p,8814b,2963s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-regu
 lar.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmrom
@@ -3594,7 +3594,7 @@ exlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home
 tf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-
 regular.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/l
 msans10-bold.otf>
-Output written on V503.pdf (12 pages, 234336 bytes).
+Output written on V503.pdf (12 pages, 234341 bytes).
 
 PDF statistics: 303 PDF objects out of 1000 (max. 8388607)
  233 compressed objects within 3 object streams

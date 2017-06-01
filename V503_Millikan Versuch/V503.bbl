@@ -21,52 +21,26 @@
   \sortlist[entry]{anyt/global/}
     \entry{avogadro}{online}{}
       \name{author}{1}{}{%
-        {{hash=c11058bdd03349da3cd02fa58118f948}{%
-           family={chemie.de},
-           familyi={c\bibinitperiod}}}%
+        {{hash=f1ed35d9ced9ced7a5199bddc5019cd1}{%
+           family={http://physics.nist.gov},
+           familyi={h\bibinitperiod}}}%
       }
-      \strng{namehash}{c11058bdd03349da3cd02fa58118f948}
-      \strng{fullhash}{c11058bdd03349da3cd02fa58118f948}
-      \strng{authornamehash}{c11058bdd03349da3cd02fa58118f948}
-      \strng{authorfullhash}{c11058bdd03349da3cd02fa58118f948}
-      \field{labelalpha}{che17}
-      \field{sortinit}{c}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{extraalpha}{1}
+      \strng{namehash}{f1ed35d9ced9ced7a5199bddc5019cd1}
+      \strng{fullhash}{f1ed35d9ced9ced7a5199bddc5019cd1}
+      \strng{authornamehash}{f1ed35d9ced9ced7a5199bddc5019cd1}
+      \strng{authorfullhash}{f1ed35d9ced9ced7a5199bddc5019cd1}
+      \field{labelalpha}{htt17}
+      \field{sortinit}{h}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{23}
+      \field{day}{30}
       \field{month}{5}
-      \field{title}{Avogadro-Konstante}
+      \field{title}{Avogadro constant}
       \field{year}{2017}
       \field{dateera}{ce}
       \verb{url}
-      \verb http://www.chemie.de/lexikon/Avogadro-Konstante.html
-      \endverb
-    \endentry
-    \entry{faraday}{online}{}
-      \name{author}{1}{}{%
-        {{hash=c11058bdd03349da3cd02fa58118f948}{%
-           family={chemie.de},
-           familyi={c\bibinitperiod}}}%
-      }
-      \strng{namehash}{c11058bdd03349da3cd02fa58118f948}
-      \strng{fullhash}{c11058bdd03349da3cd02fa58118f948}
-      \strng{authornamehash}{c11058bdd03349da3cd02fa58118f948}
-      \strng{authorfullhash}{c11058bdd03349da3cd02fa58118f948}
-      \field{labelalpha}{che17}
-      \field{sortinit}{c}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{extraalpha}{2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{23}
-      \field{month}{5}
-      \field{title}{Faraday-Konstante}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \verb{url}
-      \verb http://www.chemie.de/lexikon/Faraday-Konstante.html
+      \verb http://physics.nist.gov/cgi-bin/cuu/Value?na
       \endverb
     \endentry
     \entry{Elementarladung}{online}{}
@@ -91,6 +65,30 @@
       \field{dateera}{ce}
       \verb{url}
       \verb https://www.lernhelfer.de/schuelerlexikon/physik/artikel/elementarladung
+      \endverb
+    \endentry
+    \entry{faraday}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3e66163a77430365a659a2adbf9cfd1a}{%
+           family={physics.nist.gov},
+           familyi={p\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e66163a77430365a659a2adbf9cfd1a}
+      \strng{fullhash}{3e66163a77430365a659a2adbf9cfd1a}
+      \strng{authornamehash}{3e66163a77430365a659a2adbf9cfd1a}
+      \strng{authorfullhash}{3e66163a77430365a659a2adbf9cfd1a}
+      \field{labelalpha}{phy17}
+      \field{sortinit}{p}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{month}{5}
+      \field{title}{Faraday-constant}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{url}
+      \verb http://physics.nist.gov/cgi-bin/cuu/Value?f
       \endverb
     \endentry
     \entry{Normaldruck}{online}{}
