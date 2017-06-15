@@ -157,7 +157,40 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 Ziel des Versuchs ist es, durch Erwärmung einer Metallfläche, freie Elektronen aus dieser zu emittieren.
 \section{Theorie}
 \label{sec:theorie}
-Die durch erhitzung hervorgerufene Elektronenemmision aus einer Metallfläche wird auch als glühelektrischer Effekt bezeichnet. Die Grundlage, um diesen Effekt zu beobachten ist die Austrittsarbeit der Metalloberfläche zu überwinden. Die innere Energie der Elektronen muss somit etwa gleich groß wie die Austrittsarbeit sein, damit diese die Metalloberfläche verlassen können. Dieser Effekt ist temperaturabhängig. Daher werden in diesem Versuch fünf Kennlinien mit fünf verschiedenen Heizströmen und Heizzspannungen aufgenommen.
+Die durch Erhitzung hervorgerufene Elektronenemission aus einer Metallfläche
+wird auch als glühelektrischer Effekt bezeichnet. Die Grundlage, um diesen
+Effekt zu beobachten ist die Austrittsarbeit der Metalloberfläche zu überwinden.
+Die innere Energie der Elektronen muss somit etwa gleich groß wie die
+Austrittsarbeit sein, damit diese die Metalloberfläche verlassen können.
+Dieser Effekt ist basierend auf der Fermi-Dirac Verteilung temperaturabhängig.
+
+\noindent
+Aufgrund des Pauliprinzips besitzen die Elektronen in einem Material selbst
+am absoluten Temperaturnullpunkt eine Energie, die von Null verschieden ist
+(Fermische Grenzenergie).
+Die Fermi-Dirac Verteilung beschreibt in Abhängigkeit von der Energie die
+Wahrscheinlichkeit, dass ein entsprechender Zustand besetzt ist.
+Der Verlauf dieser Verteilung ist in Abbildung \ref{fig:fermi} dargestellt
+und die entsprechende Funktion lautet:
+\begin{equation}
+  f \left( E \right) = \frac{1}{\exp \left( \frac{E-\zeta}{kT} \right) +1}.
+  \label{eqn:fermidirac}
+\end{equation}
+Mit der Energie $E$, der Fermischen Grenzenergie $\zeta$, der Boltzmann-
+Konstante $k$ und der Temperatur $T$.
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.9\textwidth]{V5046.png}
+  \caption{Fermie-Dirac Verteilung für $T=0$ und $T>>0$. \cite{anleitung}}
+  \label{fig:fermi}
+\end{figure}\\
+Je größer die Temperatur ist desto größer ist auch die Abweichung von der
+Stufenform. Die Elektronen in den oberen Energieniveaus können dann durch
+die höhere Temperatur spontan ionisieren.
+
+\noindent
+Wegen der Temperaturabhängigkeit werden in diesem Versuch fünf Kennlinien
+mit fünf verschiedenen Heizströmen und Heizzspannungen aufgenommen.
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.9\textwidth]{V5044.png}
@@ -165,7 +198,11 @@ Die durch erhitzung hervorgerufene Elektronenemmision aus einer Metallfläche wi
   \label{fig:V5044}
 \end{figure}
 \noindent
-Abbildung \ref{fig:V5044} zeigt eine übliche Kennlinie. Dabei wird prinzipiell  die Spannung zwischen Anode und Kathode gegen den fließenden Strom abgebildet. Logischerweise muss das Experiment in einem Vakuum durchgeführt werden, da sonst Teilchen miteinander wechselwirken könnten und somit die Messungen verfälschen würden. Abbildung \ref{fig:V5045} zeigt den Aufbau einer in diesem Versuch verwendeten Diode.
+Abbildung \ref{fig:V5044} zeigt eine übliche Kennlinie. Dabei wird prinzipiell
+die Spannung zwischen Anode und Kathode gegen den fließenden Strom abgebildet.
+Logischerweise muss das Experiment in einem Vakuum durchgeführt werden, da sonst
+Teilchen miteinander wechselwirken könnten und somit die Messungen verfälschen
+würden. Abbildung \ref{fig:V5045} zeigt den Aufbau einer in diesem Versuch verwendeten Diode.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.9\textwidth]{V5045.png}
@@ -173,7 +210,12 @@ Abbildung \ref{fig:V5044} zeigt eine übliche Kennlinie. Dabei wird prinzipiell 
   \label{fig:V5045}
 \end{figure}
 \noindent
-Zu sehen ist, dass der Graph in Abbildung \ref{fig:V5044} drei Teilgebiete aufgeteilt ist. Zum ersten das Anlaufstromgebiet, indem selbst für kleine Gegenspannungen noch ein Anodenstom vorgewiesen werden kann. Dieser Effekt ist darauf zurückzuführen, dass die Elektronen eine Eigengeschwindigkeit beim Verlassen der Kathode besitzen. Dabei ergibt sich für die Stromdichte der Gegenspannung $V$ der Zusammenhang
+Zu sehen ist, dass der Graph in Abbildung \ref{fig:V5044} drei Teilgebiete
+aufgeteilt ist. Zum ersten das Anlaufstromgebiet, indem selbst für kleine
+Gegenspannungen noch ein Anodenstom vorgewiesen werden kann. Dieser Effekt
+ist darauf zurückzuführen, dass die Elektronen eine Eigengeschwindigkeit
+beim Verlassen der Kathode besitzen. Dabei ergibt sich für die Stromdichte
+der Gegenspannung $V$ der Zusammenhang
 \begin{equation}
   j(V)\,=\,const\,\exp\Big(-\frac{e_0V}{kT}\Big).
   \label{eqn:stromdichte}
@@ -308,7 +350,7 @@ Sättigungsstrom $I_\mathup{S}$ angenommen.
 \end{table}
 \clearpage
 \noindent
-Die Kennlinien wurden bei den in Tabelle \ref{tab:heiz} stehenden Heizspannungen
+Die Kennlinien werden bei den in Tabelle \ref{tab:heiz} stehenden Heizspannungen
 und Strömen gemessen.
 \begin{table}
   \centering
@@ -330,7 +372,7 @@ und Strömen gemessen.
 \subsection{Betrachtung der Strom-Spannungs-Beziehung nach dem Langmuir-Schottkyschen Gesetz}
 Für diese Betrachtung werden die gemessenen Werte der fünften Kennlinie verwendet.
 Diese werden doppelt-logarithmisch aufgetragen und anschließend mit der Funktion
-curve-fit von Python eine Anpassung an eine lineare Funktion
+curve-fit von scipy.optimize eine Anpassung an eine lineare Funktion
 \begin{equation}
   f(x) = m \cdot x + b
   \label{eqn:linear}
@@ -478,8 +520,8 @@ Sie lautet dann:
   e_0 \phi = \ln \left( \frac{j_\mathup{S} \cdot h^3}{4 \pi \cdot e_0 m_0 k^2 T^2} \right) \cdot k T
   \label{eqn:austritt}
 \end{equation}
-Da in der Formel von der Sättigungsstromdichte $j_\mathup{S}$ die Rede ist
-muss der von uns gemessene Sättigungsstrom $I_\mathup{S}$ noch durch die Fläche
+Da in der Formel die Sättigungsstromdichte $j_\mathup{S}$ verwendet wird
+muss der gemessene Sättigungsstrom $I_\mathup{S}$ noch durch die Fläche
 geteilt werden. Dabei ist auf die Einheiten zu achten. Für die Elementarladung
 $e_0$, die Elektronenmasse $m_0$ ($\approx \SI{9.109e-31}{\kilo\gram}$), die Boltzmann-Konstante $k$ und die Planksche
 Konstante $h$ ($\approx \SI{6.626e-34}{\joule\second}$) werden die Werte von Scipy \cite{scipy} verwendet.
@@ -518,7 +560,7 @@ In Tabelle \ref{tab:ergebnissevers} stehen die Ergebnisse des Versuchs.
   \sisetup{table-format=1.1}
   \begin{tabular}{S S S}
     \toprule
-    {Größe} & {Ergebniss} & {Theoriewert} \\
+    {Größe} & {Ergebnis} & {Theoriewert} \\
     \midrule
     $I_\mathup{S_1}$ & $\SI{0.029}{\milli\ampere}$ & / \\
     $I_\mathup{S_2}$ & $\SI{0.068}{\milli\ampere}$ & / \\
@@ -543,7 +585,7 @@ liegt etwas unterhalb von dem Theoriewert, was an einem systematischen Fehler li
 dürfte, da der statistische Fehler der Steigung kleiner ist als die Abweichung.
 Ein derartiger Fehler wäre z.B. ein ungenaues Ablesen der Werte. Außerdem ist
 während dem Versuch aufgefallen, dass teilweise bei einem bestimmten Wert auf
-der Skala der Spannung ein keliner Sprung stattfand, nachdem sich für davor
+der Skala der Spannung ein kleiner Sprung stattfand, nachdem sich für davor
 gemessene Werte bei erneutem Messen ein etwas höherer Wert ergab. Somit könnte
 auch durch die Messgeräte ein Fehler zustande kommen.
 

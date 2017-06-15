@@ -1,18 +1,18 @@
 [0] Config.pm:354> INFO - This is Biber 2.6
 [0] Config.pm:357> INFO - Logfile is 'V504.blg'
-[41] biber:302> INFO - === Mo Mai 29, 2017, 17:27:56
-[60] Biber.pm:359> INFO - Reading 'V504.bcf'
-[152] Biber.pm:820> INFO - Using all citekeys in bib section 0
-[168] Biber.pm:3658> INFO - Processing section 0
-[181] Biber.pm:3828> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[182] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
-[182] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
-[191] Biber.pm:3828> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[192] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
-[193] bibtex.pm:1282> INFO - Found BibTeX data source 'programme.bib'
-[215] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[215] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[215] Biber.pm:3487> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'de-DE'
-[215] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
-[223] bbl.pm:597> INFO - Writing 'V504.bbl' with encoding 'UTF-8'
-[224] bbl.pm:701> INFO - Output to V504.bbl
+[36] biber:302> INFO - === Do Jun 15, 2017, 17:33:22
+[57] Biber.pm:359> INFO - Reading 'V504.bcf'
+[145] Biber.pm:820> INFO - Using all citekeys in bib section 0
+[161] Biber.pm:3658> INFO - Processing section 0
+[176] Biber.pm:3828> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[176] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[177] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
+[185] Biber.pm:3828> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[186] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[188] bibtex.pm:1282> INFO - Found BibTeX data source 'programme.bib'
+[211] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[211] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[212] Biber.pm:3487> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'de-DE'
+[212] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
+[219] bbl.pm:597> INFO - Writing 'V504.bbl' with encoding 'UTF-8'
+[221] bbl.pm:701> INFO - Output to V504.bbl
