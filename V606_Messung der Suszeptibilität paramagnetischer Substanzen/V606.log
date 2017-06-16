@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  16 JUN 2017 12:29
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  16 JUN 2017 12:48
  restricted system commands enabled.
 **V606.tex
 (./V606.tex
@@ -605,7 +605,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.106 seconds)
+luaotfload | main : initialization completed in 0.114 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.
 sty
@@ -2362,9 +2362,9 @@ Here is how much of LuaTeX's memory you used:
  1763 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 147 glue, 1 kern, 70 attribute, 57 glue_spec, 70 at
 tribute_list, 1 write nodes
-   avail lists: 1:3,2:401,3:126,4:39,5:133,6:1674,7:475,8:75,9:248,10:25,11:235
+   avail lists: 1:3,2:407,3:126,4:39,5:133,6:1674,7:475,8:75,9:254,10:25,11:235
  46770 multiletter control sequences out of 65536+600000
- 101 fonts using 32651767 bytes
+ 101 fonts using 32652223 bytes
  61i,13n,104p,8814b,2926s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinm
 odern-math.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public
@@ -2375,7 +2375,7 @@ t/fonts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive
 cal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></hom
 e/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.ot
 f>
-Output written on V606.pdf (8 pages, 176645 bytes).
+Output written on V606.pdf (8 pages, 176638 bytes).
 
 PDF statistics: 152 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
