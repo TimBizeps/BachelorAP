@@ -6,3 +6,4 @@
 \contentsline {section}{\numberline {3}Versuchsaufbau}{3}{section.3}
 \contentsline {section}{\numberline {4}Versuchsdurchführung}{4}{section.4}
 \contentsline {section}{\numberline {5}Fehlerrechnung}{5}{section.5}
+\contentsline {section}{\numberline {6}Auswertung}{6}{section.6}

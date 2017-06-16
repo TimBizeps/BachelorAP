@@ -1,31 +1,31 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  14 JUN 2017 13:13
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  16 JUN 2017 12:24
  restricted system commands enabled.
 **V606.tex
 (./V606.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2016/06/14 v3.21 KOMA-Script document class (article)
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrkbase.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-dependent ba
 sics and keyval usage)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrbase.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrbase.sty
 Package: scrbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-independent b
 asics and keyval usage)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrlfile.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2016/06/14 v3.21 KOMA-Script package (loading files)
 
 Package scrlfile, 2016/06/14 v3.21 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 )))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/tocbasic.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/tocbasic.sty
 Package: tocbasic 2016/06/14 v3.21 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
@@ -43,10 +43,12 @@ Class scrartcl Info: File `scrsize11pt.clo' used instead of
 (scrartcl)           file `scrsize11.clo' to setup font sizes on input line 2052
 .
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrsize11pt.c
+lo
 File: scrsize11pt.clo 2016/06/14 v3.21 KOMA-Script font size class option (11pt)
 
-) (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/typearea.sty
+)
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2016/06/14 v3.21 KOMA-Script package (type area)
 
 Package typearea, 2016/06/14 v3.21 KOMA-Script package (type area)
@@ -97,14 +99,15 @@ LaTeX Info: Redefining \textsubscript on input line 4036.
 \c@table=\count87
 Class scrartcl Info: Redefining `\numberline' on input line 5049.
 \bibindent=\dimen102
-) (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrhack.sty
+)
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrhack.sty
 Package: scrhack 2016/06/14 v3.21 KOMA-Script package 
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/xpatch/xpatch.sty
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2016/05/18 v6512 L3 programming layer (loader) 
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2016/05/18 v6512 L3 programming layer (code)
 L3 Module: l3bootstrap 2016/02/12 v6412 L3 Bootstrap code
 \ucharcat@table=\catcodetable5
@@ -212,22 +215,23 @@ L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
 \l__coffin_scaled_width_dim=\dimen133
 L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count110
 \l__driver_tmp_box=\box43
 ))
 Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.st
-y
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.
+sty
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count111
 \l__xparse_m_args_int=\count112
 \l__xparse_mandatory_args_int=\count113
 \l__xparse_processor_int=\count114
 \l__xparse_v_nesting_int=\count115
-) (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count116
 )
@@ -412,74 +416,75 @@ Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 . Defining command \xshowbibdriver with sig. 'm' on line 193.
 .................................................
 ))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.s
+ty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+ (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+) (/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
-)))) (/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.
-sty
+))))
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO)
 
-
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/luatex-loader.st
-y
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/luatex-loader.
+sty
 Package: luatex-loader 2016/05/16 v0.6 Lua module loader (HO)
 
-(/home/tim/.local/texlive/2016/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua))
+(/home/simon/.local/texlive/2016/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua
+))
 \pdftexcmds@toks=\toks15
-) (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/atveryend.sty
+)
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/atveryend.sty
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/uniquecounter.st
-y
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/uniquecounter.
+sty
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
- (/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
+
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
 
 ))
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 2.
-) (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip61
 
 For additional information on amsmath, use the `?' option.
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen134
 ))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen135
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count117
@@ -520,20 +525,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/mathtools/mathtools.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count129
 \calc@Bcount=\count130
@@ -546,7 +551,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count131
 \calc@Cskip=\skip66
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/mathtools/mhsetup.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
@@ -563,21 +568,23 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen150
 \l_MT_below_shortintertext_sep=\dimen151
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/luatex/luaotfload/luaotfload.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/luatex/luaotfload/luaotfload.st
+y
 Package: luaotfload 2016/06/16 v2.7 OpenType layout system
 Lua module: luaotfload-main 2016/06/16 2.70003 OpenType layout system.
 Lua module: lualibs 2016-04-06 2.4 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2016-04-06 2.4 ConTeXt Lua libraries -- extended co
-llection.(using cache: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/gene
-ric)
-luaotfload | conf : Root cache directory is /home/tim/.local/texlive/2016/texmf-
-var/luatex-cache/generic/names.
+llection.(using write cache: /home/simon/.local/texlive/2016/texmf-var/luatex-ca
+che/generic)(using read cache: /home/simon/.local/texlive/2016/texmf-var/luatex-
+cache/generic /home/simon/.texlive2016/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /home/simon/.local/texlive/2016/texm
+f-var/luatex-cache/generic/names.
 luaotfload | init : Loading fontloader “fontloader-2016-06-16.lua” from kpse
--resolved path “/home/tim/.local/texlive/2016/texmf-dist/tex/luatex/luaotfload
-/fontloader-2016-06-16.lua”.
+-resolved path “/home/simon/.local/texlive/2016/texmf-dist/tex/luatex/luaotflo
+ad/fontloader-2016-06-16.lua”.
 Lua-only attribute luaotfload@state = 1
 Lua-only attribute luaotfload@noligature = 2
 Lua-only attribute luaotfload@syllabe = 3
@@ -586,8 +593,8 @@ Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.define_font' at position 1 in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 4
-luaotfload | conf : Root cache directory is /home/tim/.local/texlive/2016/texmf-
-var/luatex-cache/generic/names.
+luaotfload | conf : Root cache directory is /home/simon/.local/texlive/2016/texm
+f-var/luatex-cache/generic/names.
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
 font'.
 Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
@@ -600,8 +607,8 @@ Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
 luaotfload | main : initialization completed in 0.107 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.st
-y
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.
+sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
 X
 \l_fontspec_script_int=\count133
@@ -611,57 +618,56 @@ X
 \l__fontspec_tmpb_dim=\dimen153
 \l__fontspec_tmpc_dim=\dimen154
 \g__file_internal_ior=\read1
- (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+ (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2enc.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2enc.def
 File: eu2enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
 )
 LaTeX Font Info:    Try loading font information for EU2+lmr on input line 105.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmr.fd
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmr.fd
 File: eu2lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-luaotfload | db : Font names database loaded from /home/tim/.local/texlive/2016/
-texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /home/tim/.l
-ocal/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
-))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+luaotfload | db : Font names database loaded from /home/simon/.local/texlive/201
+6/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /home/simo
+n/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular
+.luc))
+(/home/simon/.local/texlive/2016/texmf-dist/tex/xelatex/xunicode/xunicode.sty
 File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many o
 ther characters in Unicode lower plane
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/tipa/t3enc.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
-(load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/ot
-l/lmromanslant10-regular.luc)(load luc: /home/tim/.local/texlive/2016/texmf-var/
-luatex-cache/generic/fonts/otl/lmroman10-italic.luc)(load luc: /home/tim/.local/
-texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)
+(load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/
+otl/lmromanslant10-regular.luc)(load luc: /home/simon/.local/texlive/2016/texmf-
+var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc)(load luc: /home/simon/.
+local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmss on input line 357.
 
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmss.fd
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmss.fd
 File: eu2lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)(load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/o
-tl/lmsans10-regular.luc))
+)(load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmsans10-regular.luc))
 \tipaTiiicode=\count136
 \tipasavetokens=\toks21
 \tipachecktokens=\toks22
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 99.
-
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/graphics-def/luatex.def
+ (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2016/08/17 v0.01g Graphics/Color for luaTeX
 \Gread@gobject=\count137
 ))
@@ -774,7 +780,8 @@ File: luatex.def 2016/08/17 v0.01g Graphics/Color for luaTeX
 . Defining command \DeclareFontsExtensions with sig. 'm' on line 603.
 .................................................
 \l__fontspec_tmp_int=\count138
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec.cfg)
 LaTeX Info: Redefining \itshape on input line 2629.
 LaTeX Info: Redefining \slshape on input line 2634.
 LaTeX Info: Redefining \scshape on input line 2639.
@@ -813,42 +820,42 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 27.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/polyglossia/polyglossia.s
+ty
 Package: polyglossia 2015/03/25 v1.42.4 Alternative to Babel for XeLaTeX and Lua
 LaTeX
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/makecmds/makecmds.sty
+ (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/makecmds/makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
-)
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+) (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks23
 \XKV@tempa@toks=\toks24
 )
 \XKV@depth=\count141
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)) (/home/simon/.local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/luatex/luatexbase/luatexbase.st
+y
 Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/luatex/ctablestack/ctablestack.st
-y
+(/home/simon/.local/texlive/2016/texmf-dist/tex/luatex/ctablestack/ctablestack.
+sty
 Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 \@catcodetablestackcnt=\count142
 )
 \CatcodeTableOther=\catcodetable6
 \CatcodeTableExpl=\catcodetable7
 )
-luatex-hyphen: using data file: /home/tim/.local/texlive/2016/texmf-var/tex/gene
-ric/config/language.dat.lua
+luatex-hyphen: using data file: /home/simon/.local/texlive/2016/texmf-var/tex/ge
+neric/config/language.dat.lua
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/polyglossia/gloss-german.ld
-f
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/polyglossia/gloss-german.
+ldf
 File: gloss-german.ldf polyglossia: module for german
 
 hyph-de-1901.pat.txt
@@ -857,7 +864,7 @@ Language german already loaded; id is 4
 hyph-de-1996.pat.txt
 Language ngerman was not yet loaded; created with id 8
 Language ngerman already loaded; id is 8
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/polyglossia/babelsh.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/polyglossia/babelsh.def
 File: babelsh.def 2013/04/30 Babel common definitions for shorthands
  Taken verbatim from babel.def (2013/04/15 v3.9e)
 )
@@ -865,27 +872,28 @@ Package polyglossia Info: Making " an active character on input line 79.
 )
 Package polyglossia Info: Default language is german.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/unicode-math/unicode-math.s
-ty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/unicode-math/unicode-math
+.sty
 Package: unicode-math 2015/09/24 v0.8c Unicode maths in XeLaTeX and LuaLaTeX
- (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/ucharcat/ucharcat.sty
+
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/ucharcat/ucharcat.sty
 Package: ucharcat 2015/11/19 v0.03 ucharcat for luaLaTeX (DPC)
 \ucharcat@table=\catcodetable8
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2
-e.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3packages/l3keys2e/l3key
+s2e.sty
 Package: l3keys2e 2016/05/18 v6512 LaTeX2e option processing using LaTeX3 keys
-) (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/base/fix-cm.sty
+) (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 ))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/filehook/filehook.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/filehook/filehook.sty
 Package: filehook 2011/10/12 v0.5d Hooks for input files
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/filehook/filehook-scrlfile.
-sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/filehook/filehook-scrlfil
+e.sty
 Package: filehook-scrlfile 2011/01/03 v0.1 filehook patch for scrlfile package
 Package filehook Info: Package 'scrlfile' detected and compensated for on input 
 line 102.
@@ -899,10 +907,10 @@ line 102.
 . Defining command \unimathsetup with sig. 'm' on line 168.
 .................................................
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/unicode-math/unicode-math-l
-uatex.sty
-(/home/tim/.local/texlive/2016/texmf-dist/tex/lualatex/lualatex-math/lualatex-m
-ath.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/unicode-math/unicode-math
+-luatex.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/lualatex/lualatex-math/lualatex
+-math.sty
 Package: lualatex-math 2016/04/16 v1.6 Patches for mathematics typesetting with 
 LuaLaTeX
 Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
@@ -954,8 +962,8 @@ h LuaLaTeX
 . Defining command \removenolimits with sig. 'm' on line 527.
 .................................................
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/unicode-math/unicode-math-t
-able.tex)
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/unicode-math/unicode-math
+-table.tex)
 .................................................
 . unicode-math info: "patch-macro"
 . 
@@ -987,10 +995,10 @@ able.tex)
 . Defining command \eqqcolon with sig. '' on line 1965.
 .................................................
 ))
-luaotfload | cache : Lookup cache loaded from /home/tim/.local/texlive/2016/texm
-f-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load luc: /home/ti
-m/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/latinmodern-math.
-luc)
+luaotfload | cache : Lookup cache loaded from /home/simon/.local/texlive/2016/te
+xmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load luc: /home/
+simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/latinmodern-m
+ath.luc)
 \g__fontspec_family_LatinModernMath_int=\count145
 .................................................
 . fontspec info: "no-font-shape"
@@ -1123,11 +1131,11 @@ LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/bx/n on input li
 ne 48.
-(load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/ot
-l/xits-math.luc)
+(load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/
+otl/xits-math.luc)
 \g__fontspec_family_XITSMath_int=\count146
-(load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/ot
-l/xits-mathbold.luc)
+(load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/
+otl/xits-mathbold.luc)
 luaotfload | aux : font no 24 (<unknown>) does not define feature smcp for scrip
 t math with language dflt
 luaotfload | aux : no font with id 24
@@ -1189,11 +1197,10 @@ e 53.
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
 (Font)                  EU2/XITSMath(1)/m/n --> EU2/XITSMath(1)/bx/n on input li
 ne 53.
-
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx.sty
+ (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2016/09/02 v2.6s A comprehensive (SI) units package
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen157
 \extrarowheight=\dimen158
@@ -1359,39 +1366,39 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 . Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7419.
 .................................................
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/beamer/translator/translato
-r.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/beamer/translator/transla
+tor.sty
 Package: translator 2010/06/12 ver 1.10
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/beamer/translator/translato
-r-language-mappings.tex)))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/mhchem/mhchem.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/beamer/translator/transla
+tor-language-mappings.tex)))
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2016/08/07 v4.05 for typesetting chemical formulae
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3rege
-x.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3re
+gex.sty
 Package: l3regex 2016/05/14 v6492 L3 Experimental regular expressions
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl-b
-uild.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl
+-build.sty
 Package: l3tl-build 2016/05/14 v6492 L3 Experimental token list construction
 \l__tl_build_start_index_int=\count164
 \l__tl_build_index_int=\count165
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl-a
-nalysis.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3tl
+-analysis.sty
 Package: l3tl-analysis 2016/03/24 v6443 L3 Experimental token lists analysis
 \l__tl_analysis_normal_int=\count166
 \l__tl_analysis_index_int=\count167
 \l__tl_analysis_nesting_int=\count168
 \l__tl_analysis_type_int=\count169
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3flag
-.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3fl
+ag.sty
 Package: l3flag 2016/05/14 v6492 L3 Experimental flags
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3str-
-convert.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3experimental/l3str/l3st
+r-convert.sty
 Package: l3str-convert 2016/03/24 v6443 L3 Experimental string encoding conversi
 ons
 \l__str_internal_int=\count170
@@ -1432,7 +1439,7 @@ ons
 \l__regex_submatch_int=\count270
 \l__regex_zeroth_submatch_int=\count271
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2016/02/10 v1.0e interfaceforuprightgreeklettersforuseinchemi
 stry (CN)
 \l__chemgreek_tmpa_int=\count272
@@ -1504,8 +1511,7 @@ stry (CN)
 \mhchem@option@minusmathsidebearingright=\dimen172
 \mhchem@option@minustextsidebearingleft=\dimen173
 \mhchem@option@minustextsidebearingright=\dimen174
-)
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.sty
+) (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2016/07/14 v5.1h context-sensitive quotations (JAW)
 \csq@reset=\count276
 \csq@gtype=\count277
@@ -1515,19 +1521,19 @@ Package: csquotes 2016/07/14 v5.1h context-sensitive quotations (JAW)
 \csq@tshold=\count281
 \csq@ltx@everypar=\toks26
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2016/07/14 v5.1h csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3packages/xfrac/xfrac.st
+y (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -1542,7 +1548,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 )
@@ -1609,8 +1615,8 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/l3packages/xtemplate/xtempl
-ate.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/l3packages/xtemplate/xtem
+plate.sty
 Package: xtemplate 2016/05/18 v6512 L3 Experimental prototype document functions
 
 \l__xtemplate_tmp_dim=\dimen175
@@ -1638,7 +1644,8 @@ Package: xfrac 2016/05/18 v6512 L3 Experimental split-level fractions
 . 
 . Defining command \sfrac with sig. 'omom' on line 451.
 .................................................
-) (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+)
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count283
 \float@exts=\toks27
@@ -1648,24 +1655,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 Package scrhack Info: loading float hack on input line 77.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/float.hak
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2016/06/14 v3.21 KOMA-Script package (hacking package float)
 Package scrhack Info: redefining \newfloat on input line 161.
 Package scrhack Info: redefining \listof on input line 161.
 Package scrhack Info: undefining \float@addtolists on input line 161.
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/placeins/placeins.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/graphics/lscape.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package scrhack Info: loading lscape hack on input line 76.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/koma-script/lscape.hak
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/lscape.hak
 File: lscape.hak 2016/06/14 v3.21 KOMA-Script package (hacking package lscape)
 Package scrhack Info: \landscape patched to make \textheight change optional on 
 input line 90.
@@ -1673,10 +1680,10 @@ input line 90.
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen181
@@ -1691,19 +1698,19 @@ Package caption Info: KOMA-Script document class.
 \c@ContinuedFloat=\count284
 Package caption Info: float package is loaded.
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count285
 \c@subtable=\count286
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/grffile.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)
 Package grffile Info: Option `multidot' is set to `true'.
 Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen188
 \lightrulewidth=\dimen189
@@ -1723,7 +1730,7 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count290
 \@thisrulewidth=\dimen256
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
 \MT@toks=\toks29
 \MT@count=\count291
@@ -1732,8 +1739,8 @@ LaTeX Info: Redefining \textls on input line 774.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
 \MT@listname@count=\count292
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/microtype/microtype-luatex.
-def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/microtype/microtype-luate
+x.def
 File: microtype-luatex.def 2016/05/14 v2.6a Definitions specific to luatex (RS)
 Lua module: microtype 2016/05/14 2.6a microtype module.
 LaTeX Info: Redefining \lsstyle on input line 674.
@@ -1742,28 +1749,27 @@ LaTeX Info: Redefining \lslig on input line 674.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
-))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.sty
+)) (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/09/17 v3.6 programmable bibliographies (PK/JW/AB)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count293
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip21
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.tex
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
 \integerpart=\count294
 \decimalpart=\count295
@@ -1824,7 +1830,7 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-dm.def)
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -1904,13 +1910,13 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-compat.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2016/09/17 v3.6 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2016/09/17 v3.6 biblatex compatibility (PK/JW/AB)
 \c@textcitecount=\count403
 \c@textcitetotal=\count404
@@ -1923,11 +1929,13 @@ File: biblatex.def 2016/09/17 v3.6 biblatex compatibility (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/alphabetic.b
+bx
 File: alphabetic.bbx 2016/09/17 v3.6 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/09/17 v3.6 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count410
 \c@bbx:relatedtotal=\count411
@@ -1935,7 +1943,8 @@ File: standard.bbx 2016/09/17 v3.6 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/alphabetic.c
+bx
 File: alphabetic.cbx 2016/09/17 v3.6 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -1950,22 +1959,21 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
 (scrhack)             need that hack, on input line 123.
-
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+ (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.
-sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperre
+f.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.s
-ty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic
+.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -1993,24 +2001,24 @@ Package hobsub Info: Skipping package `atveryend' (already loaded).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+)
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen258
 \Hy@linkcounter=\count412
 \Hy@pagecounter=\count413
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count414
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4362.
-
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2016/06/24 v6.83q Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `pdfusetitle' set `true' on input line 4362.
@@ -2043,20 +2051,19 @@ LaTeX Info: Redefining \pageref on input line 6416.
 
 Package hyperref Message: Driver (autodetected): hluatex.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/hyperref/hluatex.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/hyperref/hluatex.def
 File: hluatex.def 2016/06/24 v6.83q Hyperref driver for luaTeX
 \Fld@listcount=\count420
 \c@bookmark@seq@number=\count421
 \Hy@SectionHShift=\skip101
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/bookmark.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
 File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
 \BKM@id=\count422
-))
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/ncctools/extdash.sty
+)) (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/ncctools/extdash.sty
 Package: extdash 2005/01/29 v1.2 Extended Dash Package (NCC)
 )
 Package csquotes Info: Checking for multilingual support...
@@ -2069,7 +2076,7 @@ Package csquotes Warning: Using preliminary 'polyglossia' interface.
 
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/german.lbx
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
 )
 (./V606.aux
@@ -2095,7 +2102,7 @@ LaTeX Font Info:    ... okay on input line 148.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 148.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 148.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 148.
@@ -2106,7 +2113,7 @@ LaTeX Font Info:    ... okay on input line 148.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
 LaTeX Font Info:    ... okay on input line 148.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/home/simon/.local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count423
 \scratchdimen=\dimen262
@@ -2120,10 +2127,10 @@ LaTeX Font Info:    ... okay on input line 148.
 \makeMPintoPDFobject=\count428
 \everyMPtoPDFconversion=\toks31
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.st
+y
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+ (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
@@ -2133,18 +2140,18 @@ Package grfext Info: Graphics extension search list:
 ,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cf
-g
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.
+cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 Language ngerman already loaded; id is 8
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/tra
-nslator-basic-dictionary/translator-basic-dictionary-English.dict
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/t
+ranslator-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx-abbreviatio
-ns.cfg
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx-abbreviat
+ions.cfg
 File: siunitx-abbreviations.cfg 2016/09/02 v2.6s siunitx: Abbreviated units
 )
 .................................................
@@ -2166,8 +2173,8 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/microtype/mt-LatinModernRom
-an.cfg
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/microtype/mt-LatinModernR
+oman.cfg
 File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mode
 rn Roman (RS)
 )
@@ -2185,11 +2192,11 @@ Package biblatex Info: Reference section=0 on input line 148.
 Package biblatex Info: Reference segment=0 on input line 148.
 \AtBeginShipoutBox=\box58
 Package hyperref Info: Link coloring OFF on input line 148.
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.s
-ty
+(/home/simon/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring
+.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count429
@@ -2215,18 +2222,18 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.99991pt on input line 148.
 LaTeX Font Info:    Try loading font information for U+msa on input line 148.
- (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 148.
 
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(/home/tim/.local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 Package microtype Info: Loading generic settings for font family
@@ -2246,9 +2253,9 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/ot
-l/lmsans10-bold.luc)(load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-ca
-che/generic/fonts/otl/lmroman12-regular.luc)
+(load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/
+otl/lmsans10-bold.luc)(load luc: /home/simon/.local/texlive/2016/texmf-var/luate
+x-cache/generic/fonts/otl/lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 14.4002pt on input line 151.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
@@ -2263,7 +2270,7 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 6.9999pt on input line 151.
  [1
 
-{/home/tim/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/home/simon/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 152
 .
  (./V606.toc
@@ -2277,14 +2284,14 @@ Language ngerman already loaded; id is 8)
 <V6063.png, id=31, 677.53125pt x 793.96625pt>
 File: V6063.png Graphic file (type png)
  <use V6063.png>
-Package luatex.def Info: V6063.png used on input line 180.
+Package luatex.def Info: V6063.png used on input line 193.
 (luatex.def)             Requested size: 292.7776pt x 343.09492pt.
 
 
-LaTeX Warning: Citation 'anleitung' on page 1 undefined on input line 181.
+LaTeX Warning: Citation 'anleitung' on page 1 undefined on input line 195.
 
 
-LaTeX Warning: Citation 'anleitung' on page 1 undefined on input line 181.
+LaTeX Warning: Citation 'anleitung' on page 1 undefined on input line 195.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
@@ -2293,49 +2300,62 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 [2<./V6063.png>] <V6062.png, id=53, 1506.62875pt x 720.6925pt>
 File: V6062.png Graphic file (type png)
  <use V6062.png>
-Package luatex.def Info: V6062.png used on input line 225.
+Package luatex.def Info: V6062.png used on input line 249.
 (luatex.def)             Requested size: 376.42744pt x 180.06271pt.
 
 
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 226.
+LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 250.
 
 
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 226.
+LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 250.
 
 <V6061.png, id=54, 822.07124pt x 859.21pt>
 File: V6061.png Graphic file (type png)
  <use V6061.png>
-Package luatex.def Info: V6061.png used on input line 233.
+Package luatex.def Info: V6061.png used on input line 257.
 (luatex.def)             Requested size: 292.7776pt x 305.99841pt.
 
 
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 234.
+LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 258.
 
 
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 234.
+LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 258.
 
-[3<./V6062.png>](load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/
-generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/tim/.local/texlive/2016/
-texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
-Underfull \hbox (badness 10000) in paragraph at lines 241--247
+[3<./V6062.png>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cach
+e/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/simon/.local/texlive/2
+016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
+Underfull \hbox (badness 10000) in paragraph at lines 269--289
 
  []
 
-[4<./V6061.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+[4<./V6061.png>] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
+ [6
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
  (./V606.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
-Package rerunfilecheck Info: File `V606.aux' has not changed.
-(rerunfilecheck)             Checksum: C10C89A5CF6C51B5682E366B1A83B94C;5397.
-Package rerunfilecheck Info: File `V606.toc' has not changed.
-(rerunfilecheck)             Checksum: 7AC6EFE07850192B2C22256D894A28A0;507.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
 
+
+Package rerunfilecheck Warning: File `V606.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `V606.aux':
+(rerunfilecheck)             Before: 0A52E35492044307A841E1A96AA4D579;5397
+(rerunfilecheck)             After:  C9D3987F028DF8BE4E65C20DEA96B3B1;5745.
+
+Package rerunfilecheck Warning: File `V606.toc' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `V606.toc':
+(rerunfilecheck)             Before: 7AC6EFE07850192B2C22256D894A28A0;507
+(rerunfilecheck)             After:  F1A7134C89D2FEA9EB9D7CC3C935A95A;572.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -2348,27 +2368,28 @@ Package logreq Info: Writing requests to 'V606.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44458 strings out of 495118
+ 44462 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 1738 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 144 glue, 1 kern, 69 attribute, 57 glue_spec, 69 at
+ 1763 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 147 glue, 1 kern, 70 attribute, 57 glue_spec, 70 at
 tribute_list, 1 write nodes
-   avail lists: 1:3,2:399,3:129,4:39,5:133,6:1674,7:478,8:75,9:257,10:25,11:235
- 46768 multiletter control sequences out of 65536+600000
- 101 fonts using 32651615 bytes
+   avail lists: 1:3,2:401,3:126,4:39,5:133,6:1674,7:475,8:75,9:248,10:25,11:235
+ 46770 multiletter control sequences out of 65536+600000
+ 101 fonts using 32652223 bytes
  61i,13n,104p,8814b,2926s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmod
-ern-math.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/
-lmroman10-bold.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/publ
-ic/lm-math/latinmodern-math.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/
-opentype/public/lm-math/latinmodern-math.otf></home/tim/.local/texlive/2016/texm
-f-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/tim/.local/texlive/
-2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/tim/.local
-/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on V606.pdf (7 pages, 176216 bytes).
+</home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinm
+odern-math.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public
+/lm/lmroman10-bold.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentyp
+e/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive/2016/texmf-dis
+t/fonts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive
+/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/simon/.lo
+cal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></hom
+e/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.ot
+f>
+Output written on V606.pdf (8 pages, 176570 bytes).
 
-PDF statistics: 143 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 131072)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 151 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 131072)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
