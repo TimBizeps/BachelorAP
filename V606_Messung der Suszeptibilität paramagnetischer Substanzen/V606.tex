@@ -187,7 +187,8 @@ Der Gesamtdrehimpuls $\vec{J}$ der Elektronenhülle ergibt sich zu
   \label{eqn:gesamtdrehimpuls}
 \end{equation}
 Dabei bezeichnet $\vec{L}$ der Gesamtbahndrehimpuls und $\vec{S}$ den Gesamtspin.
-Abbildung \ref{fig:V6061} zeigt das Vektordiagramm aus den Drehimpulsvekoren einer Elektronenhülle.
+Abbildung \ref{fig:V6061} zeigt das Vektordiagramm aus den Drehimpulsvekoren
+einer Elektronenhülle.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{V6063.png}
@@ -196,7 +197,8 @@ Abbildung \ref{fig:V6061} zeigt das Vektordiagramm aus den Drehimpulsvekoren ein
   \label{fig:V6061}
 \end{figure}
 \noindent
-Aus geometrischen Gesetzen und einigen Umformungen erhält man damit den sogenannte Lande-Faktor
+Aus geometrischen Gesetzen und einigen Umformungen erhält man damit den
+sogenannte Lande-Faktor
 \begin{equation}
   g_J\,=\, \frac{3J(J+1)+ (S(S+1)-L(L+1))}{2J(J+1)}.
   \label{eqn:g_j}
@@ -215,12 +217,13 @@ ist und einigen mathematischen Umformungen ergibt sich für die Suszeptibilität
   \label{eqn:xi}
 \end{equation}
 Dabei ist
-\begin{equation*}
+\begin{equation}
   \mu_B\,\coloneq\,\frac{1}{2} \frac{e_0}{m_0} \hbar
-\end{equation*}
+  \label{eqn:bohrmag}
+\end{equation}
 und $m$ die Orientierungsquantenzahl.
-Das Curiesche Gesetz des Paramagnetismus, welches einen Zusammenhang zwischen
-Temperatur und Suszeptibilität liefert, ergibt sich dabei zu
+Das Curiesche Gesetz des Paramagnetismus \eqref{eqn:xi} liefert also einen
+Zusammenhang zwischen Temperatur und Suszeptibilität:
 \begin{equation}
   \chi\,\approx\,\frac{1}{T}.
 \end{equation}
@@ -240,8 +243,24 @@ Wenn nun $\omega -> \infty$ betrachtet wird  ergibt sich für die Suszeptibilit�
   \chi\,=\,4 \frac{F}{Q} \frac{U_{Br}}{U_{Sp}}.
   \label{eqn:infty}
 \end{equation}
-Die Seltenen-Erd-Elemente haben die Besonderheit, dass ihre Ionen paramagnetisch sind. Damit lässt sich bei Seltenen-Erd-Elementen gut die Suszeptibilität berechnen. Suszeptibilität ist abhängig von der Anordnung von Elektronen im Atom. Aus den Elektronen resultiert der Gesamtdrehimpuls. Dabei gibt es drei Regeln, die durch die Hund'schen Regeln beschrieben werden.
-Die Hund'schen Regeln sagen aus, dass die Spins sich zum maximalen Gesamtspin kombinieren. Dies ist auf das Pauli-Prinzip zurückzuführen, welches besagt, dass jedes Elektron sich in einer Atomhülle in mindestens einer seiner Quantenzahlen von seinem Nachbarn unterscheiden muss. Damit können sich auf einer Schale nie unendlich viele Elektronen aufhalten. Eine weitere Regel ist, dass sich der maximale Drehimpuls aus einzelnen Bahndrehimpulsen zusammensetzt, die mit der Pauli-Regel verträglich sind. Die letzte Regel besagt, dass der Gesamtdrehimpuls eine besondere Abhängigkeit vom maximalen Gesamtspin und vom maximalen Drehimpuls hat. Wenn die jeweilige Schale weniger als halb gefüllt ist ergibt sich der Zusammenhang
+Die Seltenen-Erd-Elemente haben die Besonderheit, dass ihre Ionen
+paramagnetisch sind. Damit lässt sich bei Seltenen-Erd-Elementen gut
+die Suszeptibilität berechnen. Suszeptibilität ist abhängig von der
+Anordnung von Elektronen im Atom. Aus den Elektronen resultiert der
+Gesamtdrehimpuls. Dabei gibt es drei Regeln, die durch die Hundschen
+Regeln beschrieben werden.
+
+\noindent
+Die Hundschen Regeln sagen aus, dass die Spins sich zum maximalen
+Gesamtspin kombinieren. Dies ist auf das Pauli-Prinzip zurückzuführen,
+welches besagt, dass jedes Elektron sich in einer Atomhülle in mindestens
+einer seiner Quantenzahlen von seinem Nachbarn unterscheiden muss. Damit
+können sich auf einer Schale nie unendlich viele Elektronen aufhalten.
+Eine weitere Regel ist, dass sich der maximale Drehimpuls aus einzelnen
+Bahndrehimpulsen zusammensetzt, die mit der Pauli-Regel verträglich sind.
+Die letzte Regel besagt, dass der Gesamtdrehimpuls eine besondere Abhängigkeit
+vom maximalen Gesamtspin und vom maximalen Drehimpuls hat. Wenn die jeweilige
+Schale weniger als halb gefüllt ist ergibt sich der Zusammenhang
 \begin{equation*}
   \vec{J}\,=\,\vec{L}-\vec{S}
   \label{eqn:-}
@@ -251,6 +270,7 @@ und wenn die Schale mehr als halb gefüllt ist ergibt sich der Zusammenhang
   \vec{J}\,=\,\vec{L}+\vec{S}.
   \label{eqn:+}
 \end{equation}
+\clearpage
 \section{Versuchsaufbau}
 \label{sec:aufbau}
 Abbildung \ref{fig:V6062} zeigt den verwendeten Versuchsaufbau zur Bestimmung
@@ -298,22 +318,25 @@ und aus der Differenz dieser erlangt man die Suszeptibilität der Elemente.
 Es werden jeweils 3 Messungen für 3 verschiedene Speisespannungen für 3
 verschiedene Seltene-Erd-Elemente durchgeführt.
 \noindent
-Dabei werden drei Proben mit den folgenden Massen und Längen genutzt. \\
+Dabei werden drei Proben mit den folgenden Massen, Dichten und Längen genutzt. \\
 \\
-Für die $Nd_2O_3$-Probe ergibt sich
+Für die $\ce{Nd2O3}$-Probe ergibt sich
 \begin{align*}
   m\,&=\,\SI{9}{\gram} \\
-  l\,&=\,\SI{16.5}{\centi\meter}
+  L\,&=\,\SI{16.5}{\centi\meter} \\
+  \rho_\mathup{w}\,&=\,\SI{7.24}{\gram\per\cubic\centi\meter}
 \end{align*}
-Für die $Gd_2O_3$-Probe ergibt sich
+Für die $\ce{Gd2O3}$-Probe ergibt sich
 \begin{align*}
   m\,&=\,\SI{14.08}{\gram} \\
-  l\,&=\,\SI{16.7}{\centi\meter}
+  L\,&=\,\SI{16.7}{\centi\meter} \\
+  \rho_\mathup{w}\,&=\,\SI{7.4}{\gram\per\cubic\centi\meter}
 \end{align*}
-Für die $Dy_2O_3$-Probe ergibt sich
+Für die $\ce{Dy2O3}$-Probe ergibt sich
 \begin{align*}
   m\,&=\,\SI{15.1}{\gram} \\
-  l\,&=\,\SI{15.8}{\centi\meter}
+  L\,&=\,\SI{15.8}{\centi\meter} \\
+  \rho_\mathup{w}\,&=\,\SI{7.8}{\gram\per\cubic\centi\meter}
 \end{align*}
 \section{Fehlerrechnung}
 \label{sec:fehlerrechnung}
@@ -342,5 +365,256 @@ Zur Auswertung wird das Programm Python verwendet.
 \clearpage
 \section{Auswertung}
 \label{sec:auswertung}
+Zu Beginn wird die optimale Frequenz für den Selektivverstärker gesucht.
+Die hierzu gemessenen Werte von $U_A$ und $U_E$ stehen in Tabelle \ref{tab:messwerte1}.
+\begin{table}[H]
+  \centering
+  \caption{Messwerte der Durchlasskurve.}
+  \label{tab:messwerte1}
+  \sisetup{table-format=4.1}
+  \begin{tabular}{S[table-format=5.0] S}
+    \toprule
+    {$f$ in $\si{\hertz}$} & {$U_\mathup{A}$ in $\si{\milli\volt}$} \\
+    \midrule
+    30000 &   31.5 \\
+    30300 &   34.0 \\
+    30600 &   36.0 \\
+    30900 &   39.0 \\
+    31200 &   42.0 \\
+    31500 &   46.0 \\
+    31800 &   50.0 \\
+    32100 &   55.0 \\
+    32400 &   62.0 \\
+    32700 &   70.0 \\
+    33000 &   81.0 \\
+    33300 &   94.5 \\
+    33600 &  110.0 \\
+    33900 &  137.5 \\
+    34200 &  182.5 \\
+    34500 &  270.0 \\
+    34800 &  470.0 \\
+    35100 & 1000.0 \\
+    35400 &  550.0 \\
+    35700 &  300.0 \\
+    36000 &  200.0 \\
+    36300 &  150.0 \\
+    36600 &  120.0 \\
+    36900 &  100.0 \\
+    37200 &   87.5 \\
+    37500 &   76.5 \\
+    37800 &   68.0 \\
+    38100 &   61.0 \\
+    38400 &   55.5 \\
+    38700 &   51.0 \\
+    39000 &   47.0 \\
+    39300 &   44.0 \\
+    39600 &   41.0 \\
+    39900 &   38.5 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\noindent
+Aus diesen Messwerten wird dann eine Durchlasskurve erstellt, welche in Abbildung
+\ref{fig:plot} zu sehen ist.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Plot.pdf}
+  \caption{Die gemessene Durchlasskurve.}
+  \label{fig:plot}
+\end{figure}
+\noindent
+Es ist leicht zu erkennen, dass der Selektivverstärker
+eine Frequenz von $\SI{35.1}{\kilo\hertz}$ am besten passieren lässt.
 
+\noindent
+Für die Bestimmung der Suzeptibilitäten werden die in Tabelle \ref{tab:messwerte2}
+stehenden Werte gemessen.
+\begin{table}
+  \centering
+  \caption{Messwerte bei der Messung der Suszeptibilität.}
+  \label{tab:messwerte2}
+  \sisetup{table-format=1.3}
+  \begin{tabular}{S S[table-format=1.2] | S[table-format=3.1] S | S[table-format=3.1] S}
+    \toprule
+    & & \multicolumn{2}{c}{Ohne Magnet} & \multicolumn{2}{c}{Mit Magnet} \\
+    {Stoff} & {$U_\mathup{Sp}$ in $\si{\volt}$} & {$U_\mathup{Br}$ in $\si{\micro\volt}$} & {$R_3R_4$ in $\si{\ohm}$} & {$U_\mathup{Br}$ in $\si{\micro\volt}$} & {$R_3R_4$ in $\si{\ohm}$}\\
+    \midrule
+    \ce{Nd2O3} & 0.70 & 237.5 & 0.960 & 242.5 & 0.850 \\
+    \ce{Nd2O3} & 0.76 & 267.5 & 0.980 & 270.0 & 0.860 \\
+    \ce{Nd2O3} & 0.80 & 282.5 & 0.940 & 280.0 & 0.860 \\
+    \ce{Gd2O3} & 0.70 & 250.0 & 0.985 & 350.0 & 0.190 \\
+    \ce{Gd2O3} & 0.76 & 267.5 & 0.985 & 370.0 & 0.260 \\
+    \ce{Gd2O3} & 0.80 & 282.5 & 1.000 & 395.0 & 0.200 \\
+    \ce{Dy2O3} & 0.70 & 250.0 & 1.015 & 580.0 & 0     \\
+    \ce{Dy2O3} & 0.76 & 272.5 & 0.990 & 610.0 & 0     \\
+    \ce{Dy2O3} & 0.80 & 285.0 & 0.990 & 665.0 & 0     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Zunächst wird aus den Längen $L$, Massen $m$ und Dichten $\rho_\mathup{w}$ der Proben nach
+\begin{equation}
+  Q_\mathup{real} = \frac{m}{L \cdot \rho_\mathup{w}}
+\end{equation}
+der tatsächliche Querschnitt dieser bestimmt. Die Ergebnisse davon stehen
+in Tabelle \ref{tab:ergebnisse1}.
+\begin{table}
+  \centering
+  \caption{Querschnitte der Proben.}
+  \label{tab:ergebnisse1}
+  \sisetup{table-format=1.3}
+  \begin{tabular}{S S}
+    \toprule
+    {Stoff} & {Querschnitt in $\si{\centi\meter\squared}$}\\
+    \midrule
+    \ce{Nd2O3} & 0.075 \\
+    \ce{Gd2O3} & 0.114 \\
+    \ce{Dy2O3} & 0.123 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Der Querschnitt der Spule ist mit $\SI{0.866}{\centi\meter\squared}$ gegeben.
+Aus den Querschnitten, den gemessenen Speisespannungen und den Spannungsdifferenzen
+bei der Brückenspannung wird nun nach Formel \eqref{eqn:infty} die Suszeptibilität berechnet.
+Anschließend wird sie nach Formel \eqref{eqn:xi2} aus der Differenz am Widerstand
+ein zweites Mal bestimmt. Hierbei ist $R_3 = \SI{998}{\ohm}$.
+Die Ergebnisse beider Rechnungen stehen in Tabelle \ref{tab:ergebnisse2}.
+\begin{table}
+  \centering
+  \caption{Die bestimmten Suszeptibilitäten.}
+  \label{tab:ergebnisse2}
+  \sisetup{table-format=1.3}
+  \begin{tabular}{S S[table-format=1.2] | S[table-format=3.1] S | S[table-format=2.5] S}
+    \toprule
+    {Stoff} & {$U_\mathup{Sp}$ in $\si{\volt}$} & {$\Delta U_\mathup{Br}$ in $\si{\micro\volt}$} & {$\Delta R_3R_4$ in $\si{\ohm}$} & {$\chi_U$} & {$\chi_R$}\\
+    \midrule
+    \ce{Nd2O3} & 0.70 &   5.0 & 0.110 &  0.00033 & 0.0025 \\
+    \ce{Nd2O3} & 0.76 &   2.5 & 0.120 &  0.00015 & 0.0028 \\
+    \ce{Nd2O3} & 0.80 &  -2.5 & 0.080 & -0.00014 & 0.0018 \\
+    \ce{Gd2O3} & 0.70 & 100.0 & 0.795 &  0.00434 & 0.0121 \\
+    \ce{Gd2O3} & 0.76 & 102.5 & 0.725 &  0.00410 & 0.0110 \\
+    \ce{Gd2O3} & 0.80 & 112.5 & 0.800 &  0.00428 & 0.0122 \\
+    \ce{Dy2O3} & 0.70 & 330.0 & 1.015 &  0.01333 & 0.0143 \\
+    \ce{Dy2O3} & 0.76 & 337.5 & 0.990 &  0.01255 & 0.0140 \\
+    \ce{Dy2O3} & 0.80 & 380.0 & 0.990 &  0.01343 & 0.0140 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\noindent
+Durch Mittel ergeben sich:
+\begin{align*}
+  \bar{\chi}_{U_\mathup{Nd_2O_3}}\,&=\,\SI{0.0001(1)}{} \\
+  \bar{\chi}_{R_\mathup{Nd_2O_3}}\,&=\,\SI{0.0024(3)}{} \\
+  \bar{\chi}_{U_\mathup{Gd_2O_3}}\,&=\,\SI{0.00424(7)}{} \\
+  \bar{\chi}_{R_\mathup{Gd_2O_3}}\,&=\,\SI{0.0118(4)}{} \\
+  \bar{\chi}_{U_\mathup{Dy_2O_3}}\,&=\,\SI{0.0131(3)}{} \\
+  \bar{\chi}_{R_\mathup{Dy_2O_3}}\,&=\,\SI{0.0141(1)}{}
+\end{align*}
+\\
+
+\noindent
+Bei den folgenden Rechnungen werden für die Elementarladung $e_0$, die
+Elektronenmasse $m_0$, $\hbar$, $\mu_0$, die Boltzmann-Konstante $k$ und
+die Avogadro-konstante $N_A$ die von Scipy \cite{scipy} zur Verfügung gestellten
+Werte verwendet.
+
+\noindent
+Für den Vergleich mit Theoriewerten werden diese zunächst mittels der Hundschen
+Regeln, dem Landé-Faktor und dem Curieschen Gesetz bestimmt.
+Zuerst wir das Bohrsche Magneton nach \eqref{eqn:bohrmag} bestimmt.
+Anschließend wird nach
+\begin{equation}
+  N = 2 \cdot N_A \frac{\rho_\mathup{w}}{M}
+\end{equation}
+die Konzentration der magnetischen Momente berechnet.
+Dafür werden die molaren Massen der Stoffe benötigt.
+Diese betragen \cite{mol1} \cite{mol2}:
+\begin{align*}
+  M_\mathup{Nd_2O_3}\,&=\,\SI{336.48}{\gram\per\mol} \\
+  M_\mathup{Gd_2O_3}\,&=\,\SI{362.5}{\gram\per\mol} \\
+  M_\mathup{Dy_2O_3}\,&=\,\SI{373}{\gram\per\mol}
+\end{align*}
+Nun wird aus der Elektronenkonfiguration der drei Stoffe jeweils der
+Gesamtdrehimpuls der Elektronenhülle und der Landé-Faktor bestimmt.
+Hierzu werden die Hundschen Regeln verwendet.
+Die entsprechenden Quantenzahlen und Landé-Faktoren stehen in Tabelle \ref{tab:ergebnisse3}.
+\begin{table}[H]
+  \centering
+  \caption{Quantenzahlen der Erden.}
+  \label{tab:ergebnisse3}
+  \sisetup{table-format=1.2}
+  \begin{tabular}{S S S[table-format=1.1] S}
+    \toprule
+    & {\ce{Nd2O3}} & {\ce{Gd2O3}} & {\ce{Dy2O3}}\\
+    \midrule
+    \text{4f-Elektronen} & 3 & 7 & 9 \\
+    \text{Spin} S & 1.5 & 3.5 & 2.5 \\
+    \text{Bahndrehimpuls} L & 6 & 0 & 5 \\
+    \text{Gesamtdrehimpuls} J & 4.5 & 3.5 & 7.5 \\
+    \text{Landé-Faktor} $g_J$ & 0.72 & 2 & 1.33 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\noindent
+Schließlich wird daraus nach dem Curieschen Gesetz \eqref{eqn:xi} die theoretische
+Suszeptibilität berechnet.
+Alle Zwischenergebnisse und die Suszeptibilitäten stehen in Tabelle \ref{tab:ergebnisse4}.
+\begin{table}[H]
+  \centering
+  \caption{Theoretische Suszeptibilitäten.}
+  \label{tab:ergebnisse4}
+  \sisetup{table-format=1.2}
+  \begin{tabular}{S S}
+    \toprule
+    {Größe} & {Wert}\\
+    \midrule
+    $\mu_B$ & $\SI{9.274e-24}{\joule\per\tesla}$ \\
+    $N_{\ce{Nd2O3}}$ & $\SI{2.59e28}{\per\cubic\meter}$ \\
+    $N_{\ce{Gd2O3}}$ & $\SI{2.46e28}{\per\cubic\meter}$ \\
+    $N_{\ce{Dy2O3}}$ & $\SI{2.52e28}{\per\cubic\meter}$ \\
+    $\chi_{\mathup{Theo}_{\ce{Nd2O3}}}$ & $\SI{0.00296}{}$ \\
+    $\chi_{\mathup{Theo}_{\ce{Gd2O3}}}$ & $\SI{0.01379}{}$ \\
+    $\chi_{\mathup{Theo}_{\ce{Dy2O3}}}$ & $\SI{0.02529}{}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\section{Diskussion}
+\label{sec:diskussion}
+In Tabelle \ref{tab:ergebnissevers} stehen die Ergebnisse des Versuchs.
+\begin{table}[H]
+  \centering
+  \caption{Ergebnisse.}
+  \label{tab:ergebnissevers}
+  \sisetup{table-format=1.2}
+  \begin{tabular}{S S S S}
+    \toprule
+    & {$\ce{Nd2O3}$} & {$\ce{Gd2O3}$} & {$\ce{Dy2O3}$} \\
+    \midrule
+    $\bar{\chi}_U$ & $\SI{0.0001(1)}{}$ & $\SI{0.00424(7)}{}$ & $\SI{0.0131(3)}{}$ \\
+    $\bar{\chi}_R$ & $\SI{0.0024(3)}{}$ & $\SI{0.0118(4)}{}$ & $\SI{0.0141(1)}{}$ \\
+    $\chi_{\mathup{Theo}}$ & $\SI{0.00296}{}$ & $\SI{0.01379}{}$ & $\SI{0.02529}{}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\noindent
+Die Ergebnisse bei der Bestimmung über die Spannung weichen alle sehr stark von
+den Theoriewerten ab. Das liegt wahrscheinlich hauptsächlich an den Störspannungen,
+die nicht durch den Selektivverstärker herrausgefiltert wurden. Diese sind
+verhältnismäßig größer, wenn zuvor nicht die optimale Filterfrequenz bei der
+Speisespannung eingestellt wurde. Zudem war bei $\ce{Nd2O3}$ der Unterschied
+der Spannungen nur sehr klein und somit nur ungenau zu bestimmen.
+
+\noindent
+Die Ergebnisse bei der Bestimmung über die Widerstände weichen hingegen nur wenig
+von den theoretischen Werten ab. Lediglich die so bestimmte Suszeptibilität von
+$\ce{Dy2O3}$ liegt deutlich unter dem theoretischen Werte. Das liegt aber daran,
+dass der Regler für den Widerstand nicht weiter reduzierbar war.
+
+\noindent
+Insgesamt erweist sich die Methode der Bestimmung über die Spannung als sehr
+unzuverlässig, während die Bestimmung über die Widerstände gute Werte liefert.
+\clearpage
+\nocite{*}
+\printbibliography
 \end{document}

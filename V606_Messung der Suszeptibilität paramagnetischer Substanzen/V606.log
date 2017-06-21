@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  16 JUN 2017 12:48
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  19 JUN 2017 16:59
  restricted system commands enabled.
 **V606.tex
 (./V606.tex
@@ -605,7 +605,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.114 seconds)
+luaotfload | main : initialization completed in 0.109 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.
 sty
@@ -2185,13 +2185,13 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout4 = V606.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'V606.bbl' not found.
-
-No file V606.bbl.
+Package biblatex Info: ... file 'V606.bbl' found.
+ (./V606.bbl)
 Package biblatex Info: Reference section=0 on input line 148.
 Package biblatex Info: Reference segment=0 on input line 148.
 \AtBeginShipoutBox=\box58
 Package hyperref Info: Link coloring OFF on input line 148.
+
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2281,104 +2281,168 @@ Language ngerman already loaded; id is 8)
  [2
 
 ]
-<V6063.png, id=33, 677.53125pt x 793.96625pt>
+<V6063.png, id=37, 677.53125pt x 793.96625pt>
 File: V6063.png Graphic file (type png)
  <use V6063.png>
-Package luatex.def Info: V6063.png used on input line 193.
+Package luatex.def Info: V6063.png used on input line 194.
 (luatex.def)             Requested size: 292.7776pt x 343.09492pt.
-
-
-LaTeX Warning: Citation 'anleitung' on page 1 undefined on input line 195.
-
-
-LaTeX Warning: Citation 'anleitung' on page 1 undefined on input line 195.
-
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2<./V6063.png>] <V6062.png, id=55, 1506.62875pt x 720.6925pt>
+[2<./V6063.png>] [3] <V6062.png, id=74, 1506.62875pt x 720.6925pt>
 File: V6062.png Graphic file (type png)
- <use V6062.png>
-Package luatex.def Info: V6062.png used on input line 249.
+
+<use V6062.png>
+Package luatex.def Info: V6062.png used on input line 284.
 (luatex.def)             Requested size: 376.42744pt x 180.06271pt.
-
-
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 250.
-
-
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 250.
-
-<V6061.png, id=56, 822.07124pt x 859.21pt>
+ <V6061.png, id=77, 822.07124pt x 859.21pt>
 File: V6061.png Graphic file (type png)
  <use V6061.png>
-Package luatex.def Info: V6061.png used on input line 257.
+Package luatex.def Info: V6061.png used on input line 292.
 (luatex.def)             Requested size: 292.7776pt x 305.99841pt.
 
+[4
 
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 258.
-
-
-LaTeX Warning: Citation 'anleitung' on page 3 undefined on input line 258.
-
-[3<./V6062.png>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cach
-e/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/simon/.local/texlive/2
-016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
-Underfull \hbox (badness 10000) in paragraph at lines 269--289
+<./V6062.png>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/
+generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/simon/.local/texlive/201
+6/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
+Underfull \hbox (badness 10000) in paragraph at lines 304--324
 
  []
 
-[4<./V6061.png>] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
- [6
+[5<./V6061.png>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cach
+e/generic/fonts/otl/lmroman5-regular.luc) [6]
+<Plot.pdf, id=105, 578.16pt x 433.62pt>
+File: Plot.pdf Graphic file (type pdf)
+ <use Plot.pdf>
+Package luatex.def Info: Plot.pdf used on input line 421.
+(luatex.def)             Requested size: 418.25555pt x 313.68826pt.
+ [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
+Overfull \hbox (5.475pt too wide) detected at line 490
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 491
+ 
+ []
+
+
+Overfull \hbox (3.0441pt too wide) detected at line 492
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 492
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 493
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 494
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 495
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 496
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 497
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 498
+ 
+ []
+
+[8<./Plot.pdf>] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
+
+ []
+
+[10] [11](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/gener
+ic/fonts/otl/lmromancaps10-regular.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 619.
+
+
+(/home/simon/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
+File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)(load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmmono10-regular.luc)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: EU2).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+Package biblatex Warning: No driver for entry type 'software'.
+(biblatex)                Using fallback driver on input line 619.
+
+
+Package biblatex Warning: No driver for entry type 'software'.
+(biblatex)                Using fallback driver on input line 619.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 620.
+[12
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 620.
  (./V606.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 331.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 620.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 620.
 Package rerunfilecheck Info: File `V606.aux' has not changed.
-(rerunfilecheck)             Checksum: C9D3987F028DF8BE4E65C20DEA96B3B1;5745.
+(rerunfilecheck)             Checksum: E9950CFAB68B1E3605E954F98FB95F53;8913.
 Package rerunfilecheck Info: File `V606.toc' has not changed.
-(rerunfilecheck)             Checksum: F1A7134C89D2FEA9EB9D7CC3C935A95A;572.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                V606
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 7347A19019429ABFC0362D8236DF60F2;704.
 Package logreq Info: Writing requests to 'V606.run.xml'.
 
 \openout1 = V606.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 44462 strings out of 495118
+ 44627 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 1763 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 147 glue, 1 kern, 70 attribute, 57 glue_spec, 70 at
-tribute_list, 1 write nodes
-   avail lists: 1:3,2:407,3:126,4:39,5:133,6:1674,7:475,8:75,9:254,10:25,11:235
- 46770 multiletter control sequences out of 65536+600000
- 101 fonts using 32652223 bytes
- 61i,13n,104p,8814b,2926s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinm
-odern-math.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public
-/lm/lmroman10-bold.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentyp
-e/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive/2016/texmf-dis
-t/fonts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive
-/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/simon/.lo
-cal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></hom
-e/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.ot
-f>
-Output written on V606.pdf (8 pages, 176638 bytes).
+ 5150 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 531 glue, 1 kern, 239 attribute, 58 glue_spec, 239 
+attribute_list, 1 write, 3 pdf_action nodes
+   avail lists: 1:3,2:4438,3:305,4:59,5:406,6:1991,7:2093,8:149,9:1689,10:25,11:
+233
+ 46886 multiletter control sequences out of 65536+600000
+ 104 fonts using 33039999 bytes
+ 61i,29n,104p,8814b,2956s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-re
+gular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/l
+mromancaps10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opent
+ype/public/lm/lmroman10-italic.otf></home/simon/.local/texlive/2016/texmf-dist/f
+onts/opentype/public/lm/lmroman8-regular.otf></home/simon/.local/texlive/2016/te
+xmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/
+texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/simon
+/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.o
+tf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/lat
+inmodern-math.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/pub
+lic/lm/lmroman10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/o
+pentype/public/lm/lmroman12-regular.otf></home/simon/.local/texlive/2016/texmf-d
+ist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on V606.pdf (14 pages, 224552 bytes).
 
-PDF statistics: 152 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 131072)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 305 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 131072)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
