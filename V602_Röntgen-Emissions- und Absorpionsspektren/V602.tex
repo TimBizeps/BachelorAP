@@ -142,7 +142,8 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \publishers{TU Dortmund – Fakultät Physik}
 
 \date{Durchführung: 30.05.2017\\
-      Abgabe: 06.06.2017}
+      Abgabe: 06.06.2017\\
+      Korrektur: 21.06.2017}
 
 
 \begin{document}
@@ -161,7 +162,7 @@ und verschiedene Absorptionsspektren untersucht.
 Röntgenstrahlung besteht aus elektromagnetischen Wellen im Energiebereich von
 mehreren $\si{\kilo\electronvolt}$. Sie wird erzeugt, indem Elektronen eine
 entsprechend große Beschleunigungsspannug durchlaufen und anschließend auf die
-Anode treffen. Im Coulombfeld des Anodenmaterials werden die Elektronen
+Anode treffen. Im Coulombfeld der Kerne des Anodenmaterials werden die Elektronen
 abgebremst. Dabei geben diese dann einen Teil ihrer Energie in Form von
 Röntgenstrahlung ab. Da die Elektronen dabei einen beliebigen Teil ihrer Energie
 abgeben können ist dieses Spektrum kontinuierlich. Es wird allgemein als
@@ -201,12 +202,13 @@ stattfindet. Z.B. werden die Bezeichnungen $K_\alpha$, $K_\beta$, $L_\alpha$,
 $L_\beta$ usw. verwendet. Der Buchstabe steht dabei jeweils für den energetisch
 günstigeren Zustand, auf den das Elektron herabfällt. Sie sind von $K$ aus
 aufwärts alphabetisch nummeriert. Die griechischen Indizes stehen für den
-Ursprung des Elektrons. So bedeutet der $K_\alpha$ Übergang, dass ein Elektron
-aus der $L$-Schale in die $K$-Schale wandert, und der $K_\beta$ Übergang, dass
+Ursprung des Elektrons. So bedeutet der $K_\alpha$-Übergang, dass ein Elektron
+aus der $L$-Schale in die $K$-Schale wandert, und der $K_\beta$-Übergang, dass
 ein Elektron aus der $M$-Schale in die $K$-Schale wandert.
 
 \noindent
-Die Bindungsenergie der Elektronen im Anodenmaterial wird durch innere Elektronen
+Die Bindungsenergie der Elektronen im Anodenmaterial wird durch innere
+Elektronen
 geschwächt. Daher ergibt sich für diese:
 \begin{equation}
   E_n = - R_\infty z_{eff}^2 \cdot \frac{1}{n^2}.
@@ -214,12 +216,14 @@ geschwächt. Daher ergibt sich für diese:
 \end{equation}
 Dabei ist $z_{eff} = z - \sigma$ die effektive Kernladungszahl, mit der
 Abschirmkonstante $\sigma$, und $R_\infty = \SI{13.6}{\electronvolt}$ die
-Rydbergenergie. Der Index $n$ nimmt von $K = 1$ aus aufsteigend ganze Zahlen an.
+Rydbergenergie. Der Index $n$ nimmt von $K = 1$ aus aufsteigend ganze Zahlen
+an.
 Die Spektren treten parallel auf, weshalb sich das Emissionsspektrum aus beiden
 zusammensetzt.
 
 \noindent
-Das Absorpionsspektrum von Röntgenstrahlung ist ebenfalls sehr materialabhängig.
+Das Absorpionsspektrum von Röntgenstrahlung ist ebenfalls sehr
+materialabhängig.
 Allgemein nimmt das Absorptionsvermögen eines Absorbers mit zunehmender Energie
 ab. Es steigt jedoch abrupt, wenn die Strahlung die Ionisierungsenergie einer
 weiter innen gelegenen Schale erreicht. Dadurch werden sich dort befindliche
@@ -259,10 +263,13 @@ Für die zweite effektive Kernladungszahl $z_{eff,2}$ wird eine neue
 Abschirmkonstante $\sigma_L$ benötigt.
 Diese berechnet sich nach:
 \begin{equation}
-  \sigma_L = Z - \left( \frac{4}{\alpha} \sqrt{\frac{\Delta E_L}{R_\infty}} - \frac{5 \Delta E_L}{R_\infty} \right)^\frac{1}{2} \left( 1+ \frac{19}{32} \alpha^2 \frac{\Delta E_L}{R_\infty} \right)^\frac{1}{2}.
+  \sigma_L = Z - \left( \frac{4}{\alpha} \sqrt{\frac{\Delta E_L}{R_\infty}} -
+  \frac{5 \Delta E_L}{R_\infty} \right)^\frac{1}{2} \left( 1+ \frac{19}{32}
+  \alpha^2 \frac{\Delta E_L}{R_\infty} \right)^\frac{1}{2}.
   \label{eqn:sigl}
 \end{equation}
-Hierbei ist $\Delta E_L = E_{L_{II}} - E_{L_{III}}$ die Energiedifferenz zwischen
+Hierbei ist $\Delta E_L = E_{L_{II}} - E_{L_{III}}$ die Energiedifferenz
+zwischen
 der $L_{II}$ und der $L_{III}$ Kante und $Z$ die Ordnungszahl des Absorbers.
 
 \noindent
@@ -365,7 +372,7 @@ Das Maximum des Graphen in Abbildung \ref{fig:6025} liegt bei etwa \SI{14.1}{°}
   \label{fig:60211}
 \end{figure}
 \noindent
-Abbildung \ref{fig:60211} zeigt das Emissionsspektrum einer Cu-Röntgenröhre. Es beginnt bei $5°$ und endet bei $26°$. Die $K_{\alpha}$ und $K_{\beta}$ Linien sind in den beiden Bergen enthalten. Dabei liegt $K_{\alpha}$ bei $22°$ und $K_{\beta}$ bei $19.8°$. Das Maximum von $K_{\alpha}$ entspricht einem Wert von $\SI{4273,0}{\frac{Impulse}{s}}$ und das Maximum von $K_{\beta}$ entspricht
+Abbildung \ref{fig:60211} zeigt das Emissionsspektrum einer Cu-Röntgenröhre. Es beginnt bei $5°$ und endet bei $26°$. Die $K_{\alpha}$-und $K_{\beta}$-Linien sind in den beiden Bergen enthalten. Dabei liegt $K_{\alpha}$ bei $22°$ und $K_{\beta}$ bei $19.8°$. Das Maximum von $K_{\alpha}$ entspricht einem Wert von $\SI{4273.0}{\frac{Impulse}{s}}$ und das Maximum von $K_{\beta}$ entspricht
 einem Wert von $\SI{1228}{\frac{Impulse}{s}}$. Durch Gleichung \eqref{eqn:minlam} wird außerdem $E_{max}$ und der Sollwert bestimmt. Dabei ergibt sich für den Sollwert
 \begin{equation*}
   e_0 U\,=\,\SI{35000}{\electronvolt}
@@ -393,10 +400,10 @@ benutzt. Dann ergibt sich Tabelle \ref{tab:energiedifferenzen}.
 			{Wert} & {Winkel $\theta$ [°]} & {Energie [$eV$]}
       & {Energiedifferenz $\delta$E [eV]}\\
 			\midrule
-      $K_{\beta 1}$ & $19.4$ & $9619$ & $/$ \\
-			$K_{\beta 2}$ & $20.2$ & $9253$ & $366$ \\
-			$K_{\alpha 1}$ & $21.6$ & $8679$ & $/$\\
-			$K_{\alpha 2}$ & $22.4$ & $8385$ & $294$ \\
+      $K_{\beta 1}$ & $19,4$ & $9619$ & $/$ \\
+			$K_{\beta 2}$ & $20,2$ & $9253$ & $366$ \\
+			$K_{\alpha 1}$ & $21,6$ & $8679$ & $/$\\
+			$K_{\alpha 2}$ & $22,4$ & $8385$ & $294$ \\
 			\bottomrule
 		\end{tabular}
 	\end{center}
@@ -419,8 +426,8 @@ genutzt.
 \noindent
 Dann ergibt sich für die beiden Werte:
 \begin{align*}
-  \sigma_{\beta}\,=\,2,66 \\
-  \sigma_{\alpha}\,=\,12,70.
+  \sigma_{1}\,=\,2.66 \\
+  \sigma_{2}\,=\,12.70.
 \end{align*}
 Im Folgenden sind die Graphen für die Absorptionsspektren von Brom, Germanium, Zink und Zirkonium zu sehen.
 \begin{figure}[H]
@@ -464,11 +471,10 @@ Das $\alpha$ in dieser Formel ist dabei stets $\alpha$\,=\,$\frac{1}{137}$. Das 
       {Ordnungszahl} & {Element} & {Winkel $\theta$ [°]} & {Energie [$eV$]}
       & {Abschirmkonstante $\sigma$}\\
 			\midrule
-      29  & Kupfer & $22.0$ & $9297$ & $3.03$ \\
-      30  & Zink & $19.9$ & $10017$ & $3.06$ \\
-      32  & Germanium & $16.0$ & $11522$ & $3.13$\\
-      35  & Brom & $13.2$ & $13992$ & $3.24$ \\
-      40  & Zirkonium & $10.9$ & $18584$ & $3.50$ \\
+      30  & Zink & $18,1$ & $10017$ & $3,06$ \\
+      32  & Germanium & $16,0$ & $11522$ & $3,13$\\
+      35  & Brom & $13,2$ & $13992$ & $3,24$ \\
+      40  & Zirkonium & $10,9$ & $18584$ & $3,50$ \\
 			\bottomrule
 		\end{tabular}
 	\end{center}
@@ -488,7 +494,7 @@ Dabei ergibt sich:
 \end{align*}
 Dabei soll $a$ quadriert gleich der Rydberg-Energie $R_{\infty}$ sein.
 \begin{equation*}
-  a²\,\approx\,13.10
+  a²\,=\,\SI{13.10(4)}{eV}
 \end{equation*}
 Als nächstes werden schwere Absorber betrachtet.
 \begin{figure}[H]
@@ -500,8 +506,8 @@ Als nächstes werden schwere Absorber betrachtet.
 \noindent
 Abbildung \ref{fig:6026} zeigt das Absorptionsspektrum von Bismut. Dabei liegen die L-Kanten bei den Winkeln
 \begin{align*}
-  \theta_{L1}\,=\,11,1° \\
-  \theta_{L2}\,=\,13,2°
+  \theta_{L1}\,=\,11.1° \\
+  \theta_{L2}\,=\,13.2°
 \end{align*}
 Die dazu berechneten Energien und die dazu gehörige Energiedifferenz lauten
 \begin{align*}
@@ -531,11 +537,10 @@ Als nächstes werden die leichten Absorber betrachtet. Tabelle \ref{tab:literatu
 			{Ordnungszahl} & {Element} & {Winkel $\theta$ [°]} & {Energie [$eV$]}
       & {Abschirmkonstante $\sigma$}\\
 			\midrule
-      29  & Kupfer & $20.1$ & $8980$ & $3.30$ \\
-			30  & Zink & $18.6$ & $9650$ & $3.56$ \\
-			32  & Germanium & $16.1$ & $11100$ & $3.56$\\
-			35  & Brom & $13.2$ & $18980$ & $3.85$ \\
-			40  & Zirkonium & $9.9$ & $17990$ & $4.10$ \\
+			30  & Zink & $18,6$ & $9650$ & $3,56$ \\
+			32  & Germanium & $16,1$ & $11100$ & $3,56$\\
+			35  & Brom & $13,2$ & $18980$ & $3,85$ \\
+			40  & Zirkonium & $9,9$ & $17990$ & $4,10$ \\
 			\bottomrule
 		\end{tabular}
 	\end{center}
@@ -552,8 +557,7 @@ Tabelle \ref{tab:errechnet2} zeigt die von uns errechneten Werte. Dabei werden d
       {Ordnungszahl} & {Element} & {Winkel $\theta$ [°]} & {Energie [$eV$]}
       & {Abschirmkonstante $\sigma$}\\
 			\midrule
-      29  & Kupfer & $22.0$ & $9297$ & $3.03$ \\
-      30  & Zink & $19.9$ & $10017$ & $3.06$ \\
+      30  & Zink & $18.1$ & $10017$ & $3.06$ \\
       32  & Germanium & $16.0$ & $11522$ & $3.13$\\
       35  & Brom & $13.2$ & $13992$ & $3.24$ \\
       40  & Zirkonium & $10.9$ & $18584$ & $3.50$ \\
@@ -562,14 +566,15 @@ Tabelle \ref{tab:errechnet2} zeigt die von uns errechneten Werte. Dabei werden d
 	\end{center}
 \end{table}
 \noindent
-Für Kupfer ergibt sich ein Fehler von \SI{8.0}{\percent}, für Zink ein Fehler von \SI{14.0}{\percent}, für Germanium ein Fehler von \SI{12.1}{\percent} , für Brom ein Fehler von \SI{15.8}{\percent} und für Zirkonium ein Fehler von \SI{14.6}{\percent}.
-Die Werte liegen alle in der richtigen Größenordnung, aber weichen dennoch deutlich voneinander ab. Der Grund liegt wahrscheinlich darin, dass man zur Bestimmung von \sigma eine Näherung verwendet.
-Bei der Betrachtung der Energien ergeben sich jeweils Fehler von \SI{3.4}{\percent} für Kupfer, \SI{3.7}{\percent} für Zink. \SI{3.7}{\percent} für Germanium, \SI{26.2}{\percent} für Brom und ein Fehler von   \SI{3.2}{\percent} für Zirkonium.
-Sowohl bei der Energie $E$ als auch bei der Abschirmkonstanten $\sigma$ ergeben sich bei Brom die größten Fehler.  Die Abweichungen der Energien sind außerdem geringer, als die der Abschirmkonstanten.
-Als nächstes werden die Abweichungen der Winkel bestimmt. Für Zink ergibt sich hierbei ein Fehler von \SI{6.5}{\percent}, für Germanium ein Fehler von \SI{0.6}{\percent}, für Brom ein Fehler von \SI{0}{\percent} und für Zirkonium ein Fehler von \SI{9.2}{\percent}. Die Abweichungen der Winkel sind ebenfalls relativ gering.
+Für Zink ergibt sich ein Fehler von \SI{14.0}{\percent}, für Germanium ein Fehler von \SI{12.1}{\percent}, für Brom ein Fehler von \SI{15.8}{\percent} und für Zirkonium ein Fehler von \SI{14.6}{\percent}.
+Die Werte liegen alle in der richtigen Größenordnung, aber weichen dennoch deutlich voneinander ab. Der Grund liegt wahrscheinlich darin, dass man zur Bestimmung von $\sigma$ eine Näherung verwendet.
+Bei der Betrachtung der Energien ergeben sich jeweils Fehler von \SI{3.7}{\percent} für Zink. \SI{3.7}{\percent} für Germanium, \SI{26.2}{\percent} für Brom und ein Fehler von \SI{3.2}{\percent} für Zirkonium.
+Sowohl bei der Energie $E$ als auch bei der Abschirmkonstanten $\sigma$ ergeben sich bei Brom die größten Fehler. Die Abweichungen der Energien sind außerdem geringer, als die der Abschirmkonstanten.
+Als nächstes werden die Abweichungen der Winkel bestimmt. Für Zink ergibt sich hierbei ein Fehler von \SI{2.7}{\percent}, für Germanium ein Fehler von \SI{0.6}{\percent}, für Brom ein Fehler von \SI{0}{\percent} und für Zirkonium ein Fehler von \SI{9.2}{\percent}. Die Abweichungen der Winkel sind ebenfalls relativ gering.
 Bei der Untersuchung der Rydberg-Energie ergibt sich ein Fehler von \SI{3.7}{\percent}.
 Der Plot in Abbildung \ref{plot} trägt die Ordnungszahl gegen die Wurzel der Energie auf. Dabei wird die Wurzel der Energie verwendet, damit der fit linear wird. Insgesamt ist diese Linearität auch deutlich zu erkennen.
 Bei dem schweren Absorber Bismut ist die L-Kante relativ gut zu erkennen. Der Wert von $\sigma_L = 4.15$ weicht um \SI{1}{\percent} vom Literaturwert $\sigma_{Lit} = 4.19$ ab.
+Für die untersuchte Emissionsquelle Kupfer ergibt sich für die Abschirmkonstante ein Wert von $\sigma\,=\,3.30$, welcher um \SI{8.0}{\percent} vom Literaturwert $\sigma\,=\,3.03$ abweicht. Für die Energie ergibt sich bei Kupfer ein Wert von \SI{9297}{\eV}, während der Literaturwert bei \SI{8980}{\eV} liegt. Das ist eine Abweichung von \SI{3.4}{\percent}. Bei der Betrachtung der Winkel ergibt sich ein Wert von \SI{22.0}{°}, während der Literaturwert bei \SI{20.1}{°} liegt. Das ist eine Abweichung von \SI{8.6}{\percent}.
 Insgesamt ist die Hauptfehlerquelle in diesem Versuch auf genutzte Näherungen zurückzuführen. Dennoch liegen alle bestimmten Werte in der richtigen Größenordnung.
 
 \clearpage

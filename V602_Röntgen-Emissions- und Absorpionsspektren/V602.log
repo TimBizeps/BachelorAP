@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  6 JUN 2017 10:53
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  21 JUN 2017 15:00
  restricted system commands enabled.
 **V602.tex
 (./V602.tex
@@ -598,7 +598,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.107 seconds)
+luaotfload | main : initialization completed in 0.114 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.st
 y
@@ -2078,33 +2078,33 @@ luatex-hyphen: info: no hyphenation exceptions for this language
 Language ngerman already loaded; id is 8)
 \openout1 = V602.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 148.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 148.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 149.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 149.
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2150,12 +2150,12 @@ File: siunitx-abbreviations.cfg 2016/09/02 v2.6s siunitx: Abbreviated units
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `fontspec' on line 148.
+. Activating mapping `fontspec' on line 149.
 .................................................
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 148.
+LaTeX Info: Redefining \microtypecontext on input line 149.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2180,10 +2180,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'V602.bbl' found.
  (./V602.bbl)
-Package biblatex Info: Reference section=0 on input line 148.
-Package biblatex Info: Reference segment=0 on input line 148.
+Package biblatex Info: Reference section=0 on input line 149.
+Package biblatex Info: Reference segment=0 on input line 149.
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 148.
+Package hyperref Info: Link coloring OFF on input line 149.
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2194,34 +2194,34 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count429
 )
-LaTeX Info: Redefining \ref on input line 148.
-LaTeX Info: Redefining \pageref on input line 148.
-LaTeX Info: Redefining \nameref on input line 148.
+LaTeX Info: Redefining \ref on input line 149.
+LaTeX Info: Redefining \pageref on input line 149.
+LaTeX Info: Redefining \nameref on input line 149.
 \c__siunitx_mathsf_int=\count430
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LatinModernMath' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 148.
+(Font)              scaled to size 10.95015pt on input line 149.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 148.
+(Font)              scaled to size 8.00012pt on input line 149.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 148.
+(Font)              scaled to size 6.00009pt on input line 149.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 148.
+(Font)              scaled to size 10.94983pt on input line 149.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 148.
+(Font)              scaled to size 7.99988pt on input line 149.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 148.
-LaTeX Font Info:    Try loading font information for U+msa on input line 148.
+(Font)              scaled to size 5.99991pt on input line 149.
+LaTeX Font Info:    Try loading font information for U+msa on input line 149.
  (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 148.
+LaTeX Font Info:    Try loading font information for U+msb on input line 149.
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2250,21 +2250,21 @@ Package microtype Info: Loading generic settings for font family
 l/lmsans10-bold.luc)(load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-ca
 che/generic/fonts/otl/lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 151.
+(Font)              scaled to size 14.4002pt on input line 152.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 151.
+(Font)              scaled to size 10.00015pt on input line 152.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 151.
+(Font)              scaled to size 7.0001pt on input line 152.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 151.
+(Font)              scaled to size 14.39977pt on input line 152.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 151.
+(Font)              scaled to size 9.99985pt on input line 152.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 151.
+(Font)              scaled to size 6.9999pt on input line 152.
  [1
 
 {/home/tim/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 152
+Package tocbasic Info: character protrusion at toc deactivated on input line 153
 .
  (./V602.toc
 Language ngerman already loaded; id is 8)
@@ -2279,36 +2279,36 @@ x-cache/generic/fonts/otl/lmroman6-regular.luc) <V6021.png, id=38, 1055.945pt x
  527.9725pt>
 File: V6021.png Graphic file (type png)
  <use V6021.png>
-Package luatex.def Info: V6021.png used on input line 182.
+Package luatex.def Info: V6021.png used on input line 183.
 (luatex.def)             Requested size: 250.95587pt x 125.47533pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1<./V6021.png>] <V6022.png, id=54, 446.66875pt x 565.11125pt>
 File: V6022.png Graphic file (type png)
  <use V6022.png>
-Package luatex.def Info: V6022.png used on input line 232.
+Package luatex.def Info: V6022.png used on input line 236.
 (luatex.def)             Requested size: 188.21371pt x 238.12115pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 [2<./V6022.png>] <V6023.png, id=65, 762.85pt x 503.8825pt>
 File: V6023.png Graphic file (type png)
  <use V6023.png>
-Package luatex.def Info: V6023.png used on input line 282.
+Package luatex.def Info: V6023.png used on input line 289.
 (luatex.def)             Requested size: 209.12778pt x 138.1337pt.
 
 [3<./V6023.png>] <V6024.png, id=81, 1077.02374pt x 564.1075pt>
 File: V6024.png Graphic file (type png)
  <use V6024.png>
-Package luatex.def Info: V6024.png used on input line 294.
+Package luatex.def Info: V6024.png used on input line 301.
 (luatex.def)             Requested size: 418.25555pt x 219.07141pt.
 (load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/ot
 l/lmroman5-regular.luc)
-Underfull \hbox (badness 10000) in paragraph at lines 306--311
+Underfull \hbox (badness 10000) in paragraph at lines 313--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--320
+Underfull \hbox (badness 10000) in paragraph at lines 319--327
 
  []
 
@@ -2317,13 +2317,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--320
 <./V6024.png>] [5] <1.png, id=98, 99.39496pt x 51.78401pt>
 File: 1.png Graphic file (type png)
  <use 1.png>
-Package luatex.def Info: 1.png used on input line 356.
+Package luatex.def Info: 1.png used on input line 363.
 (luatex.def)             Requested size: 376.42744pt x 196.15459pt.
 
 <Emission.png, id=100, 99.39496pt x 51.78401pt>
 File: Emission.png Graphic file (type png)
  <use Emission.png>
-Package luatex.def Info: Emission.png used on input line 363.
+Package luatex.def Info: Emission.png used on input line 370.
 (luatex.def)             Requested size: 376.42744pt x 196.15459pt.
  [6
 
@@ -2331,44 +2331,41 @@ Package luatex.def Info: Emission.png used on input line 363.
 File: AbsBr.png Graphic file (type png)
 
 <use AbsBr.png>
-Package luatex.def Info: AbsBr.png used on input line 428.
+Package luatex.def Info: AbsBr.png used on input line 435.
 (luatex.def)             Requested size: 376.42744pt x 196.15459pt.
  <AbsGe.png, id=126, 99.39496pt x 51.78401pt>
 File: AbsGe.png Graphic file (type png)
  <use AbsGe.png>
-Package luatex.def Info: AbsGe.png used on input line 434.
+Package luatex.def Info: AbsGe.png used on input line 441.
 (luatex.def)             Requested size: 376.42744pt x 196.15459pt.
 
 <AbsZn.png, id=127, 99.39496pt x 51.78401pt>
 File: AbsZn.png Graphic file (type png)
  <use AbsZn.png>
-Package luatex.def Info: AbsZn.png used on input line 440.
+Package luatex.def Info: AbsZn.png used on input line 447.
 (luatex.def)             Requested size: 376.42744pt x 196.15459pt.
 
 <AbsZr.png, id=128, 99.39496pt x 51.78401pt>
 File: AbsZr.png Graphic file (type png)
  <use AbsZr.png>
-Package luatex.def Info: AbsZr.png used on input line 446.
+Package luatex.def Info: AbsZr.png used on input line 453.
 (luatex.def)             Requested size: 376.42744pt x 196.15459pt.
  [8<./AbsBr.png><./AbsGe.png>] [9<./AbsZn.png><./AbsZr.png>]
 <plot.pdf, id=151, 578.16pt x 433.62pt>
 File: plot.pdf Graphic file (type pdf)
  <use plot.pdf>
-Package luatex.def Info: plot.pdf used on input line 480.
+Package luatex.def Info: plot.pdf used on input line 486.
 (luatex.def)             Requested size: 376.42744pt x 282.31943pt.
- [10<./plot.pdf>]
-<AbsBi.png, id=202, 99.39496pt x 51.78401pt>
+
+<AbsBi.png, id=152, 99.39496pt x 51.78401pt>
 File: AbsBi.png Graphic file (type png)
  <use AbsBi.png>
-Package luatex.def Info: AbsBi.png used on input line 496.
+Package luatex.def Info: AbsBi.png used on input line 502.
 (luatex.def)             Requested size: 376.42744pt x 196.15459pt.
- [11<./AbsBi.png>]
-[12
-Missing character: There is no 𝜎 (U+1D70E) in font file:lmroman10-regular:scr
-ipt=latn;+trep;+tlig;!
-] [13](load luc: /home/tim/.local/texlive/2016/texmf-var/luatex-cache/generic/fo
-nts/otl/lmromancaps10-regular.luc)
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 577.
+ [10<./plot.pdf>]
+[11<./AbsBi.png>] [12] [13](load luc: /home/tim/.local/texlive/2016/texmf-var/lu
+atex-cache/generic/fonts/otl/lmromancaps10-regular.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 582.
 
 
 (/home/tim/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
@@ -2382,29 +2379,29 @@ Package microtype Info: Loading generic settings for font family
 
 
 Package biblatex Warning: No driver for entry type 'software'.
-(biblatex)                Using fallback driver on input line 577.
+(biblatex)                Using fallback driver on input line 582.
 
 
 Package biblatex Warning: No driver for entry type 'software'.
-(biblatex)                Using fallback driver on input line 577.
+(biblatex)                Using fallback driver on input line 582.
 
 
-Overfull \hbox (19.21878pt too wide) in paragraph at lines 578--578
+Overfull \hbox (19.21878pt too wide) in paragraph at lines 583--583
 \EU2/lmtt/m/n/10.95 de / tabellen - fur - spektroskopiker / wellenlaengen - und
  - anregungsenergien -
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 578.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 583.
 [14
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 578.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 583.
  (./V602.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 578.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 578.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 583.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 583.
 Package rerunfilecheck Info: File `V602.aux' has not changed.
-(rerunfilecheck)             Checksum: 8309B294EBCAB63A0C2C286826F6DBC8;10099.
+(rerunfilecheck)             Checksum: 8BC5D23C8F017EE2C6BDAC7957E5B84B;10099.
 Package rerunfilecheck Info: File `V602.toc' has not changed.
 (rerunfilecheck)             Checksum: 018BFAF60B9922C29A5888B23E2ABFF1;716.
 Package logreq Info: Writing requests to 'V602.run.xml'.
@@ -2415,13 +2412,13 @@ Package logreq Info: Writing requests to 'V602.run.xml'.
 Here is how much of LuaTeX's memory you used:
  44667 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 3869 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 394 glue, 1 kern, 157 attribute, 58 glue_spec, 157 
+ 4141 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 418 glue, 1 kern, 183 attribute, 58 glue_spec, 183 
 attribute_list, 1 write, 4 pdf_action nodes
-   avail lists: 1:3,2:1053,3:220,4:41,5:247,6:2674,7:942,8:143,9:309,10:21,11:32
-2
+   avail lists: 1:3,2:1008,3:220,4:42,5:295,6:3005,7:1089,8:143,9:309,10:21,11:3
+60
  46906 multiletter control sequences out of 65536+600000
- 105 fonts using 33171831 bytes
+ 105 fonts using 33172135 bytes
  61i,17n,104p,8814b,2966s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-regu
 lar.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmrom
@@ -2435,10 +2432,10 @@ exlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home
 tf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-
 regular.otf></home/tim/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/l
 msans10-bold.otf>
-Output written on V602.pdf (16 pages, 848543 bytes).
+Output written on V602.pdf (16 pages, 849048 bytes).
 
-PDF statistics: 345 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+PDF statistics: 344 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  59 named destinations out of 1000 (max. 131072)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
