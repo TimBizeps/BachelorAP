@@ -1,0 +1,264 @@
+\documentclass[
+  bibliography=totoc,     % Literatur im Inhaltsverzeichnis
+  captions=tableheading,  % Tabellenüberschriften
+  titlepage=firstiscover, % Titelseite ist Deckblatt
+]{scrartcl}
+
+% Paket float verbessern
+\usepackage{scrhack}
+
+% Warnung, falls nochmal kompiliert werden muss
+\usepackage[aux]{rerunfilecheck}
+
+% unverzichtbare Mathe-Befehle
+\usepackage{amsmath}
+% viele Mathe-Symbole
+\usepackage{amssymb}
+% Erweiterungen für amsmath
+\usepackage{mathtools}
+
+% Fonteinstellungen
+\usepackage{fontspec}
+% Latin Modern Fonts werden automatisch geladen
+% Alternativ:
+%\setromanfont{Libertinus Serif}
+%\setsansfont{Libertinus Sans}
+%\setmonofont{Libertinus Mono}
+\recalctypearea % Wenn man andere Schriftarten gesetzt hat,
+% sollte man das Seiten-Layout neu berechnen lassen
+
+% deutsche Spracheinstellungen
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+
+\usepackage[
+  math-style=ISO,    % ┐
+  bold-style=ISO,    % │
+  sans-style=italic, % │ ISO-Standard folgen
+  nabla=upright,     % │
+  partial=upright,   % ┘
+  warnings-off={           % ┐
+    mathtools-colon,       % │ unnötige Warnungen ausschalten
+    mathtools-overbracket, % │
+},                       % ┘
+]{unicode-math}
+
+% traditionelle Fonts für Mathematik
+\setmathfont{Latin Modern Math}
+% Alternativ:
+%\setmathfont{Libertinus Math}
+
+\setmathfont{XITS Math}[range={scr, bfscr}]
+\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
+
+% Zahlen und Einheiten
+\usepackage[
+locale=DE,                   % deutsche Einstellungen
+separate-uncertainty=true,   % immer Fehler mit \pm
+per-mode=symbol-or-fraction, % / in inline math, fraction in display math
+]{siunitx}
+
+% chemische Formeln
+\usepackage[
+version=4,
+math-greek=default, % ┐ mit unicode-math zusammenarbeiten
+text-greek=default, % ┘
+]{mhchem}
+
+% richtige Anführungszeichen
+\usepackage[autostyle]{csquotes}
+
+% schöne Brüche im Text
+\usepackage{xfrac}
+
+% Standardplatzierung für Floats einstellen
+\usepackage{float}
+\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}
+
+% Floats innerhalb einer Section halten
+\usepackage[
+section, % Floats innerhalb der Section halten
+below,   % unterhalb der Section aber auf der selben Seite ist ok
+]{placeins}
+
+% Seite drehen für breite Tabellen: landscape Umgebung
+\usepackage{pdflscape}
+
+% Captions schöner machen.
+\usepackage[
+  labelfont=bf,        % Tabelle x: Abbildung y: ist jetzt fett
+  font=small,          % Schrift etwas kleiner als Dokument
+  width=0.9\textwidth, % maximale Breite einer Caption schmaler
+]{caption}
+% subfigure, subtable, subref
+\usepackage{subcaption}
+
+% Grafiken können eingebunden werden
+\usepackage{graphicx}
+% größere Variation von Dateinamen möglich
+\usepackage{grffile}
+
+% schöne Tabellen
+\usepackage{booktabs}
+
+% Verbesserungen am Schriftbild
+\usepackage{microtype}
+
+% Literaturverzeichnis
+\usepackage[style=alphabetic,]{biblatex}
+% Quellendatenbank
+\addbibresource{lit.bib}
+\addbibresource{programme.bib}
+
+% Hyperlinks im Dokument
+\usepackage[
+  unicode,        % Unicode in PDF-Attributen erlauben
+  pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
+  pdfcreator={},  % ┐ PDF-Attribute säubern
+  pdfproducer={}, % ┘
+]{hyperref}
+% erweiterte Bookmarks im PDF
+\usepackage{bookmark}
+
+% Trennung von Wörtern mit Strichen
+\usepackage[shortcuts]{extdash}
+
+\title{US3: Doppler-Sonographie}
+\author{
+  Simon Schulte
+  \texorpdfstring{
+    \\
+    \href{mailto:simon.schulte@udo.edu}{simon.schulte@udo.edu}
+  }{}
+  \texorpdfstring{\and}{, }
+  Tim Sedlaczek
+  \texorpdfstring{
+    \\
+    \href{mailto:tim.sedlaczek@udo.edu}{tim.sedlaczek@udo.edu}
+  }{}
+}
+\publishers{TU Dortmund – Fakultät Physik}
+
+\date{Durchführung: 27.06.2017\\
+      Abgabe: 04.07.2017}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\section{Zielsetzung}
+\label{sec:zielsetzung}
+Bei diesem Versuch wird das Verhalten von Rohrströmungen mit Ultraschall untersucht.
+\section{Theorie}
+\label{sec:theorie}
+Als Ultraschall werden Schallwellen mit Frequenzen zwischen $\SI{20}{\kilo\hertz}$
+und $\SI{1}{\giga\hertz}$ bezeichnet. Diese Frequenzen liegen oberhalb von dem,
+was Menschen hören können. Für die Erzeugung dieser Schallwellen wird der
+piezo-elektrische Effekt verwendet. Dabei wird ein geeigneter Kristall
+elektrisch zu Schwingungen angeregt. Gleichzeitig kann die Resonanz eines solchen
+Kristalls für die Messung von entsprechend hoch frequenten Schallwellen verwendet
+werden. Bei dem Versuch wird, zur Messung der Geschwindigkeit der Strömung,
+der Doppler-Effekt ausgenutzt. Durch die Geschwindigkeit der Strömung wird die
+Frequenz der Welle verändert und die Differenz der Frequenzen kann zur Bestimmung
+der Geschwindigkeiten verwendet werden.
+Die Differenz der Frequenzen ergibt sich nach:
+\begin{equation}
+  \Delta \nu = 2 \nu_{0} \frac{v}{c} \cos \left( \alpha \right).
+  \label{eqn:freqdiff}
+\end{equation}
+Dabei ist $\nu_{0}$ die ursprüngliche Frequenz, $v$ die Geschwindigkeit der
+Strömung, $c$ die Schallgeschwindigkeit der Flüssigkeit und $\alpha$ der Winkel,
+in dem die Schallwelle auf die Röhre trifft.
+Demnach lässt sich die Geschwindigkeit nach
+\begin{equation}
+  v = \frac{\Delta \nu \cdot c}{2 \nu_{0} \cos \left( \alpha \right)}
+  \label{eqn:geschw}
+\end{equation}
+bestimmen.\\
+
+\noindent
+Um reproduzierbare Winkel verwenden zu können und um die Ultraschall-Sonde besser
+an die Röhren koppeln zu können werden bei dem Versuch Acryl-Prismen verwendet.
+Wegen Brechung entsprechen die vorgegebenen Prismenwinkel nicht den für die
+Bestimmung der Geschwindigkeit nötigen Dopplerwinkeln. Diese lassen sich jedoch
+nach
+\begin{equation}
+  \alpha = \SI{90}{\degree} - \arcsin \left( \sin \left( \theta \right) \cdot \frac{c_\mathup{L}}{c_\mathup{P}} \right)
+  \label{eqn:dopplerwinkel}
+\end{equation}
+berechnen. Dabei ist $c_\mathup{L}$ die Schallgeschwindigkeit der Flüssigkeit und
+$c_\mathup{P}$ die von Acryl.
+\clearpage
+\section{Durchführung}
+\label{sec:durchführung}
+\subsection{Versuchsaufbau}
+\label{sec:aufbau}
+Der Aufbau besteht aus einer Schleife aus Silikonröhren, welche an eine
+Zentrifugalpumpe angeschlossen ist. Sie ist zudem mit einer Phantomflüssigkeit
+aus Wasser, Glycerin und Glaskugeln gefüllt. In der Schleife befinden sich drei
+Abschnitte mit unterschiedlichen Durchmessern. An ihnen wird später die
+Strömungsgeschwindigkeit gemessen. Für die Mesungen wird eine $\SI{2}{\mega\hertz}$-Sonde
+verwendet, welche gleichzeitig als Sender und Empfänger dient. Das Signal wird
+dann an einem PC ausgewerte, welcher dann die Differenz der Frequenzen anzeigt.
+Zur Kopplung zwischen Sonde und Röhre werden, wie bereits erwähnt, Acryl-Prismen
+verwendet. Diese liegen in drei Varianten vor, welche an die verschiedenen Durchmesser
+der Röhren angepasst sind. Zusätzlich wird ein Ultraschall-Kopplungsgel verwendet.
+In Abbildung \ref{fig:prisma} ist ein Acryl-Prisma mit den drei Prismenwinkeln
+zu sehen.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\textwidth]{prisma.png}
+  \caption{Querschnitt eines Prismas. \cite{anleitung}}
+  \label{fig:prisma}
+\end{figure}
+\noindent
+Für die Phantomflüssigkeit, die Prismen und die Röhren sind die in Tabelle \ref{tab:vorgaben}
+stehenden Werte gegeben.
+\begin{table}
+  \centering
+  \caption{Technische Vorgaben.}
+  \label{tab:vorgaben}
+  \sisetup{table-format=2.0}
+  \begin{tabular}{S S S}
+    \toprule
+    \text{Phantomflüssigkeit} & \SI{1.15}{\gram\per\cubic\centi\meter} & \text{Dichte} $\rho$ \\
+                              & \SI{1800}{\meter\per\second} & \text{Schallgeschwindigkeit} $c_\mathup{L}$ \\
+                              & \SI{12}{\milli\pascal\second} & \text{Viskosität} $\eta$ \\
+    \text{Prismen} & \SI{2700}{\meter\per\second} & \text{Schallgeschwindigkeit} $c_\mathup{P}$ \\
+                   & \SI{30.7}{\milli\meter} & \text{Länge der Vorlaufstrecke} $l$ \\
+    \text{Röhren} & \text{Innendurchmesser} & \text{Außendurchmesser} \\
+    1             & \SI{7}{\milli\meter} & \SI{10}{\milli\meter} \\
+    2             & \SI{10}{\milli\meter} & \SI{15}{\milli\meter} \\
+    3             & \SI{16}{\milli\meter} & \SI{20}{\milli\meter} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\clearpage
+\subsection{Versuchsablauf}
+\label{sec:ablauf}
+Zuerst werden verschiedene Strömungsgeschwindigkeiten bestimmt.
+Dazu werden für die drei Röhren, mit den drei Prismenwinkeln, für fünf verschiedene
+Pumpleistungen $\left( \SI{30}{\percent}, \SI{40}{\percent}, \SI{50}{\percent}, \SI{60}{\percent}, \SI{70}{\percent} \right)$
+die durch den Doppler-Effekt entstehenden Frequenzdifferenzen gemessen.
+Es werden also 45 Messwerte genommen. Für diese Geschwindigkeitsmessung
+ist am Ultraschallgenerator das Sample Volume auf Large zu stellen. Aus
+den Differenzen wird dann die Strömungsgeschwindigkeit bestimmt.\\
+
+\noindent
+Im zweiten Teil des Versuchs wird das Strömungsprofil der mittleren/zweiten Röhre
+$\left( \SI{10}{\milli\meter} \; \text{Innendurchmesser} \right)$ unter zwei
+verschiedenen Pumpleistungen $\left( \SI{45.2}{\percent}, \SI{70}{\percent} \right)$
+vermessen. An dem Prisma wird dabei immer der Winkel $\SI{15}{\degree}$ verwendet.
+Zum Einstellen der Messtiefe wird an dem Generator das Sample Volume auf Small
+gestellt. Anschließend wird für Messtiefen von $\SI{12}{\micro\second}$ bis $\SI{19.5}{\micro\second}$
+in $\SI{0.5}{\micro\second}$ Schritten die Frequenzdifferenz und die Streuintensität
+gemessen.
+\clearpage
+%Auswertung
+\end{document}
