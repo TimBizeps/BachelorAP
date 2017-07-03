@@ -1,0 +1,5 @@
+[0] Config.pm:354> INFO - This is Biber 2.6
+[0] Config.pm:357> INFO - Logfile is 'US3.tex.blg'
+[35] biber:302> INFO - === Mo Jul  3, 2017, 10:30:32
+[147] Utils.pm:180> ERROR - Cannot find control file 'US3.tex.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[148] Biber.pm:113> INFO - ERRORS: 1

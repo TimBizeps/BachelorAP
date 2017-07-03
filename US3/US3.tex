@@ -260,5 +260,261 @@ gestellt. Anschließend wird für Messtiefen von $\SI{12}{\micro\second}$ bis $\
 in $\SI{0.5}{\micro\second}$ Schritten die Frequenzdifferenz und die Streuintensität
 gemessen.
 \clearpage
-%Auswertung
+\section{Auswertung}
+\subsection{Bestimmung der Strömungsgeschwindigkeit für die Dopplerwinkel.}
+Um die Strömungsgeschwindigkeit zu bestimmmen, wird \eqref{eqn:geschw} genutzt.
+Mit \eqref{eqn:dopplerwinkel} folgt für die Dopplerwinkel $\alpha$
+\begin{table}
+  \centering
+  \begin{tabular}{c c}
+    \toprule
+    $\theta$ & $\alpha$ \\
+    \midrule
+    15° & 80.1° \\
+    30° & 70.5° \\
+    60° & 54.7° \\
+    \bottomrule
+  \end{tabular}
+  \caption{Dopplerwinkel $\alpha$ zu den vordefinierten Einfallswinkeln
+  $\theta$.}
+  \label{tab:1}
+\end{table}
+mit $c_L = \SI{1800}{\meter\per\second}$ und $c_P =
+\SI{2700}{\meter\per\second}$.
+Damit folgen die Ergebnisse für die drei Dopplerwinkel mit $\nu_0 =
+\SI{2}{\mega\hertz}$
+und $c = \SI{1800}{\meter\per\second}$ mit dem jeweils passendem Diagramm.
+
+\begin{figure}
+    \centering
+      \includegraphics[width=0.8\textwidth]{a15.pdf}
+      \caption{Die Frequenzverschiebung geteilt durch den cos des
+      Dopplerwinkels 80.1° aufgetragen gegen die Geschwindigkeit.}
+      \label{fig:1}
+  \end{figure}
+ \begin{table}
+    \centering
+    \begin{tabular}{c c c c}
+      \toprule
+      Pumpleistung / $\%$ & $\symup{\Delta} \nu$ / $\si{\hertz}$ & $v$ /
+      \si{\meter\per\second} & Rohrdicke $\si{\milli\meter}$ \\
+      \midrule
+      30 & 49 & 0.21  & 16\\
+      40 & 61 & 0.26  & 16\\
+      50 & 98 & 0.42  & 16\\
+      60 & 122 & 0.52  & 16\\
+      70 & 146 & 0.62  & 16\\
+      30 & 85 & 0.36  & 10\\
+      40 & 134 & 0.57  & 10\\
+      50 & 195 & 0.83  & 10\\
+      60 & 244 & 1.04 & 10\\
+      70 & 330 & 1.40 & 10\\
+      30 & 159 & 0.67  & 7\\
+      40 & 244 & 1.04 & 7\\
+      50 & 366 & 1.56 & 7\\
+      60 & 574 & 2.43 & 7\\
+      70 & 818 & 3.47 & 7\\
+      \bottomrule
+    \end{tabular}
+    \caption{Die Pumpleistung, die Frequenzverschiebung (aus den Messungen) und
+    die Geschwindigkeit aus \eqref{eqn:geschw} berechnet für einen Einfallswinkel
+    von 15°.}
+    \label{tab:2}
+  \end{table}
+
+      \begin{figure}
+      \centering
+        \includegraphics[width=0.8\textwidth]{a30.pdf}
+        \caption{Die Frequenzverschiebung geteilt durch den cos des
+        Dopplerwinkels 70.5° aufgetragen gegen die Geschwindigkeit.}
+        \label{fig:2}
+    \end{figure}
+    \begin{table}
+      \centering
+      \begin{tabular}{c c c c}
+        \toprule
+        Pumpleistung / $\%$ & $\symup{\Delta} \nu$ / $\si{\hertz}$ & $v$ /
+        \si{\meter\per\second} & Rohrdicke $\si{\milli\meter}$ \\
+        \midrule
+        30 & -61 & 0.15 & 16\\
+        40 & -98 & 0.24 & 16\\
+        50 & -134 & 0.33 & 16\\
+        60 & -183 & 0.45 & 16\\
+        70 & -244 & 0.59 & 16\\
+        30 & -122 & 0.30 & 10\\
+        40 & -220 & 0.54 & 10\\
+        50 & -317 & 0.77 & 10\\
+        60 & -464 & 1.13 & 10\\
+        70 & -696 & 1.70 & 10\\
+        30 & -269 & 0.66 & 7\\
+        40 & -452 & 1.10 & 7\\
+        50 & -836 & 2.04 & 7\\
+        60 & -1184 & 2.88 & 7\\
+        70 & -1563 & 3.81 & 7\\
+      \bottomrule
+      \end{tabular}
+      \caption{Die Pumpleistung, die Frequenzverschiebung (aus den Messungen)
+      und die Geschwindigkeit aus \eqref{eqn:geschw} berechnet für einen
+      Einfallswinkel von 30°.}
+      \label{tab:3}
+    \end{table}
+
+      \begin{figure}
+        \centering
+          \includegraphics[width=0.8\textwidth]{a60.pdf}
+          \caption{Die Frequenzverschiebung geteilt durch den cos des
+          Dopplerwinkels 54.7° aufgetragen gegen die Geschwindigkeit.}
+          \label{fig:3}
+      \end{figure}
+
+      \begin{table}
+        \centering
+        \begin{tabular}{c c c c}
+          \toprule
+          Pumpleistung / $\%$ & $\symup{\Delta} \nu$ / $\si{\hertz}$ & $v$ /
+          \si{\meter\per\second} & Rohrdicke $\si{\milli\meter}$ \\
+          \midrule
+          30 & 85 & 0.14 & 16\\
+          40 & 159 & 0.26 & 16\\
+          50 & 244 & 0.40 & 16\\
+          60 & 342 & 0.56 & 16\\
+          70 & 488 & 0.80 & 16\\
+          30 & 195 & 0.32 & 10\\
+          40 & 378 & 0.62 & 10\\
+          50 & 598 & 0.98 & 10\\
+          60 & 891 & 1.46 & 10\\
+          70 & 1184 & 1.94 & 10\\
+          30 & 342 & 0.56 & 7\\
+          40 & 732 & 1.20 & 7\\
+          50 & 1257 & 2.06 & 7\\
+          60 & 1685 & 2.76 & 7\\
+          70 & 2264 & 3.71 & 7\\
+          \bottomrule
+        \end{tabular}
+        \caption{Die Pumpleistung, die Frequenzverschiebung (aus den Messungen)
+        und die Geschwindigkeit aus \eqref{eqn:geschw} berechnet für einen
+        Einfallswinkel von 60°.}
+        \label{tab:4}
+      \end{table}
+
+
+    \subsection{Bestimmung der Streuintensität und der Momentangeschwindigkeit
+    in
+      Abhängigkeit von der Messtiefe}
+      Zur Bestimmung der Momentangeschwindigkeit wird \eqref{eqn:freqdiff} genutzt mit
+      $\alpha = 80.1°$ und dem gemessenen Wert für $\symup{\Delta} \nu$. Für
+      $\nu_0$
+      wird $\SI{2}{\mega\hertz}$ und für $c$
+      $\SI{1800}{\meter\per\second}$ verwendet. Für die Messtiefe wird die
+      Umrechnung
+         $4 \, \symup{\mu s} = 6 \, \symup{mm}$
+      verwendet. Im Folgenden sind die Ergebnisse als
+      Tabelle und Diagramm aufgelistet.
+
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{b45.pdf}
+        \caption{Momentangeschwindigkeit und Streuintensität in Abhängigkeit
+        von der Messtiefe aufgetragen.}
+        \label{fig:4}
+      \end{figure}
+      \begin{table}
+        \centering
+        \begin{tabular}{c c c}
+            \toprule
+            Messtiefe / $\si{\meter\meter}$ & $v$ / $\si{\meter\per\second}$ &
+            $I$ / $\si{\volt\squared\per\second} \cdot 1000$ \\
+            \midrule
+            30 & 6.19 & 30 \\
+            30.75 &  6.19 & 100 \\
+            31.5 & 7.25 & 200 \\
+            32.25 & 8.27 & 250 \\
+            33 & 9.33 & 250 \\
+            33.75 &  10.35 & 280 \\
+            34.5 & 10.86 & 300 \\
+            35.25 & 10.86 & 350 \\
+            36 & 9.84 & 350 \\
+            36.75 & 8.27 & 350 \\
+            37.5 & 6.74 & 280 \\
+            38.25 & 6.74 & 200 \\
+            39 & 8.27 & 300 \\
+            39.75 & 8.82 & 600 \\
+            40.5 & 8.27 & 350 \\
+            41.25 & 7.76 & 100 \\
+            \bottomrule
+        \end{tabular}
+        \caption{Messtiefe, Momentangeschwindigkeit $v$ und Streuintensität $I$.}
+        \label{tab:5}
+      \end{table}
+
+      \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{b70.pdf}
+        \caption{Momentangeschwindigkeit und Streuintensität in Abhängigkeit
+        von der Messtiefe aufgetragen.}
+        \label{fig:5}
+      \end{figure}
+      \begin{table}
+        \centering
+        \begin{tabular}{c c c}
+          \toprule
+          Messtiefe / $\si{\meter\meter}$ & $v$ / $\si{\meter\per\second}$ &
+          $I$ / $\si{\volt\squared\per\second} \cdot 1000$ \\
+          \midrule
+          30 & 10.86 & 250 \\
+          30.75 & 10.86 & 700 \\
+          31.5 & 12.93 & 900 \\
+          32.25 & 16.58 & 1100 \\
+          33 & 20.69 & 1150 \\
+          33.75 & 22.77 & 1200 \\
+          34.5 & 23.28 & 1400 \\
+          35.25 & 21.75 & 1500 \\
+          36 & 19.17 & 1600 \\
+          36.75 & 15.01 & 1700 \\
+          37.5 & 12.42 & 1900 \\
+          38.25 & 13.44 & 2000 \\
+          39 & 16.03 & 4500 \\
+          39.75 & 16.60 & 6000 \\
+          40.5 & 16.03 & 2200 \\
+          41.25 & 16.03 & 700 \\
+          \bottomrule
+        \end{tabular}
+        \caption{Messtiefe, Momentangeschwindigkeit $v$ und Streuintensität $I$.}
+        \label{tab:6}
+      \end{table}
+
+\section{Diskussion}
+Aus den Diagrammen \ref{fig:1} bis \ref{fig:3} folgt, dass ein linearer
+Zusammenhang
+zwischen dem Verhältnis aus Frequenzverschiebung und dem Cosinus des
+Dopplerwinkels und
+der Strömungsgeschwindigkeit vorliegt. Außerdem stimmen die
+Strömungsgeschwindigkeiten bei
+den Einstrahlwinkeln 30° und 60° mit einer maximalen Abweichung von
+\SI{0.33}{\meter\per\second}
+gut überein. Die Werte für den Einstrahlwinkel von 15° weichen etwas stärker
+ab. Hier liegt die
+maximale Abweichung bei \SI{0.48}{\meter\per\second} im Vergleich zu der
+Messung bei 30°
+bzw. bei \SI{0.50}{\meter\per\second} unter einem Winkel von 60°.\\
+\\ 2: linear bis 44, danach Ausschlag, weil rohr zuende und damit störungen reinkommen
+Aus Abbildung \ref{fig:4} lässt sich erkennen, dass die Geschwindigkeit zum
+Rand des Rohrs hin relativ
+konstant ist, während sie in der Mitte des Rohrs ein Minimum hat, was dem
+Modell widerspricht.
+Ähnliches gilt für Abbildung \ref{fig:5}. Es wird weiterhin ein Minimum zur Rohrmitte hin aufgewiesen.
+Die Streuintensität in Abbildung \ref{fig:4} hat einen antiproportionalen Zusammenhang zur Geschwindigkeit. Die Streuintensität in Abbildung \ref{fig:5} verläuft bis zu einer Messtiefe von \SI{44}{\milli\meter} linear. Danach gibt es einen Ausschlag, weil das Rohr zuende ist und damit Störungen die Messung beeinflussen.
+Möglich dafür ist hier eine Blockade des Flüssigkeitsstroms durch Knicke in den nicht
+starren Kurvenstücken.
+Außerdem lässt sich sagen, dass sich das Ablesen der vom Computer angezeigten
+Werte bei beiden Versuchsteilen
+als schwierig gestaltet hat, da sich die Werte teilweise im Sekundenintervall
+änderten.
+Dadurch sind systematische Fehler nicht auszuschließen. Abschließend lässt sich
+feststellen,
+dass der erste Teil des Versuchs gute Ergebnisse geliefert hat, während der
+zweite Teil mit einigen systematischen Fehlern belastet ist.
+\newpage
+\nocite{*}
+\printbibliography
 \end{document}
