@@ -1,18 +1,18 @@
 [0] Config.pm:354> INFO - This is Biber 2.6
-[0] Config.pm:357> INFO - Logfile is 'US2.blg'
-[53] biber:302> INFO - === Mo Jun 26, 2017, 22:13:52
-[78] Biber.pm:359> INFO - Reading 'US2.bcf'
-[172] Biber.pm:820> INFO - Using all citekeys in bib section 0
+[1] Config.pm:357> INFO - Logfile is 'US2.blg'
+[50] biber:302> INFO - === Do Jul  6, 2017, 15:12:27
+[75] Biber.pm:359> INFO - Reading 'US2.bcf'
+[170] Biber.pm:820> INFO - Using all citekeys in bib section 0
 [187] Biber.pm:3658> INFO - Processing section 0
 [201] Biber.pm:3828> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[202] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
-[203] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
-[212] Biber.pm:3828> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[213] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
-[214] bibtex.pm:1282> INFO - Found BibTeX data source 'programme.bib'
-[237] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[237] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[238] Biber.pm:3487> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'de-DE'
-[238] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
-[246] bbl.pm:597> INFO - Writing 'US2.bbl' with encoding 'UTF-8'
-[247] bbl.pm:701> INFO - Output to US2.bbl
+[354] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[354] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
+[372] Biber.pm:3828> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[393] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[395] bibtex.pm:1282> INFO - Found BibTeX data source 'programme.bib'
+[433] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[433] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[433] Biber.pm:3487> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'de-DE'
+[433] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
+[446] bbl.pm:597> INFO - Writing 'US2.bbl' with encoding 'UTF-8'
+[448] bbl.pm:701> INFO - Output to US2.bbl
