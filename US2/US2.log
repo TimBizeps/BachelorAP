@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  6 JUL 2017 15:12
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.10)  6 JUL 2017 15:23
  restricted system commands enabled.
 **US2.tex
 (./US2.tex
@@ -605,7 +605,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.105 seconds)
+luaotfload | main : initialization completed in 0.108 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.
 sty
@@ -2281,128 +2281,122 @@ Language ngerman already loaded; id is 8)
  [2
 
 ]
-<US22.png, id=35, 663.47874pt x 785.93625pt>
-File: US22.png Graphic file (type png)
- <use US22.png>
-Package luatex.def Info: US22.png used on input line 187.
-(luatex.def)             Requested size: 209.12778pt x 247.72713pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--190
+Underfull \hbox (badness 10000) in paragraph at lines 169--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--190
+Underfull \hbox (badness 10000) in paragraph at lines 169--179
 
  []
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1] <US23.png, id=48, 630.355pt x 734.745pt>
-File: US23.png Graphic file (type png)
- <use US23.png>
-Package luatex.def Info: US23.png used on input line 205.
-(luatex.def)             Requested size: 209.12778pt x 243.75589pt.
+[1] <US22.png, id=42, 663.47874pt x 785.93625pt>
+File: US22.png Graphic file (type png)
+ <use US22.png>
+Package luatex.def Info: US22.png used on input line 188.
+(luatex.def)             Requested size: 209.12778pt x 247.72713pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2<./US22.png>] <US21.png, id=61, 1546.77875pt x 785.93625pt>
+[2
+
+<./US22.png>] <US23.png, id=54, 630.355pt x 734.745pt>
+File: US23.png Graphic file (type png)
+ <use US23.png>
+Package luatex.def Info: US23.png used on input line 207.
+(luatex.def)             Requested size: 209.12778pt x 243.75589pt.
+
+<US21.png, id=58, 1546.77875pt x 785.93625pt>
 File: US21.png Graphic file (type png)
  <use US21.png>
-Package luatex.def Info: US21.png used on input line 229.
+Package luatex.def Info: US21.png used on input line 231.
 (luatex.def)             Requested size: 292.7776pt x 148.7658pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--232
+Underfull \hbox (badness 10000) in paragraph at lines 221--234
 
  []
 
-[3<./US23.png>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache
-/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/simon/.local/texlive/20
-16/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
-Underfull \hbox (badness 10000) in paragraph at lines 242--273
+[3
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--273
+<./US23.png>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/g
+eneric/fonts/otl/lmroman8-regular.luc)(load luc: /home/simon/.local/texlive/2016
+/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
+Underfull \hbox (badness 10000) in paragraph at lines 244--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--273
+Underfull \hbox (badness 10000) in paragraph at lines 244--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--275
 
  []
 
 [4<./US21.png>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache
 /generic/fonts/otl/lmroman5-regular.luc) [5]
-<Plot.pdf, id=89, 578.16pt x 433.62pt>
+<Plot.pdf, id=88, 578.16pt x 433.62pt>
 File: Plot.pdf Graphic file (type pdf)
  <use Plot.pdf>
-Package luatex.def Info: Plot.pdf used on input line 295.
+Package luatex.def Info: Plot.pdf used on input line 297.
 (luatex.def)             Requested size: 418.25555pt x 313.68826pt.
 
-<Plot2.pdf, id=90, 578.16pt x 433.62pt>
+<Plot2.pdf, id=89, 578.16pt x 433.62pt>
 File: Plot2.pdf Graphic file (type pdf)
  <use Plot2.pdf>
-Package luatex.def Info: Plot2.pdf used on input line 301.
+Package luatex.def Info: Plot2.pdf used on input line 303.
 (luatex.def)             Requested size: 418.25555pt x 313.68826pt.
  [6
 
 <./Plot.pdf>]
-Overfull \hbox (3.0441pt too wide) detected at line 326
+Overfull \hbox (3.0441pt too wide) detected at line 328
  
  []
 
 
-Overfull \hbox (48.60155pt too wide) in paragraph at lines 321--339
+Overfull \hbox (48.60155pt too wide) in paragraph at lines 323--341
  [][] 
  []
 
 [7<./Plot2.pdf>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cach
 e/generic/fonts/otl/lmroman7-regular.luc)
-Underfull \hbox (badness 10000) in paragraph at lines 341--359
+Underfull \hbox (badness 10000) in paragraph at lines 343--361
 
  []
 
 
-Overfull \hbox (48.60155pt too wide) in paragraph at lines 395--413
+Overfull \hbox (48.60155pt too wide) in paragraph at lines 397--415
  [][] 
  []
 
-[8] <B-Scan1Mhz1.png, id=160, 612.8496pt x 433.62pt>
+[8] <B-Scan1Mhz1.png, id=159, 612.8496pt x 433.62pt>
 File: B-Scan1Mhz1.png Graphic file (type png)
  <use B-Scan1Mhz1.png>
-Package luatex.def Info: B-Scan1Mhz1.png used on input line 416.
+Package luatex.def Info: B-Scan1Mhz1.png used on input line 418.
 (luatex.def)             Requested size: 368.06693pt x 260.42543pt.
 
-<B-Scan1Mhz2.png, id=161, 612.1269pt x 436.5108pt>
+<B-Scan1Mhz2.png, id=160, 612.1269pt x 436.5108pt>
 File: B-Scan1Mhz2.png Graphic file (type png)
  <use B-Scan1Mhz2.png>
-Package luatex.def Info: B-Scan1Mhz2.png used on input line 422.
+Package luatex.def Info: B-Scan1Mhz2.png used on input line 424.
 (luatex.def)             Requested size: 368.06693pt x 262.46799pt.
 
-[9] <B-Scan4MHz1.png, id=167, 618.81187pt x 465.23813pt>
+[9] <B-Scan4MHz1.png, id=166, 618.81187pt x 465.23813pt>
 File: B-Scan4MHz1.png Graphic file (type png)
  <use B-Scan4MHz1.png>
-Package luatex.def Info: B-Scan4MHz1.png used on input line 428.
+Package luatex.def Info: B-Scan4MHz1.png used on input line 430.
 (luatex.def)             Requested size: 347.15286pt x 261.0072pt.
 
-<B-Scan4MHz2.png, id=168, 616.55344pt x 470.50781pt>
+<B-Scan4MHz2.png, id=167, 616.55344pt x 470.50781pt>
 File: B-Scan4MHz2.png Graphic file (type png)
  <use B-Scan4MHz2.png>
-Package luatex.def Info: B-Scan4MHz2.png used on input line 434.
+Package luatex.def Info: B-Scan4MHz2.png used on input line 436.
 (luatex.def)             Requested size: 347.15286pt x 264.92561pt.
 
 [10<./B-Scan1Mhz1.png><./B-Scan1Mhz2.png>]
-Overfull \hbox (5.475pt too wide) detected at line 456
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 457
- 
- []
-
-
 Overfull \hbox (5.475pt too wide) detected at line 458
  
  []
@@ -2447,34 +2441,44 @@ Overfull \hbox (5.475pt too wide) detected at line 466
  
  []
 
-<TM-Scan.png, id=178, 615.80063pt x 398.23781pt>
+
+Overfull \hbox (5.475pt too wide) detected at line 467
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 468
+ 
+ []
+
+<TM-Scan.png, id=177, 615.80063pt x 398.23781pt>
 File: TM-Scan.png Graphic file (type png)
  <use TM-Scan.png>
-Package luatex.def Info: TM-Scan.png used on input line 472.
+Package luatex.def Info: TM-Scan.png used on input line 474.
 (luatex.def)             Requested size: 388.9746pt x 251.5535pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--475
+Underfull \hbox (badness 10000) in paragraph at lines 441--477
 
  []
 
 [11<./B-Scan4MHz1.png><./B-Scan4MHz2.png>] [12<./TM-Scan.png>]
-Overfull \hbox (3.0441pt too wide) detected at line 513
+Overfull \hbox (3.0441pt too wide) detected at line 515
  
  []
 
 [13]
-Overfull \hbox (5.475pt too wide) detected at line 554
+Overfull \hbox (5.475pt too wide) detected at line 556
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 555
+Overfull \hbox (5.475pt too wide) detected at line 557
  
  []
 
 [14](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fo
 nts/otl/lmromancaps10-regular.luc)
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 572.
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 574.
 
 
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
@@ -2488,29 +2492,34 @@ Package microtype Info: Loading generic settings for font family
 
 
 Package biblatex Warning: No driver for entry type 'software'.
-(biblatex)                Using fallback driver on input line 572.
+(biblatex)                Using fallback driver on input line 574.
 
 
 Package biblatex Warning: No driver for entry type 'software'.
-(biblatex)                Using fallback driver on input line 572.
+(biblatex)                Using fallback driver on input line 574.
 
 
-Overfull \hbox (21.91722pt too wide) in paragraph at lines 573--573
+Overfull \hbox (21.91722pt too wide) in paragraph at lines 575--575
 \EU2/lmr/m/sc/10.95 url\EU2/lmr/m/n/10.95 : []$\EU2/lmtt/m/n/10.95 http : / / w
 ww . spektrum . de / lexikon / astronomie / schallgeschwindigkeit /
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 573.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 575.
 [15
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 573.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 575.
  (./US2.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 573.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 573.
-Package rerunfilecheck Info: File `US2.aux' has not changed.
-(rerunfilecheck)             Checksum: 1199940E7CDC000388EA690E11A0E24E;9211.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 575.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 575.
+
+
+Package rerunfilecheck Warning: File `US2.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `US2.aux':
+(rerunfilecheck)             Before: 02E8F4695B158BB129D7364CB0948F2A;9211
+(rerunfilecheck)             After:  1C3739751328DF5E8BEC0E7A6D38DDAA;9211.
 Package rerunfilecheck Info: File `US2.toc' has not changed.
 (rerunfilecheck)             Checksum: 6548A7A07861BEE259BDD0B0306974B0;635.
 Package logreq Info: Writing requests to 'US2.run.xml'.
@@ -2524,10 +2533,10 @@ Here is how much of LuaTeX's memory you used:
  2891 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 278 glue, 1 kern, 114 attribute, 58 glue_spec, 114 
 attribute_list, 1 write, 5 pdf_action nodes
-   avail lists: 1:3,2:5713,3:212,4:36,5:521,6:1904,7:3015,8:93,9:1869,10:19,11:2
-24
+   avail lists: 1:3,2:5713,3:219,4:38,5:521,6:2079,7:3015,8:93,9:1869,10:19,11:2
+45
  46892 multiletter control sequences out of 65536+600000
- 105 fonts using 33171831 bytes
+ 105 fonts using 33171679 bytes
  61i,21n,104p,8813b,2956s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/l
@@ -2540,10 +2549,10 @@ simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.
 otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman
 12-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public
 /lm/lmsans10-bold.otf>
-Output written on US2.pdf (17 pages, 2884906 bytes).
+Output written on US2.pdf (17 pages, 2885007 bytes).
 
-PDF statistics: 317 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+PDF statistics: 316 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  51 named destinations out of 1000 (max. 131072)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
