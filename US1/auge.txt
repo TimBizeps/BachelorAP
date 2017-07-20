@@ -1,0 +1,4 @@
+# Peak t/mikros deltat/mikros
+Iris   17.3 15.1
+Linse  26.4 24.2
+Retina 70.8 68.6
