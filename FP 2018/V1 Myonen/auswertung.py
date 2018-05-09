@@ -22,42 +22,42 @@ kal1 = np.genfromtxt("Daten/Kal_1_micro_second.Spe", unpack=True)
 print("Summe Stopp: ", ufloat(np.sum(daten), np.sum(np.sqrt(daten))))
 dt = dt     # Zentrieren
 N *= 1
-hoehe = np.mean(N[4:16])
-links = N[0:4]
-rechts = N[16:]
-dt_rechts = dt[16:]
+hoehe = np.mean(N[7:39])
+rechts = N[0:7]
+links = N[39:]
+dt_links = dt[39:]
 
 # linearer Fit links und rechts
-params_links, cov_links = curve_fit(linear, dt[0:4], links)
-errors_links = np.sqrt(np.diag(cov_links))
-m = ufloat(params_links[0], errors_links[0])
-b = ufloat(params_links[1], errors_links[1])
-print("Steigung links: ", m)
-print("y-Achsenabschnitt rechts: ", b)
-print("Halbe Höhe: ", hoehe/2)
-
-params_rechts, cov_rechts = curve_fit(linear, dt_rechts, rechts)
+params_rechts, cov_rechts = curve_fit(linear, dt[0:7], rechts)
 errors_rechts = np.sqrt(np.diag(cov_rechts))
 m = ufloat(params_rechts[0], errors_rechts[0])
 b = ufloat(params_rechts[1], errors_rechts[1])
 print("Steigung rechts: ", m)
 print("y-Achsenabschnitt rechts: ", b)
+print("Halbe Höhe: ", hoehe/2)
+
+params_links, cov_links = curve_fit(linear, dt_links, links)
+errors_links = np.sqrt(np.diag(cov_links))
+m = ufloat(params_links[0], errors_links[0])
+b = ufloat(params_links[1], errors_links[1])
+print("Steigung links: ", m)
+print("y-Achsenabschnitt links: ", b)
 
 # Berechnen des Schnittpunktes
-x_links = np.linspace(-25, -17)
-x_rechts = np.linspace(6, 20)
+x_links = np.linspace(-25, -16)
+x_rechts = np.linspace(14, 23)
 
 links_w = linear(x_links, *params_links)
 rechts_w = linear(x_rechts, *params_rechts)
 
 plt.figure(1)
+plt.plot(x_links, links_w, 'r-', label="linke Flanke")
+plt.plot(x_rechts, rechts_w, 'r-', label="rechte Flanke")
 plt.ylabel(r"$N(t) \, / \, (20\mathrm{s})^{-1}$")
 plt.xlabel(r"$\mathrm{d}t \, / \, \mathrm{ns}$")
 plt.errorbar(dt, N, yerr=np.sqrt(N), fmt='kx', label="Messwerte")
-# plt.plot(dt, N, 'r.', label="Messwerte")
-plt.axhline(y=hoehe, xmin=0.15, xmax=0.75, label="Plateau")
-plt.axhline(y=hoehe/2, xmin=0.065, xmax=0.9, color="green",
-            label="Halbwertsbreite")
+plt.axhline(y=hoehe, xmin=0.19, xmax=0.81, label="Plateau")
+plt.axhline(y=hoehe/2, xmin=0.125, xmax=0.88, color="green", label="Halbwertsbreite")
 # plt.ylim(0, 130)
 plt.grid()
 plt.legend(loc="best")
@@ -81,7 +81,7 @@ x = np.linspace(0, 210)
 plt.plot(kanal, kal_t, 'r+', label="Daten", markersize=25)
 plt.plot(x, linear(x, *params_kal), 'b--', label="Regression")
 plt.xlabel("Kanal")
-plt.ylabel(r"$T_{VZ} \, / \, \mathrm{\mu s}$")
+plt.ylabel(r"$t_{kal} \, / \, \mathrm{\mu s}$")
 plt.xlim(0, 210)
 plt.tight_layout()
 plt.legend(loc="best")
@@ -89,33 +89,33 @@ plt.savefig("kal20.pdf")
 plt.clf()
 
 # Bestimmung Untergrundrate
-messdauer = 147182  # Sekunden
-Startimpulse = 3061879
+messdauer = 153426  # Sekunden
+Startimpulse = 3393742
 Startimpulse = ufloat(Startimpulse, np.sqrt(Startimpulse))
 n = Startimpulse/messdauer
 Ts = 20*10**(-6)    # Sekunden
 Nf = Startimpulse*n*Ts*unp.exp(-n*Ts)
-Nf_kanal = Nf/450
+Nf_kanal = Nf/435
 print("-------------------")
 print(Startimpulse)
 print("Fehlmessungen: ", Nf)
 print("Untergrundrate: ", Nf_kanal)
 
 # Umrechnung Kanäle in Zeit
-kanaele = np.arange(0, 510, 1)
+kanaele = np.arange(1, 511, 1)
 zeiten1 = linear(kanaele, *params_kal)
 # Rausnehmen von komischen Werten
 zeiten = zeiten1[0:6]
 zeiten = np.append(zeiten, zeiten1[7:14])
-zeiten = np.append(zeiten, zeiten1[15:476])
+zeiten = np.append(zeiten, zeiten1[15:474])
 
 daten_ang = daten[0:6]
 daten_ang = np.append(daten_ang, daten[7:14])
-daten_ang = np.append(daten_ang, daten[15:4])
-
+daten_ang = np.append(daten_ang, daten[15:474])
 # print("Vorher: ", len(daten_ang))
 # print("Vorher ohne Nullen: ", len(daten_ang[daten_ang > 0]))
-
+print(zeiten[0])
+print(daten_ang[0])
 # Nullenverarbeitung
 for i in range(len(daten_ang)):
     if daten_ang[i] == 0:
@@ -158,10 +158,10 @@ print("Verhältnis: ", (1-ta_fit/tau)*100)
 print("Verhältnis Untergrund: ", (1-U/Nf_kanal)*100)
 
 print(zeiten1)
-plt.hist(zeiten1, bins=100, label="Daten")
-# plt.plot(zeiten1, daten, 'r.', label="Daten")
+#plt.hist(zeiten1, bins=510, label="Daten")
+plt.plot(zeiten1, daten, 'r.', label="Daten")
 #plt.plot(zeiten_ent, daten_ent, 'gx', label="Nicht-betrachtete Daten")
-plt.plot(zeiten, e(zeiten, *params_fit), 'b--', label="Fit")
+plt.plot(zeiten1, e(zeiten1, *params_fit), 'b--', label="Fit")
 plt.xlabel(r"$\tau \,  / \, \mathrm{\mu s}$")
 plt.ylabel(r"$N(t)$")
 plt.grid()
