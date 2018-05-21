@@ -10,7 +10,6 @@ def f(x, A, B):
     return A+B*x
 
 params, covariance = curve_fit(f, 1/x, np.log(y))
-
 errors = np.sqrt(np.diag(covariance))
 
 lna = ufloat(params[0], errors[0])

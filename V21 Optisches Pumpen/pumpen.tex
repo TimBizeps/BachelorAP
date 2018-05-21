@@ -155,7 +155,7 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \label{sec:theorie}
 Ziel des Versuchs ist die Untersuchung von Übergängen bestimmter
 Energieniveaus in Rubidium-Isotopen. Daraus lassen sich die Lande-Faktoren,
-sowie die Spins von Elektronen und Kern berechnen. \\
+der Kernspin der Isotope und die Größe der Zeeman-Aufspaltung berechnen. \\
 In allen Atomen befinden sich Elektronen auf sogenannten Schalen um den
 Atomkern. Auf diesen Schalen besitzen sie feste Energien, zwischen welchen
 allerdings Übergänge stattfinden können. Dazu muss Energie, die exakt der
@@ -185,24 +185,24 @@ Energieabstand $\symup{h}\nu=W_2-W_1$ der Niveaus messen.
 %
 Die Verteilung der Elektronen auf verschiedene Energieniveaus innerhalb des
 Atomes folgt aus Auswahlregeln verschiedener Quantenzahlen. Aus dem
-Gesamtdrehimpuls $\vec{J}$ der Elektronenhülle folgt ein magnetisches Moment
-$\vec{\mu}_J=-g_{\symup{J}}\mu_{\symup{B}}\vec{J}$. Der Faktor $g_{\symup{J}}$
-berücksichtigt dabei, dass das Gesamtmoment aus Spin $S$ und Drehimpuls $L$
+Gesamtdrehimpuls $\vec{\mathup{J}}$ der Elektronenhülle folgt ein magnetisches Moment
+$\vec{\mu}_\mathup{J}=-g_{\symup{J}}\mu_{\symup{B}}\vec{\mathup{J}}$. Der Faktor $g_{\symup{J}}$
+berücksichtigt dabei, dass das Gesamtmoment aus Spin $\mathup{S}$ und Drehimpuls $\mathup{L}$
 folgt. Es gilt
 %
 \begin{align*}
-  |\vec{\mu}_J|=&g_{\symup{J}}\mu_{\symup{B}}\sqrt{J(J+1)},\;\text{wobei} \\
-  |\vec{\mu}_L|=&-\mu_{\symup{B}}\sqrt{L(L+1)}\;\text{und} \\
-  |\vec{\mu}_S|=&-g_{\symup{S}}\mu_{\symup{B}}\sqrt{S(S+1)}\;.
+  |\vec{\mu}_\mathup{J}|=&g_{\symup{J}}\mu_{\symup{B}}\sqrt{\mathup{J}(\mathup{J}+1)},\;\text{wobei} \\
+  |\vec{\mu}_\mathup{L}|=&-\mu_{\symup{B}}\sqrt{\mathup{L}(\mathup{L}+1)}\;\text{und} \\
+  |\vec{\mu}_\mathup{S}|=&-g_{\symup{S}}\mu_{\symup{B}}\sqrt{\mathup{S}(\mathup{S}+1)}\;.
 \end{align*}
 %
-Das Gesamtdrehmoment $\vec{\mu}_J$ der Elektronenhülle präzediert dabei um den
-Gesamtdrehimpuls $\vec{J}$. Daher trägt stets nur der parallele Anteil dieses
+Das Gesamtdrehmoment $\vec{\mu}_\mathup{J}$ der Elektronenhülle präzediert dabei um den
+Gesamtdrehimpuls $\vec{\mathup{J}}$. Daher trägt stets nur der parallele Anteil dieses
 Drehimpulses zum magnetischen Moment bei. $g_{\symup{J}}$ ist also abhängig von
-$J$, $S$ und $L$. Es ergibt sich
+$\mathup{J}$, $\mathup{S}$ und $\mathup{L}$. Es ergibt sich
 %
 \begin{equation}
-  g_{\symup{J}}=\frac{\num{3.0023}J(J+1)+\num{1.0023}\left(S(S+1)-L(L+1)\right)}{2J(J+1)}
+  g_{\symup{J}}=\frac{\num{3.0023}\mathup{J}(\mathup{J}+1)+\num{1.0023}\left(\mathup{S}(\mathup{S}+1)-\mathup{L}(\mathup{L}+1)\right)}{2\mathup{J}(\mathup{J}+1)}
   \label{eq:gj}
 \end{equation}
 %
@@ -210,19 +210,19 @@ Wird ein äußeres Magnetfeld angelegt, so spaltet sich das
 Spektrum weiter auf. Es gilt
 %
 \begin{equation}
-  U_\text{mag}=-\vec{\mu}_J\cdot\vec{B}
+  U_\text{mag}=-\vec{\mu}_\mathup{J}\cdot\vec{B}
 \end{equation}
 %
 Hieraus folgt eine Richtungsquantelung der Energie:
 %
 \begin{equation}
-  U_\text{mag}=g_{\symup{J}}\mu_{\symup{B}}B\cdot M_J,\quad M_J\in[-J,J]
+  U_\text{mag}=g_{\symup{J}}\mu_{\symup{B}}B\cdot M_\mathup{J},\quad M_\mathup{J}\in[-\mathup{J},\mathup{J}]
 \end{equation}
 %
 Bei Anlegen eines äußeren Magnetfeldes wird also über den Zeeman-Effekt jedes
-Energieniveau in $2J+1$ Unterniveaus aufgespalten. Die Anzahl der so
+Energieniveau in $2\mathup{J}+1$ Unterniveaus aufgespalten. Die Anzahl der so
 entstehenden Niveaus ist abhängig von dem sich aus Gesamtdrehimpuls der
-Elektronenhülle $J$ und dem Kernspin $I$ ergebenden Gesamtdrehimpuls $F$ des
+Elektronenhülle $\mathup{J}$ und dem Kernspin $\mathup{I}$ ergebenden Gesamtdrehimpuls $\mathup{F}$ des
 Atomes.
 %
 \begin{figure}[h]
@@ -239,9 +239,8 @@ Atomes.
 %
 Die beiden in diesem Versuch betrachteten Rubidium-Isotope haben beide einen
 Kernspin $I \neq 0$. Das Verfahren des optischen Pumpens wird anhand eines Beispiel-Systems
-betrachtet. Es handelt sich dabei um ein Atom ohne Kernspin $\vec{I}$, genau wie
-auch bei den hier untersuchten Rubidium-Isotopen. Der
-Grundzustand ist der Zustand $^2S_{\sfrac{1}{2}}$. Angeregte Zustände sind
+betrachtet. Es handelt sich dabei zunächst vereinfacht um ein Alkali-Atom ohne Kernspin $\vec{I}$.
+Der Grundzustand ist der Zustand $^2S_{\sfrac{1}{2}}$. Angeregte Zustände sind
 $^2P_{\sfrac{1}{2}}$, sowie $^2P_{\sfrac{3}{2}}$.
 %
 \begin{figure}[htb]
@@ -275,13 +274,13 @@ Apparatur. Eine Spektrallampe strahlt Licht in die Apparatur ein. Aus diesem
 Licht wird mit Hilfe eines $\text{D}_1$-Filters und eines Polarisationsfilters
 rechtszirkular polarisiertes $\text{D}_1$-Licht. Der einzige mögliche
 Energieübergang innerhalb der Atome in der Dampfzelle ist derjenige von
-$^2\symup{S}_{\sfrac{1}{2}}$ (mit $M_J=-\sfrac{1}{2}$) zu
-$^2P_{\sfrac{1}{2}}$ (mit $M_J=+\sfrac{1}{2}$), sowie rückwärts durch
+$^2\symup{S}_{\sfrac{1}{2}}$ (mit $M_\mathup{J}=-\sfrac{1}{2}$) zu
+$^2P_{\sfrac{1}{2}}$ (mit $M_\mathup{J}=+\sfrac{1}{2}$), sowie rückwärts durch
 spontane Emission. Beim rückwärtigen Prozess werden allerdings beide
 Zeeman-Niveaus des $^2\symup{S}_{\sfrac{1}{2}}$-Niveaus besetzt, sodass im
 Laufe der Zeit das Niveau $^2\symup{S}_{\sfrac{1}{2}}$ (mit
-$M_J=+\sfrac{1}{2}$) angereichert und das
-$^2\symup{S}_{\sfrac{1}{2}}$-Niveau (mit $M_J=-\sfrac{1}{2}$)
+$M_\mathup{J}=+\sfrac{1}{2}$) angereichert und das
+$^2\symup{S}_{\sfrac{1}{2}}$-Niveau (mit $M_\mathup{J}=-\sfrac{1}{2}$)
 \enquote{leergepumpt} wird. Dies hat eine Umkehr der Besetzung im S-Niveau zur
 Folge. Experimentell beobachten lässt sich diese Entwicklung über die
 Transparenz des Dampfes für Licht.
@@ -289,7 +288,7 @@ Transparenz des Dampfes für Licht.
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.6\textwidth]{transparenz.pdf}
-  \caption{Verlauf der Transparenz der Dampfzelle in Abhängigkeit der Zeit. Das $M_J=-\sfrac{1}{2}$-Niveau wird \enquote{leergepumpt}\cite{anleitung}.}
+  \caption{Verlauf der Transparenz der Dampfzelle in Abhängigkeit der Zeit. Das $M_\mathup{J}=-\sfrac{1}{2}$-Niveau wird \enquote{leergepumpt}\cite{anleitung}.}
   \label{fig:transparenz}
 \end{figure}
 \noindent
@@ -299,22 +298,23 @@ ist natürlich nur möglich, wenn sich Elektronen in dem unteren Energieniveau
 dieser Anregungen befinden. Je weniger Elektronen sich in diesem Niveau
 befinden, desto unwahrscheinlicher ist eine Absorbtion des Photons und desto
 transparenter erscheint das Gas, Abbildung~\ref{fig:transparenz}. \\
+\\
 Es treten zwei Prozesse zur Abregung, also zur Emission von Photonen aus den
-Gasatomen auf. Bei der spontanen Emission begibt sich ein Elektron auf
+Gasatomen, auf. Bei der spontanen Emission begibt sich ein Elektron auf
 ein niedrigeres Energieniveau und gibt dabei ein Photon der Energiedifferenz
 ab. Bei der induzierten Emission verursacht ein eingestrahltes Photon
 den beschriebenen Prozess, sodass hierbei zwei Photonen emittiert werden. Diese
 gleichen sich in Energie, Polarisation und Impulsvektor. Welcher dieser beiden
 Prozesse überwiegt, hängt von der Energie der Photonen ab. Die
 Übergangswahrscheinlichkeit für spontane Emission ist proportional zu $\nu^3$,
-und damit bei großen Frequenzen aussschlaggebend. Bei kleineren Energien, wie
+und damit bei großen Frequenzen ausschlaggebend. Bei kleineren Energien, wie
 etwa denen bei Zeeman-Übergängen kommt es quasi nur zu induzierter Emission.
 Dies kann also sehr gut zur Vermessung dieser Übergänge verwendet werden. \\
 Die Energiedifferenzen zwischen den Zeeman-Niveaus ist abhängig von der Stärke
 des angelegten Magnetfeldes:
 %
 \begin{equation}
-  h\nu=g_{\symup{J}}\mu_{\symup{B}}B\symup{\Delta}M_J
+  h\nu=g_{\symup{J}}\mu_{\symup{B}}B\symup{\Delta}M_\mathup{J}
   \label{eq:übergangsenergie}
 \end{equation}
 %
@@ -323,7 +323,7 @@ das oben beschriebene Pumpen durch spontane Emission bis eine
 Besetzungsumkehrung eintritt. Wenn allerdings das Magnetfeld den Wert
 %
 \begin{equation}
-  B_m=\frac{4\pi m_0}{e_0g_J}\nu
+  B_\mathup{m}=\frac{4\pi m_0}{e_0g_J}\nu
 \end{equation}
 %
 annimmt setzt induzierte Emission ein, sodass die Besetzungsinversion wieder
@@ -341,23 +341,24 @@ wieder kleiner, wenn der oben beschriebene Wert erreicht wird, Abbildung~\ref{fi
 
 \subsection{Der quadratische Zeeman-Effekt}
 
-Die Aufspaltung der Zeeman-Niveaus verhält sich allerdings nicht für alle Magnetfeldstärken wie in Abbildung~\ref{fig:aufspaltung} dargestellt. Für große Magnetfelder werden höhere Ordnungen in Abhängigkeit des Magnetfeldes relevant, sodass die Energiedifferenz durch
+Die Aufspaltung der Zeeman-Niveaus verhält sich allerdings nicht für alle Magnetfeldstärken
+wie in Abbildung~\ref{fig:aufspaltung} dargestellt. Für große Magnetfelder werden höhere
+Ordnungen in Abhängigkeit des Magnetfeldes relevant, sodass die Zeeman-Aufspaltung durch
 %
 \begin{equation}
-  E = g_{\mathup{F}}\mu_{B}B
+  \mathup{U}_\mathup{HF} = g_{\mathup{F}}\mu_{\mathup{B}}B + g_{\mathup{F}}^2\mu_{\mathup{B}}^2B^2\frac{(1-2M_\mathup{F})}{\symup{\Delta} \mathup{E_{Hy}}} - ....
   \label{eq:quad_zeeman}
 \end{equation}
 %
-beschrieben wird. Dabei ist $E$ die Energiedistanz der
-Hyperfeinstrukturaufspaltung zwischen den Niveaus $F$ und $F+1$. Hier werden nun
-neben den Wechselwirkungen der magnetischen Momente mit dem äußeren Magnetfeld
-auch diese zwischen den magnetischen Momenten berücksichtigt.
+beschrieben wird. Dabei ist $\symup{\Delta} \mathup{E_{Hy}}$ die Energiedifferenz der
+Hyperfeinstrukturaufspaltung zwischen den Niveaus $\mathup{F}$ und $\mathup{F}+1$.
+Hier werden nun neben den Wechselwirkungen der magnetischen Momente mit dem äußeren
+Magnetfeld auch diese zwischen den magnetischen Momenten berücksichtigt.
 
 \section{Durchführung}
 \label{sec:durchführung}
 
 \subsection{Der Versuchsaufbau}
-
 Abbildung~\ref{fig:aufbau} zeigt den schematischen Aufbau der Versuchsapparatur.
 Ausgangspunkt des untersuchten Lichtes ist eine Spektrallampe. Dabei handelt es
 sich um eine Rubidiumdampflampe. Das Licht dieser Lampe wird über eine
@@ -383,24 +384,25 @@ besthende Verzögerungsvorrichtung dar. Sie ist in der Lage einfallendes Licht
 entlang zweier Achsen unterschiedlich zu verzögern, sodass durch die Ausrichtung
 der gewünschte Phasenunterschied zwischen einzelnen Komponenten des Lichtes
 erzeugt werden kann. Für zirkular polarisiertes Licht aus linear polarisiertem Licht,
-muss diese Ausrichtung gerade einen Winkel von $\sfrac{\pi}{2}$ betragen. \\ Das
-nun hinreichend präparierte Licht fällt anschließend auf eine Dampfzelle. Diese
-ist mit Rubidiumgas gefüllt und elektrisch beheizbar. Die Temperaturerhöhung
+muss diese Ausrichtung gerade einen Winkel von $\sfrac{\pi}{2}$ betragen. \\
+Das nun hinreichend präparierte Licht fällt anschließend auf eine Dampfzelle.
+Diese ist mit Rubidiumgas gefüllt und elektrisch beheizbar. Die Temperaturerhöhung
 sorgt dafür, dass die thermische Verteilung der Energie breiter ist, sowie zur
 Regulierung des Dampfdruckes innerhalb der Zelle. Die Zelle befindet sich
 innerhalb mehrerer Helmholtzspulenpaare. Ein Paar ist horizontal ausgerichtet
 (Horizontalfeldspule), während das zweite Paar vertikal ausgerichtet ist. Dazu
 geschaltet ist eine Modulationsfeldspule (Sweep-Spule). Alle Spulen lassen sich
-einzeln über die Feldströme steuern. Nachdem das Licht die Dampfzellle passiert
-hat wird es durch eine Sammellinse wieder fokussiert und anschließend von einem
-Lichtdetektor vermessen. Dazu wird ein Si-Photoelement verwendet, welches das
-Licht in ein elektrisches Signal wandelt. Dieses wird durch ein Oszilloskop
-eingelesen und dargestellt. Zur Abschirmung von Außenlicht wird der gesamte
-Messaufbau während der Messung mit einer schwarzen Stoffdecke abgedunkelt.
-Dennoch lässt sich die Messung durch Lichtschwankungen leicht beeinflussen.
+einzeln über die Feldströme steuern. Zusätzlich zu den Helmholtzspulen besitzt
+die Apparatur auch eine RF-Spule. Mit dieser lassen sich elektromagnetische Wellen
+bestimmter Frequenz erzeugen, die für die induzierte Emission verwendet werden.
+Nachdem das Licht die Dampfzellle passiert hat wird es durch eine Sammellinse
+wieder fokussiert und anschließend von einem Lichtdetektor vermessen.
+Dazu wird ein Si-Photoelement verwendet, welches das Licht in ein elektrisches
+Signal wandelt. Dieses wird durch ein Oszilloskop eingelesen und dargestellt.
+Zur Abschirmung von Außenlicht wird der gesamte Messaufbau während der Messung
+mit einer schwarzen Stoffdecke abgedunkelt.
 
 \subsection{Die Versuchsdurchführung}
-
 Da es sich hierbei um einen optischen Aufbau mit mehreren optischen Elementen
 handelt, muss die Apperatur zunächst so eingestellt werden, dass das vermessene
 Licht eine maximale Intensität aufweist. Dazu wird der Polarisationsfilter
@@ -411,20 +413,16 @@ gesamte Versuchsaufbau entlang der optischen Achse in Nord-Süd-Richtung
 ausgerichtet. Dies dient zur Kompensation der horizontalen Komponente des
 Magnetfeldes. Die vertikale Komponente wird durch die Vertikalspule
 ausgeglichen. Dazu wird der Spulenstrom solange variiert, bis der auf dem
-Oszilloskop dargestellte Strom des Lichtdetektors eine minimale Breite aufweist.
+Oszilloskop dargestellte Bereich des Transparenzminimums eine minimale Breite aufweist.
 Zur Verringerung des Einflusses äußeren Lichtes wird der Aufbau nun durch eine
-schwarze Stoffdecke abgeschirmt.\\ Zur Vermessung der Zeeman-Aufspaltung wird an
-den Aufbau ein äußeres niederfrequentes Magnetfeld angelegt. Dieses wird über
-eine Sägezahnspannung an der Sweep-Spule erzeugt. Ziel ist es, die in
-Abbildung~\ref{fig:transparenz_b} dargestellten \enquote{dips} auf dem
-Oszilloskop zu untersuchen. Dazu ist es notwendig die Darstellung für
-verschiedene Frequenzen des Sweep-Spulen-Stromes auf dem Oszilloskop anzupassen
-und die Zeitdifferenz dieser \enquote{dips} abzulesen.\\ Anschließend wird das
-oben beschriebene Überschwingen des Lichtdetektor-Stromes (also der Transparenz)
-bei Anlegen einer Rechteckspannung an die Sweep-Spule untersucht. Dazu wird eine
-Rechteckspannung variierender Frequenzen an die Sweep-Spule gelegt und an der
-abfallenden Flanke dieser die gedämpfte Schwingung betrachtet. Durch Ausmessen
-des Zeitabstandes mehrerer Maxima dieser Schwingung lässt sich die Frequenz
-bestimmen.
+schwarze Stoffdecke abgeschirmt.
+\clearpage
+\noindent
+Zur Vermessung der Zeeman-Aufspaltung wird über die RF-Spule stufenweise ein äußeres
+hochfrequentes Magnetfeld angelegt ($\SI{100}{\kilo\hertz}$ bis $\SI{1}{\mega\hertz}$).
+Dieses wird über eine Sinusspannung an einem HF-Generator erzeugt. Ziel ist es, die in
+Abbildung~\ref{fig:transparenz_b} dargestellten \enquote{dips} auf dem Oszilloskop
+zu untersuchen. Dazu werden für jede Frequenz die Spulenströme von Horizontalfeld-
+und Sweepspule bei den \enquote{dips} abgelesen.\\
 
 \end{document}
