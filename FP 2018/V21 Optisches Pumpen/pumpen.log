@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  21 MAY 2018 19:07
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  31 MAY 2018 23:48
  restricted system commands enabled.
 **pumpen.tex
 (./pumpen.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.115 seconds
+luaotfload | main : initialization completed in 0.112 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2174,13 +2174,13 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout4 = pumpen.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'pumpen.bbl' not found.
-
-No file pumpen.bbl.
+Package biblatex Info: ... file 'pumpen.bbl' found.
+ (./pumpen.bbl)
 Package biblatex Info: Reference section=0 on input line 148.
 Package biblatex Info: Reference segment=0 on input line 148.
 \AtBeginShipoutBox=\box58
 Package hyperref Info: Link coloring OFF on input line 148.
+
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2288,152 +2288,187 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 <Aufspaltung.jpg, id=24, pagebox=cropbox, 676.77844pt x 576.65437pt>
 File: Aufspaltung.jpg Graphic file (type jpg)
 <use Aufspaltung.jpg>
-Package luatex.def Info: Aufspaltung.jpg  used on input line 230. on input line 
-230.
+Package luatex.def Info: Aufspaltung.jpg  used on input line 231. on input line 
+231.
 Package luatex.def Info: Requested size: 313.69167pt x 267.288pt on input line 2
-30.
-
-
-LaTeX Warning: Citation 'anleitung' on page 2 undefined on input line 234.
-
-
-LaTeX Warning: Citation 'anleitung' on page 2 undefined on input line 234.
-
-<Beispiel.jpg, id=25, pagebox=cropbox, 855.94781pt x 538.26094pt>
+31.
+<Beispiel.jpg, id=27, pagebox=cropbox, 855.94781pt x 538.26094pt>
 File: Beispiel.jpg Graphic file (type jpg)
 <use Beispiel.jpg>
-Package luatex.def Info: Beispiel.jpg  used on input line 248. on input line 248
+Package luatex.def Info: Beispiel.jpg  used on input line 249. on input line 249
 .
 Package luatex.def Info: Requested size: 376.42744pt x 236.71234pt on input line
- 248.
+ 249.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 251.
+(Font)              scaled to size 5.00008pt on input line 252.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 251.
+(Font)              scaled to size 4.99992pt on input line 252.
 (load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/
 otl/lmroman7-regular.luc)
-LaTeX Font Info:    Calculating math sizes for size <6.97195> on input line 251.
+LaTeX Font Info:    Calculating math sizes for size <6.97195> on input line 252.
 
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 6.97205pt on input line 251.
+(Font)              scaled to size 6.97205pt on input line 252.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 4.8804pt on input line 251.
+(Font)              scaled to size 4.8804pt on input line 252.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 3.48602pt on input line 251.
+(Font)              scaled to size 3.48602pt on input line 252.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.97185pt on input line 251.
+(Font)              scaled to size 6.97185pt on input line 252.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.88026pt on input line 251.
+(Font)              scaled to size 4.88026pt on input line 252.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 3.48592pt on input line 251.
-
-
-LaTeX Warning: Citation 'anleitung' on page 2 undefined on input line 251.
-
-
-LaTeX Warning: Citation 'anleitung' on page 2 undefined on input line 251.
-
-<Versuchsaufbau.pdf, id=27, pagebox=cropbox, 683.35298pt x 232.87pt>
+(Font)              scaled to size 3.48592pt on input line 252.
+<Versuchsaufbau.pdf, id=31, pagebox=cropbox, 683.35298pt x 232.87pt>
 File: Versuchsaufbau.pdf Graphic file (type pdf)
 <use Versuchsaufbau.pdf>
-Package luatex.def Info: Versuchsaufbau.pdf  used on input line 267. on input li
-ne 267.
+Package luatex.def Info: Versuchsaufbau.pdf  used on input line 268. on input li
+ne 268.
 Package luatex.def Info: Requested size: 418.25555pt x 142.53017pt on input line
- 267.
-
-LaTeX Warning: Citation 'anleitung' on page 2 undefined on input line 268.
-
-
-LaTeX Warning: Citation 'anleitung' on page 2 undefined on input line 268.
-
-<transparenz.pdf, id=29, pagebox=cropbox, 1042.89626pt x 612.2875pt>
+ 268.
+<transparenz.pdf, id=35, pagebox=cropbox, 1042.89626pt x 612.2875pt>
 File: transparenz.pdf Graphic file (type pdf)
 <use transparenz.pdf>
-Package luatex.def Info: transparenz.pdf  used on input line 290. on input line 
-290.
+Package luatex.def Info: transparenz.pdf  used on input line 291. on input line 
+291.
 Package luatex.def Info: Requested size: 250.95587pt x 147.33505pt on input line
- 290.
+ 291.
 
-LaTeX Warning: Citation 'anleitung' on page 2 undefined on input line 291.
-
-
-LaTeX Warning: Citation 'anleitung' on page 2 undefined on input line 291.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--316
+Underfull \hbox (badness 10000) in paragraph at lines 241--317
 
  []
 
 [2<./Aufspaltung.jpg>] [3<./Beispiel.jpg><./Versuchsaufbau.pdf>] [4<./transparen
 z.pdf>]
-<transparenzkurve.pdf, id=64, pagebox=cropbox, 795.773pt x 385.44pt>
+<transparenzkurve.pdf, id=74, pagebox=cropbox, 795.773pt x 385.44pt>
 File: transparenzkurve.pdf Graphic file (type pdf)
 <use transparenzkurve.pdf>
-Package luatex.def Info: transparenzkurve.pdf  used on input line 335. on input 
-line 335.
+Package luatex.def Info: transparenzkurve.pdf  used on input line 336. on input 
+line 336.
 Package luatex.def Info: Requested size: 250.95587pt x 121.5495pt on input line 
-335.
-
-
-LaTeX Warning: Citation 'anleitung' on page 5 undefined on input line 336.
-
-
-LaTeX Warning: Citation 'anleitung' on page 5 undefined on input line 336.
-
-[5<./transparenzkurve.pdf>] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 420--427
+336.
+ [5<./transparenzkurve.pdf>] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 419--438
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
 [7
 
+](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmromancaps10-regular.luc) [8
+
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
+Overfull \hbox (78.60327pt too wide) in paragraph at lines 504--521
+ [][] 
+ []
+
+<Plot2.pdf, id=134, pagebox=cropbox, 462.52798pt x 346.89601pt>
+File: Plot2.pdf Graphic file (type pdf)
+<use Plot2.pdf>
+Package luatex.def Info: Plot2.pdf  used on input line 565. on input line 565.
+Package luatex.def Info: Requested size: 418.25555pt x 313.70679pt on input line
+ 565.
+[9
+
+] [10<./Plot2.pdf>]
+LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 12.00018pt on input line 599.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 8.00012pt on input line 599.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 6.00009pt on input line 599.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 11.99982pt on input line 599.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 7.99988pt on input line 599.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.99991pt on input line 599.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 599.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 599.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathup' on input line 599.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 599.
+
+<Plot1.pdf, id=184, pagebox=cropbox, 462.52798pt x 346.89601pt>
+File: Plot1.pdf Graphic file (type pdf)
+<use Plot1.pdf>
+Package luatex.def Info: Plot1.pdf  used on input line 635. on input line 635.
+Package luatex.def Info: Requested size: 418.25555pt x 313.70679pt on input line
+ 635.
+[11
+
+] [12<./Plot1.pdf>] [13] [14](load luc: /home/simon/.local/texlive/2016/texmf-va
+r/luatex-cache/generic/fonts/otl/lmmono10-regular.luc)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+Package biblatex Warning: No driver for entry type 'software'.
+(biblatex)                Using fallback driver on input line 747.
+
+
+Package biblatex Warning: No driver for entry type 'software'.
+(biblatex)                Using fallback driver on input line 747.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 749.
+[15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 749.
  (./pumpen.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
-Package rerunfilecheck Info: File `pumpen.aux' has not changed.
-(rerunfilecheck)             Checksum: BA9FD596548F7A63EE9472C28F80BB85;7639.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 749.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 749.
 
 
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Warning: File `pumpen.aux' has changed. Rerun.
 
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                pumpen
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: Checksums for `pumpen.aux':
+(rerunfilecheck)             Before: DB3D0349E80271B2EA0E3FE76A41397E;16854
+(rerunfilecheck)             After:  256B64CDD8400E48157358E2EDED6728;16854.
 Package logreq Info: Writing requests to 'pumpen.run.xml'.
 
 \openout1 = pumpen.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 41394 strings out of 494483
+ 41634 strings out of 494483
  100000,1648299 words of node,token memory allocated
- 635 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 23 attribute, 72 glue_spec, 23 attr
-ibute_list, 1 write nodes
-   avail lists: 2:1281,3:125,4:61,5:317,6:4225,7:1809,8:68,9:479,10:29,11:554
- 44153 multiletter control sequences out of 65536+600000
- 316 fonts using 119472767 bytes
- 59i,17n,104p,8816b,3043s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinm
-odern-math.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public
-/lm/lmroman10-bold.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentyp
-e/public/lm/lmroman8-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fon
-ts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive/2016
-/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.loc
-al/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home
-/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular
-.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans
-10-bold.otf>
-Output written on pumpen.pdf (8 pages, 191518 bytes).
+ 779 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 46 attribute, 74 glue_spec, 46 attr
+ibute_list, 1 write, 7 pdf_action nodes
+   avail lists: 2:1334,3:198,4:79,5:327,6:4207,7:1806,8:98,9:476,10:29,11:546
+ 44301 multiletter control sequences out of 65536+600000
+ 350 fonts using 132156175 bytes
+ 59i,17n,104p,8816b,3075s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-re
+gular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/l
+mroman10-italic.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/p
+ublic/lm/lmromancaps10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/f
+onts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive/20
+16/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/simon/.local/te
+xlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/simon
+/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.o
+tf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/lat
+inmodern-math.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/pub
+lic/lm/lmroman10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/o
+pentype/public/lm/lmroman12-regular.otf></home/simon/.local/texlive/2016/texmf-d
+ist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on pumpen.pdf (16 pages, 260747 bytes).
 
-PDF statistics: 169 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 131072)
- 57 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 410 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 131072)
+ 137 words of extra memory for PDF output out of 10000 (max. 100000000)
 

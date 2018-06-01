@@ -1934,6 +1934,17 @@
     <bcf:citekey order="8">anleitung</bcf:citekey>
     <bcf:citekey order="9">anleitung</bcf:citekey>
     <bcf:citekey order="10">anleitung</bcf:citekey>
+    <bcf:citekey order="11">numpy</bcf:citekey>
+    <bcf:citekey order="12">matplotlib</bcf:citekey>
+    <bcf:citekey order="13">uncertainties</bcf:citekey>
+    <bcf:citekey order="14">scipy</bcf:citekey>
+    <bcf:citekey order="15">GFZPot</bcf:citekey>
+    <bcf:citekey order="16">scipy</bcf:citekey>
+    <bcf:citekey order="17">scipyconst</bcf:citekey>
+    <bcf:citekey order="18">rubwi</bcf:citekey>
+    <bcf:citekey order="19">seilnacht</bcf:citekey>
+    <bcf:citekey order="20">rubwi</bcf:citekey>
+    <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
@@ -1968,4 +1979,13 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="anyt/global//global/global"
+                type="entry"
+                sortingtemplatename="anyt"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>
