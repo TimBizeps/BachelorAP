@@ -144,7 +144,6 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \date{Durchführung: 09.05.2018\\
       Abgabe: 01.06.2018}
 
-
 \begin{document}
 
 \maketitle
@@ -153,9 +152,9 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 \pagenumbering{arabic}
 \section{Theorie}
 \label{sec:theorie}
-Ziel des Versuchs ist die Untersuchung von Übergängen bestimmter
-Energieniveaus in Rubidium-Isotopen. Daraus lassen sich die Lande-Faktoren,
-der Kernspin der Isotope und die Größe der Zeeman-Aufspaltung berechnen. \\
+Ziel des Versuchs ist die Untersuchung von energetischen Übergängen zwischen den
+Zeeman-Niveaus in Rubidium-Isotopen im Magnetfeld. Daraus lassen sich die
+Lande-Faktoren und der Kernspin der Isotope berechnen. \\
 In allen Atomen befinden sich Elektronen auf sogenannten Schalen um den
 Atomkern. Auf diesen Schalen besitzen sie feste Energien, zwischen welchen
 allerdings Übergänge stattfinden können. Dazu muss Energie, die exakt der
@@ -171,7 +170,7 @@ Besetzungszahlen zweier Niveaus gilt:
 \end{equation}
 %
 Hierbei beschreiben die $W_i$ die Energien der Zustände, die $g_{\symup{i}}$ die
-Lande-Faktoren, welche beschreiben, wie viele Zustände zu der entsprechenden
+statistischen Gewichte, welche beschreiben, wie viele Zustände zu der entsprechenden
 Energie gehören, sowie $\symup{k_B}$ die Boltzmann-Konstante und $T$ die
 Temperatur. \\
 Mit Hilfe des optischen Pumpens kann eine Abweichung von dieser Verteilung
@@ -184,16 +183,16 @@ Energieabstand $\symup{h}\nu=W_2-W_1$ der Niveaus messen.
 \subsection{Energieniveaus der Elektronen eines Atomes}
 %
 Die Verteilung der Elektronen auf verschiedene Energieniveaus innerhalb des
-Atomes folgt aus Auswahlregeln verschiedener Quantenzahlen. Aus dem
+Atomes folgt aus dem Paulischen Ausschließungsprinzip verschiedener Quantenzahlen. Aus dem
 Gesamtdrehimpuls $\vec{\mathup{J}}$ der Elektronenhülle folgt ein magnetisches Moment
-$\vec{\mu}_{\mathup{J}}=-g_{\symup{J}}\mu_{\symup{B}}\vec{\mathup{J}}$. Der Faktor $g_{\symup{J}}$
-berücksichtigt dabei, dass das Gesamtmoment aus Spin $\mathup{S}$ und Drehimpuls $\mathup{L}$
-folgt. Es gilt
+$\vec{\mu}{\mathup{J}}=-g{\symup{J}}\mu_{\symup{B}}\vec{\mathup{J}}$. Der Lande-Faktor $g_{\symup{J}}$
+berücksichtigt dabei, dass das Gesamtmoment aus Spin $\mathup{S}$ und Bahndrehimpuls $\mathup{L}$
+der Elektronen folgt. Es gilt
 %
 \begin{align*}
-  |\vec{\mu}_{\mathup{J}}|=&g_{\symup{J}}\mu_{\symup{B}}\sqrt{\mathup{J}(\mathup{J}+1)},\;\text{wobei} \\
-  |\vec{\mu}_{\mathup{L}}|=&-\mu_{\symup{B}}\sqrt{\mathup{L}(\mathup{L}+1)}\;\text{und} \\
-  |\vec{\mu}_{\mathup{S}}|=&-g_{\symup{S}}\mu_{\symup{B}}\sqrt{\mathup{S}(\mathup{S}+1)}\;.
+  |\vec{\mu}{\mathup{J}}|=&g{\symup{J}}\mu_{\symup{B}}\sqrt{\mathup{J}(\mathup{J}+1)},\;\text{wobei} \\
+  |\vec{\mu}{\mathup{L}}|=&-\mu{\symup{B}}\sqrt{\mathup{L}(\mathup{L}+1)}\;\text{und} \\
+  |\vec{\mu}{\mathup{S}}|=&-g{\symup{S}}\mu_{\symup{B}}\sqrt{\mathup{S}(\mathup{S}+1)}\;.
 \end{align*}
 %
 Das Gesamtdrehmoment $\vec{\mu}_{\mathup{J}}$ der Elektronenhülle präzediert dabei um den
@@ -206,8 +205,10 @@ $\mathup{J}$, $\mathup{S}$ und $\mathup{L}$. Es ergibt sich
   \label{eq:gj}
 \end{equation}
 %
-Wird ein äußeres Magnetfeld angelegt, so spaltet sich das
-Spektrum weiter auf. Es gilt
+Wird ein äußeres Magnetfeld angelegt, so spaltet sich die aus $L$, $S$ und $J$
+resultierende Feinstruktur der Energieniveaus weiter auf. Dies ist in Abbildung
+\ref{fig:aufspaltung} zu sehen. Bei Anlegen eines äußeren Magnetfeldes wird also über den Zeeman-Effekt jedes
+Energieniveau in $2\mathup{J}+1$ Unterniveaus aufgespalten. Es gilt
 %
 \begin{equation}
   U_{\text{mag}}=-\vec{\mu}_{\mathup{J}\cdot\vec{B}}
@@ -220,11 +221,11 @@ Hieraus folgt eine Richtungsquantelung der Energie:
   \label{penis}
 \end{equation}
 %
-Bei Anlegen eines äußeren Magnetfeldes wird also über den Zeeman-Effekt jedes
-Energieniveau in $2\mathup{J}+1$ Unterniveaus aufgespalten. Die Anzahl der so
+Die Anzahl der so
 entstehenden Niveaus ist abhängig von dem sich aus Gesamtdrehimpuls der
-Elektronenhülle $\mathup{J}$ und dem Kernspin $\mathup{I}$ ergebenden Gesamtdrehimpuls $\mathup{F}$ des
-Atomes.
+Elektronenhülle $\mathup{J}$ und dem Kernspin $\mathup{I}$ ergebenden
+Gesamtdrehimpuls $\mathup{F}$ des Atoms. Dabei ist der Kernspin der
+Gesamtdrehimpuls eines Atomkerns um seinen Schwerpunkt.
 %
 \begin{figure}[h]
   \centering
@@ -242,7 +243,7 @@ Die beiden in diesem Versuch betrachteten Rubidium-Isotope haben beide einen
 Kernspin $I \neq 0$. Das Verfahren des optischen Pumpens wird anhand eines Beispiel-Systems
 betrachtet. Es handelt sich dabei zunächst vereinfacht um ein Alkali-Atom ohne Kernspin $\vec{I}$.
 Der Grundzustand ist der Zustand $^2S_{\sfrac{1}{2}}$. Angeregte Zustände sind
-$^2P_{\sfrac{1}{2}}$ sowie $^2P_{\sfrac{3}{2}}$.
+$^2P_{\sfrac{1}{2}}$, sowie $^2P_{\sfrac{3}{2}}$.
 %
 \begin{figure}[htb]
   \centering
@@ -274,17 +275,17 @@ Abbildung~\ref{fig:aufbau} zeigt den schematischen Aufbau der verwendeten
 Apparatur. Eine Spektrallampe strahlt Licht in die Apparatur ein. Aus diesem
 Licht wird mit Hilfe eines $\text{D}_1$-Filters und eines Polarisationsfilters
 rechtszirkular polarisiertes $\text{D}_1$-Licht. Der einzige mögliche
-Energieübergang innerhalb der Atome in der Dampfzelle ist derjenige von
-$^2\symup{S}_{\sfrac{1}{2}}$ (mit $M_{\mathup{J}}=-\sfrac{1}{2}$) zu
-$^2P_{\sfrac{1}{2}}$ (mit $M_{\mathup{J}}=+\sfrac{1}{2}$), sowie rückwärts durch
+Energieübergang innerhalb der Atome in der Dampfzelle ist somit derjenige von
+$^2\symup{S}{\sfrac{1}{2}}$ (mit $M{\mathup{J}}=-\sfrac{1}{2}$) zu
+$^2P_{\sfrac{1}{2}}$ (mit $M_{\mathup{J}}=+\sfrac{1}{2}$), sowie umgekehrt durch
 spontane Emission. Beim rückwärtigen Prozess werden allerdings beide
 Zeeman-Niveaus des $^2\symup{S}_{\sfrac{1}{2}}$-Niveaus besetzt, sodass im
 Laufe der Zeit das Niveau $^2\symup{S}_{\sfrac{1}{2}}$ (mit
 $M_{\mathup{J}}=+\sfrac{1}{2}$) angereichert und das
-$^2\symup{S}_{\sfrac{1}{2}}$-Niveau (mit $M_{\mathup{J}}=-\sfrac{1}{2}$)
+$^2\symup{S}{\sfrac{1}{2}}$-Niveau (mit $M{\mathup{J}}=-\sfrac{1}{2}$)
 \enquote{leergepumpt} wird. Dies hat eine Umkehr der Besetzung im S-Niveau zur
 Folge. Experimentell beobachten lässt sich diese Entwicklung über die
-Transparenz des Dampfes für Licht.
+Transparenz des Dampfes für Licht, wie in Abbildung \ref{fig:transparenz} veranschaulicht.
 %
 \begin{figure}[htb]
   \centering
@@ -298,7 +299,7 @@ dass Elektronen im Gas angeregt werden und dabei die Photonen absorbieren. Dies
 ist natürlich nur möglich, wenn sich Elektronen in dem unteren Energieniveau
 dieser Anregungen befinden. Je weniger Elektronen sich in diesem Niveau
 befinden, desto unwahrscheinlicher ist eine Absorbtion des Photons und desto
-transparenter erscheint das Gas, Abbildung~\ref{fig:transparenz}. \\
+transparenter erscheint das Gas. \\
 \\
 Es treten zwei Prozesse zur Abregung, also zur Emission von Photonen aus den
 Gasatomen, auf. Bei der spontanen Emission begibt sich ein Elektron auf
@@ -310,6 +311,8 @@ Prozesse überwiegt, hängt von der Energie der Photonen ab. Die
 Übergangswahrscheinlichkeit für spontane Emission ist proportional zu $\nu^3$,
 und damit bei großen Frequenzen ausschlaggebend. Bei kleineren Energien, wie
 etwa denen bei Zeeman-Übergängen kommt es quasi nur zu induzierter Emission.
+Dabei nimmt dann die Transparenz der Dampfdruckkurve ab. Dies wird auch Resonanzfall
+genannt.
 Dies kann also sehr gut zur Vermessung dieser Übergänge verwendet werden. \\
 Die Energiedifferenzen zwischen den Zeeman-Niveaus ist abhängig von der Stärke
 des angelegten Magnetfeldes:
@@ -328,9 +331,12 @@ Besetzungsumkehrung eintritt. Wenn allerdings das Magnetfeld den Wert
 \end{equation}
 %
 annimmt setzt induzierte Emission ein, sodass die Besetzungsinversion wieder
-zerfällt. Die Transparenz wird also nachdem sie der Eins zustrebte plötzlich
+zerfällt. Das ist nur mit einer RF-Spule möglich. Diese würde ein weiteres horizontales
+Magnetfeld erzeugen. Die Transparenz wird also nachdem sie Ihrem Maximum zustrebte plötzlich
 wieder kleiner, wenn der oben beschriebene Wert erreicht wird, Abbildung~\ref{fig:transparenz_b}.
-%
+Dabei ist zu sehen, dass es einen negativen Nullpeak gibt. Dieser kommt dadurch
+zu Stande, dass dort kein Zeeman Aufspaltung stattfindet. Dadurch gibt es kein
+optisches Pumpen.
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.6\textwidth]{transparenzkurve.pdf}
@@ -339,31 +345,28 @@ wieder kleiner, wenn der oben beschriebene Wert erreicht wird, Abbildung~\ref{fi
 \end{figure}
 %
 \subsection{Der Einfluss des Kernspins auf das Rubidium-Atom}
-Rubidium hat einen Kernspin, der verschieden von 0 ist. Deshalb ist noch der Einfluss
-der Hyperfeinstruktur zu beachten (Abbildung~\ref{fig:aufspaltung}).\\
-Schließlich ergibt sich dann für den Landé-Faktor $g_{\mathup{F}}$:
+Rubidium hat einen Kernspin, der verschieden von 0 ist. Dadurch ändert sich die
+Formel \eqref{eq:gj} zu
 \begin{equation}
-  g_{\mathup{F}}\,\approx\,g_{\mathup{J}} \frac{\mathup{F}(\mathup{F}+1)+\mathup{J}(\mathup{J}+1)-\mathup{I}(\mathup{I}+1)}{2\mathup{F}(\mathup{F}+1)}.
-  \label{eqn:gflande}
+  g_{F}\,=\,g_{J} \frac{F(F+1)+J(J+1)-I(I+1)}{2F(F+1)}
 \end{equation}
-Der Abstand benachbarter Zeeman-Niveaus beträgt dann:
+und die Formel \eqref{penis} zu
 \begin{equation}
-  \mathup{U}_{\mathup{HF}}\,=\,g_{\mathup{F}}\mu_{\mathup{B}} B.
-  \label{eqn:zeeman}
+  U_{HF}\,=\,g_{F}\mu_{B} B.
+  \label{lol}
 \end{equation}
-$\mu_{\mathup{B}}$ ist dabei das bohrsche Magneton
-
 \subsection{Der quadratische Zeeman-Effekt}
+
 Die Aufspaltung der Zeeman-Niveaus verhält sich allerdings nicht für alle Magnetfeldstärken
-wie in Abbildung~\ref{fig:aufspaltung} dargestellt. Für große Magnetfelder werden höhere
+wie in Gleichung \eqref{lol} erkennbar. Für große Magnetfelder werden höhere
 Ordnungen in Abhängigkeit des Magnetfeldes relevant, sodass die Zeeman-Aufspaltung durch
 %
 \begin{equation}
-  \mathup{U}_{\mathup{HF}} = g_{\mathup{F}}\mu_{\mathup{B}}B + g_{\mathup{F}}^2\mu_{\mathup{B}}^2B^2\frac{(1-2M_{\mathup{F}})}{\symup{\Delta} \mathup{E_{Hy}}} - ....
+  \mathup{U}{\mathup{HF}} = g{\mathup{F}}\mu_{\mathup{B}}B + g_{\mathup{F}}^2\mu_{\mathup{B}}^2B^2\frac{(1-2M_{\mathup{F}})}{\symup{\Delta} \mathup{E_{Hy}}} - ....
   \label{eq:quad_zeeman}
 \end{equation}
 %
-beschrieben wird. Dabei ist $\symup{\Delta} \mathup{E_{Hy}}$ die Energiedifferenz der
+für einen Übergang von $M_F$ nach $M_{F+1}$ beschrieben wird. Dabei ist $\symup{\Delta} \mathup{E_{Hy}}$ die Energiedifferenz der
 Hyperfeinstrukturaufspaltung zwischen den Niveaus $\mathup{F}$ und $\mathup{F}+1$.
 Hier werden nun neben den Wechselwirkungen der magnetischen Momente mit dem äußeren
 Magnetfeld auch diese zwischen den magnetischen Momenten berücksichtigt.
@@ -375,36 +378,20 @@ Magnetfeld auch diese zwischen den magnetischen Momenten berücksichtigt.
 Abbildung~\ref{fig:aufbau} zeigt den schematischen Aufbau der Versuchsapparatur.
 Ausgangspunkt des untersuchten Lichtes ist eine Spektrallampe. Dabei handelt es
 sich um eine Rubidiumdampflampe. Das Licht dieser Lampe wird über eine
-Sammellinse fokussiert und parallelisiert. Ein D1-Filter selektiert aus diesem
+Sammellinse parallelisiert. Ein D1-Filter selektiert aus diesem
 Licht ein schmales Frequenzspektrum heraus. Dabei handelt es sich um die
 D1-Linie des Rubidiums, welche eine Wellenlänge von etwa
-$\lambda=\SI{794.8}{\nano\metre}$ besitzt. Der Filter stellt ein von einer
-refĺektierenden Schicht umgebenes Dielektrikum der Dicke $d$ und
-Brechungsindex $n$ dar. Die äußere Schicht ist für Licht halbdurchlässig,
-weswegen einfallendes Licht innerhalb des Dielektrikums mehrfach reflektiert
-wird. Dies führt dazu, dass Wellenlängen der Größe
-%
-\begin{equation}
-  m\cdot\lambda_m=2\cdot n\cdot d+\frac{\lambda}{2}, \quad m=2,3,\ldots
-\end{equation}
-%
-konstruktiv interferieren. Licht einer anderen Wellenlänge hingegen wird so
-durch destruktive Interferenz herausgefiltert. Durch einen Polarisationsfilter
-wird das Licht anschließend linear polarisiert, um anschließend durch ein
-$\sfrac{\lambda}{4}$-Plättchen zirkular polarisiert zu werden. Das
-$\sfrac{\lambda}{4}$-Plättchen stellt eine aus einem anisotropen Material
-besthende Verzögerungsvorrichtung dar. Sie ist in der Lage einfallendes Licht
-entlang zweier Achsen unterschiedlich zu verzögern, sodass durch die Ausrichtung
-der gewünschte Phasenunterschied zwischen einzelnen Komponenten des Lichtes
-erzeugt werden kann. Für zirkular polarisiertes Licht aus linear polarisiertem Licht,
-muss diese Ausrichtung gerade einen Winkel von $\sfrac{\pi}{2}$ betragen. \\
+$\lambda=\SI{794.8}{\nano\metre}$ besitzt. Durch einen Polarisationsfilter
+wird das Licht linear polarisiert, um anschließend durch ein
+$\sfrac{\lambda}{4}$-Plättchen zirkular polarisiert zu werden. \\
 Das nun hinreichend präparierte Licht fällt anschließend auf eine Dampfzelle.
 Diese ist mit Rubidiumgas gefüllt und elektrisch beheizbar. Die Temperaturerhöhung
 sorgt dafür, dass die thermische Verteilung der Energie breiter ist, sowie zur
 Regulierung des Dampfdruckes innerhalb der Zelle. Die Zelle befindet sich
 innerhalb mehrerer Helmholtzspulenpaare. Ein Paar ist horizontal ausgerichtet
 (Horizontalfeldspule), während das zweite Paar vertikal ausgerichtet ist. Dazu
-geschaltet ist eine Modulationsfeldspule (Sweep-Spule). Alle Spulen lassen sich
+geschaltet ist eine Modulationsfeldspule (Sweep-Spule), die vertikal ausgerichtet
+ist. Alle Spulen lassen sich
 einzeln über die Feldströme steuern. Zusätzlich zu den Helmholtzspulen besitzt
 die Apparatur auch eine RF-Spule. Mit dieser lassen sich elektromagnetische Wellen
 bestimmter Frequenz erzeugen, die für die induzierte Emission verwendet werden.
@@ -414,27 +401,32 @@ Dazu wird ein Si-Photoelement verwendet, welches das Licht in ein elektrisches
 Signal wandelt. Dieses wird durch ein Oszilloskop eingelesen und dargestellt.
 Zur Abschirmung von Außenlicht wird der gesamte Messaufbau während der Messung
 mit einer schwarzen Stoffdecke abgedunkelt.
-\clearpage
+
 \subsection{Die Versuchsdurchführung}
 Da es sich hierbei um einen optischen Aufbau mit mehreren optischen Elementen
 handelt, muss die Apperatur zunächst so eingestellt werden, dass das vermessene
 Licht eine maximale Intensität aufweist. Dazu wird der Polarisationsfilter
-sowie das $\sfrac{\lambda}{4}$-Plättchen zunächst aus dem Strahlengang entfernt.
+sowie das $\sfrac{\lambda}{4}$-Plättchen zunächst aus dem Strahlengang entfernt,
+alle \enquote{Gain}-Knöpfe werden auf $1$ gestellt und setzt die Zeitkonstante auf
+\SI{100}{\milli\seconds}.
 Da die Magnetfeldstärken der verwendeten Spulen in der Größenordnung des
 Erdmagnetfeldes liegen, muss dieses möglichst kompensiert werden. Dazu wird der
 gesamte Versuchsaufbau entlang der optischen Achse in Nord-Süd-Richtung
 ausgerichtet. Dies dient zur Kompensation der horizontalen Komponente des
 Magnetfeldes. Die vertikale Komponente wird durch die Vertikalspule
 ausgeglichen. Dazu wird der Spulenstrom solange variiert, bis der auf dem
-Oszilloskop dargestellte Bereich des Transparenzminimums eine minimale Breite aufweist.
-Zur Verringerung des Einflusses äußeren Lichtes wird der Aufbau durch eine
+Oszilloskop dargestellte Bereich des Nullpeaks eine minimale Breite aufweist.
+Zur Verringerung des Einflusses äußeren Lichtes wird der Aufbau nun durch eine
 schwarze Stoffdecke abgeschirmt.
+\clearpage
+\noindent
 Zur Vermessung der Zeeman-Aufspaltung wird über die RF-Spule stufenweise ein äußeres
 hochfrequentes Magnetfeld angelegt ($\SI{100}{\kilo\hertz}$ bis $\SI{1}{\mega\hertz}$).
 Dieses wird über eine Sinusspannung an einem HF-Generator erzeugt. Ziel ist es, die in
 Abbildung~\ref{fig:transparenz_b} dargestellten \enquote{dips} auf dem Oszilloskop
-zu untersuchen. Dazu werden für jede Frequenz die Spulenströme von Horizontalfeld-
-und Sweepspule bei den \enquote{dips} abgelesen.\\
+zu untersuchen. Dazu werden für verschiedene Frequenzen an der RF-Spule die
+Magnetfeldstärke im Resonanzfall, welcher sich durch minimale Transparenz der
+Dampfzelle erkennen lässt, gemessen.\\
 \clearpage
 \section{Auswertung}
 \label{sec:auswertung}
@@ -448,38 +440,38 @@ und Sweepspule bei den \enquote{dips} abgelesen.\\
   $\textsc{Uncertainties}$ \cite{uncertainties} automatisiert.
 
 \subsection{Messwerte}
+Für die Potenziometerskalen sind die Umrechnungsfaktoren vorgegeben.
+Bei der Sweepspule sowie der Vertikalfeldspule beträgt er $\SI{0.1}{\ampere}$ pro Umdrehung und bei
+der Horizontalfeldspule sind es $\SI{0.3}{\ampere}$ pro Umdrehung.
 \begin{table}[H]
   \centering
-  \caption{Die Messwerte in Einheiten der Skalen an den jeweiligen Potenziometern.}
+  \caption{Die Stromstärken an Sweep- und Horizontalfeldspule bei den beiden Peaks.}
   \label{tab:1}
   \begin{tabular}{c c c c c}
     \toprule
     & \multicolumn{2}{c}{Sweepspule} & \multicolumn{2}{c}{Horizontalfeld}\\
-    f in \si{\kilo\hertz} & 1.Peak & 2.Peak & 1.Peak & 2.Peak \\
+    f in \si{\kilo\hertz} & 1.Peak in $\si{\milli\ampere}$ & 2.Peak in $\si{\milli\ampere}$ & 1.Peak in $\si{\milli\ampere}$ & 2.Peak $\si{\milli\ampere}$ \\
     \midrule
-    100  & 6,14 & 7,34 & 0,00 & 0,00 \\
-    201  & 3,64 & 6,04 & 0,20 & 0,20 \\
-    300  & 1,36 & 4,96 & 0,30 & 0,30 \\
-    401  & 1,57 & 6,38 & 0,35 & 0,35 \\
-    500  & 1,82 & 7,70 & 0,40 & 0,40 \\
-    602  & 4,18 & 4,77 & 0,40 & 0,55 \\
-    700  & 4,19 & 6,04 & 0,45 & 0,60 \\
-    800  & 4,44 & 5,28 & 0,50 & 0,70 \\
-    900  & 4,77 & 4,38 & 0,55 & 0,80 \\
-    1000 & 4,86 & 5,77 & 0,60 & 0,85 \\
+    100  & 614 & 734 &   0 &   0 \\
+    201  & 364 & 604 &  60 &  60 \\
+    300  & 136 & 496 &  90 &  90 \\
+    401  & 157 & 638 & 105 & 105 \\
+    500  & 182 & 770 & 120 & 120 \\
+    602  & 418 & 477 & 120 & 165 \\
+    700  & 419 & 604 & 135 & 180 \\
+    800  & 444 & 528 & 150 & 210 \\
+    900  & 477 & 438 & 165 & 240 \\
+    1000 & 486 & 577 & 180 & 255 \\
     \bottomrule
   \end{tabular}
 \end{table}
-Für die Potenziometerskalen sind die Umrechnungsfaktoren vorgegeben.
-Bei der Sweepspule sowie der Vertikalfeldspule beträgt er $\SI{0.1}{\ampere}$ pro Umdrehung und bei
-der Horizontalfeldspule sind es $\SI{0.3}{\ampere}$ pro Umdrehung.
 Das B-Feld eines Helmholtzspulenpaares berechnet sich nach:
 \begin{equation}
   B = \mu_0 \frac{8}{\sqrt{125}}\cdot \frac{N}{R} \cdot I
 \end{equation}
-Dabei ist $N$ die Anzahl an Windungen pro Spule, $R$ der mittlere Radius in $\si{\meter}$
-und $I$ die Stromstärke in $\si{\ampere}$. Die Daten der verwendeten Spulen waren
-ebenfalls gegeben. Für $\mu_0$ wird der bei Scipy \cite{scipy} hinterlegte Wert verwendet.
+Dabei ist $N$ die Anzahl an Windungen pro Spule, $R$ der mittlere Radius
+und $I$ die Stromstärke. Die Daten der verwendeten Spulen sind in Tabelle \ref{tab:2}
+gegeben. Für $\mu_0$ wird der bei Scipy \cite{scipy} hinterlegte Wert verwendet.
 \begin{table}[H]
   \centering
   \caption{Daten der Spulen.}
@@ -522,7 +514,7 @@ Damit lassen sich die gemessenen B-Felder bestimmen:
 \subsection{Bestimmung des lokalen Erdmagnetfeldes}
 Beim ersten Plotten und Fitten fällt auf, dass fast alle Werte auf einer Geraden liegen.
 Die ersten Messwerte, bei denen die Stromstärke an der Horizontalfeldspule noch bei 0 liegt,
-reißen jedoch stärker aus. Wir können uns daran Erinnerung, dass beim minimieren des Horizontalfeldes
+reißen jedoch stärker aus. Wir wissen, dass beim minimieren des Horizontalfeldes
 die Skala am Potenziometer nicht genau 0 angezeigt hat, wir aber 0 notiert haben.
 Im weiteren Verlauf haben wir uns dann immer exakt an die Skala gehalten, weshalb es
 wahrscheinlich zu einem systematischen Fehler kam, der sich in einer konkreten Differenz
@@ -648,7 +640,7 @@ Da Rubidium zu den Alkali-Metallen gehört besitzt die Elektronenhülle lediglic
 einen Gesamtspin von $\mathup{J} = \frac{1}{2}$. Dabei ist $\mathup{S} = \frac{1}{2}$
 und $\mathup{L} = 0$. In Formel \ref{eq:gj} eingesetzt ergibt sich damit:
 $g_\mathup{J} = \num{2.0023}$.\\
-Wenn nun in Formel \ref{eqn:gflande} $\mathup{F}$ durch $\mathup{I}+\mathup{J}$
+Wenn nun in Formel (\ref{eqn:gflande}) $\mathup{F}$ durch $\mathup{I}+\mathup{J}$
 ersetzt wird (mit $\mathup{J} = \frac{1}{2}$) und anschließend die Formel auf $\mathup{I}$ umgeformt wird,
 folgt durch Einsetzen von $g_\mathup{F}$ und $g_\mathup{J}$ der Kernspin $\mathup{I}$
 der Isotope:
@@ -669,7 +661,7 @@ und das obere $^{85}\mathup{Rb}$.
 
 \subsection{Abschätzung des quadratischen Zeeman-Effektes}
 Für die Abschätzung des quadratischen Zeeman-Effektes werden der lineare und der
-quadratische Teil in Formel \ref{eq:quad_zeeman} einzeln für die bestimmten Werte
+quadratische Teil in Formel (\ref{eq:quad_zeeman}) einzeln für die bestimmten Werte
 von $g_\mathup{F}$ und für die sich, aus den Parametern des 1.Fits (für $\SI{100}{\kilo\hertz}$)
 und aus den Parametern des 2.Fits (für $\SI{1000}{\kilo\hertz}$) ergebenden B-Feldern berechnet.
 Dabei wirken die beiden Werte der B-Felder als obere und untere Grenze.
@@ -696,6 +688,8 @@ gegeben. Die Ergebnisse stehen in Tabelle \ref{tab:7}.
     \bottomrule
   \end{tabular}
 \end{table}
+Der Einfluss des quadratischen Zeeman-Effektes liegt also maximal in einer
+Größenordnung von \SI{e-30}{\joule}.
 
 \subsection{Ausdruck des Signalbildes und Bestimmung des Isotopenverhältnisses}
 Auf dem Ausdruck wird zunächst per Lineal die Tiefe der beiden Transparenzminima
@@ -738,7 +732,7 @@ sehr dicht an dem Literaturwert.\\
 Bei der Abschätzung des quadratischen Zeeman-Effektes ist deutlich zu erkennen,
 dass dieser hier nur eine kleine Rolle spielt, da die Aufspaltung bei den von
 uns betrachteten Magnetfeldern zwei bis vier Größenordnungen kleiner ist.\\
-Das Isotopenverhältnis in der Probe ist nah an dem natürlchen Verhältnis.
+Das Isotopenverhältnis in der Probe ist nah an dem natürlichen Verhältnis.
 Die Abmessung ist hier allerdings auch mit einer gewissen Ungenauigkeit verbunden,
 da die Strichdicke in der Aufnahme einen Ablesefehler nicht unwahrscheinlich macht.
 Tendenziell scheint die Probe aber leicht mit $^{87}\mathup{Rb}$ angereichert zu sein.
