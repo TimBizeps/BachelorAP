@@ -1,0 +1,18 @@
+[0] Config.pm:302> INFO - This is Biber 2.10
+[0] Config.pm:305> INFO - Logfile is 'inter.blg'
+[44] biber-MSWIN32:313> INFO - === 
+[92] Biber.pm:371> INFO - Reading 'inter.bcf'
+[249] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[272] Biber.pm:3976> INFO - Processing section 0
+[289] Biber.pm:4136> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[293] bibtex.pm:1490> INFO - LaTeX decoding ...
+[305] bibtex.pm:1306> INFO - Found BibTeX data source 'lit.bib'
+[321] Biber.pm:4136> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[326] bibtex.pm:1490> INFO - LaTeX decoding ...
+[339] bibtex.pm:1306> INFO - Found BibTeX data source 'programme.bib'
+[390] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[390] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[391] Biber.pm:3804> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[391] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[441] bbl.pm:617> INFO - Writing 'inter.bbl' with encoding 'UTF-8'
+[446] bbl.pm:720> INFO - Output to inter.bbl
