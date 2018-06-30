@@ -1,18 +1,18 @@
 [1] Config.pm:302> INFO - This is Biber 2.8
 [1] Config.pm:305> INFO - Logfile is 'Myonen.blg'
-[57] biber:313> INFO - === Mi Mai  2, 2018, 21:42:56
-[81] Biber.pm:361> INFO - Reading 'Myonen.bcf'
-[175] Biber.pm:844> INFO - Using all citekeys in bib section 0
-[197] Biber.pm:3971> INFO - Processing section 0
-[210] Biber.pm:4144> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[211] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
-[218] bibtex.pm:1305> INFO - Found BibTeX data source 'lit.bib'
-[230] Biber.pm:4144> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[231] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
-[232] bibtex.pm:1305> INFO - Found BibTeX data source 'programme.bib'
-[274] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[274] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[275] Biber.pm:3799> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
-[275] Biber.pm:3805> INFO - No sort tailoring available for locale 'de-DE'
-[289] bbl.pm:613> INFO - Writing 'Myonen.bbl' with encoding 'UTF-8'
-[295] bbl.pm:716> INFO - Output to Myonen.bbl
+[74] biber:313> INFO - === Sa Jun 30, 2018, 18:34:13
+[101] Biber.pm:361> INFO - Reading 'Myonen.bcf'
+[217] Biber.pm:844> INFO - Using all citekeys in bib section 0
+[236] Biber.pm:3971> INFO - Processing section 0
+[248] Biber.pm:4144> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[249] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[253] bibtex.pm:1305> INFO - Found BibTeX data source 'lit.bib'
+[264] Biber.pm:4144> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[265] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[266] bibtex.pm:1305> INFO - Found BibTeX data source 'programme.bib'
+[308] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[308] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[308] Biber.pm:3799> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[308] Biber.pm:3805> INFO - No sort tailoring available for locale 'de-DE'
+[321] bbl.pm:613> INFO - Writing 'Myonen.bbl' with encoding 'UTF-8'
+[325] bbl.pm:716> INFO - Output to Myonen.bbl

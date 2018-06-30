@@ -1924,9 +1924,10 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">anleitung</bcf:citekey>
-    <bcf:citekey order="2">anleitung</bcf:citekey>
-    <bcf:citekey order="3">literaturwert</bcf:citekey>
+    <bcf:citekey order="1">numpy</bcf:citekey>
+    <bcf:citekey order="2">uncertainties</bcf:citekey>
+    <bcf:citekey order="3">matplotlib</bcf:citekey>
+    <bcf:citekey order="4">literaturwert</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
