@@ -1,18 +1,18 @@
 [0] Config.pm:302> INFO - This is Biber 2.8
-[2] Config.pm:305> INFO - Logfile is 'pumpen.blg'
-[46] biber:313> INFO - === Do Mai 31, 2018, 23:29:39
-[65] Biber.pm:361> INFO - Reading 'pumpen.bcf'
-[153] Biber.pm:844> INFO - Using all citekeys in bib section 0
-[171] Biber.pm:3971> INFO - Processing section 0
-[183] Biber.pm:4144> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[184] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
-[188] bibtex.pm:1305> INFO - Found BibTeX data source 'lit.bib'
-[212] Biber.pm:4144> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[232] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
-[233] bibtex.pm:1305> INFO - Found BibTeX data source 'programme.bib'
-[286] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[286] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[286] Biber.pm:3799> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
-[286] Biber.pm:3805> INFO - No sort tailoring available for locale 'de-DE'
-[302] bbl.pm:613> INFO - Writing 'pumpen.bbl' with encoding 'UTF-8'
-[307] bbl.pm:716> INFO - Output to pumpen.bbl
+[0] Config.pm:305> INFO - Logfile is 'pumpen.blg'
+[42] biber:313> INFO - === Di Jul  3, 2018, 17:32:25
+[59] Biber.pm:361> INFO - Reading 'pumpen.bcf'
+[146] Biber.pm:844> INFO - Using all citekeys in bib section 0
+[164] Biber.pm:3971> INFO - Processing section 0
+[176] Biber.pm:4144> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[177] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[181] bibtex.pm:1305> INFO - Found BibTeX data source 'lit.bib'
+[203] Biber.pm:4144> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[225] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[226] bibtex.pm:1305> INFO - Found BibTeX data source 'programme.bib'
+[271] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[271] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[271] Biber.pm:3799> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[271] Biber.pm:3805> INFO - No sort tailoring available for locale 'de-DE'
+[286] bbl.pm:613> INFO - Writing 'pumpen.bbl' with encoding 'UTF-8'
+[292] bbl.pm:716> INFO - Output to pumpen.bbl
