@@ -1,3 +1,3 @@
 #blau innere Maxima bei 1 Tesla
-0.75 0.2
-0.8  0.25
+0.75 0.2  0.3
+0.8  0.25 0.35

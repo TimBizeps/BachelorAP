@@ -91,11 +91,13 @@ print('b31 ', quoti31)
 print('b32 ', quoti32)
 print('b4 ', quoti4)
 
-DeltaSb2, deltas5 = np.genfromtxt('daten5.txt', unpack=True)
+DeltaSb2, deltas5, deltas52 = np.genfromtxt('daten5.txt', unpack=True)
 
 quoti5 = deltas5/DeltaSb2
+quoti52 = deltas52/DeltaSb2
 
 print('b5 ', quoti5)
+print('b52 ', quoti52)
 
 deltaLambr = (1/2)*quoti*DeltaLambDr       #1/2 weil die Aufspaltung nach links
 deltaLambb1 = (1/2)*quoti1*DeltaLambDb     #und rechts geht und deltaLamb dann zur mitte gemessenwird
@@ -104,6 +106,7 @@ deltaLambb31 = (1/2)*quoti31*DeltaLambDb
 deltaLambb32 = (1/2)*quoti32*DeltaLambDb
 deltaLambb4 = (1/2)*quoti4*DeltaLambDb
 deltaLambb5 = (1/2)*quoti5*DeltaLambDb
+deltaLambb52 = (1/2)*quoti52*DeltaLambDb
 print('deltaLambr ', deltaLambr)
 print('deltaLambb1 ', deltaLambb1)
 print('deltaLambb2 ', deltaLambb2)
@@ -111,8 +114,14 @@ print('deltaLambb31 ', deltaLambb31)
 print('deltaLambb32 ', deltaLambb32)
 print('deltaLambb4 ', deltaLambb4)
 print('deltaLambb5 ', deltaLambb5)
+print('deltaLambb52 ', deltaLambb52)
 deltaLambb3 = np.concatenate((deltaLambb31, deltaLambb32), axis=None)
 print('deltaLambb3 ', deltaLambb3)
+
+np.savetxt("deltaLambr.txt", np.column_stack([deltaLambr]))
+np.savetxt("deltaLambb.txt", np.column_stack([deltaLambb1, deltaLambb2, deltaLambb31, deltaLambb32, deltaLambb4]))
+np.savetxt("deltaLambb2.txt", np.column_stack([deltaLambb52]))
+
 meandeltalar = np.mean(deltaLambr)
 fdeltalar = np.std(deltaLambr, ddof=1)/np.sqrt(len(deltaLambr))
 meandeltalab1 = np.mean(deltaLambb1)
@@ -125,6 +134,8 @@ meandeltalab4 = np.mean(deltaLambb4)
 fdeltalab4 = np.std(deltaLambb4, ddof=1)/np.sqrt(len(deltaLambb4))
 meandeltalab5 = np.mean(deltaLambb5)
 fdeltalab5 = np.std(deltaLambb5, ddof=1)/np.sqrt(len(deltaLambb5))
+meandeltalab52 = np.mean(deltaLambb52)
+fdeltalab52 = np.std(deltaLambb52, ddof=1)/np.sqrt(len(deltaLambb52))
 
 deltaLaR = ufloat(meandeltalar, fdeltalar)
 deltaLaB1 = ufloat(meandeltalab1, fdeltalab1)
@@ -132,6 +143,7 @@ deltaLaB2 = ufloat(meandeltalab2, fdeltalab2)
 deltaLaB3 = ufloat(meandeltalab3, fdeltalab3)
 deltaLaB4 = ufloat(meandeltalab4, fdeltalab4)
 deltaLaB5 = ufloat(meandeltalab5, fdeltalab5)
+deltaLaB52 = ufloat(meandeltalab52, fdeltalab52)
 
 print('deltaLaR ', deltaLaR)
 print('deltaLaB1 ', deltaLaB1)
@@ -139,6 +151,10 @@ print('deltaLaB2 ', deltaLaB2)
 print('deltaLaB3 ', deltaLaB3)
 print('deltaLaB4 ', deltaLaB4)
 print('deltaLaB5 ', deltaLaB5)
+print('deltaLaB52 ', deltaLaB52)
+
+np.savetxt("meandeltaLambs.txt", np.column_stack([meandeltalar, fdeltalar , meandeltalab1, fdeltalab1 , meandeltalab2, fdeltalab2 , meandeltalab3, fdeltalab3 , meandeltalab4, fdeltalab4 , meandeltalab52, fdeltalab52]))
+
 
 h = const.h
 c = const.c
@@ -154,6 +170,7 @@ deltaEb2 = ((h*c)/(480*10**(-9))-(h*c)/(deltaLaB2+(480*10**(-9))))
 deltaEb3 = ((h*c)/(480*10**(-9))-(h*c)/(deltaLaB3+(480*10**(-9))))
 deltaEb4 = ((h*c)/(480*10**(-9))-(h*c)/(deltaLaB4+(480*10**(-9))))
 deltaEb5 = ((h*c)/(480*10**(-9))-(h*c)/(deltaLaB5+(480*10**(-9))))
+deltaEb52 = ((h*c)/(480*10**(-9))-(h*c)/(deltaLaB52+(480*10**(-9))))
 
 EBr = müB*Br
 EB1 = müB*B1
@@ -182,6 +199,7 @@ gjB2 = deltaEb2/EB2
 gjB3 = deltaEb3/EB3
 gjB4 = deltaEb4/EB4
 gjB5 = deltaEb5/EB5
+gjB52 = deltaEb52/EB5
 
 print('gjR ', gjR)
 print('gjB1 ', gjB1)
@@ -189,3 +207,4 @@ print('gjB2 ', gjB2)
 print('gjB3 ', gjB3)
 print('gjB4 ', gjB4)
 print('gjB5 ', gjB5)
+print('gjB52 ', gjB52)

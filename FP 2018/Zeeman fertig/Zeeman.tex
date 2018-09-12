@@ -125,6 +125,8 @@ below,   % unterhalb der Section aber auf der selben Seite ist ok
 % Trennung von Wörtern mit Strichen
 \usepackage[shortcuts]{extdash}
 
+\usepackage{pdflscape}
+
 \title{V27: Der Zeeman-Effekt}
 \author{
   Simon Schulte
@@ -371,8 +373,9 @@ Auflösungsvermögen $A$ der Lummer-Gehrke-Platte lässt sich beschreiben durch:
 \begin{equation}
   A = \frac{L}{\lambda} (n^2 - 1).
   \label{eqn:12}
-\end{equation}\
+\end{equation}
 Dabei entspricht $L$ der Länge der Platte und $n$ dem Brechungsindex.
+\clearpage
 \subsection{Versuchsdurchführung}
 Als erstes wird der Elektromagnet, indem das B-Feld über ein Gaußmeter
 in Abhängigkeit von dem Feldstrom gemessen wird in einem Intervall von
@@ -383,4 +386,285 @@ mit der durch den Polarisationsfilter eingestellten Polarisation auf die
 Lummer-Gehrke-Platte fallen. Daraufhin wird eine Digitalkamera genutzt, um
 Bilder von Interferenzbildern bei verschiedenen Polarisationen und Magnetfeldstärken
 aufzunehmen. Dadurch ergibt sich die Wellenlängenverschiebung.
+
+\clearpage
+\section{Auswertung}
+\label{sec:auswertung}
+\subsection{Fehlerrechnung}
+Für die Fehlerrechnung sowie den mathematischen Teil der Auswertung wird auf
+$\textsc{Python}$ zurückgegriffen:\\
+Regressionen sowie deren Fehler wurden durch die $\textsc{Numpy}$ \cite{numpy} Funktion
+$\textsc{curve-fit}$ durchgeführt. Grafiken wurden mit $\textsc{Matplotlib}$ \cite{matplotlib}
+erstellt.
+Fehlerfortpflanzung wird durch die Bibliothek
+$\textsc{Uncertainties}$ \cite{uncertainties} automatisiert.
+
+\subsection{"Eichung" des Magnetfeldes}
+Um für die weiteren Messungen ein Maß für die stärke des Magnetfeldes bei der Lampe
+zu erhalten, wird in einer ersten Messreihe diese in Abhängigkeit von der angelegten
+Stromstärke aufgenommen.
+Die Ergebnisse dazu stehen in Tabelle \ref{tab:eichung}.
+\begin{table}[H]
+  \centering
+  \caption{Die gemessenen Magnetfeldstärken bei der Lampe mit dem jeweils eingestellten Strom.}
+  \label{tab:eichung}
+  \begin{tabular}{c c c c c}
+    \toprule
+    B in \si{\milli\tesla} & I in $\si{\ampere}$ \\
+    \midrule
+    62  & 1 \\
+    120 & 2 \\
+    178 & 3 \\
+    235 & 4 \\
+    290 & 5 \\
+    356 & 6 \\
+    410 & 7 \\
+    462 & 8 \\
+    518 & 9 \\
+    572 & 10 \\
+    625 & 11 \\
+    675 & 12 \\
+    730 & 13 \\
+    780 & 14 \\
+    828 & 15 \\
+    860 & 16 \\
+    890 & 17 \\
+    942 & 18 \\
+    990 & 19 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\clearpage
+\noindent
+Anschließend werden diese Werte linear gefittet.
+Für die Steigung $m$ der Geraden und den Y-Achsenabschnitt $b$ ergeben sich:
+\begin{align*}
+  m &= \SI{51.8(8)}{\milli\tesla\per\ampere}\\
+  b &= \SI{36(9)}{\milli\tesla}
+\end{align*}
+Der entsprechende Graph ist in Abbildung \ref{fig:eichkurve} dargestellt.
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{plot.pdf}
+  \caption{Messwerte mit Fit.}
+  \label{fig:eichkurve}
+\end{figure}\\
+Bei den weiteren Messungen wird nun immer die Stromstärke abgelesen und dann mit der
+Funktion die entsprechende Magnetfeldstärke bestimmt.
+\clearpage
+\subsection{Bestimmung der $g_J$ aus der größe der Aufspaltung}
+Bei dem Versuch werden zwei Linien des Spektrums einer Cadmiumlampe beobachtet.
+Die rote bei $\SI{643.8}{\nano\meter}$ und die blaue bei $\SI{480}{\nano\meter}$.
+
+\noindent
+Die rote Linie entsteht bei Übergängen zwischen dem $^1D_2$-Niveau und dem $^1P_1$-Niveau.
+Da hier die Multiplizität $M$ für beide Niveaus 1 ist, gilt $S=0$ und somit findet ein
+normaler Zeeman-Effekt statt. $g_J$ ist für die bei diesem Übergang beteiligten Niveaus also 1.
+
+\noindent
+Die blaue Linie entsteht bei Übergängen zwischen dem $^3P_1$-Niveau und dem $^3S_1$-Niveau.
+Aus der Multiplizität ergibt sich für beide Niveaus ein Gesamtspin von 1.
+Für das $^3P_1$-Niveau ergibt sich nach Formel \eqref{eq:g_J}
+\begin{equation*}
+  g_J = \frac{3}{2}
+\end{equation*}
+und für das $^3S_1$-Niveau ergibt sich
+\begin{equation*}
+  g_J = 2.
+\end{equation*}
+Die Größe der Aufspaltung beträgt bei dem anomalen Zeeman-Effekt
+\begin{equation}
+  \Delta E = g_J \cdot m \mu_B  B.
+\end{equation}
+Basierend auf diesen Aufspaltungen kommt es nun zu sechs Übergängen zwischen den beiden
+Niveaus, welche alle eine unterschiedliche Energie besitzen.
+Sie unterscheiden sich um $\pm 2 \mu_B B$, $\pm \frac{3}{2} \mu_B B$ oder $\pm \frac{1}{2} \mu_B B$
+von der ursprünglichen Energie der blauen Linie.
+Wegen $\Delta m = 0$ ist das Licht, welches die Energie $\Delta E_0 \pm \frac{1}{2} \mu_B B$ besitzt, $\pi$ polarisiert.\\
+
+\noindent
+In der Vorbereitung wurde für die verwendete Lummer-Gehrcke-Platte das Dispersionsgebiet $\Delta\lambda_D$
+und das Auflösungsvermögen bei einer Wellenlänge von $\SI{643.8}{\nano\meter}$ und
+$\SI{480}{\nano\meter}$ berechnet. Das Dispersionsgebiet gibt an wie groß eine Abweichung
+der Wellenlänge maximal sein darf, bis sich die entsprechende Linie mit der nächsten Linie überlagert.
+Die berechneten Werte sind:
+\begin{align*}
+  \Delta\lambda_{D_{rot}} &= \SI{4.89e-11}{\meter} \\
+  \Delta\lambda_{D_{blau}} &= \SI{2.7e-11}{\meter} \\
+  A_{rot} &= 209129 \\
+  A_{blau} &= 285458
+\end{align*}
+Bei abgeschaltetem Magnetfeld entspricht also der Abstand zwischen zwei Maxima einer
+Wellenlängendifferenz von $\Delta\lambda_D$. Nun wird zuerst der Abstand $\Delta s$ zwischen
+zwei Maxima bei abgeschaltetem Magnetfeld und anschließend die Größe
+der Aufspaltung $\delta s$ bei aktivem Magnetfeld gemessen.
+Bei der roten Linie lässt sich die größe der Aufspaltung relativ gut messen.
+Bei der blauen Linie sind die ausgedruckten Bilder jedoch sehr unscharf. Daher
+wird ein Zeichenprogram verwendet um die am Bildschirm deutlich besser zu erkennenden
+Maxima mit einer kontrastreicheren Farbe zu markieren und anschließend auf dem Ausdruck
+diese Markierungen zu vermessen.
+\clearpage
+\noindent
+Die Bilder befinden sich im Anhang und die gemessenen Werte stehen zusammen mit den eingestellten
+B-Feldern in den Tabellen \ref{tab:aufspaltungswerte1} und \ref{tab:aufspaltungswerte2}.
+Die Maxima werden dabei entsprechend durchnummeriert.
+\begin{table}[H]
+  \centering
+  \caption{Messwerte von der roten Linie (Bilder 1 und 2).\\ $\delta s$ bei $I=\SI{11.25}{\ampere}\stackrel{\wedge}{=}B=\SI{619(13)}{\milli\tesla}$.}
+  \label{tab:aufspaltungswerte1}
+  \begin{tabular}{c c c c c c c c c}
+    \toprule
+    Maximum Nr. & $\Delta s$ in $\si{\centi\meter}$ & $\delta s$ in $\si{\centi\meter}$ \\
+    \midrule
+     1 & 0.7  & 0.35 \\
+     2 & 0.8  & 0.35 \\
+     3 & 0.85 & 0.4  \\
+     4 & 0.9  & 0.4  \\
+     5 & 1    & 0.5  \\
+     6 & 1.05 & 0.5  \\
+     7 & 1.2  & 0.6  \\
+     8 & 1.4  & 0.7  \\
+     9 & 1.7  & 0.75 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\noindent
+Die Ströme zu den Magnetfeldern, die bei der blauen Linie eingestellt wurden stehen
+in Tabelle \ref{tab:ströme}.
+\begin{table}[H]
+  \centering
+  \caption{Die Stromstärken zu den $B$ Feldern in Tabelle \ref{tab:aufspaltungswerte2}.}
+  \label{tab:ströme}
+  \begin{tabular}{c c}
+    \toprule
+    $I$ in $\si{\ampere}$ & $B$ in $\si{\milli\tesla}$ \\
+    \midrule
+    9.75  & $\SI{541(12)}{}$  \\
+    13.4  & $\SI{730(14)}{}$  \\
+    15.25 & $\SI{826(15)}{}$  \\
+    16    & $\SI{865(16)}{}$  \\
+    19.4  & $\SI{1041(18)}{}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\clearpage
+\begin{landscape}
+  \begin{table}[H]
+    \centering
+    \caption{Messwerte von der blauen Linie. Bei Bild 4 ist $\Delta s$ angegeben. Für die Anderen $\delta s$. Der Index steht für die Nr. des Maximums.}
+    \label{tab:aufspaltungswerte2}
+    \begin{tabular}{c c c c c c c c c}
+      \toprule
+      Bild Nr. & $\Delta s_1$ | $\delta s_1$ & $\Delta s_2$ | $\delta s_2$ & $\Delta s_3$ | $\delta s_3$ & $\Delta s_4$ | $\delta s_4$ & $\Delta s_5$ | $\delta s_5$ & $\Delta s_6$ | $\delta s_6$ & $B$ in $\si{\milli\tesla}$ & Polarisierung \\
+      \midrule
+       4 & $\SI{0.75}{\centi\meter}$ & $\SI{0.8 }{\centi\meter}$ & $\SI{0.9 }{\centi\meter}$ & $\SI{1   }{\centi\meter}$ & $\SI{1.15}{\centi\meter}$ & $\SI{1.25}{\centi\meter}$ & $\SI{0}{}$ & $\sigma$ \\
+       5 & $\SI{0.2 }{\centi\meter}$ & $\SI{0.2 }{\centi\meter}$ & $\SI{0.25}{\centi\meter}$ & $\SI{0.3 }{\centi\meter}$ & $\SI{0.3 }{\centi\meter}$ & $\SI{0.4 }{\centi\meter}$ & $\SI{541(12)}{}$ & $\sigma$ \\
+       6 & $\SI{0.25}{\centi\meter}$ & $\SI{0.35}{\centi\meter}$ & $\SI{0.3 }{\centi\meter}$ & $\SI{0.3 }{\centi\meter}$ & $\SI{0.35}{\centi\meter}$ & $\SI{0.4 }{\centi\meter}$ & $\SI{730(14)}{}$ & $\sigma$ \\
+       7 & $\SI{0.2 }{\centi\meter}$ & $\SI{0.3 }{\centi\meter}$ & $\SI{0.35}{\centi\meter}$ & $\SI{0.35}{\centi\meter}$ & $\SI{0.4 }{\centi\meter}$ & $\SI{0.4 }{\centi\meter}$ & $\SI{826(15)}{}$ & $\sigma$ \\
+       9 & $\SI{0.25}{\centi\meter}$ & $\SI{0.3 }{\centi\meter}$ & $\SI{0.3 }{\centi\meter}$ & $\SI{0.35}{\centi\meter}$ & $\SI{0.4 }{\centi\meter}$ & $\SI{0.45}{\centi\meter}$ & $\SI{826(15)}{}$ & $\sigma$ \\
+      10 & $\SI{0.3 }{\centi\meter}$ & $\SI{0.3 }{\centi\meter}$ & $\SI{0.35}{\centi\meter}$ & $\SI{0.4 }{\centi\meter}$ & $\SI{0.4 }{\centi\meter}$ & $\SI{0.45}{\centi\meter}$ & $\SI{865(16)}{}$ & $\sigma$ \\
+      12 & $\SI{0.2 }{\centi\meter}$ & $\SI{0.25}{\centi\meter}$ & - & - & - & - & $\SI{1041(18)}{}$ & $\pi$ \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+\end{landscape}
+\clearpage
+\noindent
+Da bei der Zeemanaufspaltung eine Wellenlängenaufspaltung in beide Richtungen stattfindet
+(größer und kleiner als die ursprüngliche Wellenlänge) entspricht $\delta s$ der zweifachen
+Wellenlängendifferenz $\delta\lambda$.
+Damit lässt sich die Wellenlängendifferenz der Aufspaltung berechnen nach:
+\begin{equation}
+  \delta\lambda = \frac{1}{2} \frac{\delta s}{\Delta s} \Delta\lambda_D
+\end{equation}
+Die einzelnen Wellenlängendifferenzen stehen in Tabelle \ref{tab:wellenl} und die Mittelwerte in Tabelle \ref{tab:wellenl2}.
+Die Mittelwerte werden dabei immer über die Differenzen gebildet, die bei der gleichen
+Magnetfeldstärke aufgenommen wurden.
+\begin{landscape}
+\begin{table}[H]
+  \centering
+  \caption{Wellenlängendifferenzen $\delta \lambda$.}
+  \label{tab:wellenl}
+  \begin{tabular}{c c c c c c c c}
+    \toprule
+    Bild: 2 & 5 & 6 & 7 & 9 & 10 & 12 \\
+    \midrule
+    $\SI{1.22e-11}{\meter}$ & $\SI{3.60e-12}{\meter}$ & $\SI{4.50e-12}{\meter}$ & $\SI{3.60e-12}{\meter}$ & $\SI{4.50e-12}{\meter}$ & $\SI{5.40e-12}{\meter}$ & $\SI{5.40e-12}{\meter}$ \\
+    $\SI{1.07e-11}{\meter}$ & $\SI{3.38e-12}{\meter}$ & $\SI{5.91e-12}{\meter}$ & $\SI{5.06e-12}{\meter}$ & $\SI{5.06e-12}{\meter}$ & $\SI{5.06e-12}{\meter}$ & $\SI{5.91e-12}{\meter}$ \\
+    $\SI{1.15e-11}{\meter}$ & $\SI{3.75e-12}{\meter}$ & $\SI{4.50e-12}{\meter}$ & $\SI{5.25e-12}{\meter}$ & $\SI{4.50e-12}{\meter}$ & $\SI{5.25e-12}{\meter}$ &  \\
+    $\SI{1.09e-11}{\meter}$ & $\SI{4.05e-12}{\meter}$ & $\SI{4.05e-12}{\meter}$ & $\SI{4.73e-12}{\meter}$ & $\SI{4.73e-12}{\meter}$ & $\SI{5.40e-12}{\meter}$ &  \\
+    $\SI{1.22e-11}{\meter}$ & $\SI{3.52e-12}{\meter}$ & $\SI{4.11e-12}{\meter}$ & $\SI{4.70e-12}{\meter}$ & $\SI{4.70e-12}{\meter}$ & $\SI{4.70e-12}{\meter}$ &  \\
+    $\SI{1.16e-11}{\meter}$ & $\SI{4.32e-12}{\meter}$ & $\SI{4.32e-12}{\meter}$ & $\SI{4.32e-12}{\meter}$ & $\SI{4.86e-12}{\meter}$ & $\SI{4.86e-12}{\meter}$ &  \\
+    $\SI{1.22e-11}{\meter}$ &  &  &  &  &  &  \\
+    $\SI{1.22e-11}{\meter}$ &  &  &  &  &  &  \\
+    $\SI{1.08e-11}{\meter}$ &  &  &  &  &  &  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\begin{table}[H]
+  \centering
+  \caption{Mittelwerte von $\delta \lambda$.}
+  \label{tab:wellenl2}
+  \begin{tabular}{c c c c c c c c}
+    \toprule
+    Bild: & Mittelwert $\delta\lambda$ \\
+    \midrule
+    2 & $\SI{1.16(2)e-11}{\meter}$ \\
+    5 & $\SI{3.77(1)e-12}{\meter}$ \\
+    6 & $\SI{4.56(3)e-12}{\meter}$ \\
+    7u.9 & $\SI{4.67(1)e-12}{\meter}$ \\
+    10 & $\SI{5.11(1)e-12}{\meter}$ \\
+    12 & $\SI{5.65(3)e-12}{\meter}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\end{landscape}
+\noindent
+Zuletzt wird die Wellenlängendifferenz in die Energiedifferenz und
+diese über die Magnetfeldstärke in $g_J$ umgerechnet:
+\begin{align}
+  \Delta E &= \frac{h \cdot c}{\lambda_0}-\frac{h \cdot c}{\lambda_0+\delta\lambda}\\
+  \Delta E &= g_J \cdot \mu_B B\\
+  => g_J &= \left(\frac{h \cdot c}{\lambda_0}-\frac{h \cdot c}{\lambda_0+\delta\lambda}\right) / \mu_B B
+\end{align}
+$\lambda_0$ ist dabei die Wellenlänge der Linie ohne Magnetfeld. $h$ ist die Planck-Konstante, $c$ die Lichtgeschwindigkeit
+und $\mu_B$ das bohrsche Magneton. Für diese Konstanten werden immer die Werte von Scipy \cite{scipy} verwendet.
+Damit ergeben sich dann die Werte für $g_J$, welche in Tabelle \ref{tab:gjergebnisse} stehen.
+Die Theoriewerte sind dort ebenfalls aufgelistet.
+\begin{table}[H]
+  \centering
+  \caption{Die berechneten Werte von $g_J$ und die Theoriewerte}
+  \label{tab:gjergebnisse}
+  \begin{tabular}{c c c c c}
+    \toprule
+    Bild: & $g_J$ & Theorie \\
+    \midrule
+    2 & $\SI{0.969(27)}{}$ & 1 \\
+    5 & $\SI{0.648(29)}{}$ & 2 oder 1.5 \\
+    6 & $\SI{0.58(4)}{}$ & 2 oder 1.5 \\
+    7 u. 9 & $\SI{0.525(17)}{}$ & 2 oder 1.5 \\
+    10 & $\SI{0.549(16)}{}$ & 2 oder 1.5 \\
+    12 & $\SI{0.505(24)}{}$ & 0.5 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\section{Diskussion}
+Beim Betrachten der Ergebnisse fällt sofort auf, dass die Werte bei der roten Linie
+und bei dem $\pi$ Übergang, welcher auf Bild 12 zu sehen ist, sehr nah an die Theoriewerte heran kommen.
+Die Werte für die $\sigma$ Übergänge der blauen Linie liegen allerdings deutlich unter den Theoriewerten.
+Mögliche Gründe dafür sind die generell etwas unscharfen Aufnahmen der blauen Aufspaltungen und eventuell
+auch eine Fehlinterpretation der Bilder. Bei den Polarisationswinkeln scheint etwas durcheinander gekommen zu sein.
+demnach könnte es durchaus sein, dass die Bilder 5, 6, 7, 9 und 10 eigentlich die $\pi$ Aufspaltung zeigen und Bild 12 die
+$\sigma$ Aufspaltung. Bei dem entsprechenden Magnetfeld von Bild 12 wäre die Aufspaltung theoretisch so groß, dass sich die Maxima überlagern
+könnten. Bei der Aufzeichnung der Bilder wurden die Polarisationswinkel notiert. Allerdings schien für uns die Aufspaltung in den Bildern 5, 6, 7, 9 und 10
+die $\sigma$ Aufspaltung zu sein. Auf Bild 8 ist die gleiche Polarisationsrichtung abgebildet, wie auf Bild 12.
+Die Aufspaltung ist dort fast nicht zu erkennen. Das Magnetfeld sollte allerdings mit $\SI{826(15)}{\milli\tesla}$ klein genug sein,
+damit auf diesem Bild, sofern es die $\sigma$ Aufspaltung zeigen würde, eine Aufspaltung deutlich zu erkennen sein müsste
+und die Maxima sich dabei noch nicht überlagern.
+Wenn die angenommenen Polarisationswinkel stimmen scheint die Aufspaltung durch andere Gründe wesentlich kleiner auszufallen
+als sie es eigentlich tun sollte.
+\newpage
+\nocite{*}
+\printbibliography
+
 \end{document}

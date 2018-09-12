@@ -1,0 +1,18 @@
+[0] Config.pm:302> INFO - This is Biber 2.8
+[0] Config.pm:305> INFO - Logfile is 'Zeeman.blg'
+[36] biber:313> INFO - === Mo Sep 10, 2018, 12:01:00
+[53] Biber.pm:361> INFO - Reading 'Zeeman.bcf'
+[131] Biber.pm:844> INFO - Using all citekeys in bib section 0
+[149] Biber.pm:3971> INFO - Processing section 0
+[161] Biber.pm:4144> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[162] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[166] bibtex.pm:1305> INFO - Found BibTeX data source 'lit.bib'
+[172] Biber.pm:4144> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[186] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[187] bibtex.pm:1305> INFO - Found BibTeX data source 'programme.bib'
+[228] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[229] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[229] Biber.pm:3799> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[229] Biber.pm:3805> INFO - No sort tailoring available for locale 'de-DE'
+[241] bbl.pm:613> INFO - Writing 'Zeeman.bbl' with encoding 'UTF-8'
+[244] bbl.pm:716> INFO - Output to Zeeman.bbl
