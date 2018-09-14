@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.4" bltxversion="3.10" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.4" bltxversion="3.8a" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -1944,6 +1944,10 @@
     <bcf:citekey order="18">V51</bcf:citekey>
     <bcf:citekey order="19">V51</bcf:citekey>
     <bcf:citekey order="20">V51</bcf:citekey>
+    <bcf:citekey order="21">numpy</bcf:citekey>
+    <bcf:citekey order="22">matplotlib</bcf:citekey>
+    <bcf:citekey order="23">uncertainties</bcf:citekey>
+    <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">
@@ -1978,4 +1982,13 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="anyt/global//global/global"
+                type="entry"
+                sortingtemplatename="anyt"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>

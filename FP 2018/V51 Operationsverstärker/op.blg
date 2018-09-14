@@ -1,0 +1,18 @@
+[0] Config.pm:302> INFO - This is Biber 2.8
+[0] Config.pm:305> INFO - Logfile is 'op.blg'
+[39] biber:313> INFO - === Do Sep 13, 2018, 21:16:16
+[59] Biber.pm:361> INFO - Reading 'op.bcf'
+[140] Biber.pm:844> INFO - Using all citekeys in bib section 0
+[158] Biber.pm:3971> INFO - Processing section 0
+[170] Biber.pm:4144> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[171] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[175] bibtex.pm:1305> INFO - Found BibTeX data source 'lit.bib'
+[182] Biber.pm:4144> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[183] bibtex.pm:1449> INFO - Decoding LaTeX character macros into UTF-8
+[184] bibtex.pm:1305> INFO - Found BibTeX data source 'programme.bib'
+[223] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[223] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[224] Biber.pm:3799> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[224] Biber.pm:3805> INFO - No sort tailoring available for locale 'de-DE'
+[235] bbl.pm:613> INFO - Writing 'op.bbl' with encoding 'UTF-8'
+[238] bbl.pm:716> INFO - Output to op.bbl

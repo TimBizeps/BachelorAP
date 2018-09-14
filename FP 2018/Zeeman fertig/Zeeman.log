@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  12 SEP 2018 11:10
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  14 SEP 2018 07:56
  restricted system commands enabled.
 **Zeeman.tex
 (./Zeeman.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.111 seconds
+luaotfload | main : initialization completed in 0.114 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2298,20 +2298,14 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 5.00008pt on input line 306.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 306.
-
-LaTeX Warning: Citation 'V27' on page 3 undefined on input line 306.
-
-
-LaTeX Warning: Citation 'V27' on page 3 undefined on input line 306.
-
-<normal.png, id=42, pagebox=cropbox, 709.65125pt x 557.08125pt>
+<normal.png, id=44, pagebox=cropbox, 709.65125pt x 557.08125pt>
 File: normal.png Graphic file (type png)
 <use normal.png>
 Package luatex.def Info: normal.png  used on input line 319. on input line 319.
 Package luatex.def Info: Requested size: 283.85547pt x 222.82855pt on input line
  319.
 [3<./aufspaltung.pdf>]
-<aufbau.png, id=81, pagebox=cropbox, 1073.00874pt x 430.60875pt>
+<aufbau.png, id=84, pagebox=cropbox, 1073.00874pt x 430.60875pt>
 File: aufbau.png Graphic file (type png)
 <use aufbau.png>
 Package luatex.def Info: aufbau.png  used on input line 348. on input line 348.
@@ -2323,7 +2317,7 @@ Package luatex.def Info: Requested size: 418.47173pt x 167.93672pt on input line
 /otl/lmromancaps10-regular.luc) [7
 
 ]
-<plot.pdf, id=127, pagebox=cropbox, 462.52798pt x 346.89601pt>
+<plot.pdf, id=131, pagebox=cropbox, 462.52798pt x 346.89601pt>
 File: plot.pdf Graphic file (type pdf)
 <use plot.pdf>
 Package luatex.def Info: plot.pdf  used on input line 448. on input line 448.
@@ -2375,8 +2369,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 478--484
 
 ] [13
 
-] [14
-
 ](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
 /otl/lmmono10-regular.luc)
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2393,17 +2385,24 @@ Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 668.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 670.
-[15]
+[14]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 670.
  (./Zeeman.aux
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 670.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 670.
-Package rerunfilecheck Info: File `Zeeman.aux' has not changed.
-(rerunfilecheck)             Checksum: 17E8C527579459A5179D769BD6D99ABF;13259.
 
+
+Package rerunfilecheck Warning: File `Zeeman.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `Zeeman.aux':
+(rerunfilecheck)             Before: 17E8C527579459A5179D769BD6D99ABF;13259
+(rerunfilecheck)             After:  4580103E3FC3E2EE5B4033B4A6A36E88;13362.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -2416,15 +2415,15 @@ Package logreq Info: Writing requests to 'Zeeman.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41286 strings out of 494483
+ 41285 strings out of 494483
  100000,1648299 words of node,token memory allocated
  715 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 36 attribute, 74 glue_spec, 36 attr
 ibute_list, 1 write, 3 pdf_action nodes
-   avail lists: 2:1889,3:183,4:87,5:237,6:2212,7:955,8:77,9:595,10:18,11:262
+   avail lists: 2:1891,3:183,4:91,5:237,6:2212,7:949,8:77,9:589,10:18,11:262
  44063 multiletter control sequences out of 65536+600000
- 247 fonts using 90567071 bytes
- 59i,21n,104p,8816b,3063s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 247 fonts using 90567479 bytes
+ 59i,21n,104p,8816b,3073s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/l
 mroman10-italic.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/p
@@ -2437,10 +2436,10 @@ ath.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmr
 oman10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/pu
 blic/lm/lmroman12-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/
 opentype/public/lm/lmsans10-bold.otf>
-Output written on Zeeman.pdf (16 pages, 253044 bytes).
+Output written on Zeeman.pdf (15 pages, 252640 bytes).
 
-PDF statistics: 335 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 131072)
+PDF statistics: 334 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 131072)
  113 words of extra memory for PDF output out of 10000 (max. 100000000)
 

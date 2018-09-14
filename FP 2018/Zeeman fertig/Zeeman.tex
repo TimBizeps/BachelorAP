@@ -303,7 +303,7 @@ Dieser Effekt wird als Zeeman-Effekt bezeichnet.
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{aufspaltung.pdf}
-    \caption{Schematische Darstellung der Aufspaltung eines Energieniveaus eines Atoms mit Gesamtdrehimpulsquantenzahl $J=2$.\cite{V27}}
+    \caption{Schematische Darstellung der Aufspaltung eines Energieniveaus eines Atoms mit Gesamtdrehimpulsquantenzahl $J=2$.\cite{anleitung}}
     \label{fig:aufspaltung}
 \end{figure}
 %
@@ -346,7 +346,7 @@ abhängt.
 \begin{figure}
   \centering
   \includegraphics[scale=0.39]{aufbau.png}
-  \caption{Der verwendendete Versuchsaufbau.}
+  \caption{Der verwendendete Versuchsaufbau. \cite{anleitung}}
   \label{fig:3}
 \end{figure}
 \noindent
@@ -408,7 +408,7 @@ Die Ergebnisse dazu stehen in Tabelle \ref{tab:eichung}.
   \centering
   \caption{Die gemessenen Magnetfeldstärken bei der Lampe mit dem jeweils eingestellten Strom.}
   \label{tab:eichung}
-  \begin{tabular}{c c c c c}
+  \begin{tabular}{c c}
     \toprule
     B in \si{\milli\tesla} & I in $\si{\ampere}$ \\
     \midrule
@@ -512,7 +512,7 @@ Die Maxima werden dabei entsprechend durchnummeriert.
   \centering
   \caption{Messwerte von der roten Linie (Bilder 1 und 2).\\ $\delta s$ bei $I=\SI{11.25}{\ampere}\stackrel{\wedge}{=}B=\SI{619(13)}{\milli\tesla}$.}
   \label{tab:aufspaltungswerte1}
-  \begin{tabular}{c c c c c c c c c}
+  \begin{tabular}{c c c}
     \toprule
     Maximum Nr. & $\Delta s$ in $\si{\centi\meter}$ & $\delta s$ in $\si{\centi\meter}$ \\
     \midrule
@@ -547,6 +547,18 @@ in Tabelle \ref{tab:ströme}.
     \bottomrule
   \end{tabular}
 \end{table}
+
+\noindent
+Da bei der Zeemanaufspaltung eine Wellenlängenaufspaltung in beide Richtungen stattfindet
+(größer und kleiner als die ursprüngliche Wellenlänge) entspricht $\delta s$ der zweifachen
+Wellenlängendifferenz $\delta\lambda$.
+Damit lässt sich die Wellenlängendifferenz der Aufspaltung berechnen nach:
+\begin{equation}
+  \delta\lambda = \frac{1}{2} \frac{\delta s}{\Delta s} \Delta\lambda_D
+\end{equation}
+Die einzelnen Wellenlängendifferenzen stehen in Tabelle \ref{tab:wellenl} und die Mittelwerte in Tabelle \ref{tab:wellenl2}.
+Die Mittelwerte werden dabei immer über die Differenzen gebildet, die bei der gleichen
+Magnetfeldstärke aufgenommen wurden.
 \clearpage
 \begin{landscape}
   \begin{table}[H]
@@ -568,18 +580,6 @@ in Tabelle \ref{tab:ströme}.
     \end{tabular}
   \end{table}
 \end{landscape}
-\clearpage
-\noindent
-Da bei der Zeemanaufspaltung eine Wellenlängenaufspaltung in beide Richtungen stattfindet
-(größer und kleiner als die ursprüngliche Wellenlänge) entspricht $\delta s$ der zweifachen
-Wellenlängendifferenz $\delta\lambda$.
-Damit lässt sich die Wellenlängendifferenz der Aufspaltung berechnen nach:
-\begin{equation}
-  \delta\lambda = \frac{1}{2} \frac{\delta s}{\Delta s} \Delta\lambda_D
-\end{equation}
-Die einzelnen Wellenlängendifferenzen stehen in Tabelle \ref{tab:wellenl} und die Mittelwerte in Tabelle \ref{tab:wellenl2}.
-Die Mittelwerte werden dabei immer über die Differenzen gebildet, die bei der gleichen
-Magnetfeldstärke aufgenommen wurden.
 \begin{landscape}
 \begin{table}[H]
   \centering
@@ -605,7 +605,7 @@ Magnetfeldstärke aufgenommen wurden.
   \centering
   \caption{Mittelwerte von $\delta \lambda$.}
   \label{tab:wellenl2}
-  \begin{tabular}{c c c c c c c c}
+  \begin{tabular}{c c}
     \toprule
     Bild: & Mittelwert $\delta\lambda$ \\
     \midrule
@@ -635,7 +635,7 @@ Die Theoriewerte sind dort ebenfalls aufgelistet.
   \centering
   \caption{Die berechneten Werte von $g_J$ und die Theoriewerte}
   \label{tab:gjergebnisse}
-  \begin{tabular}{c c c c c}
+  \begin{tabular}{c c c}
     \toprule
     Bild: & $g_J$ & Theorie \\
     \midrule
