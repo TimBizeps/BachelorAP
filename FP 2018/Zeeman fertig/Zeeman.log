@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  14 SEP 2018 07:56
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  14 SEP 2018 08:23
  restricted system commands enabled.
 **Zeeman.tex
 (./Zeeman.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.114 seconds
+luaotfload | main : initialization completed in 0.111 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2391,24 +2391,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 670.
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 670.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 670.
-
-
-Package rerunfilecheck Warning: File `Zeeman.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `Zeeman.aux':
-(rerunfilecheck)             Before: 17E8C527579459A5179D769BD6D99ABF;13259
-(rerunfilecheck)             After:  4580103E3FC3E2EE5B4033B4A6A36E88;13362.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Zeeman
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `Zeeman.aux' has not changed.
+(rerunfilecheck)             Checksum: 4580103E3FC3E2EE5B4033B4A6A36E88;13362.
 Package logreq Info: Writing requests to 'Zeeman.run.xml'.
 
 \openout1 = Zeeman.run.xml
@@ -2422,7 +2406,7 @@ Here is how much of LuaTeX's memory you used:
 ibute_list, 1 write, 3 pdf_action nodes
    avail lists: 2:1891,3:183,4:91,5:237,6:2212,7:949,8:77,9:589,10:18,11:262
  44063 multiletter control sequences out of 65536+600000
- 247 fonts using 90567479 bytes
+ 247 fonts using 90568703 bytes
  59i,21n,104p,8816b,3073s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/l
@@ -2436,7 +2420,7 @@ ath.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmr
 oman10-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/pu
 blic/lm/lmroman12-regular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/
 opentype/public/lm/lmsans10-bold.otf>
-Output written on Zeeman.pdf (15 pages, 252640 bytes).
+Output written on Zeeman.pdf (15 pages, 252772 bytes).
 
 PDF statistics: 334 PDF objects out of 1000 (max. 8388607)
  262 compressed objects within 3 object streams
