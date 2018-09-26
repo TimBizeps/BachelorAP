@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  14 SEP 2018 08:19
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  18 SEP 2018 11:32
  restricted system commands enabled.
 **op.tex
 (./op.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.113 seconds
+luaotfload | main : initialization completed in 0.109 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2269,16 +2269,16 @@ atex-cache/generic/fonts/otl/lmroman5-regular.luc)
 <op.PNG, id=15, pagebox=cropbox, 912.40875pt x 644.4075pt>
 File: op.PNG Graphic file (type png)
 <use op.PNG>
-Package luatex.def Info: op.PNG  used on input line 187. on input line 187.
+Package luatex.def Info: op.PNG  used on input line 185. on input line 185.
 Package luatex.def Info: Requested size: 209.12778pt x 147.6993pt on input line 
-187.
+185.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 192.
+(Font)              scaled to size 5.00008pt on input line 190.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 192.
+(Font)              scaled to size 4.99992pt on input line 190.
 (load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/
 otl/lmroman7-regular.luc)
-Underfull \hbox (badness 10000) in paragraph at lines 205--209
+Underfull \hbox (badness 10000) in paragraph at lines 203--207
 
  []
 
@@ -2290,175 +2290,129 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 <linearverstaerker.PNG, id=36, pagebox=cropbox, 892.83563pt x 558.58687pt>
 File: linearverstaerker.PNG Graphic file (type png)
 <use linearverstaerker.PNG>
-Package luatex.def Info: linearverstaerker.PNG  used on input line 265. on input
- line 265.
+Package luatex.def Info: linearverstaerker.PNG  used on input line 261. on input
+ line 261.
 Package luatex.def Info: Requested size: 209.12778pt x 130.83324pt on input line
- 265.
- [2]
-<elektrometer.PNG, id=54, pagebox=cropbox, 899.61093pt x 587.19376pt>
-File: elektrometer.PNG Graphic file (type png)
-<use elektrometer.PNG>
-Package luatex.def Info: elektrometer.PNG  used on input line 299. on input line
- 299.
-Package luatex.def Info: Requested size: 209.12778pt x 136.50322pt on input line
- 299.
- [3<./linearverstaerker.PNG>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 304.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 304.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 304.
-
-<amperemeter.png, id=67, pagebox=cropbox, 724.20563pt x 463.7325pt>
-File: amperemeter.png Graphic file (type png)
-<use amperemeter.png>
-Package luatex.def Info: amperemeter.png  used on input line 314. on input line 
-314.
-Package luatex.def Info: Requested size: 209.12778pt x 133.90582pt on input line
- 314.
-<integrator.PNG, id=71, pagebox=cropbox, 895.09406pt x 602.25pt>
+ 261.
+ [2<./linearverstaerker.PNG>]
+<integrator.PNG, id=54, pagebox=cropbox, 895.09406pt x 602.25pt>
 File: integrator.PNG Graphic file (type png)
 <use integrator.PNG>
-Package luatex.def Info: integrator.PNG  used on input line 337. on input line 3
-37.
+Package luatex.def Info: integrator.PNG  used on input line 307. on input line 3
+07.
 Package luatex.def Info: Requested size: 204.94751pt x 137.8897pt on input line 
-337.
+307.
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
 [][]|\TU/lmr/m/n/10 Schalt-bild ei-nes Umkehr-Integrators
  []
 
-<differentiator.PNG, id=74, pagebox=cropbox, 727.96968pt x 453.19313pt>
+<differentiator.PNG, id=57, pagebox=cropbox, 727.96968pt x 453.19313pt>
 File: differentiator.PNG Graphic file (type png)
 <use differentiator.PNG>
-Package luatex.def Info: differentiator.PNG  used on input line 343. on input li
-ne 343.
+Package luatex.def Info: differentiator.PNG  used on input line 313. on input li
+ne 313.
 Package luatex.def Info: Requested size: 204.94751pt x 127.58472pt on input line
- 343.
+ 313.
 
-Underfull \hbox (badness 4132) in paragraph at lines 344--344
+Underfull \hbox (badness 4132) in paragraph at lines 314--314
 [][]|\TU/lmr/m/n/10 Schalt-bild ei-nes Umkehr-Differentiators
  []
 
-[4<./elektrometer.PNG><./amperemeter.png>]
-<log.PNG, id=88, pagebox=cropbox, 909.3975pt x 572.1375pt>
-File: log.PNG Graphic file (type png)
-<use log.PNG>
-Package luatex.def Info: log.PNG  used on input line 367. on input line 367.
-Package luatex.def Info: Requested size: 204.94751pt x 128.93489pt on input line
- 367.
-<expo.PNG, id=91, pagebox=cropbox, 910.90312pt x 590.95781pt>
-File: expo.PNG Graphic file (type png)
-<use expo.PNG>
-Package luatex.def Info: expo.PNG  used on input line 373. on input line 373.
-Package luatex.def Info: Requested size: 204.94751pt x 132.95976pt on input line
- 373.
-
-Underfull \hbox (badness 10000) in paragraph at lines 374--374
-[][]|\TU/lmr/m/n/10 Schalt-bild ei-nes Ex-po-nen-ti-al-ge-ne-ra-tors
- []
-
-[5<./integrator.PNG><./differentiator.PNG>]
-<schmitt_trigger.PNG, id=105, pagebox=cropbox, 910.90312pt x 606.01407pt>
+[3<./integrator.PNG><./differentiator.PNG>]
+<schmitt_trigger.PNG, id=72, pagebox=cropbox, 910.90312pt x 606.01407pt>
 File: schmitt_trigger.PNG Graphic file (type png)
 <use schmitt_trigger.PNG>
-Package luatex.def Info: schmitt_trigger.PNG  used on input line 404. on input l
-ine 404.
+Package luatex.def Info: schmitt_trigger.PNG  used on input line 344. on input l
+ine 344.
 Package luatex.def Info: Requested size: 209.12778pt x 139.13063pt on input line
- 404.
- [6<./log.PNG><./expo.PNG><./schmitt_trigger.PNG>]
-<dreieck.PNG, id=119, pagebox=cropbox, 1099.10625pt x 432.11438pt>
-File: dreieck.PNG Graphic file (type png)
-<use dreieck.PNG>
-Package luatex.def Info: dreieck.PNG  used on input line 428. on input line 428.
-
-Package luatex.def Info: Requested size: 376.42744pt x 147.99168pt on input line
- 428.
-<sinus.PNG, id=123, pagebox=cropbox, 913.16156pt x 429.10312pt>
+ 344.
+ [4<./schmitt_trigger.PNG>]
+<sinus.PNG, id=84, pagebox=cropbox, 913.16156pt x 429.10312pt>
 File: sinus.PNG Graphic file (type png)
 <use sinus.PNG>
-Package luatex.def Info: sinus.PNG  used on input line 456. on input line 456.
+Package luatex.def Info: sinus.PNG  used on input line 378. on input line 378.
 Package luatex.def Info: Requested size: 376.42744pt x 176.88281pt on input line
- 456.
- [7
+ 378.
 
-<./dreieck.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 469--493
+Underfull \hbox (badness 10000) in paragraph at lines 391--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--493
+Underfull \hbox (badness 10000) in paragraph at lines 391--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--493
+Underfull \hbox (badness 10000) in paragraph at lines 391--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--493
+Underfull \hbox (badness 10000) in paragraph at lines 391--417
 
  []
 
-[8<./sinus.PNG>](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cach
-e/generic/fonts/otl/lmromancaps10-regular.luc)
-Overfull \hbox (8.88104pt too wide) in paragraph at lines 533--573
+[5
+
+<./sinus.PNG>] [6](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-ca
+che/generic/fonts/otl/lmromancaps10-regular.luc) [7
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 490--496
+
+ []
+
+
+Overfull \hbox (32.48926pt too wide) in paragraph at lines 524--564
  [][] 
  []
 
-<plot.pdf, id=157, pagebox=cropbox, 462.52798pt x 346.89601pt>
+<plot.pdf, id=136, pagebox=cropbox, 462.52798pt x 346.89601pt>
 File: plot.pdf Graphic file (type pdf)
 <use plot.pdf>
-Package luatex.def Info: plot.pdf  used on input line 576. on input line 576.
+Package luatex.def Info: plot.pdf  used on input line 612. on input line 612.
 Package luatex.def Info: Requested size: 334.60571pt x 250.96649pt on input line
- 576.
-<plot2.pdf, id=158, pagebox=cropbox, 462.52798pt x 346.89601pt>
+ 612.
+<plot2.pdf, id=137, pagebox=cropbox, 462.52798pt x 346.89601pt>
 File: plot2.pdf Graphic file (type pdf)
 <use plot2.pdf>
-Package luatex.def Info: plot2.pdf  used on input line 582. on input line 582.
+Package luatex.def Info: plot2.pdf  used on input line 618. on input line 618.
 Package luatex.def Info: Requested size: 334.60571pt x 250.96649pt on input line
- 582.
-<plot3.pdf, id=159, pagebox=cropbox, 462.52798pt x 346.89601pt>
+ 618.
+<plot3.pdf, id=138, pagebox=cropbox, 462.52798pt x 346.89601pt>
 File: plot3.pdf Graphic file (type pdf)
 <use plot3.pdf>
-Package luatex.def Info: plot3.pdf  used on input line 588. on input line 588.
+Package luatex.def Info: plot3.pdf  used on input line 624. on input line 624.
 Package luatex.def Info: Requested size: 334.60571pt x 250.96649pt on input line
- 588.
-<plot4.pdf, id=160, pagebox=cropbox, 462.52798pt x 346.89601pt>
+ 624.
+<plot4.pdf, id=139, pagebox=cropbox, 462.52798pt x 346.89601pt>
 File: plot4.pdf Graphic file (type pdf)
 <use plot4.pdf>
-Package luatex.def Info: plot4.pdf  used on input line 594. on input line 594.
+Package luatex.def Info: plot4.pdf  used on input line 630. on input line 630.
 Package luatex.def Info: Requested size: 334.60571pt x 250.96649pt on input line
- 594.
-[9
-
-] [10] [11<./plot.pdf><./plot2.pdf>] [12<./plot3.pdf><./plot4.pdf>]
-<schmitt.png, id=298, pagebox=cropbox, 803.0pt x 541.02126pt>
+ 630.
+[8] [9] [10] [11<./plot.pdf><./plot2.pdf>] [12<./plot3.pdf><./plot4.pdf>]
+<schmitt.png, id=301, pagebox=cropbox, 803.0pt x 541.02126pt>
 File: schmitt.png Graphic file (type png)
 <use schmitt.png>
-Package luatex.def Info: schmitt.png  used on input line 611. on input line 611.
+Package luatex.def Info: schmitt.png  used on input line 648. on input line 648.
 
 Package luatex.def Info: Requested size: 334.60571pt x 225.44423pt on input line
- 611.
- [13
+ 648.
 
-<./schmitt.png>]
-<plot5.pdf, id=309, pagebox=cropbox, 462.52798pt x 346.89601pt>
+[13<./schmitt.png>]
+<plot5.pdf, id=313, pagebox=cropbox, 462.52798pt x 346.89601pt>
 File: plot5.pdf Graphic file (type pdf)
 <use plot5.pdf>
-Package luatex.def Info: plot5.pdf  used on input line 644. on input line 644.
+Package luatex.def Info: plot5.pdf  used on input line 681. on input line 681.
 Package luatex.def Info: Requested size: 334.60571pt x 250.96649pt on input line
- 644.
- [14<./plot5.pdf>] [15](load luc: /home/simon/.local/texlive/2016/texmf-var/luat
-ex-cache/generic/fonts/otl/lmmono10-regular.luc)
+ 681.
+ [14<./plot5.pdf>] [15] [16
+
+] [17](load luc: /home/simon/.local/texlive/2016/texmf-var/luatex-cache/generic/
+fonts/otl/lmmono10-regular.luc)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -2466,36 +2420,36 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 Package biblatex Warning: No driver for entry type 'software'.
-(biblatex)                Using fallback driver on input line 705.
+(biblatex)                Using fallback driver on input line 806.
 
 
 Package biblatex Warning: No driver for entry type 'software'.
-(biblatex)                Using fallback driver on input line 705.
+(biblatex)                Using fallback driver on input line 806.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 707.
-[16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 707.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 808.
+[18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 808.
  (./op.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 707.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 707.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 808.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 808.
 Package rerunfilecheck Info: File `op.aux' has not changed.
-(rerunfilecheck)             Checksum: F564504631085DBA7AD511F5E9D93181;20890.
+(rerunfilecheck)             Checksum: F5554A506E296103EB6C377D8347DB4B;16607.
 Package logreq Info: Writing requests to 'op.run.xml'.
 
 \openout1 = op.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 41129 strings out of 494483
+ 41079 strings out of 494483
  100000,1648299 words of node,token memory allocated
- 687 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 29 attribute, 74 glue_spec, 29 attr
+ 715 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 36 attribute, 74 glue_spec, 36 attr
 ibute_list, 1 write, 3 pdf_action nodes
-   avail lists: 2:2177,3:167,4:39,5:176,6:2455,7:2099,8:104,9:625,10:22,11:271
- 43973 multiletter control sequences out of 65536+600000
- 156 fonts using 54570351 bytes
- 59i,18n,104p,8812b,3256s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 2:6043,3:368,4:81,5:238,6:3498,7:4521,8:159,9:1913,10:18,11:304
+ 43936 multiletter control sequences out of 65536+600000
+ 154 fonts using 54306743 bytes
+ 59i,18n,104p,8812b,3249s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/l
 mroman10-italic.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/p
@@ -2511,10 +2465,10 @@ e/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive/2016/texmf-dis
 t/fonts/opentype/public/lm/lmroman10-regular.otf></home/simon/.local/texlive/201
 6/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/simon/.local/
 texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on op.pdf (17 pages, 580717 bytes).
+Output written on op.pdf (19 pages, 417528 bytes).
 
-PDF statistics: 522 PDF objects out of 1000 (max. 8388607)
- 377 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 131072)
- 177 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 519 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 131072)
+ 137 words of extra memory for PDF output out of 10000 (max. 100000000)
 

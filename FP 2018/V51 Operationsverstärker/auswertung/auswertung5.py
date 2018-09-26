@@ -19,9 +19,9 @@ x, y = np.genfromtxt('h.txt', unpack=True)
 x2, y2 = np.genfromtxt('h2.txt', unpack=True)
 
 def funktion(x,a,b,c,d):
-    return a*np.exp((b*x)/(20*c))*np.sin(x/c)+d
+    return a*np.exp((-1*(x-b))/(20*c))*np.sin((x-b)/c)+d
 
-params, cov = curve_fit(funktion, x2, y2, p0=(0.2, -1, 0.000224, -0.02))
+params, cov = curve_fit(funktion, x2, y2, p0=(0.2, 0, 0.000224, -0.02))
 
 errors = np.sqrt(np.diag(cov))
 
@@ -55,6 +55,10 @@ plt.legend(loc='best')
 plt.tight_layout()
 plt.savefig("plot5.pdf")
 
+cmit = ufloat(c, c_err)
+ctau = 20*cmit
+print('ctau = ', ctau)
+
 k = np.array([215, 236])
 meank = np.mean(k)
 fk = np.std(k, ddof=1)/np.sqrt(len(k))
@@ -62,5 +66,7 @@ kmit = ufloat(meank, fk)
 print('kmit = ', kmit)
 kmit = kmit * 10**(-10)
 konstantec = kmit * 9960
+tau = 20*konstantec
 print('kmit = ', kmit)
 print('konstantec = ', konstantec)
+print('tau = ', tau)

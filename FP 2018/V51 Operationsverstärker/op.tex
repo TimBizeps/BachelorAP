@@ -161,10 +161,8 @@ realisiert werden.
 
 \subsection{Eigenschaften des Operationsverstärkers}
 \label{subsec:eigenschaften}
-Ein Operationsverstärker ist ein Differenzverstärker, welcher mit einem/r konstanten
-Betriebsstrom/spannung gekoppelt ist.
-Die wichtigste elektrische Eigenschaft des Operationsverstärkers
-ist die Proportionalität der Ausgangsspannung $U_\text{A}$ zur
+Die wichtigste elektrische Eigenschaft des Operationsverstärkers, auch
+Differenzverstärker ist die Proportionalität der Ausgangsspannung $U_\text{A}$ zur
 Differenz der Eingangsspannungen $U_\text{P}$ und $U_\text{N}$:
 \begin{equation}
 \label{eq:proportionalität}
@@ -173,7 +171,7 @@ Differenz der Eingangsspannungen $U_\text{P}$ und $U_\text{N}$:
 wobei $V$ die Leerlaufverstärkung bezeichnet.
 Diese Beziehung gilt in einem Spannungsbereich
 $-U_\text{B} < U_\text{A} < U_\text{B}$, der durch die Betriebsspannung
-$U_\text{B}$ bestimmt ist. Ausserhalb dieses Bereichs läuft die
+$U_\text{B}$ bestimmt ist. Außerhalb dieses Bereichs läuft die
 Ausgangsspannung in eine Sättigung.
 
 \noindent
@@ -249,9 +247,7 @@ Ableitung wird mit Offsetspannungsdrift bezeichnet.
 Im Folgenden werden einige Schaltbeispiele für Operationsverstärker
 dargestellt.
 
-\subsection{Arten von Operationsverstärkern}
-
-\subsubsection{Rückgekoppelter Linearverstärker}
+\subsection{Rückgekoppelter Linearverstärker}
 \label{subsubsec:rueck-linearverstärker}
 Der relativ kleine Arbeitsbereich des Operationsverstärkers ist in der
 Anwendung oft nicht praktikabel. Um diesen Bereich zu verbreitern, wird die
@@ -267,10 +263,18 @@ dargestellt sind.
     \label{fig:linear}
 \end{figure}
 \noindent
-Bei der Annahme eines idealen Verstärkers ergibt sich über die Kirchhoffschen Regeln
-ein Verstärkungsfaktor von:
+$U_N$ ist aufgrund der hohen Leerlaufverstärkung $V$ nahezu Null. Bei Betrachtung
+des idealen Operationsverstärkers wird $U_N$ sogar exakt Null, da dort
+$V -> \inf$. Beim idealen Operationsverstärker verschwindet außerdem
+der Eingangsstrom IN. Daraus folgt mit der Kirchhoffschen Knotenregel für
+den Verzweigungspunkt A:
 \begin{equation}
-  V^\prime = -\frac{R_\text{N}}{R_1}
+  \frac{U_1}{R_1} + \frac{U_A}{R_N}\,=\,0.
+\end{equation}
+Die Verstärkung $V^\prime$ ist das Verhältnis von Ausgangsspannung $U_A$ zur Eingangsspannung
+$U_1$. Daraus ergibt sich
+\begin{equation}
+  V^\prime = -\frac{R_\text{N}}{R_1}.
   \label{eqn:v'lingegen}
 \end{equation}
 Für den Fall $R_\text{N}/R_1 \ll V$ gilt dies auch für den realen OPV.
@@ -279,42 +283,8 @@ hochohmigen Spannungsquellen möglicherweise nachteilig auf Spannungsmessungen a
 Im nächsten Abschnitt wird daher ein Linearverstärker vorgestellt, der diesen Nachteil
 umgeht.
 
-\subsubsection{Elektrometerverstärker}
-\label{subsubsec:elektrometerverstärker}
-Wie in Abbildung \ref{fig:elektrometer} deutlich wird, wird auch bei diesem
-Verstärker ein Teil der Ausgangsspannung $U_\text{A}$ zum invertierenden
-Eingang zurückgeführt. Dabei sind die Widerstände $R_1$ und $R_\text{N}$ auf
-eine andere Art und Weise verschaltet, sodass der Eingangswiderstand in der
-Größenordnung des Gleichtakteingangwiderstandes
-($r_\text{Gl} \approx \SI{10}{\giga\ohm}$) liegt, hier tritt das eventuelle
-Problem des zu geringen Eingangswiderstandes also nicht auf.
-Stattdessen kann hier ein Eingangsruhestrom $I_\text{B}$ für Probleme sorgen,
-indem er am Innenwiederstand einer Spannungsquelle einen Spannungsabfall hervorruft.
-Die Verstärkung $V^\prime$ des Elektrometerverstärkers beträgt
-\begin{equation*}
-    V^\prime = \frac{U_\text{A}}{U_1} = \frac{R_\text{N} + R_1}{R_1}\,.
-\end{equation*}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{elektrometer.PNG}
-    \caption{Schaltbild eines Elektrometerverstärkers \cite{V51}.}
-    \label{fig:elektrometer}
-\end{figure}
 
-\subsubsection{OP mit geringem Eingangswiderstand $R_\text{e}$ (Ampèremeter)}
-\label{subsubsec:amperemeter}
-Im Gegensatz zum grossen Eingangswiderstand $R_\text{e}$ eines
-Elektrometerverstärkers lässt sich, wie in Abbildung
-\ref{fig:amperemeter} dargestellt, ein Linearverstärker mit
-besonders geringem Eingangswiderstand konstruieren.
-Somit können zum Beispiel Ströme in einem Ampèremeter gemessen werden, wobei
-der dazu nötige Spannungsabfall $\Delta U$ besonders gering ist.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{amperemeter.png}
-    \caption{Schaltbild eines Elektrometerverstärkers \cite{V51}.}
-    \label{fig:amperemeter}
-\end{figure}
+
 
 \subsection{Umkehr-Integrator und -Differentiator}
 \label{subsec:integrator}
@@ -348,35 +318,6 @@ Die entsprechenden Schaltungen sind in Abbildung \ref{fig:integrator} dargestell
     \label{fig:integrator}
 \end{figure}
 
-\subsection{Logarithmierer und Exponentialgenerator}
-\label{subsec:log_expo}
-Neben Differential- und Integral-Operationen können auch Exponentierung nud
-Logarithmierung mit Hilfe des Operationsverstärkers umgesetzt werden.
-Dabei wird statt eines Kondensators eine Diode eingebaut.
-Dabei gilt für die entsprechenden Ausgangssignale $U_\text{A,E}$ und
-$U_\text{A,L}$
-\begin{align*}
-    U_\text{A,L} &= R I_0 \exp\left(\frac{e_0}{k_\text{B}T} U_\text{e}\right)\,,\\
-    \text{und} \qquad U_\text{A,E} &= \frac{k_\text{B}T}{e_0}\ln \frac{U_\text{e}}{R I_0}\,,
-\end{align*}
-mit der absoluten Temperatur $T$, der Boltzmannkonstante $k_\text{B}$ und
-der Elementarladung $e_0$. Abbildung \ref{fig:log_expo} zeigt die Schaltungen.
-\begin{figure}[H]
-    \begin{subfigure}{.49\linewidth}
-        \centering
-        \includegraphics[width=1.0\linewidth]{log.PNG}
-        \caption{Schaltbild eines Logarithmierers \cite{V51}.}
-        \label{fig:log}
-    \end{subfigure}
-    \begin{subfigure}{.49\linewidth}
-        \centering
-        \includegraphics[width=1.0\linewidth]{expo.PNG}
-        \caption{Schaltbild eines Exponentialgenerators \cite{V51}.}
-        \label{fig:expo}
-    \end{subfigure}
-    \caption{Linearverstärker mit Diode.}
-    \label{fig:log_expo}
-\end{figure}
 
 \subsection{Schmitt-Trigger}
 \label{subsec:schmitt_trigger}
@@ -393,9 +334,8 @@ schnell die Sättigungsspannung $U_\text{B}$.
     \end{cases}
     \label{eqn:schmitt}
 \end{align}
-mit der Betriebsspannugn $U_\text{B}$. Der Schmitt-Trigger besitzt also im Gegensatz
-zu anderen Schaltern nicht nur eine Schaltschwelle, sondern zwei: Eine obere Einschaltschwelle
-und eine untere Abschaltschwelle. Mit dieser Eigenschaft eignet sich der Schmitt-Trigger
+mit der Betriebsspannung $U_\text{B}$. Der Schmitt-Trigger besitzt also im Gegensatz
+zu anderen Schaltern nicht nur eine Schaltschwelle, sondern zwei. Mit dieser Eigenschaft eignet sich der Schmitt-Trigger
 besonders gut zur bereinigung von digitalen Signalen.
 Die entsprechende Schaltung ist in Abbildung \ref{fig:schmitt_trigger}
 dargestellt.
@@ -415,24 +355,6 @@ Schließlich können mit Hilfe eines Operationsverstärkers verschiedene
 Signalspannungen erzeugt werden. Dazu wird jeweils eine Mehrzahl von OPVs
 miteinander verschaltet.
 
-\subsubsection{Erzeugung von Dreieck- und Rechteckspannungen}
-\label{subsubsec:dreieck}
-Durch Kombination eines Schmitt-Triggers mit einem Integrationsglied
-lassen sich Dreiecks- und Rechtecksspannungen erzeugen. Damit wird die
-Integration genutzt, um den Schmitt-Trigger zu schalten und somit das
-Vorzeichen des Signals zu ändern. Je nach Ausgang der in Abbildung
-\ref{fig:dreieck} dargestellten Schaltung erhält man die gewünschte
-Spannungsform.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{dreieck.PNG}
-    \caption{
-        Schaltbild zur Erzeugung von Dreieck- und Recheckspannungen:
-        Es wird ein OP als Integrationsglied mit einem Schmitt-Trigger
-        verschaltet \cite{V51}.
-    }
-    \label{fig:dreieck}
-\end{figure}
 
 \subsubsection{Erzeugung von Sinusschwingungen}
 \label{subsubsec:sinusschwingungen}
@@ -471,14 +393,16 @@ gegengekoppelten Verstärkers bei vier verschiedenen Verstärkungsgraden $V'$
 und über mehrere Zehnerpotenzen untersucht. \\
 \\
 \noindent
-Als nächstes wird ein Umkehr-Integrator \ref{fig:integrator-integrator} zur Überprüfung der Beziehung
-$U_a \approx \frac{1}{\nu}$ (der Tiefpass Eigenschaft) aufgebaut. Außerdem werden
+Als nächstes wird ein Umkehr-Integrator, wie in Abbildung
+\ref{fig:integrator-integrator} zur Überprüfung der Beziehung
+$U_a \approx \frac{1}{\nu}$ aufgebaut. Außerdem werden
 verschiedene Signalformen eines Funktionsgenerators auf den Integrator gegeben und
 die Ausgangssignale an einem Oszilloskop beobachtet. \\
 \\
 \noindent
-Daraufhin wird ein Umkehr-Differentiator nach Schaltung \ref{fig:integrator-differentiator} verwendet
-und wie beim Umkehr-Integrator verfahren. \\
+Daraufhin wird ein Umkehr-Differentiator nach der Schaltung in Abbildung
+\ref{fig:integrator-differentiator} verwendet und wie beim Umkehr-Integrator
+verfahren. \\
 \\
 \noindent
 Danach wird ein Schmitt-Trigger wie in Abbildung \ref{fig:schmitt_trigger} aufgebaut.
@@ -496,7 +420,7 @@ Potentiometer wird dann $\eta = -1$ für eine gedämpfte Schwingung eingestellt.
 \subsection{Fehlerrechnung}
 Für die Fehlerrechnung sowie den mathematischen Teil der Auswertung wird auf
 $\textsc{Python}$ zurückgegriffen:\\
-Regressionen sowie deren Fehler wurden durch die $\textsc{Numpy}$ \cite{numpy} Funktion
+Regressionen sowie deren Fehler wurden durch die $\textsc{Scipy}$ \cite{scipy} Funktion
 $\textsc{curve-fit}$ durchgeführt. Grafiken wurden mit $\textsc{Matplotlib}$ \cite{matplotlib}
 erstellt.
 Fehlerfortpflanzung wird durch die Bibliothek
@@ -505,24 +429,91 @@ $\textsc{Uncertainties}$ \cite{uncertainties} automatisiert.
 \subsection{Gegengekoppelter Linearverstärker}
 Bei dem gegengekoppelter Linearverstärker werden die Werte aus Tabelle \ref{tab:messwerte1}
 gemessen. Die Graphen dazu sind in den Abbildungen \ref{fig:plot} bis \ref{fig:plot4}
-zu sehen. Für die maximal gemessene Ausgangsspannung wird jeweils der Wert
-$\frac{V^\prime}{\sqrt{2}}$ berechnet und als Konstante eingezeichnet. Die Bandbreite
-ist bis zu dem Schnittpunkt der beiden Kurven definiert. Die Grenzfrequenz $\nu^\prime_g$
-wird and den Graphen abgelesen bzw. mit den Messwerten abgeschätzt.
-Sie stehen zusammen mit den Widerstandsverhältinssen der einzelnen Schaltungen in Tabelle \ref{tab:widver}.
-Außerdem ist in der Tabelle das Verstärkungs-Bandbreite-Produkt aufgelistet .
+zu sehen. Als Eingangsspannung dienten dabei die Spannungen in Tabelle \ref{tab:eingangs}.
 \begin{table}[H]
   \centering
-  \caption{Die Widerstandsverhältnisse der Schaltungen.}
-  \label{tab:widver}
-  \begin{tabular}{c c c c}
+  \caption{Die Eingangsspannungen, Widerstandsverhältnisse, Verstärkungsfaktoren, und $\log{\frac{V^\prime}{\sqrt{2}}}$.}
+  \label{tab:eingangs}
+  \begin{tabular}{c c c c c}
     \toprule
-    Schaltung & Widerstandverhältnis & Grenzfrequenz & V-B-Produkt \\
+    Schaltung & $U_\text{e}$ & $\frac{R_\text{N}}{R_1}$ & $V^\prime$ & $\log{\frac{V^\prime}{\sqrt{2}}}$ \\
     \midrule
-    1 & $V^\prime = \SI{469}{\ohm}/\SI{468}{\ohm} \approx 1$        & $\nu^\prime_g \approx \SI{1150}{\kilo\hertz}$ & $\nu^\prime_g \cdot V^\prime \approx \SI{1152}{\kilo\hertz}$ \\
-    2 & $V^\prime = \SI{996}{\ohm}/\SI{468}{\ohm} \approx 2$        & $\nu^\prime_g \approx \SI{775}{\kilo\hertz}$  & $\nu^\prime_g \cdot V^\prime \approx \SI{1649}{\kilo\hertz}$ \\
-    3 & $V^\prime = \SI{10}{\kilo\ohm}/\SI{468}{\ohm} \approx 21$   & $\nu^\prime_g \approx \SI{112}{\kilo\hertz}$  & $\nu^\prime_g \cdot V^\prime \approx \SI{2393}{\kilo\hertz}$ \\
-    4 & $V^\prime = \SI{33.1}{\kilo\ohm}/\SI{468}{\ohm} \approx 71$ & $\nu^\prime_g \approx \SI{40}{\kilo\hertz}$   & $\nu^\prime_g \cdot V^\prime \approx \SI{2829}{\kilo\hertz}$ \\
+    1 & $\SI{260}{\milli\volt}$   & $\SI{469}{\ohm}/\SI{468}{\ohm} \approx 1$        & $\SI{0.998}{}$ & $\SI{-0.348}{}$ \\
+    2 & $\SI{258}{\milli\volt}$   & $\SI{996}{\ohm}/\SI{468}{\ohm} \approx 2$        & $\SI{0.990}{}$ & $\SI{-0.356}{}$ \\
+    3 & $\SI{257.5}{\milli\volt}$ & $\SI{10}{\kilo\ohm}/\SI{468}{\ohm} \approx 21$   & $\SI{0.992}{}$ & $\SI{-0.354}{}$ \\
+    4 & $\SI{257.5}{\milli\volt}$ & $\SI{33.1}{\kilo\ohm}/\SI{468}{\ohm} \approx 71$ & $\SI{0.951}{}$ & $\SI{-0.396}{}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\noindent
+Die Messwerte werden durch die jeweilige Eingangsspannung geteilt, um auf den effektiven
+Verstärkungsfaktor $V^\prime_\text{eff}$ zu kommen. Der jeweils erste Wert stellt den
+Verstärkungsfaktor $V^\prime$ dar und der entsprechende Wert
+steht zusammen mit dem Wert $\log{\frac{V^\prime}{\sqrt{2}}}$ und dem Widerstandsverhältnis
+in Tabelle \ref{tab:eingangs}. Die Frequenzen und die effektiven
+Verstärkungsfaktoren werden logarithmiert und stehen in Tabelle \ref{tab:logwerte}.
+$\log{\frac{V^\prime}{\sqrt{2}}}$ wird als Konstante in die Plots eingezeichnet. Die
+Bandbreite ist bis zu dem Schnittpunkt der beiden Kurven definiert. Also wird
+eine Gerade, der Form:
+\begin{equation*}
+  \log{V^\prime_\text{eff}} (\log{\nu}) = m \cdot \log{\nu} + b,
+\end{equation*}
+durch die fallende Flanke der Messwerte gefittet und die Parameter in der entsprechenden
+Umkehrfunktion
+\begin{equation*}
+  \log{\nu} (\log{V^\prime_\text{eff}}) = \frac{\log{V^\prime_\text{eff}}-b}{m}
+\end{equation*}
+verwendet um durch Einsetzen von $\log{\frac{V^\prime}{\sqrt{2}}}$ den Wert für $\log{\nu^\prime_g}$
+zu berechnen. Durch exponentieren folgt die Grenzfrequenz $\nu^\prime_g$.
+Für den Fit werden bei Schaltung 1 die letzten sechs Werte verwendet.
+Bei Schaltung 2 sind es die letzten acht. Bei Schaltung 3 alle außer die ersten sechs
+und bei Schaltung 4 alle außer die ersten zwei und die letzten vier.
+Als Parameter ergeben sich für die vier Schaltungen die Werte in Tabelle \ref{tab:parameter}.
+In selbiger stehen auch die Grenzfrequenzen und das Verstärkungs-Bandbreite-Produkt
+$\nu^\prime_g \cdot V^\prime$.
+\begin{table}[H]
+  \centering
+  \caption{Die Parameter der Fits, Grenzfrequenzen und Verstärkung-Bandbreite-Produkte der Schaltungen.}
+  \label{tab:parameter}
+  \begin{tabular}{c c c c c}
+    \toprule
+    Schaltung & m & b & $\nu^\prime_g$ in $\si{\kilo\hertz}$ & $\nu^\prime_g \cdot V^\prime$ in $\si{\kilo\hertz}$ \\
+    \midrule
+    1 & $\SI{-0.550(15)}{}$ & $\SI{3.51(11)}{}$ & $\SI{1.12(32)e3}{}$ & $\SI{1.12(32)e3}{}$ \\
+    2 & $\SI{-0.516(14)}{}$ & $\SI{3.06(9)}{}$  & $\SI{7.6(19)e2}{}$ & $\SI{7.5(19)e2}{}$ \\
+    3 & $\SI{-0.704(14)}{}$ & $\SI{2.98(7)}{}$ & $\SI{115(16)}{}$ & $\SI{114(16)}{}$ \\
+    4 & $\SI{-0.760(11)}{}$ & $\SI{2.39(6)}{}$ & $\SI{38.9(35)}{}$ & $\SI{37.0(34)}{}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\noindent
+Als stark vereinfachtes Ersatzschaltbild eignet sich hierbei ein $RC$-Tiefpass.
+Da die Eingangswiderstände des Operationsverstärkers sehr groß sind und einige
+der Bauteile im inneren des Verstärkers (z.B. Dioden und Transistoren) eine
+wenn auch kleine Sperrschichtkapazität besitzen zeigt sich bei entsprechend hohen Frequenzen
+ein kapazitives Verhalten.\\
+
+\noindent
+Zur Abschätzung von $V$ wird die Formel
+\begin{equation}
+  \frac{1}{V^\prime} \approx \frac{1}{V}+\frac{R_1}{R_\text{N}}
+\end{equation}
+aus der Anleitung verwendet. Dazu wird diese auf $V$ umgeformt und für die einzelnen Schaltungen
+$V^\prime$ sowie die Widerstände eingesetzt.
+Die Ergebnisse stehen in Tabelle \ref{tab:vabsch}.
+\begin{table}[H]
+  \centering
+  \caption{Die Ergebnisse der Abschätzung von $V$.}
+  \label{tab:vabsch}
+  \begin{tabular}{c c}
+    \toprule
+    Schaltung & $V$\\
+    \midrule
+    1 & $\approx 246$ \\
+    2 & $\approx 2  $ \\
+    3 & $\approx 1  $ \\
+    4 & $\approx 1  $ \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -533,41 +524,86 @@ Außerdem ist in der Tabelle das Verstärkungs-Bandbreite-Produkt aufgelistet .
   \begin{tabular}{c c c c c c c c}
     \toprule
     \multicolumn{2}{c}{Schaltung: 1} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{3} & \multicolumn{2}{c}{4} \\
-    $\nu$ in $\si{\hertz}$ & $U_\text{A}$ in $\si{\milli\volt}$ & $\nu$ in $\si{\hertz}$ & $U_\text{A}$ in $\si{\milli\volt}$ & $\nu$ in $\si{\hertz}$ & $U_\text{A}$ in $\si{\milli\volt}$ & $\nu$ in $\si{\hertz}$ & $U_\text{A}$ in $\si{\milli\volt}$ \\
+    $\nu$ in $\si{\kilo\hertz}$ & $U_\text{A}$ in $\si{\milli\volt}$ & $\nu$ in $\si{\kilo\hertz}$ & $U_\text{A}$ in $\si{\milli\volt}$ & $\nu$ in $\si{\kilo\hertz}$ & $U_\text{A}$ in $\si{\milli\volt}$ & $\nu$ in $\si{\kilo\hertz}$ & $U_\text{A}$ in $\si{\milli\volt}$ \\
     \midrule
-    0.4   & 259.5 & 0.4  & 255.5 & 0.4  & 255.5 & 0.4  & 245   \\
-    16.4  & 259.5 & 20   & 255.5 & 16.4 & 251.5 & 16.4 & 225   \\
-    32.4  & 259.5 & 40   & 255.5 & 32.4 & 239   & 32.4 & 183   \\
-    48.35 & 259.5 & 80   & 254.5 & 48.4 & 230   & 48.4 & 148.5 \\
-    64.35 & 259.5 & 120  & 248   & 66.4 & 213   & 64   & 120.5 \\
-    80.3  & 259.5 & 160  & 251   & 82.4 & 203   & 80   & 103.5 \\
-    96.3  & 259.5 & 200  & 243   & 96.4 & 191   & 96   & 88.5  \\
-    112   & 259.5 & 240  & 239   & 112  & 181   & 112  & 78.5  \\
-    128   & 258   & 280  & 234   & 128  & 167   & 128  & 72.5  \\
-    144   & 256.5 & 320  & 234   & 144  & 155   & 144  & 64.5  \\
-    160   & 256.5 & 360  & 223   & 160  & 146.5 & 160  & 60.5  \\
-    176   & 256.5 & 400  & 221   & 176  & 136.5 & 176  & 55.5  \\
-    192   & 256.5 & 500  & 211   & 192  & 128.5 & 192  & 53.5  \\
-    208   & 256.5 & 550  & 207   & 208  & 121.5 & 208  & 48    \\
-    224   & 255   & 600  & 200   & 224  & 116.5 & 224  & 45    \\
-    240   & 255   & 650  & 195   & 240  & 109.5 & 240  & 44    \\
-    256   & 255   & 700  & 187   & 256  & 104.5 & 256  & 40    \\
-    272   & 252   & 750  & 183   & 272  & 99.5  & 272  & 39    \\
-    288   & 252   & 800  & 177   & 288  & 94.5  & 288  & 39    \\
-    304   & 250.5 & 850  & 170   & 304  & 90.5  & 304  & 36    \\
-    320   & 250.5 & 900  & 165   & 320  & 88.5  & 320  & 34    \\
-    336   & 249   & 950  & 161   & 336  & 84.5  & 336  & 32    \\
-    352   & 249   & 1000 & 156   & 352  & 80.5  & 352  & 32    \\
-    368   & 244.5 &      &       & 368  & 76.5  & 368  & 32    \\
-    384   & 244.5 &      &       & 384  & 76.5  & 384  & 32    \\
-    400   & 244.5 &      &       & 400  & 72.5  & 400  & 32    \\
+    0,4   & 259,5 & 0,4  & 255,5 & 0,4  & 255,5 & 0,4  & 245   \\
+    16,4  & 259,5 & 20   & 255,5 & 16,4 & 251,5 & 16,4 & 225   \\
+    32,4  & 259,5 & 40   & 255,5 & 32,4 & 239   & 32,4 & 183   \\
+    48,35 & 259,5 & 80   & 254,5 & 48,4 & 230   & 48,4 & 148,5 \\
+    64,35 & 259,5 & 120  & 248   & 66,4 & 213   & 64   & 120,5 \\
+    80,3  & 259,5 & 160  & 251   & 82,4 & 203   & 80   & 103,5 \\
+    96,3  & 259,5 & 200  & 243   & 96,4 & 191   & 96   & 88,5  \\
+    112   & 259,5 & 240  & 239   & 112  & 181   & 112  & 78,5  \\
+    128   & 258   & 280  & 234   & 128  & 167   & 128  & 72,5  \\
+    144   & 256,5 & 320  & 234   & 144  & 155   & 144  & 64,5  \\
+    160   & 256,5 & 360  & 223   & 160  & 146,5 & 160  & 60,5  \\
+    176   & 256,5 & 400  & 221   & 176  & 136,5 & 176  & 55,5  \\
+    192   & 256,5 & 500  & 211   & 192  & 128,5 & 192  & 53,5  \\
+    208   & 256,5 & 550  & 207   & 208  & 121,5 & 208  & 48    \\
+    224   & 255   & 600  & 200   & 224  & 116,5 & 224  & 45    \\
+    240   & 255   & 650  & 195   & 240  & 109,5 & 240  & 44    \\
+    256   & 255   & 700  & 187   & 256  & 104,5 & 256  & 40    \\
+    272   & 252   & 750  & 183   & 272  & 99,5  & 272  & 39    \\
+    288   & 252   & 800  & 177   & 288  & 94,5  & 288  & 39    \\
+    304   & 250,5 & 850  & 170   & 304  & 90,5  & 304  & 36    \\
+    320   & 250,5 & 900  & 165   & 320  & 88,5  & 320  & 34    \\
+    336   & 249   & 950  & 161   & 336  & 84,5  & 336  & 32    \\
+    352   & 249   & 1000 & 156   & 352  & 80,5  & 352  & 32    \\
+    368   & 244,5 &      &       & 368  & 76,5  & 368  & 32    \\
+    384   & 244,5 &      &       & 384  & 76,5  & 384  & 32    \\
+    400   & 244,5 &      &       & 400  & 72,5  & 400  & 32    \\
     1181  & 182   &      &       &      &       &      &       \\
-    1750  & 143.5 &      &       &      &       &      &       \\
+    1750  & 143,5 &      &       &      &       &      &       \\
     1930  & 136   &      &       &      &       &      &       \\
-    1000  & 195.5 &      &       &      &       &      &       \\
-    900   & 204.5 &      &       &      &       &      &       \\
+    1000  & 195,5 &      &       &      &       &      &       \\
+    900   & 204,5 &      &       &      &       &      &       \\
     800   & 211   &      &       &      &       &      &       \\
     2000  & 133   &      &       &      &       &      &       \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\begin{table}
+  \centering
+  \caption{Die logerithmierten Werte von Frequenz und effektivem Verstärkungsfaktor.}
+  \label{tab:logwerte}
+  \begin{tabular}{c c c c c c c c}
+    \toprule
+    \multicolumn{2}{c}{Schaltung: 1} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{3} & \multicolumn{2}{c}{4} \\
+    $\log{\nu}$ & $\log{V^\prime_\text{eff}}$ & $\log{\nu}$ & $\log{V^\prime_\text{eff}}$ & $\log{\nu}$ & $\log{V^\prime_\text{eff}}$ & $\log{\nu}$ & $\log{V^\prime_\text{eff}}$ \\
+    \midrule
+    $\SI{-0.916}{}$ & $\SI{-0.00192}{}$ & $\SI{-0.916}{}$ & $\SI{-0.00974}{}$ & $\SI{-0.916}{}$ & $\SI{-0.00780}{}$ & $\SI{-0.916}{}$ & $\SI{-0.0498}{}$ \\
+    $\SI{ 2.80}{}$  & $\SI{-0.00192}{}$ & $\SI{ 3.00}{}$ & $\SI{-0.00974}{}$ & $\SI{ 2.80}{}$  & $\SI{-0.0236}{}$ & $\SI{ 2.80}{}$ & $\SI{-0.135}{}$  \\
+    $\SI{ 3.48}{}$  & $\SI{-0.00192}{}$ & $\SI{ 3.69}{}$ & $\SI{-0.00974}{}$ & $\SI{ 3.48}{}$  & $\SI{-0.0746}{}$ & $\SI{ 3.48}{}$ & $\SI{-0.342}{}$  \\
+    $\SI{ 3.88}{}$  & $\SI{-0.00192}{}$ & $\SI{ 4.38}{}$ & $\SI{-0.0137}{}$  & $\SI{ 3.88}{}$  & $\SI{-0.113}{}$ & $\SI{ 3.88}{}$ & $\SI{-0.550}{}$  \\
+    $\SI{ 4.16}{}$  & $\SI{-0.00192}{}$ & $\SI{ 4.79}{}$ & $\SI{-0.0395}{}$  & $\SI{ 4.20}{}$  & $\SI{-0.190}{}$ & $\SI{ 4.16}{}$ & $\SI{-0.759}{}$  \\
+    $\SI{ 4.39}{}$  & $\SI{-0.00192}{}$ & $\SI{ 5.08}{}$ & $\SI{-0.0275}{}$  & $\SI{ 4.41}{}$  & $\SI{-0.238}{}$ & $\SI{ 4.38}{}$ & $\SI{-0.911}{}$  \\
+    $\SI{ 4.57}{}$  & $\SI{-0.00192}{}$ & $\SI{ 5.30}{}$ & $\SI{-0.0599}{}$  & $\SI{ 4.57}{}$  & $\SI{-0.299}{}$ & $\SI{ 4.56}{}$ & $\SI{-1.07}{}$   \\
+    $\SI{ 4.72}{}$  & $\SI{-0.00192}{}$ & $\SI{ 5.48}{}$ & $\SI{-0.0765}{}$  & $\SI{ 4.72}{}$  & $\SI{-0.353}{}$ & $\SI{ 4.72}{}$ & $\SI{-1.19}{}$   \\
+    $\SI{ 4.85}{}$  & $\SI{-0.00772}{}$ & $\SI{ 5.63}{}$ & $\SI{-0.0976}{}$  & $\SI{ 4.85}{}$  & $\SI{-0.433}{}$ & $\SI{ 4.85}{}$ & $\SI{-1.27}{}$   \\
+    $\SI{ 4.97}{}$  & $\SI{-0.0136}{}$  & $\SI{ 5.77}{}$ & $\SI{-0.0976}{}$  & $\SI{ 4.97}{}$  & $\SI{-0.508}{}$ & $\SI{ 4.97}{}$ & $\SI{-1.38}{}$   \\
+    $\SI{ 5.08}{}$  & $\SI{-0.0136}{}$  & $\SI{ 5.89}{}$ & $\SI{-0.146}{}$   & $\SI{ 5.08}{}$  & $\SI{-0.564}{}$ & $\SI{ 5.08}{}$ & $\SI{-1.45}{}$   \\
+    $\SI{ 5.17}{}$  & $\SI{-0.0136}{}$  & $\SI{ 5.99}{}$ & $\SI{-0.155}{}$   & $\SI{ 5.17}{}$  & $\SI{-0.635}{}$ & $\SI{ 5.17}{}$ & $\SI{-1.53}{}$   \\
+    $\SI{ 5.26}{}$  & $\SI{-0.0136}{}$  & $\SI{ 6.21}{}$ & $\SI{-0.201}{}$   & $\SI{ 5.26}{}$  & $\SI{-0.695}{}$ & $\SI{ 5.26}{}$ & $\SI{-1.57}{}$   \\
+    $\SI{ 5.34}{}$  & $\SI{-0.0136}{}$  & $\SI{ 6.31}{}$ & $\SI{-0.220}{}$   & $\SI{ 5.34}{}$  & $\SI{-0.751}{}$ & $\SI{ 5.34}{}$ & $\SI{-1.68}{}$   \\
+    $\SI{ 5.41}{}$  & $\SI{-0.0194}{}$  & $\SI{ 6.40}{}$ & $\SI{-0.255}{}$   & $\SI{ 5.41}{}$  & $\SI{-0.793}{}$ & $\SI{ 5.41}{}$ & $\SI{-1.74}{}$   \\
+    $\SI{ 5.48}{}$  & $\SI{-0.0194}{}$  & $\SI{ 6.48}{}$ & $\SI{-0.280}{}$   & $\SI{ 5.48}{}$  & $\SI{-0.855}{}$ & $\SI{ 5.48}{}$ & $\SI{-1.77}{}$   \\
+    $\SI{ 5.55}{}$  & $\SI{-0.0194}{}$  & $\SI{ 6.55}{}$ & $\SI{-0.322}{}$   & $\SI{ 5.55}{}$  & $\SI{-0.902}{}$ & $\SI{ 5.55}{}$ & $\SI{-1.86}{}$   \\
+    $\SI{ 5.61}{}$  & $\SI{-0.0313}{}$  & $\SI{ 6.62}{}$ & $\SI{-0.343}{}$   & $\SI{ 5.61}{}$  & $\SI{-0.951}{}$ & $\SI{ 5.61}{}$ & $\SI{-1.89}{}$   \\
+    $\SI{ 5.66}{}$  & $\SI{-0.0313}{}$  & $\SI{ 6.68}{}$ & $\SI{-0.377}{}$   & $\SI{ 5.66}{}$  & $\SI{-1.00}{}$  & $\SI{ 5.66}{}$ & $\SI{-1.89}{}$   \\
+    $\SI{ 5.72}{}$  & $\SI{-0.0372}{}$  & $\SI{ 6.75}{}$ & $\SI{-0.417}{}$   & $\SI{ 5.72}{}$  & $\SI{-1.05}{}$  & $\SI{ 5.72}{}$ & $\SI{-1.97}{}$   \\
+    $\SI{ 5.77}{}$  & $\SI{-0.0372}{}$  & $\SI{ 6.80}{}$ & $\SI{-0.447}{}$   & $\SI{ 5.77}{}$  & $\SI{-1.07}{}$  & $\SI{ 5.77}{}$ & $\SI{-2.02}{}$   \\
+    $\SI{ 5.82}{}$  & $\SI{-0.0432}{}$  & $\SI{ 6.86}{}$ & $\SI{-0.472}{}$   & $\SI{ 5.82}{}$  & $\SI{-1.11}{}$  & $\SI{ 5.82}{}$ & $\SI{-2.09}{}$   \\
+    $\SI{ 5.86}{}$  & $\SI{-0.0432}{}$  & $\SI{ 6.91}{}$ & $\SI{-0.503}{}$   & $\SI{ 5.86}{}$  & $\SI{-1.16}{}$  & $\SI{ 5.86}{}$ & $\SI{-2.09}{}$   \\
+    $\SI{ 5.91}{}$  & $\SI{-0.0615}{}$  &                &                   & $\SI{ 5.91}{}$  & $\SI{-1.21}{}$  & $\SI{ 5.91}{}$ & $\SI{-2.09}{}$   \\
+    $\SI{ 5.95}{}$  & $\SI{-0.0615}{}$  &                &                   & $\SI{ 5.95}{}$  & $\SI{-1.21}{}$  & $\SI{ 5.95}{}$ & $\SI{-2.09}{}$   \\
+    $\SI{ 5.99}{}$  & $\SI{-0.0615}{}$  &                &                   & $\SI{ 5.99}{}$  & $\SI{-1.27}{}$  & $\SI{ 5.99}{}$ & $\SI{-2.09}{}$   \\
+    $\SI{ 6.68}{}$  & $\SI{-0.209}{}$   &                &                   &                 &                 &                &                  \\
+    $\SI{ 6.80}{}$  & $\SI{-0.240}{}$   &                &                   &                 &                 &                &                  \\
+    $\SI{ 6.91}{}$  & $\SI{-0.285}{}$   &                &                   &                 &                 &                &                  \\
+    $\SI{ 7.07}{}$  & $\SI{-0.357}{}$   &                &                   &                 &                 &                &                  \\
+    $\SI{ 7.47}{}$  & $\SI{-0.594}{}$   &                &                   &                 &                 &                &                  \\
+    $\SI{ 7.57}{}$  & $\SI{-0.648}{}$   &                &                   &                 &                 &                &                  \\
+    $\SI{ 7.60}{}$  & $\SI{-0.670}{}$   &                &                   &                 &                 &                &                  \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -589,23 +625,24 @@ Außerdem ist in der Tabelle das Verstärkungs-Bandbreite-Produkt aufgelistet .
   \caption{Messwerte mit Schaltung 3.}
   \label{fig:plot3}
 \end{figure}
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{plot4.pdf}
   \caption{Messwerte mit Schaltung 4.}
   \label{fig:plot4}
 \end{figure}
-\clearpage
 
 \subsection{Differentiator und Integrator}
 Diese beiden Schaltungen haben aufgrund eines technischen Defektes nicht funktioniert.
-In dem Signal waren unschöne ungewollte Schwingungen zu sehen, die aussahen wie die
-bei einer Fouriertransformierten. Dadurch war eine Aufnahme des Frequenzverhaltens unmöglich.
+In dem Signal waren ungewollte höher frequente Schwingungen zu sehen.
+Dadurch war eine Aufnahme des Frequenzverhaltens unmöglich. Das Problem ließ sich
+auch nicht beheben. Am Ende hat sich herrausgestellt, dass es scheinbar ein defekter Anschluss
+am Entwicklerboard war.
 
 \subsection{Schmitt-Trigger}
 In Abbildung \ref{fig:schmitttrigg} ist eine Bildschirmaufnahme des Eingangs- und
-des Ausgangssignals des Schmitt-Triggers zu sehen. Dabei ist das grüne Signal das Eingangssignal
-und das gelbe Signal das Ausgangssignal.
+des Ausgangssignals des Schmitt-Triggers zu sehen. Dabei ist das Sinus-Signal das Eingangssignal
+und das Rechteck-Signal das Ausgangssignal.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{schmitt.png}
@@ -631,8 +668,8 @@ gemessen und die verwendeten Widerstände betragen:
 Mit diesen Werten ergeben sich nach den Formeln \eqref{eqn:schmitt} theoretische
 Werte für die Scheitelspannungen:
 \begin{align*}
-  U_\text{e,ein} &= \SI{199(3)}{\volt} \\
-  U_\text{e,aus} &= \SI{-185(2)}{\volt}.
+  U_\text{e,ein} &= \SI{199(3)}{\milli\volt} \\
+  U_\text{e,aus} &= \SI{-185(2)}{\milli\volt}.
 \end{align*}
 
 \subsection{Oszillator Schaltung}
@@ -650,22 +687,22 @@ Es werden alle Werte aussortiert, die vor der ersten Anregung und nach der zweit
 Anregung durch die Rechteckspannung liegen. Die restlichen Werte werden anschließend
 nach einer Funktion
 \begin{equation*}
-  f(t) = a \cdot \exp{\left(\frac{bt}{20 \cdot c}\right)} \cdot \sin{\left(\frac{t}{c}\right)} + d
+  f(t) = a \cdot \exp{\left(\frac{-1 \cdot (t-b)}{20 \cdot c}\right)} \cdot \sin{\left(\frac{(t-b)}{c}\right)} + d
 \end{equation*}
 gefittet.
 Als Startwerte für den Fit dienen dabei:
 \begin{align*}
   a &= \SI{200}{\milli\volt} \\
-  b &= \SI{-1}{} \\
-  c &= \SI{224}{\nano\second} \\
+  b &= \SI{0}{\second} \\
+  c &= \SI{224}{\micro\second} \\
   d &= \SI{-20}{\milli\volt}.
 \end{align*}
 Bei dem Fit ergeben sich folgende Parameter:
 \begin{align*}
-  a &= \SI{186(4)}{\milli\volt} \\
-  b &= \SI{-1.00(3)}{} \\
-  c &= \SI{216.5(2)}{\nano\second} \\
-  d &= \SI{-22.6(4)}{\milli\volt}.
+  a &= \SI{-210.5(2)}{\milli\volt} \\
+  b &= \SI{168.9(3)}{\micro\second} \\
+  c &= \SI{225.00(2)}{\micro\second} \\
+  d &= \SI{-22.74(3)}{\milli\volt}.
 \end{align*}
 Die verwendeten Bauteile haben die Werte:
 \begin{align*}
@@ -680,26 +717,90 @@ beiden Werte gemittelt. Der Mittelwert ist: $C = \SI{22.6(10)}{\nano\farad}$.
 Damit wird jetzt der Theoriewert für die Konstante $c$ des Fits berechnet.
 Nach Formel \eqref{eqn:oszi} folgt:
 \begin{equation*}
-  c = R \cdot C = \SI{225(10)}{\nano\second}.
+  R \cdot C = \SI{225(10)}{\micro\second}
 \end{equation*}
-
+und
+\begin{equation*}
+  \tau = 20\cdot R C = \SI{4.49(21)}{\milli\second}.
+\end{equation*}
+Aus dem Fit ergibt sich
+\begin{equation*}
+  \tau = 20 \cdot c = \SI{4.4999(4)}{\milli\second}.
+\end{equation*}
+\clearpage
 \section{Diskussion}
 \label{diskussion}
+\begin{table}[H]
+  \centering
+  \caption{Die Ergebnisse zu dem gegengekoppelten Linearverstärker.}
+  \label{tab:ergebnisse}
+  \begin{tabular}{c c c c c c}
+    \toprule
+    Schaltung & $V^\prime$ & $\frac{R_\text{N}}{R_1}$ & $\nu^\prime_g$ in $\si{\kilo\hertz}$ & $\nu^\prime_g \cdot V^\prime$ in $\si{\kilo\hertz}$ & $V$ \\
+    \midrule
+    1 & $\SI{0.998}{}$ & $\approx 1$  & $\SI{1.12(32)e3}{}$ & $\SI{1.12(32)e3}{}$ & $\approx 246$ \\
+    2 & $\SI{0.990}{}$ & $\approx 2$  & $\SI{7.6(19)e2}{}$  & $\SI{7.5(19)e2}{}$  & $\approx 2$   \\
+    3 & $\SI{0.992}{}$ & $\approx 21$ & $\SI{115(16)}{}$    & $\SI{114(16)}{}$    & $\approx 1$   \\
+    4 & $\SI{0.951}{}$ & $\approx 71$ & $\SI{38.9(35)}{}$   & $\SI{37.0(34)}{}$   & $\approx 1$   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 Auffällig ist, dass bei den gegengekoppelten Linearverstärkerschaltungen die
 maximale Ausgangsspannung immer gleich war und etwa der Eingangsspannung entsprach.
-Außerdem ist das Verstärkung-Bandbreite-Produkt nicht konstant. Das erste
-Problem (möglicherweise damit auch das Zweite) ließ sich am Ende dadurch lösen,
+Der Verstärkungsfaktor $V^\prime$ ist also immer $\approx 1$. Bei der ersten Schaltung
+stimmt das. Doch bei den Anderen müsste er entsprechend dem Widerstandsverhältnis 2, 21 bzw. 71 mal so groß sein.
+
+\noindent
+Die Abweichung in $V^\prime$ wirkt sich auf alle damit zusammenhängenden Ergebnisse aus.
+Das Verstärkung-Bandbreite-Produkt ist nicht konstant.
+Die Ergebnisse der vier Schaltungen diesbezüglich liegen alle in unterschiedlichen Größenordnungen.
+Das kann aber nicht vollständig auf die Abweichung in $V^\prime$ zurückgeführt
+werden. Selbst mit den Widerstandverhältnissen sind sie nicht konstant.
+Also muss es bei den Grenzfrequenzen auch eine Abweichung geben, die allerdings auch
+indirekt durch den Verstärkungsfaktor zustande kommen könnte.
+Bei der Abschätzung von $V$ ist höchstens der Wert von Schaltung 1 sinnvoll.
+Der Wert für Schaltung zwei entspricht ungefähr dem Widerstandsverhältnis und
+die Werte für die anderen Schaltungen sind sogar kleiner als das jeweilige
+Widerstandsverhältnis. Damit sind sie viel zu klein.
+Trotz alledem ist das Tiefpassverhalten des gegengekoppelten Linearverstärkers
+gut erkennbar und die Grenzfrequenz nimmt sogar mit zunehmendem Widerstandsverhältnis
+ab.
+
+\noindent
+Das Problem mit der Ausgangsspannung ließ sich am Ende dadurch lösen,
 dass man den Widerstand, welcher zu dem OPV parallel geschaltet wird, "direkt"
 in die Schaltung auf dem Entwicklerboard einbaut und nicht "indirekt"
 über Verkabelungen anschließt. Dadurch hat die Schmitt-Trigger Schaltung später
 gut Funktioniert. Allerdings war die Zeit zu knapp um die ersten Messreihen zu
 wiederholen. Die Differentiator- und Integratorschaltungen haben leider aus genannten
-Gründen nicht funktioniert. Der Schmitt-Trigger hat gut funktioniert und seine
-Aufgabe erfüllt. Die Scheitelspannungen liegen allerdings etwas höher als erwartet.
+Gründen nicht funktioniert.
+
+\noindent
+Die Ergebnisse für die Scheitelspannungen des Schmitt-Triggers sind:
+\begin{align*}
+  \text{Theorie:} U_\text{e,ein} &= \SI{199(3)}{\milli\volt} \\
+  \text{Gemessen:} U_\text{e,ein} &= \SI{278(5)}{\milli\volt} \\
+  \text{Theorie:} U_\text{e,aus} &= \SI{-185(2)}{\milli\volt} \\
+  \text{Gemessen:} U_\text{e,aus} &= \SI{-249(5)}{\milli\volt}
+\end{align*}
+Der Schmitt-Trigger hat gut funktioniert und seine Aufgabe erfüllt.
+Allerdings sind die gemessenen Scheitelspannungen 1,4 mal
+so groß, wie die theoretischen Werte.
 Eventuell sind dafür die unter der idealen Annahme vernachlässigten Eigenschaften
 eines realen OPVs verantwortlich oder es hing ebenfalls mit dem defekten Entwicklerboard
-zusammen. Die Daten zu der Oszillatorschaltung verhalten sich weitestgehend wie
-erwartet. Bei dem Fit ergeben sich sinnvolle Werte, die mit den Theoriewerten übereinstimmen.
+zusammen.
+
+\noindent
+Die Ergebnisse für $RC$ bzw. $\tau$ bei der Oszillatorschaltung sind:
+\begin{align*}
+  &\text{Theorie:}& R \cdot C &= \SI{225(10)}{\micro\second} \\
+  &\text{Fit:}& c = R \cdot C &= \SI{225.00(2)}{\micro\second} \\
+  &\text{Theorie:}& \tau &= \SI{4.49(21)}{\milli\second} \\
+  &\text{Fit:}& \tau &= \SI{4.4999(4)}{\milli\second}.
+\end{align*}
+Damit entsprechen die Werte aus dem Fit genau den theoretischen Werten.
+Die Daten sind demzufolge sehr gut.
+
 \newpage
 \nocite{*}
 \printbibliography

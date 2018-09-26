@@ -1934,19 +1934,9 @@
     <bcf:citekey order="8">V51</bcf:citekey>
     <bcf:citekey order="9">V51</bcf:citekey>
     <bcf:citekey order="10">V51</bcf:citekey>
-    <bcf:citekey order="11">V51</bcf:citekey>
-    <bcf:citekey order="12">V51</bcf:citekey>
-    <bcf:citekey order="13">V51</bcf:citekey>
-    <bcf:citekey order="14">V51</bcf:citekey>
-    <bcf:citekey order="15">V51</bcf:citekey>
-    <bcf:citekey order="16">V51</bcf:citekey>
-    <bcf:citekey order="17">V51</bcf:citekey>
-    <bcf:citekey order="18">V51</bcf:citekey>
-    <bcf:citekey order="19">V51</bcf:citekey>
-    <bcf:citekey order="20">V51</bcf:citekey>
-    <bcf:citekey order="21">numpy</bcf:citekey>
-    <bcf:citekey order="22">matplotlib</bcf:citekey>
-    <bcf:citekey order="23">uncertainties</bcf:citekey>
+    <bcf:citekey order="11">scipy</bcf:citekey>
+    <bcf:citekey order="12">matplotlib</bcf:citekey>
+    <bcf:citekey order="13">uncertainties</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
